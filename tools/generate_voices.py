@@ -140,7 +140,7 @@ def main():
         old.unlink()
     (ASSETS / "sounds.json").write_text(json.dumps(sounds, ensure_ascii=False, indent=1), encoding="utf-8")
     (PROJECT / "build/voice-report.txt").write_text("\n".join(report), encoding="utf-8")
-    print(f"{len(used)} clips for {len(sounds)} item names: {recorded} recorded, {len(stale)} stale removed; "
+    print(f"{len(used)} clips for {len(sounds)} item and mob names: {recorded} recorded, {len(stale)} stale removed; "
           f"{len(report)} needed a reading fix, {sum('UNVERIFIED' in r for r in report)} UNVERIFIED (build/voice-report.txt)")
 
 

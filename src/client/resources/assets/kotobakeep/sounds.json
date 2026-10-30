@@ -6414,6 +6414,846 @@
    "kotobakeep:say/f77ee1ddb405c227"
   ]
  },
+ "say.entity.minecraft.acacia_boat": {
+  "sounds": [
+   "kotobakeep:say/82e35f75d43519ea"
+  ]
+ },
+ "say.entity.minecraft.acacia_chest_boat": {
+  "sounds": [
+   "kotobakeep:say/83d58ebb02dfff9e"
+  ]
+ },
+ "say.entity.minecraft.allay": {
+  "sounds": [
+   "kotobakeep:say/ae862e5ad31efdbc"
+  ]
+ },
+ "say.entity.minecraft.area_effect_cloud": {
+  "sounds": [
+   "kotobakeep:say/4fd31c921001abe9"
+  ]
+ },
+ "say.entity.minecraft.armadillo": {
+  "sounds": [
+   "kotobakeep:say/35477abfe4819671"
+  ]
+ },
+ "say.entity.minecraft.armor_stand": {
+  "sounds": [
+   "kotobakeep:say/f6afa85aff9fdaf5"
+  ]
+ },
+ "say.entity.minecraft.arrow": {
+  "sounds": [
+   "kotobakeep:say/c4e6e8cb9f4a7a9c"
+  ]
+ },
+ "say.entity.minecraft.axolotl": {
+  "sounds": [
+   "kotobakeep:say/f9f6a9e5d3329302"
+  ]
+ },
+ "say.entity.minecraft.bamboo_chest_raft": {
+  "sounds": [
+   "kotobakeep:say/f0b825379abb0d84"
+  ]
+ },
+ "say.entity.minecraft.bamboo_raft": {
+  "sounds": [
+   "kotobakeep:say/e8d8cdda3e986753"
+  ]
+ },
+ "say.entity.minecraft.bat": {
+  "sounds": [
+   "kotobakeep:say/94e6fa6de0f6a629"
+  ]
+ },
+ "say.entity.minecraft.bee": {
+  "sounds": [
+   "kotobakeep:say/0988d536399f84c2"
+  ]
+ },
+ "say.entity.minecraft.birch_boat": {
+  "sounds": [
+   "kotobakeep:say/8fa79aba60456de4"
+  ]
+ },
+ "say.entity.minecraft.birch_chest_boat": {
+  "sounds": [
+   "kotobakeep:say/0d91f4a05fa47889"
+  ]
+ },
+ "say.entity.minecraft.blaze": {
+  "sounds": [
+   "kotobakeep:say/8e07d81c6d631efe"
+  ]
+ },
+ "say.entity.minecraft.block_display": {
+  "sounds": [
+   "kotobakeep:say/439d8a85029518af"
+  ]
+ },
+ "say.entity.minecraft.boat": {
+  "sounds": [
+   "kotobakeep:say/7413898677edddb5"
+  ]
+ },
+ "say.entity.minecraft.bogged": {
+  "sounds": [
+   "kotobakeep:say/84269ce3eb002aaf"
+  ]
+ },
+ "say.entity.minecraft.breeze": {
+  "sounds": [
+   "kotobakeep:say/6552e8e73ca792a7"
+  ]
+ },
+ "say.entity.minecraft.breeze_wind_charge": {
+  "sounds": [
+   "kotobakeep:say/db0a05b582d6e827"
+  ]
+ },
+ "say.entity.minecraft.camel": {
+  "sounds": [
+   "kotobakeep:say/666200c913c393b8"
+  ]
+ },
+ "say.entity.minecraft.camel_husk": {
+  "sounds": [
+   "kotobakeep:say/6140662bbfa93fbc"
+  ]
+ },
+ "say.entity.minecraft.cat": {
+  "sounds": [
+   "kotobakeep:say/bb47706dc2ba94ae"
+  ]
+ },
+ "say.entity.minecraft.cave_spider": {
+  "sounds": [
+   "kotobakeep:say/dc38b0441ad7582f"
+  ]
+ },
+ "say.entity.minecraft.cherry_boat": {
+  "sounds": [
+   "kotobakeep:say/64d2f14affa4d853"
+  ]
+ },
+ "say.entity.minecraft.cherry_chest_boat": {
+  "sounds": [
+   "kotobakeep:say/d4c96f8bb26c2d4c"
+  ]
+ },
+ "say.entity.minecraft.chest_boat": {
+  "sounds": [
+   "kotobakeep:say/8fcee09bb76d8336"
+  ]
+ },
+ "say.entity.minecraft.chest_minecart": {
+  "sounds": [
+   "kotobakeep:say/db8b1cecf491436a"
+  ]
+ },
+ "say.entity.minecraft.chicken": {
+  "sounds": [
+   "kotobakeep:say/77bcd1f1502ab354"
+  ]
+ },
+ "say.entity.minecraft.cod": {
+  "sounds": [
+   "kotobakeep:say/42396a38b2df5da5"
+  ]
+ },
+ "say.entity.minecraft.command_block_minecart": {
+  "sounds": [
+   "kotobakeep:say/3b97e087c6077743"
+  ]
+ },
+ "say.entity.minecraft.copper_golem": {
+  "sounds": [
+   "kotobakeep:say/eaf13a02593534ff"
+  ]
+ },
+ "say.entity.minecraft.cow": {
+  "sounds": [
+   "kotobakeep:say/3f699558dfb0cf96"
+  ]
+ },
+ "say.entity.minecraft.creaking": {
+  "sounds": [
+   "kotobakeep:say/943ba22d3839bd19"
+  ]
+ },
+ "say.entity.minecraft.creaking_transient": {
+  "sounds": [
+   "kotobakeep:say/943ba22d3839bd19"
+  ]
+ },
+ "say.entity.minecraft.creeper": {
+  "sounds": [
+   "kotobakeep:say/24613c3a4cba1133"
+  ]
+ },
+ "say.entity.minecraft.cushion": {
+  "sounds": [
+   "kotobakeep:say/e4b5fe9e378af02f"
+  ]
+ },
+ "say.entity.minecraft.dark_oak_boat": {
+  "sounds": [
+   "kotobakeep:say/522541e112f18a18"
+  ]
+ },
+ "say.entity.minecraft.dark_oak_chest_boat": {
+  "sounds": [
+   "kotobakeep:say/9cebb20c4fc85dd8"
+  ]
+ },
+ "say.entity.minecraft.dolphin": {
+  "sounds": [
+   "kotobakeep:say/47870d20aa4d8111"
+  ]
+ },
+ "say.entity.minecraft.donkey": {
+  "sounds": [
+   "kotobakeep:say/d754cae985098759"
+  ]
+ },
+ "say.entity.minecraft.dragon_fireball": {
+  "sounds": [
+   "kotobakeep:say/02c7c18f9df1be9f"
+  ]
+ },
+ "say.entity.minecraft.drowned": {
+  "sounds": [
+   "kotobakeep:say/b8901392a63fb456"
+  ]
+ },
+ "say.entity.minecraft.egg": {
+  "sounds": [
+   "kotobakeep:say/338b66af05a3a051"
+  ]
+ },
+ "say.entity.minecraft.elder_guardian": {
+  "sounds": [
+   "kotobakeep:say/970d2535331b7793"
+  ]
+ },
+ "say.entity.minecraft.end_crystal": {
+  "sounds": [
+   "kotobakeep:say/3d963ddd40ed2a3a"
+  ]
+ },
+ "say.entity.minecraft.ender_dragon": {
+  "sounds": [
+   "kotobakeep:say/171ba27fb2c2923e"
+  ]
+ },
+ "say.entity.minecraft.ender_pearl": {
+  "sounds": [
+   "kotobakeep:say/9f340b6da2452511"
+  ]
+ },
+ "say.entity.minecraft.enderman": {
+  "sounds": [
+   "kotobakeep:say/11b04961255638f3"
+  ]
+ },
+ "say.entity.minecraft.endermite": {
+  "sounds": [
+   "kotobakeep:say/4a12ba6797bff741"
+  ]
+ },
+ "say.entity.minecraft.evoker": {
+  "sounds": [
+   "kotobakeep:say/ae37a101357ed876"
+  ]
+ },
+ "say.entity.minecraft.evoker_fangs": {
+  "sounds": [
+   "kotobakeep:say/e10b90785f37730d"
+  ]
+ },
+ "say.entity.minecraft.experience_bottle": {
+  "sounds": [
+   "kotobakeep:say/848215b9e1de77b9"
+  ]
+ },
+ "say.entity.minecraft.experience_orb": {
+  "sounds": [
+   "kotobakeep:say/cb0f20dd85abe01a"
+  ]
+ },
+ "say.entity.minecraft.eye_of_ender": {
+  "sounds": [
+   "kotobakeep:say/be376b8dece64e13"
+  ]
+ },
+ "say.entity.minecraft.falling_block": {
+  "sounds": [
+   "kotobakeep:say/662742ff79ae7654"
+  ]
+ },
+ "say.entity.minecraft.fireball": {
+  "sounds": [
+   "kotobakeep:say/4b40e56673d8bb9b"
+  ]
+ },
+ "say.entity.minecraft.firework_rocket": {
+  "sounds": [
+   "kotobakeep:say/64ec53c85da68a25"
+  ]
+ },
+ "say.entity.minecraft.fishing_bobber": {
+  "sounds": [
+   "kotobakeep:say/19ae3b8039a0149a"
+  ]
+ },
+ "say.entity.minecraft.fox": {
+  "sounds": [
+   "kotobakeep:say/af7016e9f5ae7ef2"
+  ]
+ },
+ "say.entity.minecraft.frog": {
+  "sounds": [
+   "kotobakeep:say/0253180c9f89a9b5"
+  ]
+ },
+ "say.entity.minecraft.frostbite": {
+  "sounds": [
+   "kotobakeep:say/a43ba10742f9dd64"
+  ]
+ },
+ "say.entity.minecraft.furnace_minecart": {
+  "sounds": [
+   "kotobakeep:say/f9094c5c602825a2"
+  ]
+ },
+ "say.entity.minecraft.ghast": {
+  "sounds": [
+   "kotobakeep:say/6c94b1e7b0c13f62"
+  ]
+ },
+ "say.entity.minecraft.giant": {
+  "sounds": [
+   "kotobakeep:say/370c20211b2c285e"
+  ]
+ },
+ "say.entity.minecraft.glow_item_frame": {
+  "sounds": [
+   "kotobakeep:say/b2dadefeea362436"
+  ]
+ },
+ "say.entity.minecraft.glow_squid": {
+  "sounds": [
+   "kotobakeep:say/33fdb0cae284bf86"
+  ]
+ },
+ "say.entity.minecraft.goat": {
+  "sounds": [
+   "kotobakeep:say/4fed21e6c815aca8"
+  ]
+ },
+ "say.entity.minecraft.guardian": {
+  "sounds": [
+   "kotobakeep:say/1856e3567063f531"
+  ]
+ },
+ "say.entity.minecraft.happy_ghast": {
+  "sounds": [
+   "kotobakeep:say/649d6fd7a728b8d7"
+  ]
+ },
+ "say.entity.minecraft.hoglin": {
+  "sounds": [
+   "kotobakeep:say/aee8df14ad4654e5"
+  ]
+ },
+ "say.entity.minecraft.hopper_minecart": {
+  "sounds": [
+   "kotobakeep:say/2483fd72cd57894d"
+  ]
+ },
+ "say.entity.minecraft.horse": {
+  "sounds": [
+   "kotobakeep:say/3843b41c185861a0"
+  ]
+ },
+ "say.entity.minecraft.husk": {
+  "sounds": [
+   "kotobakeep:say/99e04b1b723af067"
+  ]
+ },
+ "say.entity.minecraft.ice_ball": {
+  "sounds": [
+   "kotobakeep:say/8530740cb6479c01"
+  ]
+ },
+ "say.entity.minecraft.illusioner": {
+  "sounds": [
+   "kotobakeep:say/22a93b5a7d8e6d7a"
+  ]
+ },
+ "say.entity.minecraft.interaction": {
+  "sounds": [
+   "kotobakeep:say/231000591e366a09"
+  ]
+ },
+ "say.entity.minecraft.iron_golem": {
+  "sounds": [
+   "kotobakeep:say/3aa84bb805c92c8b"
+  ]
+ },
+ "say.entity.minecraft.item": {
+  "sounds": [
+   "kotobakeep:say/d7bdcd4967fde80c"
+  ]
+ },
+ "say.entity.minecraft.item_display": {
+  "sounds": [
+   "kotobakeep:say/e69da3050a27c2b6"
+  ]
+ },
+ "say.entity.minecraft.item_frame": {
+  "sounds": [
+   "kotobakeep:say/5ad2c8c294357091"
+  ]
+ },
+ "say.entity.minecraft.jungle_boat": {
+  "sounds": [
+   "kotobakeep:say/cf333de6c68949b2"
+  ]
+ },
+ "say.entity.minecraft.jungle_chest_boat": {
+  "sounds": [
+   "kotobakeep:say/5fa28e97ca1fade3"
+  ]
+ },
+ "say.entity.minecraft.killer_bunny": {
+  "sounds": [
+   "kotobakeep:say/248228346be91942"
+  ]
+ },
+ "say.entity.minecraft.leash_knot": {
+  "sounds": [
+   "kotobakeep:say/3bc6e097de49e559"
+  ]
+ },
+ "say.entity.minecraft.lightning_bolt": {
+  "sounds": [
+   "kotobakeep:say/6a2d5f80e9d58dc0"
+  ]
+ },
+ "say.entity.minecraft.lingering_potion": {
+  "sounds": [
+   "kotobakeep:say/1cd34f0f53f4578a"
+  ]
+ },
+ "say.entity.minecraft.llama": {
+  "sounds": [
+   "kotobakeep:say/3b4c5e3f1cebc4e1"
+  ]
+ },
+ "say.entity.minecraft.llama_spit": {
+  "sounds": [
+   "kotobakeep:say/5afcd6e4a23919ff"
+  ]
+ },
+ "say.entity.minecraft.magma_cube": {
+  "sounds": [
+   "kotobakeep:say/db24159e6434b8e2"
+  ]
+ },
+ "say.entity.minecraft.mangrove_boat": {
+  "sounds": [
+   "kotobakeep:say/3bbe35df45b310c8"
+  ]
+ },
+ "say.entity.minecraft.mangrove_chest_boat": {
+  "sounds": [
+   "kotobakeep:say/3c99385b327c03a6"
+  ]
+ },
+ "say.entity.minecraft.mannequin": {
+  "sounds": [
+   "kotobakeep:say/7d093fa1fd6522a4"
+  ]
+ },
+ "say.entity.minecraft.marker": {
+  "sounds": [
+   "kotobakeep:say/a18f8c8b768f8197"
+  ]
+ },
+ "say.entity.minecraft.minecart": {
+  "sounds": [
+   "kotobakeep:say/e07ddf4da96c843e"
+  ]
+ },
+ "say.entity.minecraft.mooshroom": {
+  "sounds": [
+   "kotobakeep:say/06966aac26f24541"
+  ]
+ },
+ "say.entity.minecraft.mule": {
+  "sounds": [
+   "kotobakeep:say/57d539498140c282"
+  ]
+ },
+ "say.entity.minecraft.nautilus": {
+  "sounds": [
+   "kotobakeep:say/29e4c02fd43ef4b3"
+  ]
+ },
+ "say.entity.minecraft.oak_boat": {
+  "sounds": [
+   "kotobakeep:say/c6454e94796cc2fe"
+  ]
+ },
+ "say.entity.minecraft.oak_chest_boat": {
+  "sounds": [
+   "kotobakeep:say/4dd0a0248c08bf4a"
+  ]
+ },
+ "say.entity.minecraft.ocelot": {
+  "sounds": [
+   "kotobakeep:say/4351e49a43025f99"
+  ]
+ },
+ "say.entity.minecraft.ominous_item_spawner": {
+  "sounds": [
+   "kotobakeep:say/0f9f5910c2a0c7bf"
+  ]
+ },
+ "say.entity.minecraft.painting": {
+  "sounds": [
+   "kotobakeep:say/9ba55a455bcf5529"
+  ]
+ },
+ "say.entity.minecraft.pale_oak_boat": {
+  "sounds": [
+   "kotobakeep:say/7983ab151c419687"
+  ]
+ },
+ "say.entity.minecraft.pale_oak_chest_boat": {
+  "sounds": [
+   "kotobakeep:say/96fcdc3701afa2b4"
+  ]
+ },
+ "say.entity.minecraft.panda": {
+  "sounds": [
+   "kotobakeep:say/b200ca4359eb2883"
+  ]
+ },
+ "say.entity.minecraft.parched": {
+  "sounds": [
+   "kotobakeep:say/b1a355d4f2a9ce76"
+  ]
+ },
+ "say.entity.minecraft.parrot": {
+  "sounds": [
+   "kotobakeep:say/2d92051c73dde4fd"
+  ]
+ },
+ "say.entity.minecraft.phantom": {
+  "sounds": [
+   "kotobakeep:say/66fa58cf50158d03"
+  ]
+ },
+ "say.entity.minecraft.pig": {
+  "sounds": [
+   "kotobakeep:say/ef501a0145e28bb7"
+  ]
+ },
+ "say.entity.minecraft.piglin": {
+  "sounds": [
+   "kotobakeep:say/0570862e287243fd"
+  ]
+ },
+ "say.entity.minecraft.piglin_brute": {
+  "sounds": [
+   "kotobakeep:say/fcb299e4609aa707"
+  ]
+ },
+ "say.entity.minecraft.pillager": {
+  "sounds": [
+   "kotobakeep:say/a044a17814e4d319"
+  ]
+ },
+ "say.entity.minecraft.player": {
+  "sounds": [
+   "kotobakeep:say/3f948f63b17ae5f6"
+  ]
+ },
+ "say.entity.minecraft.polar_bear": {
+  "sounds": [
+   "kotobakeep:say/6de87f7608768f9c"
+  ]
+ },
+ "say.entity.minecraft.poplar_boat": {
+  "sounds": [
+   "kotobakeep:say/78612a7ae3bf54de"
+  ]
+ },
+ "say.entity.minecraft.poplar_chest_boat": {
+  "sounds": [
+   "kotobakeep:say/5bf77ff25b5f6609"
+  ]
+ },
+ "say.entity.minecraft.potion": {
+  "sounds": [
+   "kotobakeep:say/9e9955eb9db49ad5"
+  ]
+ },
+ "say.entity.minecraft.pufferfish": {
+  "sounds": [
+   "kotobakeep:say/02c690ed6d4214b0"
+  ]
+ },
+ "say.entity.minecraft.rabbit": {
+  "sounds": [
+   "kotobakeep:say/ed546a13064b2189"
+  ]
+ },
+ "say.entity.minecraft.ravager": {
+  "sounds": [
+   "kotobakeep:say/e19affe77417a257"
+  ]
+ },
+ "say.entity.minecraft.salmon": {
+  "sounds": [
+   "kotobakeep:say/55a1ad538e26843e"
+  ]
+ },
+ "say.entity.minecraft.sheep": {
+  "sounds": [
+   "kotobakeep:say/88b27a42f017b65a"
+  ]
+ },
+ "say.entity.minecraft.shulker": {
+  "sounds": [
+   "kotobakeep:say/f1d0209938416b23"
+  ]
+ },
+ "say.entity.minecraft.shulker_bullet": {
+  "sounds": [
+   "kotobakeep:say/01bf56ea8b620e90"
+  ]
+ },
+ "say.entity.minecraft.silverfish": {
+  "sounds": [
+   "kotobakeep:say/c18775fcc7084a3a"
+  ]
+ },
+ "say.entity.minecraft.skeleton": {
+  "sounds": [
+   "kotobakeep:say/a0d421236edbd83a"
+  ]
+ },
+ "say.entity.minecraft.skeleton_horse": {
+  "sounds": [
+   "kotobakeep:say/27a7f30e96e7ee50"
+  ]
+ },
+ "say.entity.minecraft.slime": {
+  "sounds": [
+   "kotobakeep:say/b9b6b0b80a2cdcbb"
+  ]
+ },
+ "say.entity.minecraft.small_fireball": {
+  "sounds": [
+   "kotobakeep:say/4e3ff52ab5b90d6f"
+  ]
+ },
+ "say.entity.minecraft.sniffer": {
+  "sounds": [
+   "kotobakeep:say/98e4a665af6ede04"
+  ]
+ },
+ "say.entity.minecraft.snow_golem": {
+  "sounds": [
+   "kotobakeep:say/9638f89766c79984"
+  ]
+ },
+ "say.entity.minecraft.snowball": {
+  "sounds": [
+   "kotobakeep:say/fc69c78449931922"
+  ]
+ },
+ "say.entity.minecraft.spawner_minecart": {
+  "sounds": [
+   "kotobakeep:say/fa2e8095e6c21151"
+  ]
+ },
+ "say.entity.minecraft.spectral_arrow": {
+  "sounds": [
+   "kotobakeep:say/5ac59ae3bf4025de"
+  ]
+ },
+ "say.entity.minecraft.spider": {
+  "sounds": [
+   "kotobakeep:say/ca83ef79ab808338"
+  ]
+ },
+ "say.entity.minecraft.splash_potion": {
+  "sounds": [
+   "kotobakeep:say/1ae8920c928884f4"
+  ]
+ },
+ "say.entity.minecraft.spruce_boat": {
+  "sounds": [
+   "kotobakeep:say/1f31247f6d7878b5"
+  ]
+ },
+ "say.entity.minecraft.spruce_chest_boat": {
+  "sounds": [
+   "kotobakeep:say/5bf7538c384d5f16"
+  ]
+ },
+ "say.entity.minecraft.squid": {
+  "sounds": [
+   "kotobakeep:say/e6873bcbc4ad17e9"
+  ]
+ },
+ "say.entity.minecraft.stray": {
+  "sounds": [
+   "kotobakeep:say/6580efa9d177145e"
+  ]
+ },
+ "say.entity.minecraft.strider": {
+  "sounds": [
+   "kotobakeep:say/d3eb154b84784046"
+  ]
+ },
+ "say.entity.minecraft.sulfur_cube": {
+  "sounds": [
+   "kotobakeep:say/74b241f33ecdf4b0"
+  ]
+ },
+ "say.entity.minecraft.tadpole": {
+  "sounds": [
+   "kotobakeep:say/76fac9ba4d795f7f"
+  ]
+ },
+ "say.entity.minecraft.text_display": {
+  "sounds": [
+   "kotobakeep:say/658487abb3c72cec"
+  ]
+ },
+ "say.entity.minecraft.tnt": {
+  "sounds": [
+   "kotobakeep:say/9574e2ad1f43123d"
+  ]
+ },
+ "say.entity.minecraft.tnt_minecart": {
+  "sounds": [
+   "kotobakeep:say/ae356b12ad1a0eac"
+  ]
+ },
+ "say.entity.minecraft.trader_llama": {
+  "sounds": [
+   "kotobakeep:say/06a270f213a53064"
+  ]
+ },
+ "say.entity.minecraft.trident": {
+  "sounds": [
+   "kotobakeep:say/38bcca0439e59c87"
+  ]
+ },
+ "say.entity.minecraft.tropical_fish": {
+  "sounds": [
+   "kotobakeep:say/b5850e3bf404fda2"
+  ]
+ },
+ "say.entity.minecraft.turtle": {
+  "sounds": [
+   "kotobakeep:say/a40e46885132a22d"
+  ]
+ },
+ "say.entity.minecraft.vex": {
+  "sounds": [
+   "kotobakeep:say/2d742f09afdd7637"
+  ]
+ },
+ "say.entity.minecraft.villager": {
+  "sounds": [
+   "kotobakeep:say/df5d63795093a502"
+  ]
+ },
+ "say.entity.minecraft.vindicator": {
+  "sounds": [
+   "kotobakeep:say/ea85db665c2d4ab4"
+  ]
+ },
+ "say.entity.minecraft.wandering_trader": {
+  "sounds": [
+   "kotobakeep:say/0557f6e55a1340e2"
+  ]
+ },
+ "say.entity.minecraft.warden": {
+  "sounds": [
+   "kotobakeep:say/953b5e0d1d4fc558"
+  ]
+ },
+ "say.entity.minecraft.wind_charge": {
+  "sounds": [
+   "kotobakeep:say/db0a05b582d6e827"
+  ]
+ },
+ "say.entity.minecraft.witch": {
+  "sounds": [
+   "kotobakeep:say/8fba6e9054ae67a5"
+  ]
+ },
+ "say.entity.minecraft.wither": {
+  "sounds": [
+   "kotobakeep:say/78e10722c00eb65b"
+  ]
+ },
+ "say.entity.minecraft.wither_skeleton": {
+  "sounds": [
+   "kotobakeep:say/35f936d9965936ca"
+  ]
+ },
+ "say.entity.minecraft.wither_skull": {
+  "sounds": [
+   "kotobakeep:say/495a02cc668fcbb6"
+  ]
+ },
+ "say.entity.minecraft.wolf": {
+  "sounds": [
+   "kotobakeep:say/2bf6ce43877eff04"
+  ]
+ },
+ "say.entity.minecraft.zoglin": {
+  "sounds": [
+   "kotobakeep:say/1dd12fcd821dd08e"
+  ]
+ },
+ "say.entity.minecraft.zombie": {
+  "sounds": [
+   "kotobakeep:say/ff65cc51b4c46719"
+  ]
+ },
+ "say.entity.minecraft.zombie_horse": {
+  "sounds": [
+   "kotobakeep:say/81b63a13dea7ad89"
+  ]
+ },
+ "say.entity.minecraft.zombie_nautilus": {
+  "sounds": [
+   "kotobakeep:say/7775f11e4159bc3b"
+  ]
+ },
+ "say.entity.minecraft.zombie_villager": {
+  "sounds": [
+   "kotobakeep:say/6b89c910ac8c4e76"
+  ]
+ },
+ "say.entity.minecraft.zombified_piglin": {
+  "sounds": [
+   "kotobakeep:say/fc70222d63b7be97"
+  ]
+ },
  "say.item.minecraft.abandoned_camp_map": {
   "sounds": [
    "kotobakeep:say/fbfe7412efcb4b24"
@@ -9096,7 +9936,7 @@
  },
  "say.item.minecraft.wandering_trader_spawn_egg": {
   "sounds": [
-   "kotobakeep:say/b774ebd7cc4c7bb4"
+   "kotobakeep:say/92780826c815dab0"
   ]
  },
  "say.item.minecraft.ward_armor_trim_smithing_template": {

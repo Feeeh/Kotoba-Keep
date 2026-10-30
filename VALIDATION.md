@@ -1,3 +1,24 @@
+# Kotoba Keep 1.3.0 verification
+
+- New: killing a mob whose name is due asks for its Japanese name. Its drops lock (can't be picked up, don't merge) with a purple box drawn around each one for the killer; a correct answer unlocks them, a timeout destroys them, and setup problems release them.
+- End-to-end check with a one-off Fabric client gametest (not kept in the build; microphone faked, answer sent as a transcript):
+  - Cow killed with a player attack: every drop locked, the client got the ウシ challenge with a cow spawn egg icon and the locked-drop list, and standing on the drops for 1.5 s picked nothing up.
+  - Answer うし: drops unlocked, and the ウシ voice clip is registered.
+  - Pig left unanswered: after the timeout and retry window, its drop (3 porkchops) was destroyed and the client showed "removed 3".
+  - Screenshot confirmed the see-through purple box around a dropped item.
+  - Each box shows a red 🚫 (circle and slash) on every side facing the camera and on top; a second screenshot run confirmed it.
+- Mob names: 168 entity names added to the furigana, speech-vocabulary and voice-clip checks (2,027 names total); 行商人 now reads ぎょうしょうにん. 121 new voice clips, 0 unverified.
+- `gradlew build`: 21 tests passed. `gradlew speechSmoke`: passed for 2,027 names.
+- Not verified: a live spoken answer, and multiplayer with several killers.
+
+# Kotoba Keep 1.2.1 verification
+
+- Menus no longer hide the challenge. Minecraft draws open menus over the HUD, so the panel was dimmed and mostly covered. It is now drawn on top of every menu as a compact strip. Simple Voice Chat push-to-talk already worked inside menus (its key hook runs before menus handle keys).
+- R (retry) now works in item menus and is ignored while a text box has focus (chat, signs, creative search, anvil).
+- Checked with a one-off Fabric client gametest (not kept in the build): screenshots of the normal panel, the strip over the inventory and over a large chest, and the strip hiding while the mouse hovers it.
+- `gradlew build`: 21 tests passed.
+- Not verified: a live spoken answer with a menu open.
+
 # Kotoba Keep 1.2.0 verification
 
 - `gradlew build`: **21 tests passed**. New: every one of the 1,859 vanilla item/block names has a bundled voice clip, and compound readings are no longer broken by single-kanji overrides (本棚 ほんだな, 森林 しんりん, 芽生えた めばえた, …入り いり, and others).

@@ -16,22 +16,23 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class VoiceLines {
     private static final Path ASSETS = Path.of("src/client/resources/assets/kotobakeep");
 
-    static boolean isItemName(String key, String text) {
-        return key.matches("(?:item|block)\\.minecraft\\.[^.]+") && !text.contains("%");
+    /** Item, block and mob names: everything a challenge can ask for. */
+    static boolean isChallengeName(String key, String text) {
+        return key.matches("(?:item|block|entity)\\.minecraft\\.[^.]+") && !text.contains("%");
     }
 
     public static void main(String[] args) throws Exception {
         var japanese = new Japanese();
         var lines = new TreeMap<String, Japanese.Word>();
-        japanese.translations().forEach((key, text) -> { if (isItemName(key, text)) lines.put(key, japanese.word(text)); });
+        japanese.translations().forEach((key, text) -> { if (isChallengeName(key, text)) lines.put(key, japanese.word(text)); });
         Files.writeString(Path.of(args[0]), new GsonBuilder().setPrettyPrinting().disableHtmlEscaping().create().toJson(lines), StandardCharsets.UTF_8);
     }
 
-    @Test void everyItemNameHasABundledVoiceClip() throws Exception {
+    @Test void everyItemAndMobNameHasABundledVoiceClip() throws Exception {
         var sounds = JsonParser.parseString(Files.readString(ASSETS.resolve("sounds.json"))).getAsJsonObject();
         var missing = new ArrayList<String>();
         for (Map.Entry<String, String> entry : new Japanese().translations().entrySet()) {
-            if (!isItemName(entry.getKey(), entry.getValue())) continue;
+            if (!isChallengeName(entry.getKey(), entry.getValue())) continue;
             var event = sounds.getAsJsonObject("say." + entry.getKey());
             String clip = event == null ? "" : event.getAsJsonArray("sounds").get(0).getAsString().replace("kotobakeep:", "");
             if (!Files.isRegularFile(ASSETS.resolve("sounds/" + clip + ".ogg"))) missing.add(entry.getKey());

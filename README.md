@@ -2,9 +2,10 @@
 
 **Say it to keep it.** A Minecraft **26.3 / Fabric** mod by **glitchk.id** that teaches you the original Japanese names of Minecraft items.
 
-Pick up an item and a small panel appears at the top of the screen with its Japanese name, furigana above the kanji, romaji, and a countdown. Say the name into your Simple Voice Chat microphone before time runs out to keep the item. Get it right and you hear the word spoken back in natural Japanese. Run out of time and the newly picked-up items are removed.
+Pick up an item and a small panel appears at the top of the screen with its Japanese name, furigana above the kanji, romaji, and a countdown. Say the name into your Simple Voice Chat microphone before time runs out to keep the item. Get it right and you hear the word spoken back in natural Japanese. Run out of time and the newly picked-up items are removed. Kill a mob and you have to name it too, or its drops disappear.
 
-- Uses the **official Japanese Minecraft names** (`ja_jp.json`), whatever language your game is set to.
+- Uses the **official Japanese Minecraft names** (`ja_jp.json`) for items, blocks and mobs, whatever language your game is set to.
+- **Mob kills ask too**: the drops stay locked in a purple 🚫 box until you say the mob's name.
 - **Furigana** over every kanji, plus optional romaji.
 - **Offline speech recognition** with [Vosk](https://alphacephei.com/vosk/). Nothing is uploaded or saved.
 - **Native-style pronunciation**: every vanilla item name is pre-recorded with the VOICEVOX voice **冥鳴ひまり** (Meimei Himari) and played after a correct answer.
@@ -45,7 +46,11 @@ It only touches that profile, and backs up older Kotoba Keep JARs to `config/kot
 
 After a correct answer you hear the word spoken. The volume is Minecraft's **Voice/Speech** slider (Options → Music & Sounds); turn it down to mute the voice. Modded items have no recording.
 
-Press **R** for one fresh attempt at the current word, either while its countdown runs or during the **8-second "Need more time?"** window after it expires. Items stay in your inventory while you decide. You can change R under Kotoba Keep in Minecraft's key bindings.
+When you kill a mob whose name is due, its drops lock where they fell. Each one sits in a see-through purple box with a red 🚫 on its sides, so you know it can't be picked up yet, by you, other players or mobs. Say the mob's name (for a cow, **ウシ (ushi)**) and the drops unlock; run out of time and they vanish. Picking up the unlocked drops can then ask for those items' names as usual.
+
+Challenges keep working while a menu is open (inventory, chests, furnaces, and so on). The panel shrinks to a strip along the top of the screen; hover your mouse over it to see the slots underneath.
+
+Press **R** for one fresh attempt at the current word, either while its countdown runs or during the **8-second "Need more time?"** window after it expires. R also works in item menus, but not while you're typing in a text box. Items stay in your inventory while you decide. You can change R under Kotoba Keep in Minecraft's key bindings.
 
 | Command | What it does |
 | --- | --- |
@@ -70,10 +75,12 @@ These are client commands and don't need cheats.
 - If voice chat disconnects, is muted or disabled, the model fails, or you pause the mod, current challenges cancel safely and nothing is removed.
 - Furigana uses Kuromoji plus Minecraft-specific reading overrides (`src/main/resources/data/kotobakeep/readings.json`). Modded items without an official Japanese name are skipped.
 - Potion effects, custom names, enchantments and damage don't create separate items; the base Japanese name is used.
+- **Mobs** follow the same learning rules as items: a mob you haven't named correctly yet asks on every kill, and a known mob comes back after 2–5 minutes of play. Only kills by you count (melee, arrows, tridents); deaths from lava, falls or pets don't. Killing more of the same mob while it's being asked adds those drops to the same challenge. Named mobs, baby mobs and villager professions use the base mob name (村人 for every villager).
+- Locked drops are released, never destroyed, if the challenge is cancelled (microphone off, paused, disconnected, server stopping). Drops that are in an unloaded chunk when the timer runs out are released when the chunk loads again. Hoppers can still collect locked drops.
 
 ## Multiplayer
 
-Install Kotoba Keep, Fabric API and Simple Voice Chat on the Fabric server **and** every participating client. Only clients need the speech model. Use the same Kotoba Keep version everywhere. Players without the mod are ignored. Simple Voice Chat must connect normally (default UDP port 24454).
+Install Kotoba Keep, Fabric API and Simple Voice Chat on the Fabric server **and** every participating client. Only clients need the speech model. Use the same Kotoba Keep version everywhere; 1.3.0 changed the network format, so older versions can't connect to it. Players without the mod are ignored. Simple Voice Chat must connect normally (default UDP port 24454).
 
 This is a cooperative learning mod, not anti-cheat: the client reports what it heard and the server checks it against the active challenge, so a modified client can skip its own challenges.
 
@@ -107,10 +114,10 @@ Requires **JDK 25**. Dependency versions are pinned in `gradle.properties` and `
 
 The JAR is written to `build/libs/`. Kuromoji, Vosk and JNA are bundled inside it; the speech model is not, to keep it smaller.
 
-`gradlew build` runs the tests: translations, furigana readings, answer matching, cooldowns, penalties, timers, and a check that every item name has a voice clip. Two dev tasks need local files in `vendor/` (ignored by git):
+`gradlew build` runs the tests: translations, furigana readings, answer matching, cooldowns, penalties, timers, and a check that every item and mob name has a voice clip. Two dev tasks need local files in `vendor/` (ignored by git):
 
 - `gradlew runClient` needs `vendor/voicechat-fabric-2.6.27+26.3.jar` from the Simple Voice Chat releases.
-- `gradlew speechSmoke` needs the extracted model in `vendor/models/vosk-model-small-ja-0.22`. It checks speech vocabulary for all 1,859 item names and loads the model through the native library.
+- `gradlew speechSmoke` needs the extracted model in `vendor/models/vosk-model-small-ja-0.22`. It checks speech vocabulary for all 2,027 item and mob names and loads the model through the native library.
 
 ### Releasing
 

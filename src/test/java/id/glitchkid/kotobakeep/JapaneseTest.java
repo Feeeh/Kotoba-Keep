@@ -62,11 +62,12 @@ class JapaneseTest {
         assertEquals("",Japanese.cleanTranscript("[unk] [unk]"));
         assertEquals("punk",Japanese.cleanTranscript("punk"));
     }
-    @Test void everyVanillaItemAndBlockHasACompleteKanaReading() {
+    @Test void everyVanillaItemBlockAndMobHasACompleteKanaReading() {
+        assertEquals("ぎょうしょうにん",japanese.item("entity.minecraft.wandering_trader").reading());
+        assertEquals("むらびとぞんび",japanese.item("entity.minecraft.zombie_villager").reading());
         var missing=new ArrayList<String>();
         for(var entry:japanese.translations().entrySet()) {
-            if(!entry.getKey().startsWith("item.minecraft.")&&!entry.getKey().startsWith("block.minecraft."))continue;
-            if(entry.getValue().contains("%"))continue;
+            if(!VoiceLines.isChallengeName(entry.getKey(),entry.getValue()))continue;
             var word=japanese.word(entry.getValue());
             if(!word.pronounceable())missing.add(entry.getKey()+" = "+word.text()+" → "+word.reading());
             assertEquals(word.text(),word.ruby().stream().map(Japanese.Ruby::text).reduce("",String::concat));

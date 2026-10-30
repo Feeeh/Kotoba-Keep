@@ -1,5 +1,6 @@
 package id.glitchkid.kotobakeep.network;
 
+import io.netty.handler.codec.DecoderException;
 import net.fabricmc.fabric.api.networking.v1.PayloadTypeRegistry;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.codec.StreamCodec;
@@ -8,13 +9,30 @@ import net.minecraft.resources.Identifier;
 import java.util.UUID;
 
 public final class Packets {
-    public record Challenge(UUID id, String item, String name, int count, int ticks, int retriesLeft) implements CustomPacketPayload {
+    /** item: icon to show (a spawn egg for mobs). key: translation key of the name, which picks the voice clip. */
+    public record Challenge(UUID id, String item, String name, String key, int count, int ticks, int retriesLeft) implements CustomPacketPayload {
         public static final Type<Challenge> TYPE = new Type<>(Identifier.fromNamespaceAndPath("kotobakeep", "challenge"));
         public static final StreamCodec<RegistryFriendlyByteBuf, Challenge> CODEC = new StreamCodec<>() {
-            public Challenge decode(RegistryFriendlyByteBuf b) { return new Challenge(b.readUUID(), b.readUtf(256), b.readUtf(256), b.readVarInt(), b.readVarInt(), b.readVarInt()); }
-            public void encode(RegistryFriendlyByteBuf b, Challenge p) { b.writeUUID(p.id); b.writeUtf(p.item,256); b.writeUtf(p.name,256); b.writeVarInt(p.count); b.writeVarInt(p.ticks); b.writeVarInt(p.retriesLeft); }
+            public Challenge decode(RegistryFriendlyByteBuf b) { return new Challenge(b.readUUID(), b.readUtf(256), b.readUtf(256), b.readUtf(256), b.readVarInt(), b.readVarInt(), b.readVarInt()); }
+            public void encode(RegistryFriendlyByteBuf b, Challenge p) { b.writeUUID(p.id); b.writeUtf(p.item,256); b.writeUtf(p.name,256); b.writeUtf(p.key,256); b.writeVarInt(p.count); b.writeVarInt(p.ticks); b.writeVarInt(p.retriesLeft); }
         };
         public Type<Challenge> type() { return TYPE; }
+    }
+    /** Entity IDs of the receiving player's mob drops that are locked until they name the mob. */
+    public record LockedDrops(int[] ids) implements CustomPacketPayload {
+        private static final int MAX_IDS = 4096;
+        public static final Type<LockedDrops> TYPE = new Type<>(Identifier.fromNamespaceAndPath("kotobakeep", "locked_drops"));
+        public static final StreamCodec<RegistryFriendlyByteBuf, LockedDrops> CODEC = new StreamCodec<>() {
+            public LockedDrops decode(RegistryFriendlyByteBuf b) {
+                int size = b.readVarInt();
+                if (size < 0 || size > MAX_IDS) throw new DecoderException("Too many locked drops: " + size);
+                int[] ids = new int[size];
+                for (int i = 0; i < size; i++) ids[i] = b.readVarInt();
+                return new LockedDrops(ids);
+            }
+            public void encode(RegistryFriendlyByteBuf b, LockedDrops p) { b.writeVarInt(p.ids.length); for (int id : p.ids) b.writeVarInt(id); }
+        };
+        public Type<LockedDrops> type() { return TYPE; }
     }
     public record Retry(UUID id) implements CustomPacketPayload {
         public static final Type<Retry> TYPE = new Type<>(Identifier.fromNamespaceAndPath("kotobakeep", "retry"));
@@ -67,5 +85,6 @@ public final class Packets {
         PayloadTypeRegistry.serverboundPlay().register(Ready.TYPE, Ready.CODEC);
         PayloadTypeRegistry.serverboundPlay().register(Retry.TYPE, Retry.CODEC);
         PayloadTypeRegistry.clientboundPlay().register(RetryOffer.TYPE, RetryOffer.CODEC);
+        PayloadTypeRegistry.clientboundPlay().register(LockedDrops.TYPE, LockedDrops.CODEC);
     }
 }

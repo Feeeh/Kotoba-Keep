@@ -10,6 +10,11 @@ import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayConnectionEvents;
 import net.fabricmc.fabric.api.client.rendering.v1.hud.HudElementRegistry;
+import net.fabricmc.fabric.api.client.rendering.v1.level.LevelRenderEvents;
+import net.fabricmc.fabric.api.client.screen.v1.ScreenEvents;
+import net.fabricmc.fabric.api.client.screen.v1.ScreenKeyboardEvents;
+import net.minecraft.client.gui.screens.Screen;
+import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.fabricmc.fabric.api.client.command.v2.ClientCommandRegistrationCallback;
 import net.fabricmc.fabric.api.client.keymapping.v1.KeyMappingHelper;
 import com.mojang.blaze3d.platform.InputConstants;
@@ -17,7 +22,6 @@ import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.sounds.SimpleSoundInstance;
 import net.minecraft.client.resources.sounds.SoundInstance;
-import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.Identifier;
@@ -34,6 +38,7 @@ public final class KotobaClient implements ClientModInitializer {
     boolean started, submitted, flushed, pausedByUser, retryRequested;
     KeyMapping retryKey;
     String heard = "";
+    private int[] lockedDrops = new int[0];
     private int tick;
     public void onInitializeClient() {
         INSTANCE = this; speech = new SpeechRecognizer();
@@ -44,16 +49,24 @@ public final class KotobaClient implements ClientModInitializer {
         ClientPlayNetworking.registerGlobalReceiver(Packets.Result.TYPE, (packet, context) -> {
             if (challenge == null || !challenge.id().equals(packet.id())) return;
             outcome=packet.outcome(); removed=packet.count(); resultTicks=30; retryRemaining=0; started=false; speech.cancel();
-            if (outcome == 1) sayName(challenge.item());
+            if (outcome == 1) sayName(challenge.key());
         });
         ClientPlayNetworking.registerGlobalReceiver(Packets.RetryOffer.TYPE, (packet, context) -> {
             if (challenge == null || !challenge.id().equals(packet.id()) || outcome != -1) return;
             retryRemaining=packet.ticks(); retryTotalTicks=packet.ticks(); remaining=0; started=false; retryRequested=false; speech.cancel();
         });
-        ClientPlayConnectionEvents.DISCONNECT.register((handler, client) -> { speech.cancel(); challenge=null; word=null; started=false; VoiceBridge.connected=false; VoiceBridge.clientApi=null; });
+        ClientPlayNetworking.registerGlobalReceiver(Packets.LockedDrops.TYPE, (packet, context) -> lockedDrops = packet.ids());
+        ClientPlayConnectionEvents.DISCONNECT.register((handler, client) -> { speech.cancel(); challenge=null; word=null; started=false; lockedDrops=new int[0]; VoiceBridge.connected=false; VoiceBridge.clientApi=null; });
+        LevelRenderEvents.BEFORE_GIZMOS.register(context -> LockBoxes.draw(context.levelRenderer(), lockedDrops));
         ClientTickEvents.END_CLIENT_TICK.register(this::tick);
         ClientLifecycleEvents.CLIENT_STOPPING.register(client -> speech.close());
-        HudElementRegistry.addLast(Identifier.fromNamespaceAndPath("kotobakeep","challenge"), new ChallengeHud(this));
+        var hud = new ChallengeHud(this);
+        HudElementRegistry.addLast(Identifier.fromNamespaceAndPath("kotobakeep","challenge"), hud);
+        // Menus are drawn over the HUD and swallow key bindings, so hook every menu while it is open.
+        ScreenEvents.AFTER_INIT.register((client, screen, width, height) -> {
+            ScreenEvents.afterExtract(screen).register((s, g, mouseX, mouseY, delta) -> hud.drawOverScreen(g, mouseX, mouseY));
+            ScreenKeyboardEvents.afterKeyPress(screen).register((s, key) -> { if (retryKey.matches(key) && acceptsRetryKey(s)) requestRetry(); });
+        });
         ClientCommandRegistrationCallback.EVENT.register((dispatcher, registry) -> dispatcher.register(literal("kotobakeep")
             .executes(ctx -> { ctx.getSource().sendFeedback(Component.literal("Kotoba Keep: " + status() + " | /kotobakeep pause, resume, retry, demo")); return 1; })
             .then(literal("pause").executes(ctx -> { pausedByUser=true; sendReady(0,zero); ctx.getSource().sendFeedback(Component.literal("Kotoba Keep paused. Items are safe.")); return 1; }))
@@ -88,7 +101,7 @@ public final class KotobaClient implements ClientModInitializer {
         tick++;
         if(client.player==null)return;
         VoiceBridge.refresh();
-        while (retryKey.consumeClick()) if (client.gui.screen() == null) requestRetry();
+        while (retryKey.consumeClick()) requestRetry();
         if(tick%20==0)sendReady(available()?1:0,zero);
         if(client.isPaused())return;
         if(challenge!=null) {
@@ -107,6 +120,10 @@ public final class KotobaClient implements ClientModInitializer {
         ClientPlayNetworking.send(new Packets.Retry(challenge.id()));
         return true;
     }
+    /** Item menus only, and never while typing (chat, signs, creative search, anvil names). */
+    private static boolean acceptsRetryKey(Screen screen) {
+        return screen instanceof AbstractContainerScreen<?> && !screen.isInputCaptured();
+    }
     String retryKeyName() { return retryKey.getTranslatedKeyMessage().getString(); }
     private void sendReady(int state, UUID id) {
         if(ClientPlayNetworking.canSend(Packets.Ready.TYPE))ClientPlayNetworking.send(new Packets.Ready(state,id));
@@ -114,15 +131,15 @@ public final class KotobaClient implements ClientModInitializer {
     private void demo() {
         // A local visual preview. It never creates a server challenge or removes items.
         word=KotobaKeep.JAPANESE.word("オークの原木");
-        challenge=new Packets.Challenge(zero,"minecraft:oak_log",word.text(),1,200,1);
+        challenge=new Packets.Challenge(zero,"minecraft:oak_log",word.text(),"block.minecraft.oak_log",1,200,1);
         remaining=200;resultTicks=200;outcome=3;started=false;
-        sayName(challenge.item());
+        sayName(challenge.key());
     }
-    /** Plays the bundled VOICEVOX recording of the item's Japanese name (Voice/Speech volume). */
-    private static void sayName(String itemId) {
+    /** Plays the bundled VOICEVOX recording of the item or mob name (Voice/Speech volume). */
+    private static void sayName(String translationKey) {
         var sounds = Minecraft.getInstance().getSoundManager();
-        var clip = Identifier.fromNamespaceAndPath("kotobakeep", "say." + BuiltInRegistries.ITEM.getValue(Identifier.parse(itemId)).getDescriptionId());
-        if (sounds.getSoundEvent(clip) == null) return; // no recording for modded items
+        var clip = Identifier.tryBuild("kotobakeep", "say." + translationKey);
+        if (clip == null || sounds.getSoundEvent(clip) == null) return; // no recording for modded names
         sounds.play(new SimpleSoundInstance(clip, SoundSource.VOICE, 1f, 1f, SoundInstance.createUnseededRandom(), false, 0, SoundInstance.Attenuation.NONE, 0, 0, 0, true));
     }
 }
