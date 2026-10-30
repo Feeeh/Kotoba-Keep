@@ -1,0 +1,25 @@
+# Gradle / build output
+.gradle/
+build/
+out/
+release/
+
+# Dev Minecraft instance
+run/
+
+# Local downloads: Minecraft/Simple Voice Chat JARs, Vosk model, VOICEVOX runtime
+vendor/
+tools/minecraft-26.3.json
+
+# Python
+__pycache__/
+*.pyc
+
+# IDEs and OS
+.idea/
+*.iml
+.vscode/
+.DS_Store
+Thumbs.db
+
+*.log

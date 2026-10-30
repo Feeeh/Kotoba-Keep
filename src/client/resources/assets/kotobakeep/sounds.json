@@ -1,0 +1,9297 @@
+{
+ "say.block.minecraft.acacia_button": {
+  "sounds": [
+   "kotobakeep:say/a8e8411d56b666c7"
+  ]
+ },
+ "say.block.minecraft.acacia_door": {
+  "sounds": [
+   "kotobakeep:say/2ef311eef44505ac"
+  ]
+ },
+ "say.block.minecraft.acacia_fence": {
+  "sounds": [
+   "kotobakeep:say/2156bbb747fda00d"
+  ]
+ },
+ "say.block.minecraft.acacia_fence_gate": {
+  "sounds": [
+   "kotobakeep:say/20c63bee3f9026fa"
+  ]
+ },
+ "say.block.minecraft.acacia_hanging_sign": {
+  "sounds": [
+   "kotobakeep:say/9a563d72b7091fd0"
+  ]
+ },
+ "say.block.minecraft.acacia_leaves": {
+  "sounds": [
+   "kotobakeep:say/ae4b03bf59de1ca7"
+  ]
+ },
+ "say.block.minecraft.acacia_log": {
+  "sounds": [
+   "kotobakeep:say/602e045a99ef238a"
+  ]
+ },
+ "say.block.minecraft.acacia_planks": {
+  "sounds": [
+   "kotobakeep:say/051ddcf09de7587a"
+  ]
+ },
+ "say.block.minecraft.acacia_pressure_plate": {
+  "sounds": [
+   "kotobakeep:say/fc8d1d617ada5c57"
+  ]
+ },
+ "say.block.minecraft.acacia_sapling": {
+  "sounds": [
+   "kotobakeep:say/2ebbab1f764c7ad8"
+  ]
+ },
+ "say.block.minecraft.acacia_shelf": {
+  "sounds": [
+   "kotobakeep:say/145ae641b83470a2"
+  ]
+ },
+ "say.block.minecraft.acacia_sign": {
+  "sounds": [
+   "kotobakeep:say/e1961d20de6f75cf"
+  ]
+ },
+ "say.block.minecraft.acacia_slab": {
+  "sounds": [
+   "kotobakeep:say/e5b6a940fb681893"
+  ]
+ },
+ "say.block.minecraft.acacia_stairs": {
+  "sounds": [
+   "kotobakeep:say/062432cdd9260951"
+  ]
+ },
+ "say.block.minecraft.acacia_trapdoor": {
+  "sounds": [
+   "kotobakeep:say/a8ed98cc4f1176d6"
+  ]
+ },
+ "say.block.minecraft.acacia_wall_hanging_sign": {
+  "sounds": [
+   "kotobakeep:say/f3251a023d0d916d"
+  ]
+ },
+ "say.block.minecraft.acacia_wall_sign": {
+  "sounds": [
+   "kotobakeep:say/5740bd5eb966afb6"
+  ]
+ },
+ "say.block.minecraft.acacia_wood": {
+  "sounds": [
+   "kotobakeep:say/87bcc79cca9b7e05"
+  ]
+ },
+ "say.block.minecraft.activator_rail": {
+  "sounds": [
+   "kotobakeep:say/8488789d20344749"
+  ]
+ },
+ "say.block.minecraft.air": {
+  "sounds": [
+   "kotobakeep:say/35dcbe92ebb7d52f"
+  ]
+ },
+ "say.block.minecraft.allium": {
+  "sounds": [
+   "kotobakeep:say/7e48239b3879d361"
+  ]
+ },
+ "say.block.minecraft.amethyst_block": {
+  "sounds": [
+   "kotobakeep:say/3c0b383132405f09"
+  ]
+ },
+ "say.block.minecraft.amethyst_cluster": {
+  "sounds": [
+   "kotobakeep:say/93faadbe05b98357"
+  ]
+ },
+ "say.block.minecraft.ancient_debris": {
+  "sounds": [
+   "kotobakeep:say/b4d1aa4002157d53"
+  ]
+ },
+ "say.block.minecraft.andesite": {
+  "sounds": [
+   "kotobakeep:say/fa971f4d860a115c"
+  ]
+ },
+ "say.block.minecraft.andesite_slab": {
+  "sounds": [
+   "kotobakeep:say/ec1bfceb1be6bb52"
+  ]
+ },
+ "say.block.minecraft.andesite_stairs": {
+  "sounds": [
+   "kotobakeep:say/0f61e224aec0c824"
+  ]
+ },
+ "say.block.minecraft.andesite_wall": {
+  "sounds": [
+   "kotobakeep:say/0e4e70d57ccb20ab"
+  ]
+ },
+ "say.block.minecraft.anvil": {
+  "sounds": [
+   "kotobakeep:say/3bb3e30a78668742"
+  ]
+ },
+ "say.block.minecraft.attached_melon_stem": {
+  "sounds": [
+   "kotobakeep:say/20d2d454faff1a52"
+  ]
+ },
+ "say.block.minecraft.attached_pumpkin_stem": {
+  "sounds": [
+   "kotobakeep:say/c6283261b2e92450"
+  ]
+ },
+ "say.block.minecraft.azalea": {
+  "sounds": [
+   "kotobakeep:say/0b5acb64e5154545"
+  ]
+ },
+ "say.block.minecraft.azalea_leaves": {
+  "sounds": [
+   "kotobakeep:say/881b538cee4cd0b5"
+  ]
+ },
+ "say.block.minecraft.azure_bluet": {
+  "sounds": [
+   "kotobakeep:say/5e6a9c11d05488b8"
+  ]
+ },
+ "say.block.minecraft.bamboo": {
+  "sounds": [
+   "kotobakeep:say/1c95cffa54f18d91"
+  ]
+ },
+ "say.block.minecraft.bamboo_block": {
+  "sounds": [
+   "kotobakeep:say/1a3f15a5f4383fae"
+  ]
+ },
+ "say.block.minecraft.bamboo_button": {
+  "sounds": [
+   "kotobakeep:say/5c79ddcd6fd365b7"
+  ]
+ },
+ "say.block.minecraft.bamboo_door": {
+  "sounds": [
+   "kotobakeep:say/1cabd96022e1226c"
+  ]
+ },
+ "say.block.minecraft.bamboo_fence": {
+  "sounds": [
+   "kotobakeep:say/dd38dad00e6d8c01"
+  ]
+ },
+ "say.block.minecraft.bamboo_fence_gate": {
+  "sounds": [
+   "kotobakeep:say/6e6ec5193d0cc651"
+  ]
+ },
+ "say.block.minecraft.bamboo_hanging_sign": {
+  "sounds": [
+   "kotobakeep:say/be3c1db217fecb04"
+  ]
+ },
+ "say.block.minecraft.bamboo_mosaic": {
+  "sounds": [
+   "kotobakeep:say/506337fd559c17d0"
+  ]
+ },
+ "say.block.minecraft.bamboo_mosaic_slab": {
+  "sounds": [
+   "kotobakeep:say/0e46c1ea0355748e"
+  ]
+ },
+ "say.block.minecraft.bamboo_mosaic_stairs": {
+  "sounds": [
+   "kotobakeep:say/3f37497524e78770"
+  ]
+ },
+ "say.block.minecraft.bamboo_planks": {
+  "sounds": [
+   "kotobakeep:say/f43327b52e4e2fd4"
+  ]
+ },
+ "say.block.minecraft.bamboo_pressure_plate": {
+  "sounds": [
+   "kotobakeep:say/b66320a24d393991"
+  ]
+ },
+ "say.block.minecraft.bamboo_sapling": {
+  "sounds": [
+   "kotobakeep:say/490f3159e57f2838"
+  ]
+ },
+ "say.block.minecraft.bamboo_shelf": {
+  "sounds": [
+   "kotobakeep:say/b383f986a6124c8d"
+  ]
+ },
+ "say.block.minecraft.bamboo_sign": {
+  "sounds": [
+   "kotobakeep:say/228e822950cdf19b"
+  ]
+ },
+ "say.block.minecraft.bamboo_slab": {
+  "sounds": [
+   "kotobakeep:say/6b91535bf9e29663"
+  ]
+ },
+ "say.block.minecraft.bamboo_stairs": {
+  "sounds": [
+   "kotobakeep:say/aa63bc867d745522"
+  ]
+ },
+ "say.block.minecraft.bamboo_trapdoor": {
+  "sounds": [
+   "kotobakeep:say/7a44dea780fbbc88"
+  ]
+ },
+ "say.block.minecraft.bamboo_wall_hanging_sign": {
+  "sounds": [
+   "kotobakeep:say/7ee80167ca5dadf0"
+  ]
+ },
+ "say.block.minecraft.bamboo_wall_sign": {
+  "sounds": [
+   "kotobakeep:say/d291f06aa0571340"
+  ]
+ },
+ "say.block.minecraft.barrel": {
+  "sounds": [
+   "kotobakeep:say/482f37bcc2ca8332"
+  ]
+ },
+ "say.block.minecraft.barrier": {
+  "sounds": [
+   "kotobakeep:say/938132e3a4a9f330"
+  ]
+ },
+ "say.block.minecraft.basalt": {
+  "sounds": [
+   "kotobakeep:say/e053a1a96ed1b96c"
+  ]
+ },
+ "say.block.minecraft.beacon": {
+  "sounds": [
+   "kotobakeep:say/143d2c64f0e9e1fe"
+  ]
+ },
+ "say.block.minecraft.bedrock": {
+  "sounds": [
+   "kotobakeep:say/357fcff4b6e106aa"
+  ]
+ },
+ "say.block.minecraft.bee_nest": {
+  "sounds": [
+   "kotobakeep:say/ac55d9f93ab98eab"
+  ]
+ },
+ "say.block.minecraft.beehive": {
+  "sounds": [
+   "kotobakeep:say/9fe91e30085b6e46"
+  ]
+ },
+ "say.block.minecraft.beetroots": {
+  "sounds": [
+   "kotobakeep:say/a25cabddc7fcf25c"
+  ]
+ },
+ "say.block.minecraft.bell": {
+  "sounds": [
+   "kotobakeep:say/dfa9cb9c17264b20"
+  ]
+ },
+ "say.block.minecraft.big_dripleaf": {
+  "sounds": [
+   "kotobakeep:say/7aed5cbebc97324c"
+  ]
+ },
+ "say.block.minecraft.big_dripleaf_stem": {
+  "sounds": [
+   "kotobakeep:say/39d7a23f2482542b"
+  ]
+ },
+ "say.block.minecraft.birch_button": {
+  "sounds": [
+   "kotobakeep:say/2ffe5500e491cb0a"
+  ]
+ },
+ "say.block.minecraft.birch_door": {
+  "sounds": [
+   "kotobakeep:say/6f1816951a3bf533"
+  ]
+ },
+ "say.block.minecraft.birch_fence": {
+  "sounds": [
+   "kotobakeep:say/11710ca7698e6c43"
+  ]
+ },
+ "say.block.minecraft.birch_fence_gate": {
+  "sounds": [
+   "kotobakeep:say/708c7b9c2a5ef833"
+  ]
+ },
+ "say.block.minecraft.birch_hanging_sign": {
+  "sounds": [
+   "kotobakeep:say/b3693a87a4972ce5"
+  ]
+ },
+ "say.block.minecraft.birch_leaves": {
+  "sounds": [
+   "kotobakeep:say/c7e6f98bf6b2b3e1"
+  ]
+ },
+ "say.block.minecraft.birch_log": {
+  "sounds": [
+   "kotobakeep:say/803671c00ec33340"
+  ]
+ },
+ "say.block.minecraft.birch_planks": {
+  "sounds": [
+   "kotobakeep:say/eb4a2458fd664890"
+  ]
+ },
+ "say.block.minecraft.birch_pressure_plate": {
+  "sounds": [
+   "kotobakeep:say/0297d5d318574af3"
+  ]
+ },
+ "say.block.minecraft.birch_sapling": {
+  "sounds": [
+   "kotobakeep:say/9f87ffc734ea4691"
+  ]
+ },
+ "say.block.minecraft.birch_shelf": {
+  "sounds": [
+   "kotobakeep:say/91fb89cf91a04205"
+  ]
+ },
+ "say.block.minecraft.birch_sign": {
+  "sounds": [
+   "kotobakeep:say/ecb2e6412f3d8e5e"
+  ]
+ },
+ "say.block.minecraft.birch_slab": {
+  "sounds": [
+   "kotobakeep:say/fbcdc95a1e4fe9af"
+  ]
+ },
+ "say.block.minecraft.birch_stairs": {
+  "sounds": [
+   "kotobakeep:say/418bc87d01dd4223"
+  ]
+ },
+ "say.block.minecraft.birch_trapdoor": {
+  "sounds": [
+   "kotobakeep:say/8efc79293a609c3a"
+  ]
+ },
+ "say.block.minecraft.birch_wall_hanging_sign": {
+  "sounds": [
+   "kotobakeep:say/af84b522cd8d6650"
+  ]
+ },
+ "say.block.minecraft.birch_wall_sign": {
+  "sounds": [
+   "kotobakeep:say/23b3b4a46d67d24f"
+  ]
+ },
+ "say.block.minecraft.birch_wood": {
+  "sounds": [
+   "kotobakeep:say/75d36a4dc788bb23"
+  ]
+ },
+ "say.block.minecraft.black_banner": {
+  "sounds": [
+   "kotobakeep:say/e2bb8ef68b42f9c8"
+  ]
+ },
+ "say.block.minecraft.black_bed": {
+  "sounds": [
+   "kotobakeep:say/32452d2c749db667"
+  ]
+ },
+ "say.block.minecraft.black_candle": {
+  "sounds": [
+   "kotobakeep:say/b5f3b781bbb0183d"
+  ]
+ },
+ "say.block.minecraft.black_candle_cake": {
+  "sounds": [
+   "kotobakeep:say/e4ba5454f24e6e3f"
+  ]
+ },
+ "say.block.minecraft.black_carpet": {
+  "sounds": [
+   "kotobakeep:say/51af131b4c6527f4"
+  ]
+ },
+ "say.block.minecraft.black_concrete": {
+  "sounds": [
+   "kotobakeep:say/2beb53b57b279250"
+  ]
+ },
+ "say.block.minecraft.black_concrete_powder": {
+  "sounds": [
+   "kotobakeep:say/dd8d97090fcf8200"
+  ]
+ },
+ "say.block.minecraft.black_concrete_slab": {
+  "sounds": [
+   "kotobakeep:say/72d9514efcaca2df"
+  ]
+ },
+ "say.block.minecraft.black_concrete_stairs": {
+  "sounds": [
+   "kotobakeep:say/c48068a9552711d3"
+  ]
+ },
+ "say.block.minecraft.black_glazed_terracotta": {
+  "sounds": [
+   "kotobakeep:say/4d40e07404775de6"
+  ]
+ },
+ "say.block.minecraft.black_shulker_box": {
+  "sounds": [
+   "kotobakeep:say/97c638f21d6d032f"
+  ]
+ },
+ "say.block.minecraft.black_stained_glass": {
+  "sounds": [
+   "kotobakeep:say/8f33b91ee2278104"
+  ]
+ },
+ "say.block.minecraft.black_stained_glass_pane": {
+  "sounds": [
+   "kotobakeep:say/01fbe89fd3bfdba1"
+  ]
+ },
+ "say.block.minecraft.black_terracotta": {
+  "sounds": [
+   "kotobakeep:say/daf3129088db2ee8"
+  ]
+ },
+ "say.block.minecraft.black_wool": {
+  "sounds": [
+   "kotobakeep:say/28fd65588c4e64cb"
+  ]
+ },
+ "say.block.minecraft.black_wool_slab": {
+  "sounds": [
+   "kotobakeep:say/b5b60e3a427158f0"
+  ]
+ },
+ "say.block.minecraft.black_wool_stairs": {
+  "sounds": [
+   "kotobakeep:say/ca36c21cad4f7401"
+  ]
+ },
+ "say.block.minecraft.blackstone": {
+  "sounds": [
+   "kotobakeep:say/1b483c1ba47d4a05"
+  ]
+ },
+ "say.block.minecraft.blackstone_slab": {
+  "sounds": [
+   "kotobakeep:say/6f6b605320bae41b"
+  ]
+ },
+ "say.block.minecraft.blackstone_stairs": {
+  "sounds": [
+   "kotobakeep:say/55e9935aa4afa309"
+  ]
+ },
+ "say.block.minecraft.blackstone_wall": {
+  "sounds": [
+   "kotobakeep:say/16fd073b965c8faf"
+  ]
+ },
+ "say.block.minecraft.blast_furnace": {
+  "sounds": [
+   "kotobakeep:say/001a5c00c18faa26"
+  ]
+ },
+ "say.block.minecraft.blue_banner": {
+  "sounds": [
+   "kotobakeep:say/e619dba394cbece2"
+  ]
+ },
+ "say.block.minecraft.blue_bed": {
+  "sounds": [
+   "kotobakeep:say/7e53aabd29aee872"
+  ]
+ },
+ "say.block.minecraft.blue_candle": {
+  "sounds": [
+   "kotobakeep:say/95dd4579beb4bba0"
+  ]
+ },
+ "say.block.minecraft.blue_candle_cake": {
+  "sounds": [
+   "kotobakeep:say/e596a44e4c3a170a"
+  ]
+ },
+ "say.block.minecraft.blue_carpet": {
+  "sounds": [
+   "kotobakeep:say/1d80a965cffc8964"
+  ]
+ },
+ "say.block.minecraft.blue_concrete": {
+  "sounds": [
+   "kotobakeep:say/00de55692ec9db5c"
+  ]
+ },
+ "say.block.minecraft.blue_concrete_powder": {
+  "sounds": [
+   "kotobakeep:say/61f2789facd20f1f"
+  ]
+ },
+ "say.block.minecraft.blue_concrete_slab": {
+  "sounds": [
+   "kotobakeep:say/945615658142d526"
+  ]
+ },
+ "say.block.minecraft.blue_concrete_stairs": {
+  "sounds": [
+   "kotobakeep:say/3c5e99ac3c72e880"
+  ]
+ },
+ "say.block.minecraft.blue_glazed_terracotta": {
+  "sounds": [
+   "kotobakeep:say/a56235eb8878d211"
+  ]
+ },
+ "say.block.minecraft.blue_ice": {
+  "sounds": [
+   "kotobakeep:say/b199b75e01f28f2f"
+  ]
+ },
+ "say.block.minecraft.blue_orchid": {
+  "sounds": [
+   "kotobakeep:say/848b6034e44aef45"
+  ]
+ },
+ "say.block.minecraft.blue_shulker_box": {
+  "sounds": [
+   "kotobakeep:say/f96bfef7360fd417"
+  ]
+ },
+ "say.block.minecraft.blue_stained_glass": {
+  "sounds": [
+   "kotobakeep:say/365d455ce545602a"
+  ]
+ },
+ "say.block.minecraft.blue_stained_glass_pane": {
+  "sounds": [
+   "kotobakeep:say/eb913c99d31f6230"
+  ]
+ },
+ "say.block.minecraft.blue_terracotta": {
+  "sounds": [
+   "kotobakeep:say/b324be267be727df"
+  ]
+ },
+ "say.block.minecraft.blue_wool": {
+  "sounds": [
+   "kotobakeep:say/816f2d9fc9e9d276"
+  ]
+ },
+ "say.block.minecraft.blue_wool_slab": {
+  "sounds": [
+   "kotobakeep:say/7112d5aa18bb5ab0"
+  ]
+ },
+ "say.block.minecraft.blue_wool_stairs": {
+  "sounds": [
+   "kotobakeep:say/46a4ae28b65397ce"
+  ]
+ },
+ "say.block.minecraft.bone_block": {
+  "sounds": [
+   "kotobakeep:say/fa66f3a49c44c970"
+  ]
+ },
+ "say.block.minecraft.bookshelf": {
+  "sounds": [
+   "kotobakeep:say/f0f35cab6152d743"
+  ]
+ },
+ "say.block.minecraft.brain_coral": {
+  "sounds": [
+   "kotobakeep:say/ae259afc7728ffac"
+  ]
+ },
+ "say.block.minecraft.brain_coral_block": {
+  "sounds": [
+   "kotobakeep:say/14d2169c9dc01f0d"
+  ]
+ },
+ "say.block.minecraft.brain_coral_fan": {
+  "sounds": [
+   "kotobakeep:say/f9fbd1b62fa37d6f"
+  ]
+ },
+ "say.block.minecraft.brain_coral_wall_fan": {
+  "sounds": [
+   "kotobakeep:say/3c3cd4e4390fa5d0"
+  ]
+ },
+ "say.block.minecraft.brewing_stand": {
+  "sounds": [
+   "kotobakeep:say/b817432ee8d5765a"
+  ]
+ },
+ "say.block.minecraft.brick_slab": {
+  "sounds": [
+   "kotobakeep:say/143e9d74602aa4e7"
+  ]
+ },
+ "say.block.minecraft.brick_stairs": {
+  "sounds": [
+   "kotobakeep:say/48c253bb55744174"
+  ]
+ },
+ "say.block.minecraft.brick_wall": {
+  "sounds": [
+   "kotobakeep:say/90934598e198f37f"
+  ]
+ },
+ "say.block.minecraft.bricks": {
+  "sounds": [
+   "kotobakeep:say/84db5061e228b682"
+  ]
+ },
+ "say.block.minecraft.brittle_ice": {
+  "sounds": [
+   "kotobakeep:say/898c3c28254e4384"
+  ]
+ },
+ "say.block.minecraft.brown_banner": {
+  "sounds": [
+   "kotobakeep:say/6752f94f4a46046e"
+  ]
+ },
+ "say.block.minecraft.brown_bed": {
+  "sounds": [
+   "kotobakeep:say/0c635f1d80424057"
+  ]
+ },
+ "say.block.minecraft.brown_candle": {
+  "sounds": [
+   "kotobakeep:say/0b6fd12a8eef0484"
+  ]
+ },
+ "say.block.minecraft.brown_candle_cake": {
+  "sounds": [
+   "kotobakeep:say/00145638c51ca326"
+  ]
+ },
+ "say.block.minecraft.brown_carpet": {
+  "sounds": [
+   "kotobakeep:say/8f70b5685fd3bd2a"
+  ]
+ },
+ "say.block.minecraft.brown_concrete": {
+  "sounds": [
+   "kotobakeep:say/c7d57f231c50cbdd"
+  ]
+ },
+ "say.block.minecraft.brown_concrete_powder": {
+  "sounds": [
+   "kotobakeep:say/4d9e1cb187caa10c"
+  ]
+ },
+ "say.block.minecraft.brown_concrete_slab": {
+  "sounds": [
+   "kotobakeep:say/85c2dc7c63335af0"
+  ]
+ },
+ "say.block.minecraft.brown_concrete_stairs": {
+  "sounds": [
+   "kotobakeep:say/c3ff7c8a21745048"
+  ]
+ },
+ "say.block.minecraft.brown_glazed_terracotta": {
+  "sounds": [
+   "kotobakeep:say/874c685cda7634ea"
+  ]
+ },
+ "say.block.minecraft.brown_mushroom": {
+  "sounds": [
+   "kotobakeep:say/f450adb72d5b02ae"
+  ]
+ },
+ "say.block.minecraft.brown_mushroom_block": {
+  "sounds": [
+   "kotobakeep:say/d08d92cb312f3b50"
+  ]
+ },
+ "say.block.minecraft.brown_shulker_box": {
+  "sounds": [
+   "kotobakeep:say/a7f8f4cd7388ff5f"
+  ]
+ },
+ "say.block.minecraft.brown_stained_glass": {
+  "sounds": [
+   "kotobakeep:say/83cb4e42f7fba7ec"
+  ]
+ },
+ "say.block.minecraft.brown_stained_glass_pane": {
+  "sounds": [
+   "kotobakeep:say/0eaaff66fe028686"
+  ]
+ },
+ "say.block.minecraft.brown_terracotta": {
+  "sounds": [
+   "kotobakeep:say/766980f977188987"
+  ]
+ },
+ "say.block.minecraft.brown_wool": {
+  "sounds": [
+   "kotobakeep:say/2a7c07f7f2459563"
+  ]
+ },
+ "say.block.minecraft.brown_wool_slab": {
+  "sounds": [
+   "kotobakeep:say/f17a03574e5de1f2"
+  ]
+ },
+ "say.block.minecraft.brown_wool_stairs": {
+  "sounds": [
+   "kotobakeep:say/da59b7511a51ff7d"
+  ]
+ },
+ "say.block.minecraft.bubble_column": {
+  "sounds": [
+   "kotobakeep:say/532630574d6e55a6"
+  ]
+ },
+ "say.block.minecraft.bubble_coral": {
+  "sounds": [
+   "kotobakeep:say/83ebc2ea3fa020cd"
+  ]
+ },
+ "say.block.minecraft.bubble_coral_block": {
+  "sounds": [
+   "kotobakeep:say/79d2fbd63a1674dd"
+  ]
+ },
+ "say.block.minecraft.bubble_coral_fan": {
+  "sounds": [
+   "kotobakeep:say/2f1c5affe8b7d05e"
+  ]
+ },
+ "say.block.minecraft.bubble_coral_wall_fan": {
+  "sounds": [
+   "kotobakeep:say/fbbc97ec9f9b0d6e"
+  ]
+ },
+ "say.block.minecraft.budding_amethyst": {
+  "sounds": [
+   "kotobakeep:say/c33b27167a2eca8d"
+  ]
+ },
+ "say.block.minecraft.bush": {
+  "sounds": [
+   "kotobakeep:say/d93c5a6dd109ec55"
+  ]
+ },
+ "say.block.minecraft.cactus": {
+  "sounds": [
+   "kotobakeep:say/11e08a1a204f6695"
+  ]
+ },
+ "say.block.minecraft.cactus_flower": {
+  "sounds": [
+   "kotobakeep:say/ca3cbd5874ef40f9"
+  ]
+ },
+ "say.block.minecraft.cake": {
+  "sounds": [
+   "kotobakeep:say/69c4de1241ff7bcd"
+  ]
+ },
+ "say.block.minecraft.calcite": {
+  "sounds": [
+   "kotobakeep:say/0bae51d6f7494ba3"
+  ]
+ },
+ "say.block.minecraft.calibrated_sculk_sensor": {
+  "sounds": [
+   "kotobakeep:say/a7b6cee888735be6"
+  ]
+ },
+ "say.block.minecraft.campfire": {
+  "sounds": [
+   "kotobakeep:say/d209f117be2a616f"
+  ]
+ },
+ "say.block.minecraft.candle": {
+  "sounds": [
+   "kotobakeep:say/2f8b94c42a6b8937"
+  ]
+ },
+ "say.block.minecraft.candle_cake": {
+  "sounds": [
+   "kotobakeep:say/9b5f056851e32fbe"
+  ]
+ },
+ "say.block.minecraft.carrots": {
+  "sounds": [
+   "kotobakeep:say/8343d6f495001c30"
+  ]
+ },
+ "say.block.minecraft.cartography_table": {
+  "sounds": [
+   "kotobakeep:say/55d662c0754a1da2"
+  ]
+ },
+ "say.block.minecraft.carved_pumpkin": {
+  "sounds": [
+   "kotobakeep:say/8e16de222be2df96"
+  ]
+ },
+ "say.block.minecraft.cauldron": {
+  "sounds": [
+   "kotobakeep:say/3ca516d5e75d8c68"
+  ]
+ },
+ "say.block.minecraft.cave_air": {
+  "sounds": [
+   "kotobakeep:say/8601a0c174621a27"
+  ]
+ },
+ "say.block.minecraft.cave_vines": {
+  "sounds": [
+   "kotobakeep:say/66b81811ec5728f9"
+  ]
+ },
+ "say.block.minecraft.cave_vines_plant": {
+  "sounds": [
+   "kotobakeep:say/fb49330d0975c181"
+  ]
+ },
+ "say.block.minecraft.chain": {
+  "sounds": [
+   "kotobakeep:say/4cfc58aa1d634215"
+  ]
+ },
+ "say.block.minecraft.chain_command_block": {
+  "sounds": [
+   "kotobakeep:say/4f36498b09541694"
+  ]
+ },
+ "say.block.minecraft.cherry_button": {
+  "sounds": [
+   "kotobakeep:say/de16fd838d4a9ca1"
+  ]
+ },
+ "say.block.minecraft.cherry_door": {
+  "sounds": [
+   "kotobakeep:say/74ad08ede6bf5114"
+  ]
+ },
+ "say.block.minecraft.cherry_fence": {
+  "sounds": [
+   "kotobakeep:say/36f13d94e75a959d"
+  ]
+ },
+ "say.block.minecraft.cherry_fence_gate": {
+  "sounds": [
+   "kotobakeep:say/b78e4eb2c743c962"
+  ]
+ },
+ "say.block.minecraft.cherry_hanging_sign": {
+  "sounds": [
+   "kotobakeep:say/7c635efc3cecfed5"
+  ]
+ },
+ "say.block.minecraft.cherry_leaves": {
+  "sounds": [
+   "kotobakeep:say/a4fbe9521c1645fc"
+  ]
+ },
+ "say.block.minecraft.cherry_log": {
+  "sounds": [
+   "kotobakeep:say/393cb3d5877ff1a8"
+  ]
+ },
+ "say.block.minecraft.cherry_planks": {
+  "sounds": [
+   "kotobakeep:say/183ab5922240e35c"
+  ]
+ },
+ "say.block.minecraft.cherry_pressure_plate": {
+  "sounds": [
+   "kotobakeep:say/97ade8885166c9fd"
+  ]
+ },
+ "say.block.minecraft.cherry_sapling": {
+  "sounds": [
+   "kotobakeep:say/87fac8694ca56266"
+  ]
+ },
+ "say.block.minecraft.cherry_shelf": {
+  "sounds": [
+   "kotobakeep:say/63ecfe26fe8fb4a6"
+  ]
+ },
+ "say.block.minecraft.cherry_sign": {
+  "sounds": [
+   "kotobakeep:say/05eac323d4dfbb5e"
+  ]
+ },
+ "say.block.minecraft.cherry_slab": {
+  "sounds": [
+   "kotobakeep:say/422ebee5fcc95c6c"
+  ]
+ },
+ "say.block.minecraft.cherry_stairs": {
+  "sounds": [
+   "kotobakeep:say/8dab5d4a610fbc16"
+  ]
+ },
+ "say.block.minecraft.cherry_trapdoor": {
+  "sounds": [
+   "kotobakeep:say/cd45655e9da6b1a5"
+  ]
+ },
+ "say.block.minecraft.cherry_wall_hanging_sign": {
+  "sounds": [
+   "kotobakeep:say/5308df65d763e2ae"
+  ]
+ },
+ "say.block.minecraft.cherry_wall_sign": {
+  "sounds": [
+   "kotobakeep:say/918d777228f951d2"
+  ]
+ },
+ "say.block.minecraft.cherry_wood": {
+  "sounds": [
+   "kotobakeep:say/9b5db4c6517e412a"
+  ]
+ },
+ "say.block.minecraft.chest": {
+  "sounds": [
+   "kotobakeep:say/c99802f0427a7c47"
+  ]
+ },
+ "say.block.minecraft.chipped_anvil": {
+  "sounds": [
+   "kotobakeep:say/c95125321a2c040b"
+  ]
+ },
+ "say.block.minecraft.chiseled_bookshelf": {
+  "sounds": [
+   "kotobakeep:say/01666658c377ac2f"
+  ]
+ },
+ "say.block.minecraft.chiseled_cinnabar": {
+  "sounds": [
+   "kotobakeep:say/f175a7eab5453c58"
+  ]
+ },
+ "say.block.minecraft.chiseled_copper": {
+  "sounds": [
+   "kotobakeep:say/c43cc851a5331341"
+  ]
+ },
+ "say.block.minecraft.chiseled_deepslate": {
+  "sounds": [
+   "kotobakeep:say/06725dff021a4f82"
+  ]
+ },
+ "say.block.minecraft.chiseled_nether_bricks": {
+  "sounds": [
+   "kotobakeep:say/ea203f1c69e30d98"
+  ]
+ },
+ "say.block.minecraft.chiseled_packed_ice": {
+  "sounds": [
+   "kotobakeep:say/47abe66885171953"
+  ]
+ },
+ "say.block.minecraft.chiseled_polished_blackstone": {
+  "sounds": [
+   "kotobakeep:say/9dddb088fdaf59df"
+  ]
+ },
+ "say.block.minecraft.chiseled_quartz_block": {
+  "sounds": [
+   "kotobakeep:say/cd8e4a22000bcdf8"
+  ]
+ },
+ "say.block.minecraft.chiseled_red_sandstone": {
+  "sounds": [
+   "kotobakeep:say/ec277474b0847c24"
+  ]
+ },
+ "say.block.minecraft.chiseled_resin_bricks": {
+  "sounds": [
+   "kotobakeep:say/25e9136a0a535811"
+  ]
+ },
+ "say.block.minecraft.chiseled_sandstone": {
+  "sounds": [
+   "kotobakeep:say/f6c56734ec67be24"
+  ]
+ },
+ "say.block.minecraft.chiseled_stone_bricks": {
+  "sounds": [
+   "kotobakeep:say/d86e82f49ee1ec85"
+  ]
+ },
+ "say.block.minecraft.chiseled_sulfur": {
+  "sounds": [
+   "kotobakeep:say/9e4ea1e5c33a6ad1"
+  ]
+ },
+ "say.block.minecraft.chiseled_tuff": {
+  "sounds": [
+   "kotobakeep:say/ec6585b62e832ed9"
+  ]
+ },
+ "say.block.minecraft.chiseled_tuff_bricks": {
+  "sounds": [
+   "kotobakeep:say/961c035dc305cc5f"
+  ]
+ },
+ "say.block.minecraft.chorus_flower": {
+  "sounds": [
+   "kotobakeep:say/b7566eaf926bb4ab"
+  ]
+ },
+ "say.block.minecraft.chorus_plant": {
+  "sounds": [
+   "kotobakeep:say/c1e2af1f72c37393"
+  ]
+ },
+ "say.block.minecraft.cinnabar": {
+  "sounds": [
+   "kotobakeep:say/b17377abf2ee6648"
+  ]
+ },
+ "say.block.minecraft.cinnabar_brick_slab": {
+  "sounds": [
+   "kotobakeep:say/d836298e300fa148"
+  ]
+ },
+ "say.block.minecraft.cinnabar_brick_stairs": {
+  "sounds": [
+   "kotobakeep:say/f96461e24b54a718"
+  ]
+ },
+ "say.block.minecraft.cinnabar_brick_wall": {
+  "sounds": [
+   "kotobakeep:say/91b9b815c99d98e5"
+  ]
+ },
+ "say.block.minecraft.cinnabar_bricks": {
+  "sounds": [
+   "kotobakeep:say/931de5c6ae6c6223"
+  ]
+ },
+ "say.block.minecraft.cinnabar_slab": {
+  "sounds": [
+   "kotobakeep:say/dbc160c981dafab5"
+  ]
+ },
+ "say.block.minecraft.cinnabar_stairs": {
+  "sounds": [
+   "kotobakeep:say/ae84a45fbd1911ba"
+  ]
+ },
+ "say.block.minecraft.cinnabar_wall": {
+  "sounds": [
+   "kotobakeep:say/bceb69377ff67f91"
+  ]
+ },
+ "say.block.minecraft.clay": {
+  "sounds": [
+   "kotobakeep:say/422da1a62565e777"
+  ]
+ },
+ "say.block.minecraft.closed_eyeblossom": {
+  "sounds": [
+   "kotobakeep:say/0680d1feaca04ab7"
+  ]
+ },
+ "say.block.minecraft.coal_block": {
+  "sounds": [
+   "kotobakeep:say/51d1695c54de4d8f"
+  ]
+ },
+ "say.block.minecraft.coal_ore": {
+  "sounds": [
+   "kotobakeep:say/0a78dfafbc78a8c1"
+  ]
+ },
+ "say.block.minecraft.coarse_dirt": {
+  "sounds": [
+   "kotobakeep:say/2c89ece44c751d08"
+  ]
+ },
+ "say.block.minecraft.cobbled_deepslate": {
+  "sounds": [
+   "kotobakeep:say/4b5e49d9ef328071"
+  ]
+ },
+ "say.block.minecraft.cobbled_deepslate_slab": {
+  "sounds": [
+   "kotobakeep:say/25b402d02287667b"
+  ]
+ },
+ "say.block.minecraft.cobbled_deepslate_stairs": {
+  "sounds": [
+   "kotobakeep:say/566118093716fa8a"
+  ]
+ },
+ "say.block.minecraft.cobbled_deepslate_wall": {
+  "sounds": [
+   "kotobakeep:say/d4aaebb295589264"
+  ]
+ },
+ "say.block.minecraft.cobblestone": {
+  "sounds": [
+   "kotobakeep:say/b3eba6492c782c8d"
+  ]
+ },
+ "say.block.minecraft.cobblestone_slab": {
+  "sounds": [
+   "kotobakeep:say/bf48363235d3fde7"
+  ]
+ },
+ "say.block.minecraft.cobblestone_stairs": {
+  "sounds": [
+   "kotobakeep:say/fd402561e15def3f"
+  ]
+ },
+ "say.block.minecraft.cobblestone_wall": {
+  "sounds": [
+   "kotobakeep:say/0881e2334ee4201e"
+  ]
+ },
+ "say.block.minecraft.cobweb": {
+  "sounds": [
+   "kotobakeep:say/0d6545cd84b192b3"
+  ]
+ },
+ "say.block.minecraft.cocoa": {
+  "sounds": [
+   "kotobakeep:say/125cb0271bde9e10"
+  ]
+ },
+ "say.block.minecraft.command_block": {
+  "sounds": [
+   "kotobakeep:say/7892426e2b675676"
+  ]
+ },
+ "say.block.minecraft.comparator": {
+  "sounds": [
+   "kotobakeep:say/cb2f86fe66bb97c5"
+  ]
+ },
+ "say.block.minecraft.composter": {
+  "sounds": [
+   "kotobakeep:say/91b2b0d31eead4d7"
+  ]
+ },
+ "say.block.minecraft.conduit": {
+  "sounds": [
+   "kotobakeep:say/8d0e93f12509798e"
+  ]
+ },
+ "say.block.minecraft.copper_bars": {
+  "sounds": [
+   "kotobakeep:say/d2d3cb183cd1013d"
+  ]
+ },
+ "say.block.minecraft.copper_block": {
+  "sounds": [
+   "kotobakeep:say/6823f9af4cddb7d9"
+  ]
+ },
+ "say.block.minecraft.copper_bulb": {
+  "sounds": [
+   "kotobakeep:say/6ec12c788b71b700"
+  ]
+ },
+ "say.block.minecraft.copper_chain": {
+  "sounds": [
+   "kotobakeep:say/cf1a558ee4c48992"
+  ]
+ },
+ "say.block.minecraft.copper_chest": {
+  "sounds": [
+   "kotobakeep:say/6874a46ba18f1640"
+  ]
+ },
+ "say.block.minecraft.copper_door": {
+  "sounds": [
+   "kotobakeep:say/697e730215ad96aa"
+  ]
+ },
+ "say.block.minecraft.copper_golem_statue": {
+  "sounds": [
+   "kotobakeep:say/e427380736938e41"
+  ]
+ },
+ "say.block.minecraft.copper_grate": {
+  "sounds": [
+   "kotobakeep:say/c03a8ba523db416b"
+  ]
+ },
+ "say.block.minecraft.copper_lantern": {
+  "sounds": [
+   "kotobakeep:say/9925fea0bfca4fb7"
+  ]
+ },
+ "say.block.minecraft.copper_ore": {
+  "sounds": [
+   "kotobakeep:say/2aead555abe50536"
+  ]
+ },
+ "say.block.minecraft.copper_torch": {
+  "sounds": [
+   "kotobakeep:say/a5a964aa53eb8850"
+  ]
+ },
+ "say.block.minecraft.copper_trapdoor": {
+  "sounds": [
+   "kotobakeep:say/ff38944e45af32d7"
+  ]
+ },
+ "say.block.minecraft.copper_wall_torch": {
+  "sounds": [
+   "kotobakeep:say/0db80de54385baa3"
+  ]
+ },
+ "say.block.minecraft.cornflower": {
+  "sounds": [
+   "kotobakeep:say/e1926a72c7c2a78c"
+  ]
+ },
+ "say.block.minecraft.cracked_deepslate_bricks": {
+  "sounds": [
+   "kotobakeep:say/f03d09e1590d0027"
+  ]
+ },
+ "say.block.minecraft.cracked_deepslate_tiles": {
+  "sounds": [
+   "kotobakeep:say/c2047dbfacb88eeb"
+  ]
+ },
+ "say.block.minecraft.cracked_nether_bricks": {
+  "sounds": [
+   "kotobakeep:say/54716f5cf9e22991"
+  ]
+ },
+ "say.block.minecraft.cracked_polished_blackstone_bricks": {
+  "sounds": [
+   "kotobakeep:say/0f52effc5f07cd55"
+  ]
+ },
+ "say.block.minecraft.cracked_stone_bricks": {
+  "sounds": [
+   "kotobakeep:say/a86562d5bda48472"
+  ]
+ },
+ "say.block.minecraft.crafter": {
+  "sounds": [
+   "kotobakeep:say/737e04cffae25fa2"
+  ]
+ },
+ "say.block.minecraft.crafting_table": {
+  "sounds": [
+   "kotobakeep:say/170be5bc73255ae3"
+  ]
+ },
+ "say.block.minecraft.creaking_heart": {
+  "sounds": [
+   "kotobakeep:say/ade008d281bc83dc"
+  ]
+ },
+ "say.block.minecraft.creeper_head": {
+  "sounds": [
+   "kotobakeep:say/dafe3ed70acbbaac"
+  ]
+ },
+ "say.block.minecraft.creeper_wall_head": {
+  "sounds": [
+   "kotobakeep:say/7ea41f6302c85f1a"
+  ]
+ },
+ "say.block.minecraft.crimson_button": {
+  "sounds": [
+   "kotobakeep:say/331b477f22d46884"
+  ]
+ },
+ "say.block.minecraft.crimson_door": {
+  "sounds": [
+   "kotobakeep:say/0114809144b9e448"
+  ]
+ },
+ "say.block.minecraft.crimson_fence": {
+  "sounds": [
+   "kotobakeep:say/9f7de4ee986ef790"
+  ]
+ },
+ "say.block.minecraft.crimson_fence_gate": {
+  "sounds": [
+   "kotobakeep:say/4dd4b75df0cf7b11"
+  ]
+ },
+ "say.block.minecraft.crimson_fungus": {
+  "sounds": [
+   "kotobakeep:say/f770b62e7de40054"
+  ]
+ },
+ "say.block.minecraft.crimson_hanging_sign": {
+  "sounds": [
+   "kotobakeep:say/c67030c8b7ba8ac5"
+  ]
+ },
+ "say.block.minecraft.crimson_hyphae": {
+  "sounds": [
+   "kotobakeep:say/596bf3b9fe5d9a99"
+  ]
+ },
+ "say.block.minecraft.crimson_nylium": {
+  "sounds": [
+   "kotobakeep:say/e95afe04ab35096d"
+  ]
+ },
+ "say.block.minecraft.crimson_planks": {
+  "sounds": [
+   "kotobakeep:say/3558b754ab3c6a44"
+  ]
+ },
+ "say.block.minecraft.crimson_pressure_plate": {
+  "sounds": [
+   "kotobakeep:say/ab9873bbb7006b1a"
+  ]
+ },
+ "say.block.minecraft.crimson_roots": {
+  "sounds": [
+   "kotobakeep:say/f2613ef4a5721b71"
+  ]
+ },
+ "say.block.minecraft.crimson_shelf": {
+  "sounds": [
+   "kotobakeep:say/6aba3c4d07650da8"
+  ]
+ },
+ "say.block.minecraft.crimson_sign": {
+  "sounds": [
+   "kotobakeep:say/d148886e2fe181e7"
+  ]
+ },
+ "say.block.minecraft.crimson_slab": {
+  "sounds": [
+   "kotobakeep:say/ffdf7eae3822c85e"
+  ]
+ },
+ "say.block.minecraft.crimson_stairs": {
+  "sounds": [
+   "kotobakeep:say/8c26c8b2599a10f1"
+  ]
+ },
+ "say.block.minecraft.crimson_stem": {
+  "sounds": [
+   "kotobakeep:say/d58a36e21d922cda"
+  ]
+ },
+ "say.block.minecraft.crimson_trapdoor": {
+  "sounds": [
+   "kotobakeep:say/bfb79726ae0a8b7d"
+  ]
+ },
+ "say.block.minecraft.crimson_wall_hanging_sign": {
+  "sounds": [
+   "kotobakeep:say/68ca1465a6023985"
+  ]
+ },
+ "say.block.minecraft.crimson_wall_sign": {
+  "sounds": [
+   "kotobakeep:say/120a5f73d81a3d67"
+  ]
+ },
+ "say.block.minecraft.crying_obsidian": {
+  "sounds": [
+   "kotobakeep:say/348f46b21f76c4a4"
+  ]
+ },
+ "say.block.minecraft.cut_copper": {
+  "sounds": [
+   "kotobakeep:say/180995965d197f72"
+  ]
+ },
+ "say.block.minecraft.cut_copper_slab": {
+  "sounds": [
+   "kotobakeep:say/9e99cb1956de906c"
+  ]
+ },
+ "say.block.minecraft.cut_copper_stairs": {
+  "sounds": [
+   "kotobakeep:say/62c3830ce49ea548"
+  ]
+ },
+ "say.block.minecraft.cut_red_sandstone": {
+  "sounds": [
+   "kotobakeep:say/010fc83046c0c87e"
+  ]
+ },
+ "say.block.minecraft.cut_red_sandstone_slab": {
+  "sounds": [
+   "kotobakeep:say/aabc70524b5ab786"
+  ]
+ },
+ "say.block.minecraft.cut_sandstone": {
+  "sounds": [
+   "kotobakeep:say/1d22cedb39fe3f73"
+  ]
+ },
+ "say.block.minecraft.cut_sandstone_slab": {
+  "sounds": [
+   "kotobakeep:say/97d365acce478946"
+  ]
+ },
+ "say.block.minecraft.cyan_banner": {
+  "sounds": [
+   "kotobakeep:say/55063b834d3aaf0c"
+  ]
+ },
+ "say.block.minecraft.cyan_bed": {
+  "sounds": [
+   "kotobakeep:say/9707ff5e4d376c7c"
+  ]
+ },
+ "say.block.minecraft.cyan_candle": {
+  "sounds": [
+   "kotobakeep:say/d6f97001d59911ed"
+  ]
+ },
+ "say.block.minecraft.cyan_candle_cake": {
+  "sounds": [
+   "kotobakeep:say/0fa1ab60e884d20b"
+  ]
+ },
+ "say.block.minecraft.cyan_carpet": {
+  "sounds": [
+   "kotobakeep:say/50a3caaa3c4f06c0"
+  ]
+ },
+ "say.block.minecraft.cyan_concrete": {
+  "sounds": [
+   "kotobakeep:say/c2d1c974b35c1530"
+  ]
+ },
+ "say.block.minecraft.cyan_concrete_powder": {
+  "sounds": [
+   "kotobakeep:say/9c7d82d1fc9e34af"
+  ]
+ },
+ "say.block.minecraft.cyan_concrete_slab": {
+  "sounds": [
+   "kotobakeep:say/621adcdbd50d8696"
+  ]
+ },
+ "say.block.minecraft.cyan_concrete_stairs": {
+  "sounds": [
+   "kotobakeep:say/fcce452636a64733"
+  ]
+ },
+ "say.block.minecraft.cyan_glazed_terracotta": {
+  "sounds": [
+   "kotobakeep:say/266b23fa8b40147e"
+  ]
+ },
+ "say.block.minecraft.cyan_shulker_box": {
+  "sounds": [
+   "kotobakeep:say/cd60338cac68adef"
+  ]
+ },
+ "say.block.minecraft.cyan_stained_glass": {
+  "sounds": [
+   "kotobakeep:say/894c737409f02bcb"
+  ]
+ },
+ "say.block.minecraft.cyan_stained_glass_pane": {
+  "sounds": [
+   "kotobakeep:say/337b221badc94554"
+  ]
+ },
+ "say.block.minecraft.cyan_terracotta": {
+  "sounds": [
+   "kotobakeep:say/4aebf68a870b62c6"
+  ]
+ },
+ "say.block.minecraft.cyan_wool": {
+  "sounds": [
+   "kotobakeep:say/c2da54da62610553"
+  ]
+ },
+ "say.block.minecraft.cyan_wool_slab": {
+  "sounds": [
+   "kotobakeep:say/891567b1328528c9"
+  ]
+ },
+ "say.block.minecraft.cyan_wool_stairs": {
+  "sounds": [
+   "kotobakeep:say/e44be5b693bbb250"
+  ]
+ },
+ "say.block.minecraft.damaged_anvil": {
+  "sounds": [
+   "kotobakeep:say/dd495d9427ebad3b"
+  ]
+ },
+ "say.block.minecraft.dandelion": {
+  "sounds": [
+   "kotobakeep:say/5dae935961356fc0"
+  ]
+ },
+ "say.block.minecraft.dark_oak_button": {
+  "sounds": [
+   "kotobakeep:say/98dc080a6d3b5f27"
+  ]
+ },
+ "say.block.minecraft.dark_oak_door": {
+  "sounds": [
+   "kotobakeep:say/eefb2eab5bb76a8e"
+  ]
+ },
+ "say.block.minecraft.dark_oak_fence": {
+  "sounds": [
+   "kotobakeep:say/ee4a0abd49e626a1"
+  ]
+ },
+ "say.block.minecraft.dark_oak_fence_gate": {
+  "sounds": [
+   "kotobakeep:say/7ffddfbca7537824"
+  ]
+ },
+ "say.block.minecraft.dark_oak_hanging_sign": {
+  "sounds": [
+   "kotobakeep:say/f10b69ff2132c3ca"
+  ]
+ },
+ "say.block.minecraft.dark_oak_leaves": {
+  "sounds": [
+   "kotobakeep:say/75637aa3109380c1"
+  ]
+ },
+ "say.block.minecraft.dark_oak_log": {
+  "sounds": [
+   "kotobakeep:say/106fe70ef9d4870a"
+  ]
+ },
+ "say.block.minecraft.dark_oak_planks": {
+  "sounds": [
+   "kotobakeep:say/fb077e3d0dbd19a4"
+  ]
+ },
+ "say.block.minecraft.dark_oak_pressure_plate": {
+  "sounds": [
+   "kotobakeep:say/03e5d7d9e5182b37"
+  ]
+ },
+ "say.block.minecraft.dark_oak_sapling": {
+  "sounds": [
+   "kotobakeep:say/ac9e633dfcd433e7"
+  ]
+ },
+ "say.block.minecraft.dark_oak_shelf": {
+  "sounds": [
+   "kotobakeep:say/56b160c3b85b9e36"
+  ]
+ },
+ "say.block.minecraft.dark_oak_sign": {
+  "sounds": [
+   "kotobakeep:say/4e7c1e89661c436c"
+  ]
+ },
+ "say.block.minecraft.dark_oak_slab": {
+  "sounds": [
+   "kotobakeep:say/5cc9c574456147db"
+  ]
+ },
+ "say.block.minecraft.dark_oak_stairs": {
+  "sounds": [
+   "kotobakeep:say/3d272c65a31fe051"
+  ]
+ },
+ "say.block.minecraft.dark_oak_trapdoor": {
+  "sounds": [
+   "kotobakeep:say/614cb0591ff622c5"
+  ]
+ },
+ "say.block.minecraft.dark_oak_wall_hanging_sign": {
+  "sounds": [
+   "kotobakeep:say/96c74adb0800a56e"
+  ]
+ },
+ "say.block.minecraft.dark_oak_wall_sign": {
+  "sounds": [
+   "kotobakeep:say/29df107a46168d4a"
+  ]
+ },
+ "say.block.minecraft.dark_oak_wood": {
+  "sounds": [
+   "kotobakeep:say/f745d02068bb3c26"
+  ]
+ },
+ "say.block.minecraft.dark_prismarine": {
+  "sounds": [
+   "kotobakeep:say/74215072d04e1f3d"
+  ]
+ },
+ "say.block.minecraft.dark_prismarine_slab": {
+  "sounds": [
+   "kotobakeep:say/802a09e5ead8bf6f"
+  ]
+ },
+ "say.block.minecraft.dark_prismarine_stairs": {
+  "sounds": [
+   "kotobakeep:say/4aa1ddb10169a845"
+  ]
+ },
+ "say.block.minecraft.daylight_detector": {
+  "sounds": [
+   "kotobakeep:say/15c7c4dad6d8d2bf"
+  ]
+ },
+ "say.block.minecraft.dead_brain_coral": {
+  "sounds": [
+   "kotobakeep:say/fc2e2edc335558fe"
+  ]
+ },
+ "say.block.minecraft.dead_brain_coral_block": {
+  "sounds": [
+   "kotobakeep:say/81ecfacb2dc042c7"
+  ]
+ },
+ "say.block.minecraft.dead_brain_coral_fan": {
+  "sounds": [
+   "kotobakeep:say/f2f411ee63b35071"
+  ]
+ },
+ "say.block.minecraft.dead_brain_coral_wall_fan": {
+  "sounds": [
+   "kotobakeep:say/92cee6072e487d61"
+  ]
+ },
+ "say.block.minecraft.dead_bubble_coral": {
+  "sounds": [
+   "kotobakeep:say/01097775cd4d68c5"
+  ]
+ },
+ "say.block.minecraft.dead_bubble_coral_block": {
+  "sounds": [
+   "kotobakeep:say/19f0794bac296332"
+  ]
+ },
+ "say.block.minecraft.dead_bubble_coral_fan": {
+  "sounds": [
+   "kotobakeep:say/d6424534fe680e7d"
+  ]
+ },
+ "say.block.minecraft.dead_bubble_coral_wall_fan": {
+  "sounds": [
+   "kotobakeep:say/04d4714f7c83eb44"
+  ]
+ },
+ "say.block.minecraft.dead_bush": {
+  "sounds": [
+   "kotobakeep:say/355a221add578c31"
+  ]
+ },
+ "say.block.minecraft.dead_fire_coral": {
+  "sounds": [
+   "kotobakeep:say/27bf8e73a8d1504f"
+  ]
+ },
+ "say.block.minecraft.dead_fire_coral_block": {
+  "sounds": [
+   "kotobakeep:say/485e7fc80fc0dce6"
+  ]
+ },
+ "say.block.minecraft.dead_fire_coral_fan": {
+  "sounds": [
+   "kotobakeep:say/a1b813a29203d860"
+  ]
+ },
+ "say.block.minecraft.dead_fire_coral_wall_fan": {
+  "sounds": [
+   "kotobakeep:say/3b31ca1b3f8bf76e"
+  ]
+ },
+ "say.block.minecraft.dead_horn_coral": {
+  "sounds": [
+   "kotobakeep:say/1134f679d4293b26"
+  ]
+ },
+ "say.block.minecraft.dead_horn_coral_block": {
+  "sounds": [
+   "kotobakeep:say/131812af665f6431"
+  ]
+ },
+ "say.block.minecraft.dead_horn_coral_fan": {
+  "sounds": [
+   "kotobakeep:say/93f8a7355cf0666f"
+  ]
+ },
+ "say.block.minecraft.dead_horn_coral_wall_fan": {
+  "sounds": [
+   "kotobakeep:say/7679f178f3271cbe"
+  ]
+ },
+ "say.block.minecraft.dead_tube_coral": {
+  "sounds": [
+   "kotobakeep:say/34833db48c840930"
+  ]
+ },
+ "say.block.minecraft.dead_tube_coral_block": {
+  "sounds": [
+   "kotobakeep:say/ffee2b0d16a1a290"
+  ]
+ },
+ "say.block.minecraft.dead_tube_coral_fan": {
+  "sounds": [
+   "kotobakeep:say/da50f114855bea8a"
+  ]
+ },
+ "say.block.minecraft.dead_tube_coral_wall_fan": {
+  "sounds": [
+   "kotobakeep:say/5c73393f95b6da4a"
+  ]
+ },
+ "say.block.minecraft.decorated_pot": {
+  "sounds": [
+   "kotobakeep:say/74c5c30b02440c41"
+  ]
+ },
+ "say.block.minecraft.deepslate": {
+  "sounds": [
+   "kotobakeep:say/39d7d38a4cb707de"
+  ]
+ },
+ "say.block.minecraft.deepslate_brick_slab": {
+  "sounds": [
+   "kotobakeep:say/16e679489437c7a7"
+  ]
+ },
+ "say.block.minecraft.deepslate_brick_stairs": {
+  "sounds": [
+   "kotobakeep:say/0e5e6aa6b138abb7"
+  ]
+ },
+ "say.block.minecraft.deepslate_brick_wall": {
+  "sounds": [
+   "kotobakeep:say/5e3a4a899047ec0e"
+  ]
+ },
+ "say.block.minecraft.deepslate_bricks": {
+  "sounds": [
+   "kotobakeep:say/9828d94971e476ae"
+  ]
+ },
+ "say.block.minecraft.deepslate_coal_ore": {
+  "sounds": [
+   "kotobakeep:say/b79b5f0b05a2151c"
+  ]
+ },
+ "say.block.minecraft.deepslate_copper_ore": {
+  "sounds": [
+   "kotobakeep:say/09fc846e8c83fe3e"
+  ]
+ },
+ "say.block.minecraft.deepslate_diamond_ore": {
+  "sounds": [
+   "kotobakeep:say/79f5703dade3784d"
+  ]
+ },
+ "say.block.minecraft.deepslate_emerald_ore": {
+  "sounds": [
+   "kotobakeep:say/78c943fa32b1f278"
+  ]
+ },
+ "say.block.minecraft.deepslate_gold_ore": {
+  "sounds": [
+   "kotobakeep:say/d4e6f021240f74d6"
+  ]
+ },
+ "say.block.minecraft.deepslate_iron_ore": {
+  "sounds": [
+   "kotobakeep:say/bd9da2d8ebb4f015"
+  ]
+ },
+ "say.block.minecraft.deepslate_lapis_ore": {
+  "sounds": [
+   "kotobakeep:say/e0a6c8693625fe58"
+  ]
+ },
+ "say.block.minecraft.deepslate_redstone_ore": {
+  "sounds": [
+   "kotobakeep:say/0f9ea5822195f841"
+  ]
+ },
+ "say.block.minecraft.deepslate_tile_slab": {
+  "sounds": [
+   "kotobakeep:say/309ab47aec80d578"
+  ]
+ },
+ "say.block.minecraft.deepslate_tile_stairs": {
+  "sounds": [
+   "kotobakeep:say/80ce4efa1749175f"
+  ]
+ },
+ "say.block.minecraft.deepslate_tile_wall": {
+  "sounds": [
+   "kotobakeep:say/62f45fabe35a12b1"
+  ]
+ },
+ "say.block.minecraft.deepslate_tiles": {
+  "sounds": [
+   "kotobakeep:say/418ed823eeec7037"
+  ]
+ },
+ "say.block.minecraft.detector_rail": {
+  "sounds": [
+   "kotobakeep:say/ff1a77a112c9998e"
+  ]
+ },
+ "say.block.minecraft.diamond_block": {
+  "sounds": [
+   "kotobakeep:say/926ebc83e4e9829d"
+  ]
+ },
+ "say.block.minecraft.diamond_ore": {
+  "sounds": [
+   "kotobakeep:say/b078b204a5f1ab7a"
+  ]
+ },
+ "say.block.minecraft.diorite": {
+  "sounds": [
+   "kotobakeep:say/10a5ccb5f63aa052"
+  ]
+ },
+ "say.block.minecraft.diorite_slab": {
+  "sounds": [
+   "kotobakeep:say/fabc561f2d18dcf4"
+  ]
+ },
+ "say.block.minecraft.diorite_stairs": {
+  "sounds": [
+   "kotobakeep:say/8569a4ba59f8091a"
+  ]
+ },
+ "say.block.minecraft.diorite_wall": {
+  "sounds": [
+   "kotobakeep:say/9450a038aeb78138"
+  ]
+ },
+ "say.block.minecraft.dirt": {
+  "sounds": [
+   "kotobakeep:say/27a3388529b276d4"
+  ]
+ },
+ "say.block.minecraft.dirt_path": {
+  "sounds": [
+   "kotobakeep:say/f2a3ecffe5b57d70"
+  ]
+ },
+ "say.block.minecraft.dispenser": {
+  "sounds": [
+   "kotobakeep:say/8e9ed986b5d251bd"
+  ]
+ },
+ "say.block.minecraft.dragon_egg": {
+  "sounds": [
+   "kotobakeep:say/3c1e9cf361fe5a31"
+  ]
+ },
+ "say.block.minecraft.dragon_head": {
+  "sounds": [
+   "kotobakeep:say/bf0fa18458ba3e29"
+  ]
+ },
+ "say.block.minecraft.dragon_wall_head": {
+  "sounds": [
+   "kotobakeep:say/6a1e9e8ee80589dd"
+  ]
+ },
+ "say.block.minecraft.dried_ghast": {
+  "sounds": [
+   "kotobakeep:say/c76f46047ee8deb4"
+  ]
+ },
+ "say.block.minecraft.dried_kelp_block": {
+  "sounds": [
+   "kotobakeep:say/dbd1061a09a80ad0"
+  ]
+ },
+ "say.block.minecraft.dripstone_block": {
+  "sounds": [
+   "kotobakeep:say/9bf3fea463d82b5e"
+  ]
+ },
+ "say.block.minecraft.dropper": {
+  "sounds": [
+   "kotobakeep:say/948070bb6a71dd67"
+  ]
+ },
+ "say.block.minecraft.emerald_block": {
+  "sounds": [
+   "kotobakeep:say/902013fa9438e986"
+  ]
+ },
+ "say.block.minecraft.emerald_ore": {
+  "sounds": [
+   "kotobakeep:say/605bcae9c0f29e53"
+  ]
+ },
+ "say.block.minecraft.enchanting_table": {
+  "sounds": [
+   "kotobakeep:say/57cf2c84c5eba02e"
+  ]
+ },
+ "say.block.minecraft.end_gateway": {
+  "sounds": [
+   "kotobakeep:say/f1b62fc67f0420d8"
+  ]
+ },
+ "say.block.minecraft.end_portal": {
+  "sounds": [
+   "kotobakeep:say/33aa7d49de3bd5fd"
+  ]
+ },
+ "say.block.minecraft.end_portal_frame": {
+  "sounds": [
+   "kotobakeep:say/e84cbb28b5e92070"
+  ]
+ },
+ "say.block.minecraft.end_rod": {
+  "sounds": [
+   "kotobakeep:say/6c4396328c2036ce"
+  ]
+ },
+ "say.block.minecraft.end_stone": {
+  "sounds": [
+   "kotobakeep:say/fa1dbd381a1a1416"
+  ]
+ },
+ "say.block.minecraft.end_stone_brick_slab": {
+  "sounds": [
+   "kotobakeep:say/2d8164fbbc1b3ff4"
+  ]
+ },
+ "say.block.minecraft.end_stone_brick_stairs": {
+  "sounds": [
+   "kotobakeep:say/720c91da8312e7b1"
+  ]
+ },
+ "say.block.minecraft.end_stone_brick_wall": {
+  "sounds": [
+   "kotobakeep:say/578337e290d98515"
+  ]
+ },
+ "say.block.minecraft.end_stone_bricks": {
+  "sounds": [
+   "kotobakeep:say/1176af727034f13c"
+  ]
+ },
+ "say.block.minecraft.ender_chest": {
+  "sounds": [
+   "kotobakeep:say/68ee078648adee1d"
+  ]
+ },
+ "say.block.minecraft.exposed_chiseled_copper": {
+  "sounds": [
+   "kotobakeep:say/07d787b13aa06b47"
+  ]
+ },
+ "say.block.minecraft.exposed_copper": {
+  "sounds": [
+   "kotobakeep:say/a958d7cd813ca1fc"
+  ]
+ },
+ "say.block.minecraft.exposed_copper_bars": {
+  "sounds": [
+   "kotobakeep:say/852106032d54ee8d"
+  ]
+ },
+ "say.block.minecraft.exposed_copper_bulb": {
+  "sounds": [
+   "kotobakeep:say/49a07c00dfa2736d"
+  ]
+ },
+ "say.block.minecraft.exposed_copper_chain": {
+  "sounds": [
+   "kotobakeep:say/74b9d446be0456be"
+  ]
+ },
+ "say.block.minecraft.exposed_copper_chest": {
+  "sounds": [
+   "kotobakeep:say/30542446c9652a0a"
+  ]
+ },
+ "say.block.minecraft.exposed_copper_door": {
+  "sounds": [
+   "kotobakeep:say/3b0a77636af00135"
+  ]
+ },
+ "say.block.minecraft.exposed_copper_golem_statue": {
+  "sounds": [
+   "kotobakeep:say/84619fa2aa06f44f"
+  ]
+ },
+ "say.block.minecraft.exposed_copper_grate": {
+  "sounds": [
+   "kotobakeep:say/61db02cdbdbfa8d1"
+  ]
+ },
+ "say.block.minecraft.exposed_copper_lantern": {
+  "sounds": [
+   "kotobakeep:say/58ec02f199387a34"
+  ]
+ },
+ "say.block.minecraft.exposed_copper_trapdoor": {
+  "sounds": [
+   "kotobakeep:say/cb6d58743a06d32f"
+  ]
+ },
+ "say.block.minecraft.exposed_cut_copper": {
+  "sounds": [
+   "kotobakeep:say/ddf78ac081f31c21"
+  ]
+ },
+ "say.block.minecraft.exposed_cut_copper_slab": {
+  "sounds": [
+   "kotobakeep:say/7eb96b2192e48ee8"
+  ]
+ },
+ "say.block.minecraft.exposed_cut_copper_stairs": {
+  "sounds": [
+   "kotobakeep:say/50a796e5060093aa"
+  ]
+ },
+ "say.block.minecraft.exposed_lightning_rod": {
+  "sounds": [
+   "kotobakeep:say/1e01aa58123bb95f"
+  ]
+ },
+ "say.block.minecraft.farmland": {
+  "sounds": [
+   "kotobakeep:say/9bcc2d15ef15451e"
+  ]
+ },
+ "say.block.minecraft.fern": {
+  "sounds": [
+   "kotobakeep:say/39d410c58670e1d2"
+  ]
+ },
+ "say.block.minecraft.fire": {
+  "sounds": [
+   "kotobakeep:say/3d4a741343b68cc3"
+  ]
+ },
+ "say.block.minecraft.fire_coral": {
+  "sounds": [
+   "kotobakeep:say/36684a651f0565ba"
+  ]
+ },
+ "say.block.minecraft.fire_coral_block": {
+  "sounds": [
+   "kotobakeep:say/2ff17134cc1a24dd"
+  ]
+ },
+ "say.block.minecraft.fire_coral_fan": {
+  "sounds": [
+   "kotobakeep:say/079fdb92f90c5edd"
+  ]
+ },
+ "say.block.minecraft.fire_coral_wall_fan": {
+  "sounds": [
+   "kotobakeep:say/1a7859a2775565dd"
+  ]
+ },
+ "say.block.minecraft.firefly_bush": {
+  "sounds": [
+   "kotobakeep:say/48b72480cd18bfd0"
+  ]
+ },
+ "say.block.minecraft.fletching_table": {
+  "sounds": [
+   "kotobakeep:say/3ecf29b1f8ae7c83"
+  ]
+ },
+ "say.block.minecraft.flower_pot": {
+  "sounds": [
+   "kotobakeep:say/4af6e755fb0aefcf"
+  ]
+ },
+ "say.block.minecraft.flowering_azalea": {
+  "sounds": [
+   "kotobakeep:say/b8b171d733c6d3af"
+  ]
+ },
+ "say.block.minecraft.flowering_azalea_leaves": {
+  "sounds": [
+   "kotobakeep:say/b5580942419f82a9"
+  ]
+ },
+ "say.block.minecraft.frogspawn": {
+  "sounds": [
+   "kotobakeep:say/c4cfe7dd50c44a8e"
+  ]
+ },
+ "say.block.minecraft.frosted_ice": {
+  "sounds": [
+   "kotobakeep:say/e5cdd86d71815b2a"
+  ]
+ },
+ "say.block.minecraft.furnace": {
+  "sounds": [
+   "kotobakeep:say/82511eb6c568e9df"
+  ]
+ },
+ "say.block.minecraft.gilded_blackstone": {
+  "sounds": [
+   "kotobakeep:say/7ce6dce07baa323b"
+  ]
+ },
+ "say.block.minecraft.glass": {
+  "sounds": [
+   "kotobakeep:say/437bf97d9b625606"
+  ]
+ },
+ "say.block.minecraft.glass_pane": {
+  "sounds": [
+   "kotobakeep:say/24b6111cdc94413f"
+  ]
+ },
+ "say.block.minecraft.glow_lichen": {
+  "sounds": [
+   "kotobakeep:say/3a6f1ef467168412"
+  ]
+ },
+ "say.block.minecraft.glowstone": {
+  "sounds": [
+   "kotobakeep:say/f3103b0b53c1a1ea"
+  ]
+ },
+ "say.block.minecraft.gold_block": {
+  "sounds": [
+   "kotobakeep:say/666fc474fc6cf9ef"
+  ]
+ },
+ "say.block.minecraft.gold_ore": {
+  "sounds": [
+   "kotobakeep:say/bb3c632971bdb4eb"
+  ]
+ },
+ "say.block.minecraft.golden_dandelion": {
+  "sounds": [
+   "kotobakeep:say/048b6d96d9df506c"
+  ]
+ },
+ "say.block.minecraft.granite": {
+  "sounds": [
+   "kotobakeep:say/04feb1b67d624316"
+  ]
+ },
+ "say.block.minecraft.granite_slab": {
+  "sounds": [
+   "kotobakeep:say/f7ee70cb58edee41"
+  ]
+ },
+ "say.block.minecraft.granite_stairs": {
+  "sounds": [
+   "kotobakeep:say/cecc69157eaa915e"
+  ]
+ },
+ "say.block.minecraft.granite_wall": {
+  "sounds": [
+   "kotobakeep:say/e0defadd02305043"
+  ]
+ },
+ "say.block.minecraft.grass": {
+  "sounds": [
+   "kotobakeep:say/649ccb758d70298e"
+  ]
+ },
+ "say.block.minecraft.grass_block": {
+  "sounds": [
+   "kotobakeep:say/60e1afab4981d06a"
+  ]
+ },
+ "say.block.minecraft.gravel": {
+  "sounds": [
+   "kotobakeep:say/7b22b675465268eb"
+  ]
+ },
+ "say.block.minecraft.gray_banner": {
+  "sounds": [
+   "kotobakeep:say/69c1f0b7193cea2f"
+  ]
+ },
+ "say.block.minecraft.gray_bed": {
+  "sounds": [
+   "kotobakeep:say/1bde4a2202fcd914"
+  ]
+ },
+ "say.block.minecraft.gray_candle": {
+  "sounds": [
+   "kotobakeep:say/a347ffa6d5100c13"
+  ]
+ },
+ "say.block.minecraft.gray_candle_cake": {
+  "sounds": [
+   "kotobakeep:say/ad7f0f101ff72477"
+  ]
+ },
+ "say.block.minecraft.gray_carpet": {
+  "sounds": [
+   "kotobakeep:say/84e11bd1ebad5c67"
+  ]
+ },
+ "say.block.minecraft.gray_concrete": {
+  "sounds": [
+   "kotobakeep:say/8d7fe14b066ccf47"
+  ]
+ },
+ "say.block.minecraft.gray_concrete_powder": {
+  "sounds": [
+   "kotobakeep:say/cc50cc677c2c5091"
+  ]
+ },
+ "say.block.minecraft.gray_concrete_slab": {
+  "sounds": [
+   "kotobakeep:say/ea35b9be59d59318"
+  ]
+ },
+ "say.block.minecraft.gray_concrete_stairs": {
+  "sounds": [
+   "kotobakeep:say/ea279ea3c20f501b"
+  ]
+ },
+ "say.block.minecraft.gray_glazed_terracotta": {
+  "sounds": [
+   "kotobakeep:say/4d0aabee6f9501d2"
+  ]
+ },
+ "say.block.minecraft.gray_shulker_box": {
+  "sounds": [
+   "kotobakeep:say/9fba86523faca7f5"
+  ]
+ },
+ "say.block.minecraft.gray_stained_glass": {
+  "sounds": [
+   "kotobakeep:say/113ba0eac53fa4f4"
+  ]
+ },
+ "say.block.minecraft.gray_stained_glass_pane": {
+  "sounds": [
+   "kotobakeep:say/450829780b6c71de"
+  ]
+ },
+ "say.block.minecraft.gray_terracotta": {
+  "sounds": [
+   "kotobakeep:say/b23ac3f80f088370"
+  ]
+ },
+ "say.block.minecraft.gray_wool": {
+  "sounds": [
+   "kotobakeep:say/a7fa293e80fdbad9"
+  ]
+ },
+ "say.block.minecraft.gray_wool_slab": {
+  "sounds": [
+   "kotobakeep:say/e7cef0ca49e13923"
+  ]
+ },
+ "say.block.minecraft.gray_wool_stairs": {
+  "sounds": [
+   "kotobakeep:say/c97e08d150387437"
+  ]
+ },
+ "say.block.minecraft.green_banner": {
+  "sounds": [
+   "kotobakeep:say/b37bc0d01a87b5a4"
+  ]
+ },
+ "say.block.minecraft.green_bed": {
+  "sounds": [
+   "kotobakeep:say/7350ca13ab0ede81"
+  ]
+ },
+ "say.block.minecraft.green_candle": {
+  "sounds": [
+   "kotobakeep:say/03aa62d7671b053b"
+  ]
+ },
+ "say.block.minecraft.green_candle_cake": {
+  "sounds": [
+   "kotobakeep:say/3f5a34df444be615"
+  ]
+ },
+ "say.block.minecraft.green_carpet": {
+  "sounds": [
+   "kotobakeep:say/8f7213567fa495a2"
+  ]
+ },
+ "say.block.minecraft.green_concrete": {
+  "sounds": [
+   "kotobakeep:say/a9ef037d8dc4c390"
+  ]
+ },
+ "say.block.minecraft.green_concrete_powder": {
+  "sounds": [
+   "kotobakeep:say/a1748179a8073c9b"
+  ]
+ },
+ "say.block.minecraft.green_concrete_slab": {
+  "sounds": [
+   "kotobakeep:say/9b76b48b567b75e5"
+  ]
+ },
+ "say.block.minecraft.green_concrete_stairs": {
+  "sounds": [
+   "kotobakeep:say/320890d71a2090aa"
+  ]
+ },
+ "say.block.minecraft.green_glazed_terracotta": {
+  "sounds": [
+   "kotobakeep:say/c6f14e76b5cb02da"
+  ]
+ },
+ "say.block.minecraft.green_shulker_box": {
+  "sounds": [
+   "kotobakeep:say/d600921200dc7d2b"
+  ]
+ },
+ "say.block.minecraft.green_stained_glass": {
+  "sounds": [
+   "kotobakeep:say/c749167562418c4a"
+  ]
+ },
+ "say.block.minecraft.green_stained_glass_pane": {
+  "sounds": [
+   "kotobakeep:say/874052db3a73de5e"
+  ]
+ },
+ "say.block.minecraft.green_terracotta": {
+  "sounds": [
+   "kotobakeep:say/da910e64bde23142"
+  ]
+ },
+ "say.block.minecraft.green_wool": {
+  "sounds": [
+   "kotobakeep:say/f80b3fa48d25d39c"
+  ]
+ },
+ "say.block.minecraft.green_wool_slab": {
+  "sounds": [
+   "kotobakeep:say/52f6c78c6119faeb"
+  ]
+ },
+ "say.block.minecraft.green_wool_stairs": {
+  "sounds": [
+   "kotobakeep:say/edd9d0264d00ffb5"
+  ]
+ },
+ "say.block.minecraft.grindstone": {
+  "sounds": [
+   "kotobakeep:say/0a8eeaa7ef91344a"
+  ]
+ },
+ "say.block.minecraft.hanging_roots": {
+  "sounds": [
+   "kotobakeep:say/9d551851b6b1a773"
+  ]
+ },
+ "say.block.minecraft.hay_block": {
+  "sounds": [
+   "kotobakeep:say/f022147cf5bc3241"
+  ]
+ },
+ "say.block.minecraft.heavy_core": {
+  "sounds": [
+   "kotobakeep:say/06a24179d43ea459"
+  ]
+ },
+ "say.block.minecraft.heavy_weighted_pressure_plate": {
+  "sounds": [
+   "kotobakeep:say/9000926079f0e139"
+  ]
+ },
+ "say.block.minecraft.honey_block": {
+  "sounds": [
+   "kotobakeep:say/cd791f237ccc8ed4"
+  ]
+ },
+ "say.block.minecraft.honeycomb_block": {
+  "sounds": [
+   "kotobakeep:say/1f0ff59ed5b2e8eb"
+  ]
+ },
+ "say.block.minecraft.hopper": {
+  "sounds": [
+   "kotobakeep:say/c70cd7a0d1ee36ce"
+  ]
+ },
+ "say.block.minecraft.horn_coral": {
+  "sounds": [
+   "kotobakeep:say/f2b2e85a0d144074"
+  ]
+ },
+ "say.block.minecraft.horn_coral_block": {
+  "sounds": [
+   "kotobakeep:say/6a95915bdefe05ea"
+  ]
+ },
+ "say.block.minecraft.horn_coral_fan": {
+  "sounds": [
+   "kotobakeep:say/c0f7110814762ad2"
+  ]
+ },
+ "say.block.minecraft.horn_coral_wall_fan": {
+  "sounds": [
+   "kotobakeep:say/c84f891ce9e41dc1"
+  ]
+ },
+ "say.block.minecraft.ice": {
+  "sounds": [
+   "kotobakeep:say/0ebdb9a2d793ad5e"
+  ]
+ },
+ "say.block.minecraft.ice_crystal": {
+  "sounds": [
+   "kotobakeep:say/da18059507a32dc8"
+  ]
+ },
+ "say.block.minecraft.icicle": {
+  "sounds": [
+   "kotobakeep:say/b59d33a9c9d14083"
+  ]
+ },
+ "say.block.minecraft.infested_chiseled_stone_bricks": {
+  "sounds": [
+   "kotobakeep:say/03f52ce947f475ae"
+  ]
+ },
+ "say.block.minecraft.infested_cobblestone": {
+  "sounds": [
+   "kotobakeep:say/3b54a839daac6b30"
+  ]
+ },
+ "say.block.minecraft.infested_cracked_stone_bricks": {
+  "sounds": [
+   "kotobakeep:say/ec008aee5816314f"
+  ]
+ },
+ "say.block.minecraft.infested_deepslate": {
+  "sounds": [
+   "kotobakeep:say/9e61c0d529b36b1a"
+  ]
+ },
+ "say.block.minecraft.infested_mossy_stone_bricks": {
+  "sounds": [
+   "kotobakeep:say/edf354479b902403"
+  ]
+ },
+ "say.block.minecraft.infested_stone": {
+  "sounds": [
+   "kotobakeep:say/096a38e0cf799616"
+  ]
+ },
+ "say.block.minecraft.infested_stone_bricks": {
+  "sounds": [
+   "kotobakeep:say/794f74e4d6ac55fb"
+  ]
+ },
+ "say.block.minecraft.iron_bars": {
+  "sounds": [
+   "kotobakeep:say/342d973f36f1ae98"
+  ]
+ },
+ "say.block.minecraft.iron_block": {
+  "sounds": [
+   "kotobakeep:say/5a57d1969557f068"
+  ]
+ },
+ "say.block.minecraft.iron_chain": {
+  "sounds": [
+   "kotobakeep:say/4cfc58aa1d634215"
+  ]
+ },
+ "say.block.minecraft.iron_door": {
+  "sounds": [
+   "kotobakeep:say/06cd0c595a9706a4"
+  ]
+ },
+ "say.block.minecraft.iron_ore": {
+  "sounds": [
+   "kotobakeep:say/41688cf6d813f3c4"
+  ]
+ },
+ "say.block.minecraft.iron_trapdoor": {
+  "sounds": [
+   "kotobakeep:say/0d72a25cb7c8b938"
+  ]
+ },
+ "say.block.minecraft.jack_o_lantern": {
+  "sounds": [
+   "kotobakeep:say/5cbb4945d895ff45"
+  ]
+ },
+ "say.block.minecraft.jigsaw": {
+  "sounds": [
+   "kotobakeep:say/04670ca870c0bdff"
+  ]
+ },
+ "say.block.minecraft.jukebox": {
+  "sounds": [
+   "kotobakeep:say/82698b295333f0d2"
+  ]
+ },
+ "say.block.minecraft.jungle_button": {
+  "sounds": [
+   "kotobakeep:say/d3f4074f0a84a7ec"
+  ]
+ },
+ "say.block.minecraft.jungle_door": {
+  "sounds": [
+   "kotobakeep:say/96959ab6d96e143e"
+  ]
+ },
+ "say.block.minecraft.jungle_fence": {
+  "sounds": [
+   "kotobakeep:say/2a08f749c0ee577d"
+  ]
+ },
+ "say.block.minecraft.jungle_fence_gate": {
+  "sounds": [
+   "kotobakeep:say/63e4855be2c4e491"
+  ]
+ },
+ "say.block.minecraft.jungle_hanging_sign": {
+  "sounds": [
+   "kotobakeep:say/ace024a5a358cd9c"
+  ]
+ },
+ "say.block.minecraft.jungle_leaves": {
+  "sounds": [
+   "kotobakeep:say/bf1bb7e9c2f7bf1f"
+  ]
+ },
+ "say.block.minecraft.jungle_log": {
+  "sounds": [
+   "kotobakeep:say/470a576c1271934a"
+  ]
+ },
+ "say.block.minecraft.jungle_planks": {
+  "sounds": [
+   "kotobakeep:say/5767a7d5618311fe"
+  ]
+ },
+ "say.block.minecraft.jungle_pressure_plate": {
+  "sounds": [
+   "kotobakeep:say/a1935ec0c2db4327"
+  ]
+ },
+ "say.block.minecraft.jungle_sapling": {
+  "sounds": [
+   "kotobakeep:say/bcc0e6efce978986"
+  ]
+ },
+ "say.block.minecraft.jungle_shelf": {
+  "sounds": [
+   "kotobakeep:say/3aa16eda8387067e"
+  ]
+ },
+ "say.block.minecraft.jungle_sign": {
+  "sounds": [
+   "kotobakeep:say/8f8255de1688e98c"
+  ]
+ },
+ "say.block.minecraft.jungle_slab": {
+  "sounds": [
+   "kotobakeep:say/8a2c10717da2afd7"
+  ]
+ },
+ "say.block.minecraft.jungle_stairs": {
+  "sounds": [
+   "kotobakeep:say/560319231fff4c01"
+  ]
+ },
+ "say.block.minecraft.jungle_trapdoor": {
+  "sounds": [
+   "kotobakeep:say/123f2b5344057bb1"
+  ]
+ },
+ "say.block.minecraft.jungle_wall_hanging_sign": {
+  "sounds": [
+   "kotobakeep:say/f0e0170e3a43c078"
+  ]
+ },
+ "say.block.minecraft.jungle_wall_sign": {
+  "sounds": [
+   "kotobakeep:say/1d22ac345d83f3b5"
+  ]
+ },
+ "say.block.minecraft.jungle_wood": {
+  "sounds": [
+   "kotobakeep:say/2f62456c0a678797"
+  ]
+ },
+ "say.block.minecraft.kelp": {
+  "sounds": [
+   "kotobakeep:say/a8f567d2f112a6b0"
+  ]
+ },
+ "say.block.minecraft.kelp_plant": {
+  "sounds": [
+   "kotobakeep:say/840b4e9af088fe24"
+  ]
+ },
+ "say.block.minecraft.ladder": {
+  "sounds": [
+   "kotobakeep:say/d5d90569cd662846"
+  ]
+ },
+ "say.block.minecraft.lantern": {
+  "sounds": [
+   "kotobakeep:say/4650e504c8023694"
+  ]
+ },
+ "say.block.minecraft.lapis_block": {
+  "sounds": [
+   "kotobakeep:say/e138dfece80ae739"
+  ]
+ },
+ "say.block.minecraft.lapis_ore": {
+  "sounds": [
+   "kotobakeep:say/6e9cb919a6669921"
+  ]
+ },
+ "say.block.minecraft.large_amethyst_bud": {
+  "sounds": [
+   "kotobakeep:say/5eb572b7d3eee94d"
+  ]
+ },
+ "say.block.minecraft.large_fern": {
+  "sounds": [
+   "kotobakeep:say/fe9eeaa3f66c8b18"
+  ]
+ },
+ "say.block.minecraft.lava": {
+  "sounds": [
+   "kotobakeep:say/d83ebe52134d0fc7"
+  ]
+ },
+ "say.block.minecraft.lava_cauldron": {
+  "sounds": [
+   "kotobakeep:say/199141f16b7c35cf"
+  ]
+ },
+ "say.block.minecraft.leaf_litter": {
+  "sounds": [
+   "kotobakeep:say/0f104e186435e167"
+  ]
+ },
+ "say.block.minecraft.lectern": {
+  "sounds": [
+   "kotobakeep:say/1a05187dab558d14"
+  ]
+ },
+ "say.block.minecraft.lever": {
+  "sounds": [
+   "kotobakeep:say/36e4082435f49a5b"
+  ]
+ },
+ "say.block.minecraft.light": {
+  "sounds": [
+   "kotobakeep:say/c9a3eb69594dfa56"
+  ]
+ },
+ "say.block.minecraft.light_blue_banner": {
+  "sounds": [
+   "kotobakeep:say/44132f0c93b3c546"
+  ]
+ },
+ "say.block.minecraft.light_blue_bed": {
+  "sounds": [
+   "kotobakeep:say/9f5931cb26a8bf0f"
+  ]
+ },
+ "say.block.minecraft.light_blue_candle": {
+  "sounds": [
+   "kotobakeep:say/7182d144ec20d89d"
+  ]
+ },
+ "say.block.minecraft.light_blue_candle_cake": {
+  "sounds": [
+   "kotobakeep:say/64d9310d47550285"
+  ]
+ },
+ "say.block.minecraft.light_blue_carpet": {
+  "sounds": [
+   "kotobakeep:say/1d58fbd9466d5d85"
+  ]
+ },
+ "say.block.minecraft.light_blue_concrete": {
+  "sounds": [
+   "kotobakeep:say/b58c950598f33ec0"
+  ]
+ },
+ "say.block.minecraft.light_blue_concrete_powder": {
+  "sounds": [
+   "kotobakeep:say/c2dc64ac3ddd9bd1"
+  ]
+ },
+ "say.block.minecraft.light_blue_concrete_slab": {
+  "sounds": [
+   "kotobakeep:say/6dd30e8f0cf2ca93"
+  ]
+ },
+ "say.block.minecraft.light_blue_concrete_stairs": {
+  "sounds": [
+   "kotobakeep:say/b428a9a9e68c02f7"
+  ]
+ },
+ "say.block.minecraft.light_blue_glazed_terracotta": {
+  "sounds": [
+   "kotobakeep:say/99dbcf704f7fca2a"
+  ]
+ },
+ "say.block.minecraft.light_blue_shulker_box": {
+  "sounds": [
+   "kotobakeep:say/19d4ea5fa1955d1e"
+  ]
+ },
+ "say.block.minecraft.light_blue_stained_glass": {
+  "sounds": [
+   "kotobakeep:say/7bd3752aa753cc55"
+  ]
+ },
+ "say.block.minecraft.light_blue_stained_glass_pane": {
+  "sounds": [
+   "kotobakeep:say/d380f2755b747d85"
+  ]
+ },
+ "say.block.minecraft.light_blue_terracotta": {
+  "sounds": [
+   "kotobakeep:say/aca8a45177252948"
+  ]
+ },
+ "say.block.minecraft.light_blue_wool": {
+  "sounds": [
+   "kotobakeep:say/31f096c017943f8c"
+  ]
+ },
+ "say.block.minecraft.light_blue_wool_slab": {
+  "sounds": [
+   "kotobakeep:say/0c103ddd6d711ca9"
+  ]
+ },
+ "say.block.minecraft.light_blue_wool_stairs": {
+  "sounds": [
+   "kotobakeep:say/0492fcab786d2f66"
+  ]
+ },
+ "say.block.minecraft.light_gray_banner": {
+  "sounds": [
+   "kotobakeep:say/c5c82e1b5228801d"
+  ]
+ },
+ "say.block.minecraft.light_gray_bed": {
+  "sounds": [
+   "kotobakeep:say/43b7088e8df8c54c"
+  ]
+ },
+ "say.block.minecraft.light_gray_candle": {
+  "sounds": [
+   "kotobakeep:say/2de59c02495fbc50"
+  ]
+ },
+ "say.block.minecraft.light_gray_candle_cake": {
+  "sounds": [
+   "kotobakeep:say/b946e2b0033e096c"
+  ]
+ },
+ "say.block.minecraft.light_gray_carpet": {
+  "sounds": [
+   "kotobakeep:say/d99c11dc2731c454"
+  ]
+ },
+ "say.block.minecraft.light_gray_concrete": {
+  "sounds": [
+   "kotobakeep:say/dd581e5fcfddb694"
+  ]
+ },
+ "say.block.minecraft.light_gray_concrete_powder": {
+  "sounds": [
+   "kotobakeep:say/50579fc3d738f7b9"
+  ]
+ },
+ "say.block.minecraft.light_gray_concrete_slab": {
+  "sounds": [
+   "kotobakeep:say/38a39fd6fa807c5f"
+  ]
+ },
+ "say.block.minecraft.light_gray_concrete_stairs": {
+  "sounds": [
+   "kotobakeep:say/e7767669acccbfac"
+  ]
+ },
+ "say.block.minecraft.light_gray_glazed_terracotta": {
+  "sounds": [
+   "kotobakeep:say/a300c823fb53a29a"
+  ]
+ },
+ "say.block.minecraft.light_gray_shulker_box": {
+  "sounds": [
+   "kotobakeep:say/f983c8f6a0ff955e"
+  ]
+ },
+ "say.block.minecraft.light_gray_stained_glass": {
+  "sounds": [
+   "kotobakeep:say/516f3e9de942cbad"
+  ]
+ },
+ "say.block.minecraft.light_gray_stained_glass_pane": {
+  "sounds": [
+   "kotobakeep:say/fc867ca9f5623ea9"
+  ]
+ },
+ "say.block.minecraft.light_gray_terracotta": {
+  "sounds": [
+   "kotobakeep:say/281bf710c4838857"
+  ]
+ },
+ "say.block.minecraft.light_gray_wool": {
+  "sounds": [
+   "kotobakeep:say/56fd4f6eaab0113c"
+  ]
+ },
+ "say.block.minecraft.light_gray_wool_slab": {
+  "sounds": [
+   "kotobakeep:say/09f318fba04d65fd"
+  ]
+ },
+ "say.block.minecraft.light_gray_wool_stairs": {
+  "sounds": [
+   "kotobakeep:say/3f21b9075d0dbd7b"
+  ]
+ },
+ "say.block.minecraft.light_weighted_pressure_plate": {
+  "sounds": [
+   "kotobakeep:say/5f997f231e070e1d"
+  ]
+ },
+ "say.block.minecraft.lightning_rod": {
+  "sounds": [
+   "kotobakeep:say/81671dd7475f3559"
+  ]
+ },
+ "say.block.minecraft.lilac": {
+  "sounds": [
+   "kotobakeep:say/d91f2e9974727a1e"
+  ]
+ },
+ "say.block.minecraft.lily_of_the_valley": {
+  "sounds": [
+   "kotobakeep:say/d6ed9fe881633c72"
+  ]
+ },
+ "say.block.minecraft.lily_pad": {
+  "sounds": [
+   "kotobakeep:say/60d86d79d451b3ae"
+  ]
+ },
+ "say.block.minecraft.lime_banner": {
+  "sounds": [
+   "kotobakeep:say/a3f430dfe76c9771"
+  ]
+ },
+ "say.block.minecraft.lime_bed": {
+  "sounds": [
+   "kotobakeep:say/bb374d848375747e"
+  ]
+ },
+ "say.block.minecraft.lime_candle": {
+  "sounds": [
+   "kotobakeep:say/f9c5959ad4eff95f"
+  ]
+ },
+ "say.block.minecraft.lime_candle_cake": {
+  "sounds": [
+   "kotobakeep:say/650c96284f5b270e"
+  ]
+ },
+ "say.block.minecraft.lime_carpet": {
+  "sounds": [
+   "kotobakeep:say/7ca2f73ae4ae774a"
+  ]
+ },
+ "say.block.minecraft.lime_concrete": {
+  "sounds": [
+   "kotobakeep:say/4e3b4bda20de7513"
+  ]
+ },
+ "say.block.minecraft.lime_concrete_powder": {
+  "sounds": [
+   "kotobakeep:say/c034180ab2abdc6c"
+  ]
+ },
+ "say.block.minecraft.lime_concrete_slab": {
+  "sounds": [
+   "kotobakeep:say/8e1eef1012fe3f9a"
+  ]
+ },
+ "say.block.minecraft.lime_concrete_stairs": {
+  "sounds": [
+   "kotobakeep:say/ff37b2c67b5a0147"
+  ]
+ },
+ "say.block.minecraft.lime_glazed_terracotta": {
+  "sounds": [
+   "kotobakeep:say/d1d48d78c866cc2b"
+  ]
+ },
+ "say.block.minecraft.lime_shulker_box": {
+  "sounds": [
+   "kotobakeep:say/48de7b0d1ead37d8"
+  ]
+ },
+ "say.block.minecraft.lime_stained_glass": {
+  "sounds": [
+   "kotobakeep:say/ce3a3a9c5a83ac54"
+  ]
+ },
+ "say.block.minecraft.lime_stained_glass_pane": {
+  "sounds": [
+   "kotobakeep:say/b93eaddd51287c84"
+  ]
+ },
+ "say.block.minecraft.lime_terracotta": {
+  "sounds": [
+   "kotobakeep:say/e93ed6cf2702ca6a"
+  ]
+ },
+ "say.block.minecraft.lime_wool": {
+  "sounds": [
+   "kotobakeep:say/b8b05f8b6f30dafe"
+  ]
+ },
+ "say.block.minecraft.lime_wool_slab": {
+  "sounds": [
+   "kotobakeep:say/2c12ac3ca33ce72d"
+  ]
+ },
+ "say.block.minecraft.lime_wool_stairs": {
+  "sounds": [
+   "kotobakeep:say/cf53f92893d342f9"
+  ]
+ },
+ "say.block.minecraft.lodestone": {
+  "sounds": [
+   "kotobakeep:say/570ebce84fff3ef1"
+  ]
+ },
+ "say.block.minecraft.loom": {
+  "sounds": [
+   "kotobakeep:say/94e18594633f40fa"
+  ]
+ },
+ "say.block.minecraft.magenta_banner": {
+  "sounds": [
+   "kotobakeep:say/0995e0fe6dc43597"
+  ]
+ },
+ "say.block.minecraft.magenta_bed": {
+  "sounds": [
+   "kotobakeep:say/4c17ff8e7f3e01af"
+  ]
+ },
+ "say.block.minecraft.magenta_candle": {
+  "sounds": [
+   "kotobakeep:say/d28983ceb76a20d3"
+  ]
+ },
+ "say.block.minecraft.magenta_candle_cake": {
+  "sounds": [
+   "kotobakeep:say/109ac558553686e3"
+  ]
+ },
+ "say.block.minecraft.magenta_carpet": {
+  "sounds": [
+   "kotobakeep:say/2ccc40be78abfc41"
+  ]
+ },
+ "say.block.minecraft.magenta_concrete": {
+  "sounds": [
+   "kotobakeep:say/64111f955f34891f"
+  ]
+ },
+ "say.block.minecraft.magenta_concrete_powder": {
+  "sounds": [
+   "kotobakeep:say/8c0fff3e5fc0de2d"
+  ]
+ },
+ "say.block.minecraft.magenta_concrete_slab": {
+  "sounds": [
+   "kotobakeep:say/6925194f28df02a5"
+  ]
+ },
+ "say.block.minecraft.magenta_concrete_stairs": {
+  "sounds": [
+   "kotobakeep:say/9d10b95174d46de4"
+  ]
+ },
+ "say.block.minecraft.magenta_glazed_terracotta": {
+  "sounds": [
+   "kotobakeep:say/98da61326b6950b9"
+  ]
+ },
+ "say.block.minecraft.magenta_shulker_box": {
+  "sounds": [
+   "kotobakeep:say/6f5add50cb48a7d2"
+  ]
+ },
+ "say.block.minecraft.magenta_stained_glass": {
+  "sounds": [
+   "kotobakeep:say/8d1ea3f02b8b94c4"
+  ]
+ },
+ "say.block.minecraft.magenta_stained_glass_pane": {
+  "sounds": [
+   "kotobakeep:say/a9a2cff49b833e68"
+  ]
+ },
+ "say.block.minecraft.magenta_terracotta": {
+  "sounds": [
+   "kotobakeep:say/5464ee35ac92612e"
+  ]
+ },
+ "say.block.minecraft.magenta_wool": {
+  "sounds": [
+   "kotobakeep:say/d35738dfb6b3a3de"
+  ]
+ },
+ "say.block.minecraft.magenta_wool_slab": {
+  "sounds": [
+   "kotobakeep:say/df41ad620722dccc"
+  ]
+ },
+ "say.block.minecraft.magenta_wool_stairs": {
+  "sounds": [
+   "kotobakeep:say/311787767f5394e9"
+  ]
+ },
+ "say.block.minecraft.magma_block": {
+  "sounds": [
+   "kotobakeep:say/44d00b1cacae8dbf"
+  ]
+ },
+ "say.block.minecraft.mangrove_button": {
+  "sounds": [
+   "kotobakeep:say/fb5c40d1c9965f56"
+  ]
+ },
+ "say.block.minecraft.mangrove_door": {
+  "sounds": [
+   "kotobakeep:say/bc0b7bd5f844e084"
+  ]
+ },
+ "say.block.minecraft.mangrove_fence": {
+  "sounds": [
+   "kotobakeep:say/055aac250030aa11"
+  ]
+ },
+ "say.block.minecraft.mangrove_fence_gate": {
+  "sounds": [
+   "kotobakeep:say/ed1a6e9c33ec9e03"
+  ]
+ },
+ "say.block.minecraft.mangrove_hanging_sign": {
+  "sounds": [
+   "kotobakeep:say/ed433de69b1dceda"
+  ]
+ },
+ "say.block.minecraft.mangrove_leaves": {
+  "sounds": [
+   "kotobakeep:say/5ce0648ae322e178"
+  ]
+ },
+ "say.block.minecraft.mangrove_log": {
+  "sounds": [
+   "kotobakeep:say/f3ed3f50c1ed012b"
+  ]
+ },
+ "say.block.minecraft.mangrove_planks": {
+  "sounds": [
+   "kotobakeep:say/7c84c24a06578e9e"
+  ]
+ },
+ "say.block.minecraft.mangrove_pressure_plate": {
+  "sounds": [
+   "kotobakeep:say/3d3ae618643cb226"
+  ]
+ },
+ "say.block.minecraft.mangrove_propagule": {
+  "sounds": [
+   "kotobakeep:say/d9473845fc41cc33"
+  ]
+ },
+ "say.block.minecraft.mangrove_roots": {
+  "sounds": [
+   "kotobakeep:say/362e6eb5c5e4edbf"
+  ]
+ },
+ "say.block.minecraft.mangrove_shelf": {
+  "sounds": [
+   "kotobakeep:say/7e06716b1971a4d0"
+  ]
+ },
+ "say.block.minecraft.mangrove_sign": {
+  "sounds": [
+   "kotobakeep:say/002a8093d963d02f"
+  ]
+ },
+ "say.block.minecraft.mangrove_slab": {
+  "sounds": [
+   "kotobakeep:say/451f6397cd45127e"
+  ]
+ },
+ "say.block.minecraft.mangrove_stairs": {
+  "sounds": [
+   "kotobakeep:say/4435b4015eadc959"
+  ]
+ },
+ "say.block.minecraft.mangrove_trapdoor": {
+  "sounds": [
+   "kotobakeep:say/00840c4ff68239e5"
+  ]
+ },
+ "say.block.minecraft.mangrove_wall_hanging_sign": {
+  "sounds": [
+   "kotobakeep:say/86f7fd4579e5d9fc"
+  ]
+ },
+ "say.block.minecraft.mangrove_wall_sign": {
+  "sounds": [
+   "kotobakeep:say/0e733c51f3dcd919"
+  ]
+ },
+ "say.block.minecraft.mangrove_wood": {
+  "sounds": [
+   "kotobakeep:say/36a1f87c7a4e6df8"
+  ]
+ },
+ "say.block.minecraft.medium_amethyst_bud": {
+  "sounds": [
+   "kotobakeep:say/1f3936940428be38"
+  ]
+ },
+ "say.block.minecraft.melon": {
+  "sounds": [
+   "kotobakeep:say/7cb0372f12c474f9"
+  ]
+ },
+ "say.block.minecraft.melon_stem": {
+  "sounds": [
+   "kotobakeep:say/246bd2050e018081"
+  ]
+ },
+ "say.block.minecraft.moss_block": {
+  "sounds": [
+   "kotobakeep:say/37271ea530fb24d3"
+  ]
+ },
+ "say.block.minecraft.moss_carpet": {
+  "sounds": [
+   "kotobakeep:say/f8a173248c341a91"
+  ]
+ },
+ "say.block.minecraft.mossy_cobblestone": {
+  "sounds": [
+   "kotobakeep:say/97ea6065cb6f5feb"
+  ]
+ },
+ "say.block.minecraft.mossy_cobblestone_slab": {
+  "sounds": [
+   "kotobakeep:say/a6fd48492f6b5c98"
+  ]
+ },
+ "say.block.minecraft.mossy_cobblestone_stairs": {
+  "sounds": [
+   "kotobakeep:say/31c7309a873f135c"
+  ]
+ },
+ "say.block.minecraft.mossy_cobblestone_wall": {
+  "sounds": [
+   "kotobakeep:say/92145565150063ae"
+  ]
+ },
+ "say.block.minecraft.mossy_stone_brick_slab": {
+  "sounds": [
+   "kotobakeep:say/0102bdc63ae8b518"
+  ]
+ },
+ "say.block.minecraft.mossy_stone_brick_stairs": {
+  "sounds": [
+   "kotobakeep:say/3557a23404e542a7"
+  ]
+ },
+ "say.block.minecraft.mossy_stone_brick_wall": {
+  "sounds": [
+   "kotobakeep:say/44db9bce72d1451d"
+  ]
+ },
+ "say.block.minecraft.mossy_stone_bricks": {
+  "sounds": [
+   "kotobakeep:say/4c2dbca5c3b8ae57"
+  ]
+ },
+ "say.block.minecraft.moving_piston": {
+  "sounds": [
+   "kotobakeep:say/0f7bbd9d053a1928"
+  ]
+ },
+ "say.block.minecraft.mud": {
+  "sounds": [
+   "kotobakeep:say/59573b91c336e91c"
+  ]
+ },
+ "say.block.minecraft.mud_brick_slab": {
+  "sounds": [
+   "kotobakeep:say/72a4099c7fa7f9c2"
+  ]
+ },
+ "say.block.minecraft.mud_brick_stairs": {
+  "sounds": [
+   "kotobakeep:say/2c51a3c7a2fc7df3"
+  ]
+ },
+ "say.block.minecraft.mud_brick_wall": {
+  "sounds": [
+   "kotobakeep:say/ddafface8bf79715"
+  ]
+ },
+ "say.block.minecraft.mud_bricks": {
+  "sounds": [
+   "kotobakeep:say/ffe5ab1723c0c4af"
+  ]
+ },
+ "say.block.minecraft.muddy_mangrove_roots": {
+  "sounds": [
+   "kotobakeep:say/df3492a775609187"
+  ]
+ },
+ "say.block.minecraft.mushroom_stem": {
+  "sounds": [
+   "kotobakeep:say/b107f38ec6b5e1c5"
+  ]
+ },
+ "say.block.minecraft.mycelium": {
+  "sounds": [
+   "kotobakeep:say/7191e483f345d7f3"
+  ]
+ },
+ "say.block.minecraft.nether_brick_fence": {
+  "sounds": [
+   "kotobakeep:say/e62c29f7d0ba8923"
+  ]
+ },
+ "say.block.minecraft.nether_brick_slab": {
+  "sounds": [
+   "kotobakeep:say/4c8d057034b726c5"
+  ]
+ },
+ "say.block.minecraft.nether_brick_stairs": {
+  "sounds": [
+   "kotobakeep:say/0b3b0a373d735288"
+  ]
+ },
+ "say.block.minecraft.nether_brick_wall": {
+  "sounds": [
+   "kotobakeep:say/d569725e06fe7def"
+  ]
+ },
+ "say.block.minecraft.nether_bricks": {
+  "sounds": [
+   "kotobakeep:say/08bda170d8498fd1"
+  ]
+ },
+ "say.block.minecraft.nether_gold_ore": {
+  "sounds": [
+   "kotobakeep:say/00ac16cbfa3d6ff0"
+  ]
+ },
+ "say.block.minecraft.nether_portal": {
+  "sounds": [
+   "kotobakeep:say/a33246d7423f3ff4"
+  ]
+ },
+ "say.block.minecraft.nether_quartz_ore": {
+  "sounds": [
+   "kotobakeep:say/7166fe11d57c62f6"
+  ]
+ },
+ "say.block.minecraft.nether_sprouts": {
+  "sounds": [
+   "kotobakeep:say/dfbdc3629fef56af"
+  ]
+ },
+ "say.block.minecraft.nether_wart": {
+  "sounds": [
+   "kotobakeep:say/2a3de19ea7a41606"
+  ]
+ },
+ "say.block.minecraft.nether_wart_block": {
+  "sounds": [
+   "kotobakeep:say/b05e706ab907ce93"
+  ]
+ },
+ "say.block.minecraft.netherite_block": {
+  "sounds": [
+   "kotobakeep:say/7f8a9da1255cf6ca"
+  ]
+ },
+ "say.block.minecraft.netherrack": {
+  "sounds": [
+   "kotobakeep:say/27928ee6085ee09b"
+  ]
+ },
+ "say.block.minecraft.note_block": {
+  "sounds": [
+   "kotobakeep:say/47aeed6a08db855d"
+  ]
+ },
+ "say.block.minecraft.oak_button": {
+  "sounds": [
+   "kotobakeep:say/f7f347a6bbe4e62d"
+  ]
+ },
+ "say.block.minecraft.oak_door": {
+  "sounds": [
+   "kotobakeep:say/621f59dfb4f66d8c"
+  ]
+ },
+ "say.block.minecraft.oak_fence": {
+  "sounds": [
+   "kotobakeep:say/f80376cf8ab61db4"
+  ]
+ },
+ "say.block.minecraft.oak_fence_gate": {
+  "sounds": [
+   "kotobakeep:say/b9b40ffe42af5820"
+  ]
+ },
+ "say.block.minecraft.oak_hanging_sign": {
+  "sounds": [
+   "kotobakeep:say/3c14a2c65c998378"
+  ]
+ },
+ "say.block.minecraft.oak_leaves": {
+  "sounds": [
+   "kotobakeep:say/bda8d0ddaf0dadab"
+  ]
+ },
+ "say.block.minecraft.oak_log": {
+  "sounds": [
+   "kotobakeep:say/0164283a49e7f36d"
+  ]
+ },
+ "say.block.minecraft.oak_planks": {
+  "sounds": [
+   "kotobakeep:say/8309d2cea3048b9c"
+  ]
+ },
+ "say.block.minecraft.oak_pressure_plate": {
+  "sounds": [
+   "kotobakeep:say/998b8084fec57748"
+  ]
+ },
+ "say.block.minecraft.oak_sapling": {
+  "sounds": [
+   "kotobakeep:say/993cca1ea46cc764"
+  ]
+ },
+ "say.block.minecraft.oak_shelf": {
+  "sounds": [
+   "kotobakeep:say/de37a63c52a94779"
+  ]
+ },
+ "say.block.minecraft.oak_sign": {
+  "sounds": [
+   "kotobakeep:say/252d6b5395ca636f"
+  ]
+ },
+ "say.block.minecraft.oak_slab": {
+  "sounds": [
+   "kotobakeep:say/af0086ca95abb3e6"
+  ]
+ },
+ "say.block.minecraft.oak_stairs": {
+  "sounds": [
+   "kotobakeep:say/f9e1298751a2467e"
+  ]
+ },
+ "say.block.minecraft.oak_trapdoor": {
+  "sounds": [
+   "kotobakeep:say/0cfdc10ca244ac44"
+  ]
+ },
+ "say.block.minecraft.oak_wall_hanging_sign": {
+  "sounds": [
+   "kotobakeep:say/694e607be8f9bb34"
+  ]
+ },
+ "say.block.minecraft.oak_wall_sign": {
+  "sounds": [
+   "kotobakeep:say/f1a080239a9e52fa"
+  ]
+ },
+ "say.block.minecraft.oak_wood": {
+  "sounds": [
+   "kotobakeep:say/37323a810bf75eca"
+  ]
+ },
+ "say.block.minecraft.observer": {
+  "sounds": [
+   "kotobakeep:say/ccaa5b99216ef71d"
+  ]
+ },
+ "say.block.minecraft.obsidian": {
+  "sounds": [
+   "kotobakeep:say/d2937792c15ff08d"
+  ]
+ },
+ "say.block.minecraft.ochre_froglight": {
+  "sounds": [
+   "kotobakeep:say/7a5eb7b3d0b6d36f"
+  ]
+ },
+ "say.block.minecraft.ominous_banner": {
+  "sounds": [
+   "kotobakeep:say/6d5092329bf9f0bc"
+  ]
+ },
+ "say.block.minecraft.open_eyeblossom": {
+  "sounds": [
+   "kotobakeep:say/d035dfb20af0123e"
+  ]
+ },
+ "say.block.minecraft.orange_banner": {
+  "sounds": [
+   "kotobakeep:say/d8cc44d59d58dc49"
+  ]
+ },
+ "say.block.minecraft.orange_bed": {
+  "sounds": [
+   "kotobakeep:say/c6cf3fae9f8df650"
+  ]
+ },
+ "say.block.minecraft.orange_candle": {
+  "sounds": [
+   "kotobakeep:say/2d3d7d0503239dd1"
+  ]
+ },
+ "say.block.minecraft.orange_candle_cake": {
+  "sounds": [
+   "kotobakeep:say/b93efa4e08e75be5"
+  ]
+ },
+ "say.block.minecraft.orange_carpet": {
+  "sounds": [
+   "kotobakeep:say/752b6b498ba25a59"
+  ]
+ },
+ "say.block.minecraft.orange_concrete": {
+  "sounds": [
+   "kotobakeep:say/d14c2419dd5345f7"
+  ]
+ },
+ "say.block.minecraft.orange_concrete_powder": {
+  "sounds": [
+   "kotobakeep:say/336eb9ad05ae6246"
+  ]
+ },
+ "say.block.minecraft.orange_concrete_slab": {
+  "sounds": [
+   "kotobakeep:say/63cc58427dab757b"
+  ]
+ },
+ "say.block.minecraft.orange_concrete_stairs": {
+  "sounds": [
+   "kotobakeep:say/d576fcbcaef95f7a"
+  ]
+ },
+ "say.block.minecraft.orange_glazed_terracotta": {
+  "sounds": [
+   "kotobakeep:say/ac62913d3630f454"
+  ]
+ },
+ "say.block.minecraft.orange_poplar_leaves": {
+  "sounds": [
+   "kotobakeep:say/6fe121d0f582d4b0"
+  ]
+ },
+ "say.block.minecraft.orange_shulker_box": {
+  "sounds": [
+   "kotobakeep:say/96f15be73cd87f44"
+  ]
+ },
+ "say.block.minecraft.orange_stained_glass": {
+  "sounds": [
+   "kotobakeep:say/27e6b1ec6dd5bab4"
+  ]
+ },
+ "say.block.minecraft.orange_stained_glass_pane": {
+  "sounds": [
+   "kotobakeep:say/038bc78df763f39a"
+  ]
+ },
+ "say.block.minecraft.orange_terracotta": {
+  "sounds": [
+   "kotobakeep:say/316af5cbb4dd2c16"
+  ]
+ },
+ "say.block.minecraft.orange_tulip": {
+  "sounds": [
+   "kotobakeep:say/209b4f462b3e8a6f"
+  ]
+ },
+ "say.block.minecraft.orange_wool": {
+  "sounds": [
+   "kotobakeep:say/f331de7722aa283f"
+  ]
+ },
+ "say.block.minecraft.orange_wool_slab": {
+  "sounds": [
+   "kotobakeep:say/754e41c070c73832"
+  ]
+ },
+ "say.block.minecraft.orange_wool_stairs": {
+  "sounds": [
+   "kotobakeep:say/bd8e65a8f3e1a835"
+  ]
+ },
+ "say.block.minecraft.oxeye_daisy": {
+  "sounds": [
+   "kotobakeep:say/43446efe515601e1"
+  ]
+ },
+ "say.block.minecraft.oxidized_chiseled_copper": {
+  "sounds": [
+   "kotobakeep:say/d63e3931ebf60452"
+  ]
+ },
+ "say.block.minecraft.oxidized_copper": {
+  "sounds": [
+   "kotobakeep:say/92c6454c07564b32"
+  ]
+ },
+ "say.block.minecraft.oxidized_copper_bars": {
+  "sounds": [
+   "kotobakeep:say/d5ad4c710a151722"
+  ]
+ },
+ "say.block.minecraft.oxidized_copper_bulb": {
+  "sounds": [
+   "kotobakeep:say/efd8f87e737adb57"
+  ]
+ },
+ "say.block.minecraft.oxidized_copper_chain": {
+  "sounds": [
+   "kotobakeep:say/7ea5cfd338ef4853"
+  ]
+ },
+ "say.block.minecraft.oxidized_copper_chest": {
+  "sounds": [
+   "kotobakeep:say/e700ad8c2de987df"
+  ]
+ },
+ "say.block.minecraft.oxidized_copper_door": {
+  "sounds": [
+   "kotobakeep:say/b4404acb72eec51f"
+  ]
+ },
+ "say.block.minecraft.oxidized_copper_golem_statue": {
+  "sounds": [
+   "kotobakeep:say/e4b57ecfd7025fb6"
+  ]
+ },
+ "say.block.minecraft.oxidized_copper_grate": {
+  "sounds": [
+   "kotobakeep:say/8d9137271fdb8028"
+  ]
+ },
+ "say.block.minecraft.oxidized_copper_lantern": {
+  "sounds": [
+   "kotobakeep:say/15c94bd556182154"
+  ]
+ },
+ "say.block.minecraft.oxidized_copper_trapdoor": {
+  "sounds": [
+   "kotobakeep:say/1c310695fb64ec81"
+  ]
+ },
+ "say.block.minecraft.oxidized_cut_copper": {
+  "sounds": [
+   "kotobakeep:say/553b446eb876c05b"
+  ]
+ },
+ "say.block.minecraft.oxidized_cut_copper_slab": {
+  "sounds": [
+   "kotobakeep:say/325dc6c059a0cbd4"
+  ]
+ },
+ "say.block.minecraft.oxidized_cut_copper_stairs": {
+  "sounds": [
+   "kotobakeep:say/9e1e3ed2cb17211d"
+  ]
+ },
+ "say.block.minecraft.oxidized_lightning_rod": {
+  "sounds": [
+   "kotobakeep:say/e5d914311e4935ca"
+  ]
+ },
+ "say.block.minecraft.packed_ice": {
+  "sounds": [
+   "kotobakeep:say/292d0e5b8dbe96a0"
+  ]
+ },
+ "say.block.minecraft.packed_ice_brick_slab": {
+  "sounds": [
+   "kotobakeep:say/ad585441eb7463df"
+  ]
+ },
+ "say.block.minecraft.packed_ice_brick_stairs": {
+  "sounds": [
+   "kotobakeep:say/c40e9c9111bdc3be"
+  ]
+ },
+ "say.block.minecraft.packed_ice_brick_wall": {
+  "sounds": [
+   "kotobakeep:say/e3040235d158fe83"
+  ]
+ },
+ "say.block.minecraft.packed_ice_bricks": {
+  "sounds": [
+   "kotobakeep:say/03bd4387a823890c"
+  ]
+ },
+ "say.block.minecraft.packed_mud": {
+  "sounds": [
+   "kotobakeep:say/6a9eac8f8f5041c8"
+  ]
+ },
+ "say.block.minecraft.pale_hanging_moss": {
+  "sounds": [
+   "kotobakeep:say/0c92cd1485121594"
+  ]
+ },
+ "say.block.minecraft.pale_moss_block": {
+  "sounds": [
+   "kotobakeep:say/458735a1c08e65b6"
+  ]
+ },
+ "say.block.minecraft.pale_moss_carpet": {
+  "sounds": [
+   "kotobakeep:say/3e156e43c996b11a"
+  ]
+ },
+ "say.block.minecraft.pale_oak_button": {
+  "sounds": [
+   "kotobakeep:say/dbe5f2770ef310cd"
+  ]
+ },
+ "say.block.minecraft.pale_oak_door": {
+  "sounds": [
+   "kotobakeep:say/1856cb1d5445d3c7"
+  ]
+ },
+ "say.block.minecraft.pale_oak_fence": {
+  "sounds": [
+   "kotobakeep:say/76ad519f3cefecf8"
+  ]
+ },
+ "say.block.minecraft.pale_oak_fence_gate": {
+  "sounds": [
+   "kotobakeep:say/ec8a1a84bcf700ea"
+  ]
+ },
+ "say.block.minecraft.pale_oak_hanging_sign": {
+  "sounds": [
+   "kotobakeep:say/1c352a1db8240357"
+  ]
+ },
+ "say.block.minecraft.pale_oak_leaves": {
+  "sounds": [
+   "kotobakeep:say/7a1d2dacedf01dfc"
+  ]
+ },
+ "say.block.minecraft.pale_oak_log": {
+  "sounds": [
+   "kotobakeep:say/4d0ee8315154222d"
+  ]
+ },
+ "say.block.minecraft.pale_oak_planks": {
+  "sounds": [
+   "kotobakeep:say/afdfe5d17ad9dcf0"
+  ]
+ },
+ "say.block.minecraft.pale_oak_pressure_plate": {
+  "sounds": [
+   "kotobakeep:say/2f5358a4a5c28224"
+  ]
+ },
+ "say.block.minecraft.pale_oak_sapling": {
+  "sounds": [
+   "kotobakeep:say/2dd09cc96ee8d8d2"
+  ]
+ },
+ "say.block.minecraft.pale_oak_shelf": {
+  "sounds": [
+   "kotobakeep:say/0483aa964a3a69ad"
+  ]
+ },
+ "say.block.minecraft.pale_oak_sign": {
+  "sounds": [
+   "kotobakeep:say/f9c6773a24017a99"
+  ]
+ },
+ "say.block.minecraft.pale_oak_slab": {
+  "sounds": [
+   "kotobakeep:say/72072ef9608721e2"
+  ]
+ },
+ "say.block.minecraft.pale_oak_stairs": {
+  "sounds": [
+   "kotobakeep:say/141b7a12b64860d6"
+  ]
+ },
+ "say.block.minecraft.pale_oak_trapdoor": {
+  "sounds": [
+   "kotobakeep:say/aff3967bfc603fc9"
+  ]
+ },
+ "say.block.minecraft.pale_oak_wall_hanging_sign": {
+  "sounds": [
+   "kotobakeep:say/8706a034878588a9"
+  ]
+ },
+ "say.block.minecraft.pale_oak_wall_sign": {
+  "sounds": [
+   "kotobakeep:say/c04d43d92e4e5964"
+  ]
+ },
+ "say.block.minecraft.pale_oak_wood": {
+  "sounds": [
+   "kotobakeep:say/0ba7bdcb0c2346cc"
+  ]
+ },
+ "say.block.minecraft.pearlescent_froglight": {
+  "sounds": [
+   "kotobakeep:say/8e482565069bc4c2"
+  ]
+ },
+ "say.block.minecraft.peony": {
+  "sounds": [
+   "kotobakeep:say/5b4e00faa07e4a6e"
+  ]
+ },
+ "say.block.minecraft.petrified_oak_slab": {
+  "sounds": [
+   "kotobakeep:say/17185c64708d727b"
+  ]
+ },
+ "say.block.minecraft.piglin_head": {
+  "sounds": [
+   "kotobakeep:say/064d321160e58c20"
+  ]
+ },
+ "say.block.minecraft.piglin_wall_head": {
+  "sounds": [
+   "kotobakeep:say/6e63c5da37f5f825"
+  ]
+ },
+ "say.block.minecraft.pink_banner": {
+  "sounds": [
+   "kotobakeep:say/97dab8b99ec438c5"
+  ]
+ },
+ "say.block.minecraft.pink_bed": {
+  "sounds": [
+   "kotobakeep:say/214b463ef1b41d33"
+  ]
+ },
+ "say.block.minecraft.pink_candle": {
+  "sounds": [
+   "kotobakeep:say/7a1be8ed1201060c"
+  ]
+ },
+ "say.block.minecraft.pink_candle_cake": {
+  "sounds": [
+   "kotobakeep:say/5160f68db0303248"
+  ]
+ },
+ "say.block.minecraft.pink_carpet": {
+  "sounds": [
+   "kotobakeep:say/338355f523bb3227"
+  ]
+ },
+ "say.block.minecraft.pink_concrete": {
+  "sounds": [
+   "kotobakeep:say/c1d8e86a53f4da21"
+  ]
+ },
+ "say.block.minecraft.pink_concrete_powder": {
+  "sounds": [
+   "kotobakeep:say/e3d60ca0e4abe78e"
+  ]
+ },
+ "say.block.minecraft.pink_concrete_slab": {
+  "sounds": [
+   "kotobakeep:say/9fad9553291f190c"
+  ]
+ },
+ "say.block.minecraft.pink_concrete_stairs": {
+  "sounds": [
+   "kotobakeep:say/a32177ee58bf1d85"
+  ]
+ },
+ "say.block.minecraft.pink_glazed_terracotta": {
+  "sounds": [
+   "kotobakeep:say/ee7b57117c43732d"
+  ]
+ },
+ "say.block.minecraft.pink_petals": {
+  "sounds": [
+   "kotobakeep:say/0793e8c047b22c12"
+  ]
+ },
+ "say.block.minecraft.pink_shulker_box": {
+  "sounds": [
+   "kotobakeep:say/4b98d497b5c85a11"
+  ]
+ },
+ "say.block.minecraft.pink_stained_glass": {
+  "sounds": [
+   "kotobakeep:say/01e53b15e9ef1587"
+  ]
+ },
+ "say.block.minecraft.pink_stained_glass_pane": {
+  "sounds": [
+   "kotobakeep:say/219bf14578cdde51"
+  ]
+ },
+ "say.block.minecraft.pink_terracotta": {
+  "sounds": [
+   "kotobakeep:say/59a1190001f382e2"
+  ]
+ },
+ "say.block.minecraft.pink_tulip": {
+  "sounds": [
+   "kotobakeep:say/c134d1a9fe3a75b4"
+  ]
+ },
+ "say.block.minecraft.pink_wool": {
+  "sounds": [
+   "kotobakeep:say/7da7661393c03c77"
+  ]
+ },
+ "say.block.minecraft.pink_wool_slab": {
+  "sounds": [
+   "kotobakeep:say/52b68aafd9219e1c"
+  ]
+ },
+ "say.block.minecraft.pink_wool_stairs": {
+  "sounds": [
+   "kotobakeep:say/86fb0a871c605f38"
+  ]
+ },
+ "say.block.minecraft.piston": {
+  "sounds": [
+   "kotobakeep:say/8e37c60435cac522"
+  ]
+ },
+ "say.block.minecraft.piston_head": {
+  "sounds": [
+   "kotobakeep:say/f7ab91ba850abaec"
+  ]
+ },
+ "say.block.minecraft.pitcher_crop": {
+  "sounds": [
+   "kotobakeep:say/9f6abb5968339819"
+  ]
+ },
+ "say.block.minecraft.pitcher_plant": {
+  "sounds": [
+   "kotobakeep:say/9f6abb5968339819"
+  ]
+ },
+ "say.block.minecraft.player_head": {
+  "sounds": [
+   "kotobakeep:say/2c162d74e9291768"
+  ]
+ },
+ "say.block.minecraft.player_wall_head": {
+  "sounds": [
+   "kotobakeep:say/66bd1b0e01aaec8e"
+  ]
+ },
+ "say.block.minecraft.podzol": {
+  "sounds": [
+   "kotobakeep:say/b1640e60c52ea365"
+  ]
+ },
+ "say.block.minecraft.pointed_dripstone": {
+  "sounds": [
+   "kotobakeep:say/3fd8b9078247f879"
+  ]
+ },
+ "say.block.minecraft.polished_andesite": {
+  "sounds": [
+   "kotobakeep:say/f1dbe2f410e26aae"
+  ]
+ },
+ "say.block.minecraft.polished_andesite_slab": {
+  "sounds": [
+   "kotobakeep:say/c7e693221982a338"
+  ]
+ },
+ "say.block.minecraft.polished_andesite_stairs": {
+  "sounds": [
+   "kotobakeep:say/70b2d735cd15f795"
+  ]
+ },
+ "say.block.minecraft.polished_basalt": {
+  "sounds": [
+   "kotobakeep:say/e1069bfe7f06cf47"
+  ]
+ },
+ "say.block.minecraft.polished_blackstone": {
+  "sounds": [
+   "kotobakeep:say/c991a5ca853c7bfd"
+  ]
+ },
+ "say.block.minecraft.polished_blackstone_brick_slab": {
+  "sounds": [
+   "kotobakeep:say/a59a0ebc932530c6"
+  ]
+ },
+ "say.block.minecraft.polished_blackstone_brick_stairs": {
+  "sounds": [
+   "kotobakeep:say/d03c7d40b6960daf"
+  ]
+ },
+ "say.block.minecraft.polished_blackstone_brick_wall": {
+  "sounds": [
+   "kotobakeep:say/875e0bdd2a755f37"
+  ]
+ },
+ "say.block.minecraft.polished_blackstone_bricks": {
+  "sounds": [
+   "kotobakeep:say/0da46a6b084249da"
+  ]
+ },
+ "say.block.minecraft.polished_blackstone_button": {
+  "sounds": [
+   "kotobakeep:say/0f842d8d48e4d64c"
+  ]
+ },
+ "say.block.minecraft.polished_blackstone_pressure_plate": {
+  "sounds": [
+   "kotobakeep:say/b29ccf59905d698f"
+  ]
+ },
+ "say.block.minecraft.polished_blackstone_slab": {
+  "sounds": [
+   "kotobakeep:say/b34cf52a201fb576"
+  ]
+ },
+ "say.block.minecraft.polished_blackstone_stairs": {
+  "sounds": [
+   "kotobakeep:say/6bdbcf8f8d447639"
+  ]
+ },
+ "say.block.minecraft.polished_blackstone_wall": {
+  "sounds": [
+   "kotobakeep:say/63156e8a1c484bfc"
+  ]
+ },
+ "say.block.minecraft.polished_cinnabar": {
+  "sounds": [
+   "kotobakeep:say/85099a8be371316c"
+  ]
+ },
+ "say.block.minecraft.polished_cinnabar_slab": {
+  "sounds": [
+   "kotobakeep:say/7ab58ad00a1abc6f"
+  ]
+ },
+ "say.block.minecraft.polished_cinnabar_stairs": {
+  "sounds": [
+   "kotobakeep:say/899786fc0c0b410d"
+  ]
+ },
+ "say.block.minecraft.polished_cinnabar_wall": {
+  "sounds": [
+   "kotobakeep:say/8a83080579becae2"
+  ]
+ },
+ "say.block.minecraft.polished_deepslate": {
+  "sounds": [
+   "kotobakeep:say/b3a28108f0cee536"
+  ]
+ },
+ "say.block.minecraft.polished_deepslate_slab": {
+  "sounds": [
+   "kotobakeep:say/58de6ca346940357"
+  ]
+ },
+ "say.block.minecraft.polished_deepslate_stairs": {
+  "sounds": [
+   "kotobakeep:say/01f6d8f92f0c1643"
+  ]
+ },
+ "say.block.minecraft.polished_deepslate_wall": {
+  "sounds": [
+   "kotobakeep:say/e587f9022678518c"
+  ]
+ },
+ "say.block.minecraft.polished_diorite": {
+  "sounds": [
+   "kotobakeep:say/8bc583bfc99e8238"
+  ]
+ },
+ "say.block.minecraft.polished_diorite_slab": {
+  "sounds": [
+   "kotobakeep:say/da082e5a03367afc"
+  ]
+ },
+ "say.block.minecraft.polished_diorite_stairs": {
+  "sounds": [
+   "kotobakeep:say/8b2560f77a480d17"
+  ]
+ },
+ "say.block.minecraft.polished_granite": {
+  "sounds": [
+   "kotobakeep:say/31f46251fc4ae94b"
+  ]
+ },
+ "say.block.minecraft.polished_granite_slab": {
+  "sounds": [
+   "kotobakeep:say/0029799778caa568"
+  ]
+ },
+ "say.block.minecraft.polished_granite_stairs": {
+  "sounds": [
+   "kotobakeep:say/c674ced54f8c1d2e"
+  ]
+ },
+ "say.block.minecraft.polished_sulfur": {
+  "sounds": [
+   "kotobakeep:say/3844ef3fc3bed34a"
+  ]
+ },
+ "say.block.minecraft.polished_sulfur_slab": {
+  "sounds": [
+   "kotobakeep:say/64486e7512d5f270"
+  ]
+ },
+ "say.block.minecraft.polished_sulfur_stairs": {
+  "sounds": [
+   "kotobakeep:say/cf11b1d4f5b7b6cd"
+  ]
+ },
+ "say.block.minecraft.polished_sulfur_wall": {
+  "sounds": [
+   "kotobakeep:say/ebcf5ae70e3f05fb"
+  ]
+ },
+ "say.block.minecraft.polished_tuff": {
+  "sounds": [
+   "kotobakeep:say/3be9dc4355292fe4"
+  ]
+ },
+ "say.block.minecraft.polished_tuff_slab": {
+  "sounds": [
+   "kotobakeep:say/b9ec844489ae2ddf"
+  ]
+ },
+ "say.block.minecraft.polished_tuff_stairs": {
+  "sounds": [
+   "kotobakeep:say/1f5a362550eb945c"
+  ]
+ },
+ "say.block.minecraft.polished_tuff_wall": {
+  "sounds": [
+   "kotobakeep:say/aad68fd81c10a18a"
+  ]
+ },
+ "say.block.minecraft.poplar_button": {
+  "sounds": [
+   "kotobakeep:say/88fa094c990ea126"
+  ]
+ },
+ "say.block.minecraft.poplar_door": {
+  "sounds": [
+   "kotobakeep:say/d3071c3728ec0a8a"
+  ]
+ },
+ "say.block.minecraft.poplar_fence": {
+  "sounds": [
+   "kotobakeep:say/5f28e901b2a2ddb3"
+  ]
+ },
+ "say.block.minecraft.poplar_fence_gate": {
+  "sounds": [
+   "kotobakeep:say/92aedf768477be44"
+  ]
+ },
+ "say.block.minecraft.poplar_hanging_sign": {
+  "sounds": [
+   "kotobakeep:say/fd70641730029bb0"
+  ]
+ },
+ "say.block.minecraft.poplar_leaves": {
+  "sounds": [
+   "kotobakeep:say/8e44d3f40f171489"
+  ]
+ },
+ "say.block.minecraft.poplar_log": {
+  "sounds": [
+   "kotobakeep:say/09d60900452628a8"
+  ]
+ },
+ "say.block.minecraft.poplar_planks": {
+  "sounds": [
+   "kotobakeep:say/fadf0ce3e6d4ecc2"
+  ]
+ },
+ "say.block.minecraft.poplar_pressure_plate": {
+  "sounds": [
+   "kotobakeep:say/658398b71cb63709"
+  ]
+ },
+ "say.block.minecraft.poplar_sapling": {
+  "sounds": [
+   "kotobakeep:say/b39f5636257fce3a"
+  ]
+ },
+ "say.block.minecraft.poplar_shelf": {
+  "sounds": [
+   "kotobakeep:say/9a57c3f0e8081e4d"
+  ]
+ },
+ "say.block.minecraft.poplar_sign": {
+  "sounds": [
+   "kotobakeep:say/59b0cf9ac2a8f276"
+  ]
+ },
+ "say.block.minecraft.poplar_slab": {
+  "sounds": [
+   "kotobakeep:say/40134cba7449822e"
+  ]
+ },
+ "say.block.minecraft.poplar_stairs": {
+  "sounds": [
+   "kotobakeep:say/bef3d8702cb264b5"
+  ]
+ },
+ "say.block.minecraft.poplar_trapdoor": {
+  "sounds": [
+   "kotobakeep:say/4e07729a204dc3c9"
+  ]
+ },
+ "say.block.minecraft.poplar_wall_hanging_sign": {
+  "sounds": [
+   "kotobakeep:say/9806686a45dd934b"
+  ]
+ },
+ "say.block.minecraft.poplar_wall_sign": {
+  "sounds": [
+   "kotobakeep:say/9dfcf7e2b56165ca"
+  ]
+ },
+ "say.block.minecraft.poplar_wood": {
+  "sounds": [
+   "kotobakeep:say/36005632789c9928"
+  ]
+ },
+ "say.block.minecraft.poppy": {
+  "sounds": [
+   "kotobakeep:say/eb03d1972d57d0b5"
+  ]
+ },
+ "say.block.minecraft.potatoes": {
+  "sounds": [
+   "kotobakeep:say/ace8a7849d45ebf1"
+  ]
+ },
+ "say.block.minecraft.potent_sulfur": {
+  "sounds": [
+   "kotobakeep:say/5c049634c39185e5"
+  ]
+ },
+ "say.block.minecraft.potted_acacia_sapling": {
+  "sounds": [
+   "kotobakeep:say/9e1009597b1b7730"
+  ]
+ },
+ "say.block.minecraft.potted_allium": {
+  "sounds": [
+   "kotobakeep:say/1619da327074ac42"
+  ]
+ },
+ "say.block.minecraft.potted_azalea_bush": {
+  "sounds": [
+   "kotobakeep:say/1c451eae98f66317"
+  ]
+ },
+ "say.block.minecraft.potted_azure_bluet": {
+  "sounds": [
+   "kotobakeep:say/46691f89941c2e0a"
+  ]
+ },
+ "say.block.minecraft.potted_bamboo": {
+  "sounds": [
+   "kotobakeep:say/50bf4f1fd43042e7"
+  ]
+ },
+ "say.block.minecraft.potted_birch_sapling": {
+  "sounds": [
+   "kotobakeep:say/3dfe3ae4f72805d5"
+  ]
+ },
+ "say.block.minecraft.potted_blue_orchid": {
+  "sounds": [
+   "kotobakeep:say/dbb846bcad79fdd3"
+  ]
+ },
+ "say.block.minecraft.potted_brown_mushroom": {
+  "sounds": [
+   "kotobakeep:say/3420ccabc8e8802e"
+  ]
+ },
+ "say.block.minecraft.potted_cactus": {
+  "sounds": [
+   "kotobakeep:say/194768d3406fbeb5"
+  ]
+ },
+ "say.block.minecraft.potted_cherry_sapling": {
+  "sounds": [
+   "kotobakeep:say/032a946e14e1defd"
+  ]
+ },
+ "say.block.minecraft.potted_closed_eyeblossom": {
+  "sounds": [
+   "kotobakeep:say/55ca69f42d18670b"
+  ]
+ },
+ "say.block.minecraft.potted_cornflower": {
+  "sounds": [
+   "kotobakeep:say/2dc775f72349c9b0"
+  ]
+ },
+ "say.block.minecraft.potted_crimson_fungus": {
+  "sounds": [
+   "kotobakeep:say/330afcf28f5f84b1"
+  ]
+ },
+ "say.block.minecraft.potted_crimson_roots": {
+  "sounds": [
+   "kotobakeep:say/301d6056a0622a31"
+  ]
+ },
+ "say.block.minecraft.potted_dandelion": {
+  "sounds": [
+   "kotobakeep:say/f2df7765bab21a35"
+  ]
+ },
+ "say.block.minecraft.potted_dark_oak_sapling": {
+  "sounds": [
+   "kotobakeep:say/9c4543ddbb27936c"
+  ]
+ },
+ "say.block.minecraft.potted_dead_bush": {
+  "sounds": [
+   "kotobakeep:say/26a0b0c2d9cdb60f"
+  ]
+ },
+ "say.block.minecraft.potted_fern": {
+  "sounds": [
+   "kotobakeep:say/1e13927272f0613d"
+  ]
+ },
+ "say.block.minecraft.potted_flowering_azalea_bush": {
+  "sounds": [
+   "kotobakeep:say/96a82c33356e56c5"
+  ]
+ },
+ "say.block.minecraft.potted_golden_dandelion": {
+  "sounds": [
+   "kotobakeep:say/5b791f3baec96903"
+  ]
+ },
+ "say.block.minecraft.potted_jungle_sapling": {
+  "sounds": [
+   "kotobakeep:say/70d7150e64231e98"
+  ]
+ },
+ "say.block.minecraft.potted_lily_of_the_valley": {
+  "sounds": [
+   "kotobakeep:say/555f32890d6c176e"
+  ]
+ },
+ "say.block.minecraft.potted_mangrove_propagule": {
+  "sounds": [
+   "kotobakeep:say/fb25af28f0166bed"
+  ]
+ },
+ "say.block.minecraft.potted_oak_sapling": {
+  "sounds": [
+   "kotobakeep:say/db4b99f19c430e73"
+  ]
+ },
+ "say.block.minecraft.potted_open_eyeblossom": {
+  "sounds": [
+   "kotobakeep:say/55f285f8b300dd1f"
+  ]
+ },
+ "say.block.minecraft.potted_orange_tulip": {
+  "sounds": [
+   "kotobakeep:say/84d9bf9f922dc134"
+  ]
+ },
+ "say.block.minecraft.potted_oxeye_daisy": {
+  "sounds": [
+   "kotobakeep:say/7c3fc87b151fd97b"
+  ]
+ },
+ "say.block.minecraft.potted_pale_oak_sapling": {
+  "sounds": [
+   "kotobakeep:say/244dd401328bf7da"
+  ]
+ },
+ "say.block.minecraft.potted_pink_tulip": {
+  "sounds": [
+   "kotobakeep:say/317a8a9e60ef3d2d"
+  ]
+ },
+ "say.block.minecraft.potted_poplar_sapling": {
+  "sounds": [
+   "kotobakeep:say/acd161a1fec7b1ce"
+  ]
+ },
+ "say.block.minecraft.potted_poppy": {
+  "sounds": [
+   "kotobakeep:say/35c8bbb5c2777fab"
+  ]
+ },
+ "say.block.minecraft.potted_red_mushroom": {
+  "sounds": [
+   "kotobakeep:say/3f4ba83030987593"
+  ]
+ },
+ "say.block.minecraft.potted_red_tulip": {
+  "sounds": [
+   "kotobakeep:say/a693439fc8c4cab5"
+  ]
+ },
+ "say.block.minecraft.potted_spruce_sapling": {
+  "sounds": [
+   "kotobakeep:say/e5ebcbfb781a1b16"
+  ]
+ },
+ "say.block.minecraft.potted_torchflower": {
+  "sounds": [
+   "kotobakeep:say/2d019eb844b0c0cf"
+  ]
+ },
+ "say.block.minecraft.potted_warped_fungus": {
+  "sounds": [
+   "kotobakeep:say/7cc3b4c888389a1b"
+  ]
+ },
+ "say.block.minecraft.potted_warped_roots": {
+  "sounds": [
+   "kotobakeep:say/55d656b18a2b0db2"
+  ]
+ },
+ "say.block.minecraft.potted_white_tulip": {
+  "sounds": [
+   "kotobakeep:say/c5fc62388a254c34"
+  ]
+ },
+ "say.block.minecraft.potted_wither_rose": {
+  "sounds": [
+   "kotobakeep:say/9064969d2328b167"
+  ]
+ },
+ "say.block.minecraft.powder_snow": {
+  "sounds": [
+   "kotobakeep:say/53672afe8f2357cd"
+  ]
+ },
+ "say.block.minecraft.powder_snow_cauldron": {
+  "sounds": [
+   "kotobakeep:say/6f5d3065a631ba7e"
+  ]
+ },
+ "say.block.minecraft.powered_rail": {
+  "sounds": [
+   "kotobakeep:say/16204bba234da921"
+  ]
+ },
+ "say.block.minecraft.prismarine": {
+  "sounds": [
+   "kotobakeep:say/ed75c14e65fe4b97"
+  ]
+ },
+ "say.block.minecraft.prismarine_brick_slab": {
+  "sounds": [
+   "kotobakeep:say/9c5a4a34be2fea19"
+  ]
+ },
+ "say.block.minecraft.prismarine_brick_stairs": {
+  "sounds": [
+   "kotobakeep:say/8863092600938d11"
+  ]
+ },
+ "say.block.minecraft.prismarine_bricks": {
+  "sounds": [
+   "kotobakeep:say/d6428d43d6339f95"
+  ]
+ },
+ "say.block.minecraft.prismarine_slab": {
+  "sounds": [
+   "kotobakeep:say/8625ac4a64be4938"
+  ]
+ },
+ "say.block.minecraft.prismarine_stairs": {
+  "sounds": [
+   "kotobakeep:say/9e310e69da80ea36"
+  ]
+ },
+ "say.block.minecraft.prismarine_wall": {
+  "sounds": [
+   "kotobakeep:say/4682bdccbca2260b"
+  ]
+ },
+ "say.block.minecraft.pumpkin": {
+  "sounds": [
+   "kotobakeep:say/e59a43365cecba42"
+  ]
+ },
+ "say.block.minecraft.pumpkin_stem": {
+  "sounds": [
+   "kotobakeep:say/cf91ba4f755093e7"
+  ]
+ },
+ "say.block.minecraft.purple_banner": {
+  "sounds": [
+   "kotobakeep:say/c67f71e14434cdc7"
+  ]
+ },
+ "say.block.minecraft.purple_bed": {
+  "sounds": [
+   "kotobakeep:say/79435ca2fbbe3b52"
+  ]
+ },
+ "say.block.minecraft.purple_candle": {
+  "sounds": [
+   "kotobakeep:say/a65dcd0d57f0d416"
+  ]
+ },
+ "say.block.minecraft.purple_candle_cake": {
+  "sounds": [
+   "kotobakeep:say/d8977bcc72c3a86f"
+  ]
+ },
+ "say.block.minecraft.purple_carpet": {
+  "sounds": [
+   "kotobakeep:say/3c591cec1ee29af6"
+  ]
+ },
+ "say.block.minecraft.purple_concrete": {
+  "sounds": [
+   "kotobakeep:say/1498409fd9bcc2cf"
+  ]
+ },
+ "say.block.minecraft.purple_concrete_powder": {
+  "sounds": [
+   "kotobakeep:say/a4051edea7eca16c"
+  ]
+ },
+ "say.block.minecraft.purple_concrete_slab": {
+  "sounds": [
+   "kotobakeep:say/4d8870a7872ba4d2"
+  ]
+ },
+ "say.block.minecraft.purple_concrete_stairs": {
+  "sounds": [
+   "kotobakeep:say/7cff23837db04f57"
+  ]
+ },
+ "say.block.minecraft.purple_glazed_terracotta": {
+  "sounds": [
+   "kotobakeep:say/4becbd88123ef638"
+  ]
+ },
+ "say.block.minecraft.purple_shulker_box": {
+  "sounds": [
+   "kotobakeep:say/0c3989df4ad4a8c3"
+  ]
+ },
+ "say.block.minecraft.purple_stained_glass": {
+  "sounds": [
+   "kotobakeep:say/70c6ce7478a111ac"
+  ]
+ },
+ "say.block.minecraft.purple_stained_glass_pane": {
+  "sounds": [
+   "kotobakeep:say/bc5ba46091ef51aa"
+  ]
+ },
+ "say.block.minecraft.purple_terracotta": {
+  "sounds": [
+   "kotobakeep:say/a2cf298cc6e1740e"
+  ]
+ },
+ "say.block.minecraft.purple_wool": {
+  "sounds": [
+   "kotobakeep:say/103d2ffb06a006a4"
+  ]
+ },
+ "say.block.minecraft.purple_wool_slab": {
+  "sounds": [
+   "kotobakeep:say/8259d315230138c2"
+  ]
+ },
+ "say.block.minecraft.purple_wool_stairs": {
+  "sounds": [
+   "kotobakeep:say/b67a692a33f8d152"
+  ]
+ },
+ "say.block.minecraft.purpur_block": {
+  "sounds": [
+   "kotobakeep:say/4d182421dc27b196"
+  ]
+ },
+ "say.block.minecraft.purpur_pillar": {
+  "sounds": [
+   "kotobakeep:say/85e5a026181d8ef6"
+  ]
+ },
+ "say.block.minecraft.purpur_slab": {
+  "sounds": [
+   "kotobakeep:say/303b48ad8c5cf402"
+  ]
+ },
+ "say.block.minecraft.purpur_stairs": {
+  "sounds": [
+   "kotobakeep:say/d7f6d5dbb7eda30b"
+  ]
+ },
+ "say.block.minecraft.quartz_block": {
+  "sounds": [
+   "kotobakeep:say/472761ca33a32aee"
+  ]
+ },
+ "say.block.minecraft.quartz_bricks": {
+  "sounds": [
+   "kotobakeep:say/d4a29b8da9a3eaa2"
+  ]
+ },
+ "say.block.minecraft.quartz_pillar": {
+  "sounds": [
+   "kotobakeep:say/6abfb987503c34c8"
+  ]
+ },
+ "say.block.minecraft.quartz_slab": {
+  "sounds": [
+   "kotobakeep:say/f4b5f15b3f3d2bbb"
+  ]
+ },
+ "say.block.minecraft.quartz_stairs": {
+  "sounds": [
+   "kotobakeep:say/96ae42b8f67c0b6d"
+  ]
+ },
+ "say.block.minecraft.rail": {
+  "sounds": [
+   "kotobakeep:say/fb4307fce35860f7"
+  ]
+ },
+ "say.block.minecraft.raw_copper_block": {
+  "sounds": [
+   "kotobakeep:say/e72d2d43451d413e"
+  ]
+ },
+ "say.block.minecraft.raw_gold_block": {
+  "sounds": [
+   "kotobakeep:say/1071880f75e506cf"
+  ]
+ },
+ "say.block.minecraft.raw_iron_block": {
+  "sounds": [
+   "kotobakeep:say/ae27f8cbf10c4d66"
+  ]
+ },
+ "say.block.minecraft.red_banner": {
+  "sounds": [
+   "kotobakeep:say/63ea2c3c085b26c6"
+  ]
+ },
+ "say.block.minecraft.red_bed": {
+  "sounds": [
+   "kotobakeep:say/4736096a7873929f"
+  ]
+ },
+ "say.block.minecraft.red_candle": {
+  "sounds": [
+   "kotobakeep:say/80afc8d2091eea72"
+  ]
+ },
+ "say.block.minecraft.red_candle_cake": {
+  "sounds": [
+   "kotobakeep:say/f7a919801e984c3f"
+  ]
+ },
+ "say.block.minecraft.red_carpet": {
+  "sounds": [
+   "kotobakeep:say/734b5c21e5e75585"
+  ]
+ },
+ "say.block.minecraft.red_concrete": {
+  "sounds": [
+   "kotobakeep:say/db03ff582f28a51f"
+  ]
+ },
+ "say.block.minecraft.red_concrete_powder": {
+  "sounds": [
+   "kotobakeep:say/cc70f93fd5018bc8"
+  ]
+ },
+ "say.block.minecraft.red_concrete_slab": {
+  "sounds": [
+   "kotobakeep:say/d80ac7c71831cb04"
+  ]
+ },
+ "say.block.minecraft.red_concrete_stairs": {
+  "sounds": [
+   "kotobakeep:say/5ff6d82b3cf223c4"
+  ]
+ },
+ "say.block.minecraft.red_glazed_terracotta": {
+  "sounds": [
+   "kotobakeep:say/6b950626264e646e"
+  ]
+ },
+ "say.block.minecraft.red_mushroom": {
+  "sounds": [
+   "kotobakeep:say/c2b8f912415a7599"
+  ]
+ },
+ "say.block.minecraft.red_mushroom_block": {
+  "sounds": [
+   "kotobakeep:say/8ec828f235fc63b3"
+  ]
+ },
+ "say.block.minecraft.red_nether_brick_slab": {
+  "sounds": [
+   "kotobakeep:say/af494a66267465fd"
+  ]
+ },
+ "say.block.minecraft.red_nether_brick_stairs": {
+  "sounds": [
+   "kotobakeep:say/663b49f0d59b60a7"
+  ]
+ },
+ "say.block.minecraft.red_nether_brick_wall": {
+  "sounds": [
+   "kotobakeep:say/d1caba69c623c7af"
+  ]
+ },
+ "say.block.minecraft.red_nether_bricks": {
+  "sounds": [
+   "kotobakeep:say/dd1d8ddf4b2ecb52"
+  ]
+ },
+ "say.block.minecraft.red_poplar_leaves": {
+  "sounds": [
+   "kotobakeep:say/a022ecef1b265532"
+  ]
+ },
+ "say.block.minecraft.red_sand": {
+  "sounds": [
+   "kotobakeep:say/c8badd59ddc8a55c"
+  ]
+ },
+ "say.block.minecraft.red_sandstone": {
+  "sounds": [
+   "kotobakeep:say/08a10779012bea81"
+  ]
+ },
+ "say.block.minecraft.red_sandstone_slab": {
+  "sounds": [
+   "kotobakeep:say/b29726148d29bdef"
+  ]
+ },
+ "say.block.minecraft.red_sandstone_stairs": {
+  "sounds": [
+   "kotobakeep:say/878e9bbb66be6f06"
+  ]
+ },
+ "say.block.minecraft.red_sandstone_wall": {
+  "sounds": [
+   "kotobakeep:say/02a76cdcf06bae47"
+  ]
+ },
+ "say.block.minecraft.red_shrub": {
+  "sounds": [
+   "kotobakeep:say/1c569256e2f07dea"
+  ]
+ },
+ "say.block.minecraft.red_shulker_box": {
+  "sounds": [
+   "kotobakeep:say/d898c642f7d32519"
+  ]
+ },
+ "say.block.minecraft.red_stained_glass": {
+  "sounds": [
+   "kotobakeep:say/76a67fdcac22404a"
+  ]
+ },
+ "say.block.minecraft.red_stained_glass_pane": {
+  "sounds": [
+   "kotobakeep:say/df88f84df8268b92"
+  ]
+ },
+ "say.block.minecraft.red_terracotta": {
+  "sounds": [
+   "kotobakeep:say/1401de55a08c1f90"
+  ]
+ },
+ "say.block.minecraft.red_tulip": {
+  "sounds": [
+   "kotobakeep:say/f80b2de1d7d097cc"
+  ]
+ },
+ "say.block.minecraft.red_wool": {
+  "sounds": [
+   "kotobakeep:say/233a335cc5b1451f"
+  ]
+ },
+ "say.block.minecraft.red_wool_slab": {
+  "sounds": [
+   "kotobakeep:say/f06c529621375005"
+  ]
+ },
+ "say.block.minecraft.red_wool_stairs": {
+  "sounds": [
+   "kotobakeep:say/e2e399b07094ff3b"
+  ]
+ },
+ "say.block.minecraft.redstone_block": {
+  "sounds": [
+   "kotobakeep:say/f709828267fb6cd9"
+  ]
+ },
+ "say.block.minecraft.redstone_lamp": {
+  "sounds": [
+   "kotobakeep:say/8a3f85b2eaefc2a3"
+  ]
+ },
+ "say.block.minecraft.redstone_ore": {
+  "sounds": [
+   "kotobakeep:say/48467de2bf8c2a18"
+  ]
+ },
+ "say.block.minecraft.redstone_torch": {
+  "sounds": [
+   "kotobakeep:say/557789a2d31af2ab"
+  ]
+ },
+ "say.block.minecraft.redstone_wall_torch": {
+  "sounds": [
+   "kotobakeep:say/607131a1469d90ca"
+  ]
+ },
+ "say.block.minecraft.redstone_wire": {
+  "sounds": [
+   "kotobakeep:say/f459f64f50596026"
+  ]
+ },
+ "say.block.minecraft.reinforced_deepslate": {
+  "sounds": [
+   "kotobakeep:say/b4aab86009f13135"
+  ]
+ },
+ "say.block.minecraft.repeater": {
+  "sounds": [
+   "kotobakeep:say/ebd17c6b661dec54"
+  ]
+ },
+ "say.block.minecraft.repeating_command_block": {
+  "sounds": [
+   "kotobakeep:say/769226b6cbf8ffac"
+  ]
+ },
+ "say.block.minecraft.resin_block": {
+  "sounds": [
+   "kotobakeep:say/4a5fb62c490ae3ed"
+  ]
+ },
+ "say.block.minecraft.resin_brick_slab": {
+  "sounds": [
+   "kotobakeep:say/6eeccede9916f4e9"
+  ]
+ },
+ "say.block.minecraft.resin_brick_stairs": {
+  "sounds": [
+   "kotobakeep:say/338a42426ac44316"
+  ]
+ },
+ "say.block.minecraft.resin_brick_wall": {
+  "sounds": [
+   "kotobakeep:say/9f94915dc2b319bc"
+  ]
+ },
+ "say.block.minecraft.resin_bricks": {
+  "sounds": [
+   "kotobakeep:say/eb7bae03b00e778a"
+  ]
+ },
+ "say.block.minecraft.resin_clump": {
+  "sounds": [
+   "kotobakeep:say/fd070e2a6a53b48f"
+  ]
+ },
+ "say.block.minecraft.respawn_anchor": {
+  "sounds": [
+   "kotobakeep:say/ec29eb9fe1ca03c5"
+  ]
+ },
+ "say.block.minecraft.rooted_dirt": {
+  "sounds": [
+   "kotobakeep:say/a149199b4136d513"
+  ]
+ },
+ "say.block.minecraft.rose_bush": {
+  "sounds": [
+   "kotobakeep:say/6ab4cf0696949960"
+  ]
+ },
+ "say.block.minecraft.sand": {
+  "sounds": [
+   "kotobakeep:say/a66e4f4c65a229b2"
+  ]
+ },
+ "say.block.minecraft.sandstone": {
+  "sounds": [
+   "kotobakeep:say/096cf4a8e253da63"
+  ]
+ },
+ "say.block.minecraft.sandstone_slab": {
+  "sounds": [
+   "kotobakeep:say/601cc13060bb3f6a"
+  ]
+ },
+ "say.block.minecraft.sandstone_stairs": {
+  "sounds": [
+   "kotobakeep:say/3279a5e4e72b9ac8"
+  ]
+ },
+ "say.block.minecraft.sandstone_wall": {
+  "sounds": [
+   "kotobakeep:say/b0270fe847c5c46c"
+  ]
+ },
+ "say.block.minecraft.scaffolding": {
+  "sounds": [
+   "kotobakeep:say/09ba7c9f4e9bbf3e"
+  ]
+ },
+ "say.block.minecraft.sculk": {
+  "sounds": [
+   "kotobakeep:say/9264bcd06c869e44"
+  ]
+ },
+ "say.block.minecraft.sculk_catalyst": {
+  "sounds": [
+   "kotobakeep:say/4336edfdb6aeb3ba"
+  ]
+ },
+ "say.block.minecraft.sculk_sensor": {
+  "sounds": [
+   "kotobakeep:say/db66b844705d6612"
+  ]
+ },
+ "say.block.minecraft.sculk_shrieker": {
+  "sounds": [
+   "kotobakeep:say/93137234273692c1"
+  ]
+ },
+ "say.block.minecraft.sculk_vein": {
+  "sounds": [
+   "kotobakeep:say/dbce3ee7127c9d3a"
+  ]
+ },
+ "say.block.minecraft.sea_lantern": {
+  "sounds": [
+   "kotobakeep:say/5a043dd003d76051"
+  ]
+ },
+ "say.block.minecraft.sea_pickle": {
+  "sounds": [
+   "kotobakeep:say/1bfb86f2321824b6"
+  ]
+ },
+ "say.block.minecraft.seagrass": {
+  "sounds": [
+   "kotobakeep:say/913e77387ab9f74a"
+  ]
+ },
+ "say.block.minecraft.set_spawn": {
+  "sounds": [
+   "kotobakeep:say/7d5935ccd310706d"
+  ]
+ },
+ "say.block.minecraft.shelf_mushroom": {
+  "sounds": [
+   "kotobakeep:say/1f80d5c9c376a1ff"
+  ]
+ },
+ "say.block.minecraft.short_dry_grass": {
+  "sounds": [
+   "kotobakeep:say/6b11b1846566b54f"
+  ]
+ },
+ "say.block.minecraft.short_grass": {
+  "sounds": [
+   "kotobakeep:say/c6520704fb8141bd"
+  ]
+ },
+ "say.block.minecraft.shroomlight": {
+  "sounds": [
+   "kotobakeep:say/0c129d397da3ca98"
+  ]
+ },
+ "say.block.minecraft.shulker_box": {
+  "sounds": [
+   "kotobakeep:say/58a099001f90eba9"
+  ]
+ },
+ "say.block.minecraft.skeleton_skull": {
+  "sounds": [
+   "kotobakeep:say/0a3734e722709171"
+  ]
+ },
+ "say.block.minecraft.skeleton_wall_skull": {
+  "sounds": [
+   "kotobakeep:say/9c7bc0d47a34740c"
+  ]
+ },
+ "say.block.minecraft.slime_block": {
+  "sounds": [
+   "kotobakeep:say/78db68b8fed442b1"
+  ]
+ },
+ "say.block.minecraft.small_amethyst_bud": {
+  "sounds": [
+   "kotobakeep:say/22fd21363ee12e07"
+  ]
+ },
+ "say.block.minecraft.small_dripleaf": {
+  "sounds": [
+   "kotobakeep:say/5ae4bbeb1f52d19a"
+  ]
+ },
+ "say.block.minecraft.smithing_table": {
+  "sounds": [
+   "kotobakeep:say/4577df064f748eb5"
+  ]
+ },
+ "say.block.minecraft.smoker": {
+  "sounds": [
+   "kotobakeep:say/7a9897cbe0273fca"
+  ]
+ },
+ "say.block.minecraft.smooth_basalt": {
+  "sounds": [
+   "kotobakeep:say/fcb3db097388bf8c"
+  ]
+ },
+ "say.block.minecraft.smooth_quartz": {
+  "sounds": [
+   "kotobakeep:say/362b6722c2b783a5"
+  ]
+ },
+ "say.block.minecraft.smooth_quartz_slab": {
+  "sounds": [
+   "kotobakeep:say/1d13195cdbd65a3c"
+  ]
+ },
+ "say.block.minecraft.smooth_quartz_stairs": {
+  "sounds": [
+   "kotobakeep:say/2c80dae4338c18a6"
+  ]
+ },
+ "say.block.minecraft.smooth_red_sandstone": {
+  "sounds": [
+   "kotobakeep:say/6cb0b934d6e1d0b7"
+  ]
+ },
+ "say.block.minecraft.smooth_red_sandstone_slab": {
+  "sounds": [
+   "kotobakeep:say/814a165d07d094b4"
+  ]
+ },
+ "say.block.minecraft.smooth_red_sandstone_stairs": {
+  "sounds": [
+   "kotobakeep:say/d25dfe4a45c61746"
+  ]
+ },
+ "say.block.minecraft.smooth_sandstone": {
+  "sounds": [
+   "kotobakeep:say/016d0ceb5d942f7a"
+  ]
+ },
+ "say.block.minecraft.smooth_sandstone_slab": {
+  "sounds": [
+   "kotobakeep:say/512224b55214f57b"
+  ]
+ },
+ "say.block.minecraft.smooth_sandstone_stairs": {
+  "sounds": [
+   "kotobakeep:say/ea3d278b07da2b4f"
+  ]
+ },
+ "say.block.minecraft.smooth_stone": {
+  "sounds": [
+   "kotobakeep:say/2c40ca485e11f652"
+  ]
+ },
+ "say.block.minecraft.smooth_stone_slab": {
+  "sounds": [
+   "kotobakeep:say/ed110791e00168c1"
+  ]
+ },
+ "say.block.minecraft.sniffer_egg": {
+  "sounds": [
+   "kotobakeep:say/952118164a09d29b"
+  ]
+ },
+ "say.block.minecraft.snow": {
+  "sounds": [
+   "kotobakeep:say/891ba59d796a6060"
+  ]
+ },
+ "say.block.minecraft.snow_block": {
+  "sounds": [
+   "kotobakeep:say/b8feee21e59fa750"
+  ]
+ },
+ "say.block.minecraft.soul_campfire": {
+  "sounds": [
+   "kotobakeep:say/eb2488f5352f494e"
+  ]
+ },
+ "say.block.minecraft.soul_fire": {
+  "sounds": [
+   "kotobakeep:say/a7347c869e60c81b"
+  ]
+ },
+ "say.block.minecraft.soul_lantern": {
+  "sounds": [
+   "kotobakeep:say/b772a13ebd4f30c3"
+  ]
+ },
+ "say.block.minecraft.soul_sand": {
+  "sounds": [
+   "kotobakeep:say/f64da41474e5b6f9"
+  ]
+ },
+ "say.block.minecraft.soul_soil": {
+  "sounds": [
+   "kotobakeep:say/1b6680bdc2ea4bda"
+  ]
+ },
+ "say.block.minecraft.soul_torch": {
+  "sounds": [
+   "kotobakeep:say/420fb2514b9294b0"
+  ]
+ },
+ "say.block.minecraft.soul_wall_torch": {
+  "sounds": [
+   "kotobakeep:say/d3dc57faa76522d0"
+  ]
+ },
+ "say.block.minecraft.spawner": {
+  "sounds": [
+   "kotobakeep:say/9933050a54c5bf88"
+  ]
+ },
+ "say.block.minecraft.sponge": {
+  "sounds": [
+   "kotobakeep:say/d270e28304b8c3c4"
+  ]
+ },
+ "say.block.minecraft.spore_blossom": {
+  "sounds": [
+   "kotobakeep:say/893aac857cd3bcf1"
+  ]
+ },
+ "say.block.minecraft.spruce_button": {
+  "sounds": [
+   "kotobakeep:say/332d06f612797cc5"
+  ]
+ },
+ "say.block.minecraft.spruce_door": {
+  "sounds": [
+   "kotobakeep:say/1b194e88209870d1"
+  ]
+ },
+ "say.block.minecraft.spruce_fence": {
+  "sounds": [
+   "kotobakeep:say/a80bf953e9636f41"
+  ]
+ },
+ "say.block.minecraft.spruce_fence_gate": {
+  "sounds": [
+   "kotobakeep:say/b98062dd0cece82d"
+  ]
+ },
+ "say.block.minecraft.spruce_hanging_sign": {
+  "sounds": [
+   "kotobakeep:say/b176a023f7114424"
+  ]
+ },
+ "say.block.minecraft.spruce_leaves": {
+  "sounds": [
+   "kotobakeep:say/467ff242c454191c"
+  ]
+ },
+ "say.block.minecraft.spruce_log": {
+  "sounds": [
+   "kotobakeep:say/1f89ba03b189809c"
+  ]
+ },
+ "say.block.minecraft.spruce_planks": {
+  "sounds": [
+   "kotobakeep:say/69fcae626d1a8dd9"
+  ]
+ },
+ "say.block.minecraft.spruce_pressure_plate": {
+  "sounds": [
+   "kotobakeep:say/13ce9a8d72c0d78b"
+  ]
+ },
+ "say.block.minecraft.spruce_sapling": {
+  "sounds": [
+   "kotobakeep:say/8e07ba62ed8b797f"
+  ]
+ },
+ "say.block.minecraft.spruce_shelf": {
+  "sounds": [
+   "kotobakeep:say/3ffca886c028d7cd"
+  ]
+ },
+ "say.block.minecraft.spruce_sign": {
+  "sounds": [
+   "kotobakeep:say/5f67ddeb3ce7ffbd"
+  ]
+ },
+ "say.block.minecraft.spruce_slab": {
+  "sounds": [
+   "kotobakeep:say/ce7d2b71ff70f09c"
+  ]
+ },
+ "say.block.minecraft.spruce_stairs": {
+  "sounds": [
+   "kotobakeep:say/a3b28ed56e05d69b"
+  ]
+ },
+ "say.block.minecraft.spruce_trapdoor": {
+  "sounds": [
+   "kotobakeep:say/8e568c075d813403"
+  ]
+ },
+ "say.block.minecraft.spruce_wall_hanging_sign": {
+  "sounds": [
+   "kotobakeep:say/c62164d1c71b8605"
+  ]
+ },
+ "say.block.minecraft.spruce_wall_sign": {
+  "sounds": [
+   "kotobakeep:say/4177078d7c6fe29a"
+  ]
+ },
+ "say.block.minecraft.spruce_wood": {
+  "sounds": [
+   "kotobakeep:say/4d64c154deda562a"
+  ]
+ },
+ "say.block.minecraft.sticky_piston": {
+  "sounds": [
+   "kotobakeep:say/023ae073a48f4bf2"
+  ]
+ },
+ "say.block.minecraft.stone": {
+  "sounds": [
+   "kotobakeep:say/a5512a949cb97b6c"
+  ]
+ },
+ "say.block.minecraft.stone_brick_slab": {
+  "sounds": [
+   "kotobakeep:say/ce7273ddab98c5b8"
+  ]
+ },
+ "say.block.minecraft.stone_brick_stairs": {
+  "sounds": [
+   "kotobakeep:say/1c85397ca145af98"
+  ]
+ },
+ "say.block.minecraft.stone_brick_wall": {
+  "sounds": [
+   "kotobakeep:say/c8c9bc335bb36cab"
+  ]
+ },
+ "say.block.minecraft.stone_bricks": {
+  "sounds": [
+   "kotobakeep:say/8c65ae6c16ba9736"
+  ]
+ },
+ "say.block.minecraft.stone_button": {
+  "sounds": [
+   "kotobakeep:say/aa0cff73690ea7a6"
+  ]
+ },
+ "say.block.minecraft.stone_pressure_plate": {
+  "sounds": [
+   "kotobakeep:say/39708192a5279849"
+  ]
+ },
+ "say.block.minecraft.stone_slab": {
+  "sounds": [
+   "kotobakeep:say/8af4ac618564260f"
+  ]
+ },
+ "say.block.minecraft.stone_stairs": {
+  "sounds": [
+   "kotobakeep:say/828f87f499dc2a64"
+  ]
+ },
+ "say.block.minecraft.stonecutter": {
+  "sounds": [
+   "kotobakeep:say/65715fe090aa4f02"
+  ]
+ },
+ "say.block.minecraft.straw_bed": {
+  "sounds": [
+   "kotobakeep:say/99ea926bd8cbcc65"
+  ]
+ },
+ "say.block.minecraft.stripped_acacia_log": {
+  "sounds": [
+   "kotobakeep:say/52ef80d1b556ca99"
+  ]
+ },
+ "say.block.minecraft.stripped_acacia_wood": {
+  "sounds": [
+   "kotobakeep:say/eba51ce67cfc85b7"
+  ]
+ },
+ "say.block.minecraft.stripped_bamboo_block": {
+  "sounds": [
+   "kotobakeep:say/a85b47804195ec9b"
+  ]
+ },
+ "say.block.minecraft.stripped_birch_log": {
+  "sounds": [
+   "kotobakeep:say/e068aeb2319464bd"
+  ]
+ },
+ "say.block.minecraft.stripped_birch_wood": {
+  "sounds": [
+   "kotobakeep:say/0b1dd7815b4f5a9b"
+  ]
+ },
+ "say.block.minecraft.stripped_cherry_log": {
+  "sounds": [
+   "kotobakeep:say/4b445b63f5d92626"
+  ]
+ },
+ "say.block.minecraft.stripped_cherry_wood": {
+  "sounds": [
+   "kotobakeep:say/dd2e034908343aca"
+  ]
+ },
+ "say.block.minecraft.stripped_crimson_hyphae": {
+  "sounds": [
+   "kotobakeep:say/1a8b3f7f48434df7"
+  ]
+ },
+ "say.block.minecraft.stripped_crimson_stem": {
+  "sounds": [
+   "kotobakeep:say/296a5a0737950598"
+  ]
+ },
+ "say.block.minecraft.stripped_dark_oak_log": {
+  "sounds": [
+   "kotobakeep:say/26b1f68b4d42957f"
+  ]
+ },
+ "say.block.minecraft.stripped_dark_oak_wood": {
+  "sounds": [
+   "kotobakeep:say/95e8cf93f00d9846"
+  ]
+ },
+ "say.block.minecraft.stripped_jungle_log": {
+  "sounds": [
+   "kotobakeep:say/c83cd2b174f73786"
+  ]
+ },
+ "say.block.minecraft.stripped_jungle_wood": {
+  "sounds": [
+   "kotobakeep:say/4116a0ce4da3513d"
+  ]
+ },
+ "say.block.minecraft.stripped_mangrove_log": {
+  "sounds": [
+   "kotobakeep:say/a331b919aae02fc3"
+  ]
+ },
+ "say.block.minecraft.stripped_mangrove_wood": {
+  "sounds": [
+   "kotobakeep:say/f4ff7bb9cd3ce0ba"
+  ]
+ },
+ "say.block.minecraft.stripped_oak_log": {
+  "sounds": [
+   "kotobakeep:say/b3d19d6e57a10580"
+  ]
+ },
+ "say.block.minecraft.stripped_oak_wood": {
+  "sounds": [
+   "kotobakeep:say/0160a070442262ce"
+  ]
+ },
+ "say.block.minecraft.stripped_pale_oak_log": {
+  "sounds": [
+   "kotobakeep:say/5c91c9a260277274"
+  ]
+ },
+ "say.block.minecraft.stripped_pale_oak_wood": {
+  "sounds": [
+   "kotobakeep:say/d1c97c1553969a40"
+  ]
+ },
+ "say.block.minecraft.stripped_poplar_log": {
+  "sounds": [
+   "kotobakeep:say/2fc03e22cee22545"
+  ]
+ },
+ "say.block.minecraft.stripped_poplar_wood": {
+  "sounds": [
+   "kotobakeep:say/20d938893f787455"
+  ]
+ },
+ "say.block.minecraft.stripped_spruce_log": {
+  "sounds": [
+   "kotobakeep:say/3c8e7fe000a90844"
+  ]
+ },
+ "say.block.minecraft.stripped_spruce_wood": {
+  "sounds": [
+   "kotobakeep:say/a7566a516e3a5f09"
+  ]
+ },
+ "say.block.minecraft.stripped_warped_hyphae": {
+  "sounds": [
+   "kotobakeep:say/cf19980089e22e9a"
+  ]
+ },
+ "say.block.minecraft.stripped_warped_stem": {
+  "sounds": [
+   "kotobakeep:say/d7b69d9170185402"
+  ]
+ },
+ "say.block.minecraft.structure_block": {
+  "sounds": [
+   "kotobakeep:say/c59c61aa4d33ef68"
+  ]
+ },
+ "say.block.minecraft.structure_void": {
+  "sounds": [
+   "kotobakeep:say/2e4d3291d57a798b"
+  ]
+ },
+ "say.block.minecraft.sugar_cane": {
+  "sounds": [
+   "kotobakeep:say/8255c7d89116b2aa"
+  ]
+ },
+ "say.block.minecraft.sulfur": {
+  "sounds": [
+   "kotobakeep:say/a96bfaf251eaa9dd"
+  ]
+ },
+ "say.block.minecraft.sulfur_brick_slab": {
+  "sounds": [
+   "kotobakeep:say/457ac86a050385b4"
+  ]
+ },
+ "say.block.minecraft.sulfur_brick_stairs": {
+  "sounds": [
+   "kotobakeep:say/5276c14ed60deeed"
+  ]
+ },
+ "say.block.minecraft.sulfur_brick_wall": {
+  "sounds": [
+   "kotobakeep:say/2c7f2c8f3a795ac6"
+  ]
+ },
+ "say.block.minecraft.sulfur_bricks": {
+  "sounds": [
+   "kotobakeep:say/0e929bb5121119b2"
+  ]
+ },
+ "say.block.minecraft.sulfur_slab": {
+  "sounds": [
+   "kotobakeep:say/22a8d78f0c2b0de3"
+  ]
+ },
+ "say.block.minecraft.sulfur_spike": {
+  "sounds": [
+   "kotobakeep:say/efcb1b5e7ed2e333"
+  ]
+ },
+ "say.block.minecraft.sulfur_stairs": {
+  "sounds": [
+   "kotobakeep:say/2d5cb149c2543b1a"
+  ]
+ },
+ "say.block.minecraft.sulfur_wall": {
+  "sounds": [
+   "kotobakeep:say/a5de8d5c0b42cefc"
+  ]
+ },
+ "say.block.minecraft.sunflower": {
+  "sounds": [
+   "kotobakeep:say/91ab763f1be727c3"
+  ]
+ },
+ "say.block.minecraft.suspicious_gravel": {
+  "sounds": [
+   "kotobakeep:say/796987c944dfc4c8"
+  ]
+ },
+ "say.block.minecraft.suspicious_sand": {
+  "sounds": [
+   "kotobakeep:say/5f5a7594826314e8"
+  ]
+ },
+ "say.block.minecraft.sweet_berry_bush": {
+  "sounds": [
+   "kotobakeep:say/d416acaab0acc40f"
+  ]
+ },
+ "say.block.minecraft.tall_dry_grass": {
+  "sounds": [
+   "kotobakeep:say/713efdc3a2e555d0"
+  ]
+ },
+ "say.block.minecraft.tall_grass": {
+  "sounds": [
+   "kotobakeep:say/d7fad8be6fc5e584"
+  ]
+ },
+ "say.block.minecraft.tall_seagrass": {
+  "sounds": [
+   "kotobakeep:say/13583f20e100149c"
+  ]
+ },
+ "say.block.minecraft.target": {
+  "sounds": [
+   "kotobakeep:say/1893d967a53e1618"
+  ]
+ },
+ "say.block.minecraft.terracotta": {
+  "sounds": [
+   "kotobakeep:say/532a7e1068cfb9d0"
+  ]
+ },
+ "say.block.minecraft.test_block": {
+  "sounds": [
+   "kotobakeep:say/d27e356734ade727"
+  ]
+ },
+ "say.block.minecraft.test_instance_block": {
+  "sounds": [
+   "kotobakeep:say/6119d5807bb9d85f"
+  ]
+ },
+ "say.block.minecraft.tinted_glass": {
+  "sounds": [
+   "kotobakeep:say/41d619d23499c9c4"
+  ]
+ },
+ "say.block.minecraft.tnt": {
+  "sounds": [
+   "kotobakeep:say/f6aed56b86073a0f"
+  ]
+ },
+ "say.block.minecraft.torch": {
+  "sounds": [
+   "kotobakeep:say/c853f9fd17a042b3"
+  ]
+ },
+ "say.block.minecraft.torchflower": {
+  "sounds": [
+   "kotobakeep:say/1eac69c4507b7f26"
+  ]
+ },
+ "say.block.minecraft.torchflower_crop": {
+  "sounds": [
+   "kotobakeep:say/1eac69c4507b7f26"
+  ]
+ },
+ "say.block.minecraft.trapped_chest": {
+  "sounds": [
+   "kotobakeep:say/abad4415f44eee00"
+  ]
+ },
+ "say.block.minecraft.trial_spawner": {
+  "sounds": [
+   "kotobakeep:say/96d49fd2cf5667d1"
+  ]
+ },
+ "say.block.minecraft.tripwire": {
+  "sounds": [
+   "kotobakeep:say/e3213bbccc5b08be"
+  ]
+ },
+ "say.block.minecraft.tripwire_hook": {
+  "sounds": [
+   "kotobakeep:say/71307a5847aa1164"
+  ]
+ },
+ "say.block.minecraft.tube_coral": {
+  "sounds": [
+   "kotobakeep:say/daedae459d45e3d7"
+  ]
+ },
+ "say.block.minecraft.tube_coral_block": {
+  "sounds": [
+   "kotobakeep:say/0bc1ce1f0097dfa5"
+  ]
+ },
+ "say.block.minecraft.tube_coral_fan": {
+  "sounds": [
+   "kotobakeep:say/360084ac2b4c6126"
+  ]
+ },
+ "say.block.minecraft.tube_coral_wall_fan": {
+  "sounds": [
+   "kotobakeep:say/2b85c6a2c91398a7"
+  ]
+ },
+ "say.block.minecraft.tuff": {
+  "sounds": [
+   "kotobakeep:say/29ef43dbfe145d46"
+  ]
+ },
+ "say.block.minecraft.tuff_brick_slab": {
+  "sounds": [
+   "kotobakeep:say/cc3482146669ba29"
+  ]
+ },
+ "say.block.minecraft.tuff_brick_stairs": {
+  "sounds": [
+   "kotobakeep:say/8db1cc4a37bb56b3"
+  ]
+ },
+ "say.block.minecraft.tuff_brick_wall": {
+  "sounds": [
+   "kotobakeep:say/c8c8e7e645d4ad25"
+  ]
+ },
+ "say.block.minecraft.tuff_bricks": {
+  "sounds": [
+   "kotobakeep:say/d2eac1e2e91af0f9"
+  ]
+ },
+ "say.block.minecraft.tuff_slab": {
+  "sounds": [
+   "kotobakeep:say/aa99d3f6d51e4c94"
+  ]
+ },
+ "say.block.minecraft.tuff_stairs": {
+  "sounds": [
+   "kotobakeep:say/52dd4e3f5db9589a"
+  ]
+ },
+ "say.block.minecraft.tuff_wall": {
+  "sounds": [
+   "kotobakeep:say/9dfa7326fc7e052d"
+  ]
+ },
+ "say.block.minecraft.turtle_egg": {
+  "sounds": [
+   "kotobakeep:say/09bc1f97ae5a6433"
+  ]
+ },
+ "say.block.minecraft.twisting_vines": {
+  "sounds": [
+   "kotobakeep:say/e83c24bdb5eb6c4b"
+  ]
+ },
+ "say.block.minecraft.twisting_vines_plant": {
+  "sounds": [
+   "kotobakeep:say/8671aed9e1ac95fd"
+  ]
+ },
+ "say.block.minecraft.vault": {
+  "sounds": [
+   "kotobakeep:say/340694166848764e"
+  ]
+ },
+ "say.block.minecraft.verdant_froglight": {
+  "sounds": [
+   "kotobakeep:say/9d2af856d5b79601"
+  ]
+ },
+ "say.block.minecraft.vine": {
+  "sounds": [
+   "kotobakeep:say/0d4443ec4e2a1eb0"
+  ]
+ },
+ "say.block.minecraft.void_air": {
+  "sounds": [
+   "kotobakeep:say/9815e7baec21847f"
+  ]
+ },
+ "say.block.minecraft.wall_torch": {
+  "sounds": [
+   "kotobakeep:say/64525971895c7f53"
+  ]
+ },
+ "say.block.minecraft.warped_button": {
+  "sounds": [
+   "kotobakeep:say/0ad2e0ea23aecd74"
+  ]
+ },
+ "say.block.minecraft.warped_door": {
+  "sounds": [
+   "kotobakeep:say/7ebc7205dea0005f"
+  ]
+ },
+ "say.block.minecraft.warped_fence": {
+  "sounds": [
+   "kotobakeep:say/e48bc33c2eb37542"
+  ]
+ },
+ "say.block.minecraft.warped_fence_gate": {
+  "sounds": [
+   "kotobakeep:say/7d01b5fd309ec636"
+  ]
+ },
+ "say.block.minecraft.warped_fungus": {
+  "sounds": [
+   "kotobakeep:say/0ca1c23036192bc9"
+  ]
+ },
+ "say.block.minecraft.warped_hanging_sign": {
+  "sounds": [
+   "kotobakeep:say/624b698ea8878f04"
+  ]
+ },
+ "say.block.minecraft.warped_hyphae": {
+  "sounds": [
+   "kotobakeep:say/dabe7622b64f116c"
+  ]
+ },
+ "say.block.minecraft.warped_nylium": {
+  "sounds": [
+   "kotobakeep:say/3af672dbc68448f8"
+  ]
+ },
+ "say.block.minecraft.warped_planks": {
+  "sounds": [
+   "kotobakeep:say/bdc45d226dce2aaa"
+  ]
+ },
+ "say.block.minecraft.warped_pressure_plate": {
+  "sounds": [
+   "kotobakeep:say/36243ae628095232"
+  ]
+ },
+ "say.block.minecraft.warped_roots": {
+  "sounds": [
+   "kotobakeep:say/2ac514ec5d6e9ca7"
+  ]
+ },
+ "say.block.minecraft.warped_shelf": {
+  "sounds": [
+   "kotobakeep:say/77d5471e6866be29"
+  ]
+ },
+ "say.block.minecraft.warped_sign": {
+  "sounds": [
+   "kotobakeep:say/7a949515f9444923"
+  ]
+ },
+ "say.block.minecraft.warped_slab": {
+  "sounds": [
+   "kotobakeep:say/d8cd888d6ac231f4"
+  ]
+ },
+ "say.block.minecraft.warped_stairs": {
+  "sounds": [
+   "kotobakeep:say/fedb26b7d193d3fb"
+  ]
+ },
+ "say.block.minecraft.warped_stem": {
+  "sounds": [
+   "kotobakeep:say/a2a9f84b7f13522d"
+  ]
+ },
+ "say.block.minecraft.warped_trapdoor": {
+  "sounds": [
+   "kotobakeep:say/53fea9eeae21cd15"
+  ]
+ },
+ "say.block.minecraft.warped_wall_hanging_sign": {
+  "sounds": [
+   "kotobakeep:say/52905d8386b13a41"
+  ]
+ },
+ "say.block.minecraft.warped_wall_sign": {
+  "sounds": [
+   "kotobakeep:say/a60ca97b49cc53f7"
+  ]
+ },
+ "say.block.minecraft.warped_wart_block": {
+  "sounds": [
+   "kotobakeep:say/ae6d3441148f64e1"
+  ]
+ },
+ "say.block.minecraft.water": {
+  "sounds": [
+   "kotobakeep:say/6059bf96d940fced"
+  ]
+ },
+ "say.block.minecraft.water_cauldron": {
+  "sounds": [
+   "kotobakeep:say/d15dacdb6d882a89"
+  ]
+ },
+ "say.block.minecraft.waxed_chiseled_copper": {
+  "sounds": [
+   "kotobakeep:say/9c57e3dde6ab2172"
+  ]
+ },
+ "say.block.minecraft.waxed_copper_bars": {
+  "sounds": [
+   "kotobakeep:say/8acb1c1146248684"
+  ]
+ },
+ "say.block.minecraft.waxed_copper_block": {
+  "sounds": [
+   "kotobakeep:say/08fdf29ad6ba537b"
+  ]
+ },
+ "say.block.minecraft.waxed_copper_bulb": {
+  "sounds": [
+   "kotobakeep:say/16f6ecb27a5bf6a2"
+  ]
+ },
+ "say.block.minecraft.waxed_copper_chain": {
+  "sounds": [
+   "kotobakeep:say/fd437aafd2a54e24"
+  ]
+ },
+ "say.block.minecraft.waxed_copper_chest": {
+  "sounds": [
+   "kotobakeep:say/f8ec55fcca2562df"
+  ]
+ },
+ "say.block.minecraft.waxed_copper_door": {
+  "sounds": [
+   "kotobakeep:say/04c48bebfa89e7c9"
+  ]
+ },
+ "say.block.minecraft.waxed_copper_golem_statue": {
+  "sounds": [
+   "kotobakeep:say/e490f441eb2d342e"
+  ]
+ },
+ "say.block.minecraft.waxed_copper_grate": {
+  "sounds": [
+   "kotobakeep:say/9ce97863894afa66"
+  ]
+ },
+ "say.block.minecraft.waxed_copper_lantern": {
+  "sounds": [
+   "kotobakeep:say/cf8b128a2dcef505"
+  ]
+ },
+ "say.block.minecraft.waxed_copper_trapdoor": {
+  "sounds": [
+   "kotobakeep:say/f2e76d818db0312b"
+  ]
+ },
+ "say.block.minecraft.waxed_cut_copper": {
+  "sounds": [
+   "kotobakeep:say/74ba0926582cf517"
+  ]
+ },
+ "say.block.minecraft.waxed_cut_copper_slab": {
+  "sounds": [
+   "kotobakeep:say/76b094b041288487"
+  ]
+ },
+ "say.block.minecraft.waxed_cut_copper_stairs": {
+  "sounds": [
+   "kotobakeep:say/2e8363eecd3b9d8b"
+  ]
+ },
+ "say.block.minecraft.waxed_exposed_chiseled_copper": {
+  "sounds": [
+   "kotobakeep:say/d5913f96b6fe3a89"
+  ]
+ },
+ "say.block.minecraft.waxed_exposed_copper": {
+  "sounds": [
+   "kotobakeep:say/534c8a6955d9d6bd"
+  ]
+ },
+ "say.block.minecraft.waxed_exposed_copper_bars": {
+  "sounds": [
+   "kotobakeep:say/6becbbff52b8f187"
+  ]
+ },
+ "say.block.minecraft.waxed_exposed_copper_bulb": {
+  "sounds": [
+   "kotobakeep:say/43c949c7bb22f984"
+  ]
+ },
+ "say.block.minecraft.waxed_exposed_copper_chain": {
+  "sounds": [
+   "kotobakeep:say/b8d5ac5edc72f278"
+  ]
+ },
+ "say.block.minecraft.waxed_exposed_copper_chest": {
+  "sounds": [
+   "kotobakeep:say/482e6e0cd24ebe84"
+  ]
+ },
+ "say.block.minecraft.waxed_exposed_copper_door": {
+  "sounds": [
+   "kotobakeep:say/ed2292b4427f94ba"
+  ]
+ },
+ "say.block.minecraft.waxed_exposed_copper_golem_statue": {
+  "sounds": [
+   "kotobakeep:say/e7aa3dbd4130b852"
+  ]
+ },
+ "say.block.minecraft.waxed_exposed_copper_grate": {
+  "sounds": [
+   "kotobakeep:say/4bafe38c4c84111e"
+  ]
+ },
+ "say.block.minecraft.waxed_exposed_copper_lantern": {
+  "sounds": [
+   "kotobakeep:say/514d42836dd2ac30"
+  ]
+ },
+ "say.block.minecraft.waxed_exposed_copper_trapdoor": {
+  "sounds": [
+   "kotobakeep:say/c2a124f5064cb638"
+  ]
+ },
+ "say.block.minecraft.waxed_exposed_cut_copper": {
+  "sounds": [
+   "kotobakeep:say/20c059e441673ca1"
+  ]
+ },
+ "say.block.minecraft.waxed_exposed_cut_copper_slab": {
+  "sounds": [
+   "kotobakeep:say/fc01896aa25b09e4"
+  ]
+ },
+ "say.block.minecraft.waxed_exposed_cut_copper_stairs": {
+  "sounds": [
+   "kotobakeep:say/19697eca3cde55a6"
+  ]
+ },
+ "say.block.minecraft.waxed_exposed_lightning_rod": {
+  "sounds": [
+   "kotobakeep:say/0ea547461812681e"
+  ]
+ },
+ "say.block.minecraft.waxed_lightning_rod": {
+  "sounds": [
+   "kotobakeep:say/dac3e5c49da2d33d"
+  ]
+ },
+ "say.block.minecraft.waxed_oxidized_chiseled_copper": {
+  "sounds": [
+   "kotobakeep:say/e74bf94e81a2f041"
+  ]
+ },
+ "say.block.minecraft.waxed_oxidized_copper": {
+  "sounds": [
+   "kotobakeep:say/41e1a6eb4364c4c4"
+  ]
+ },
+ "say.block.minecraft.waxed_oxidized_copper_bars": {
+  "sounds": [
+   "kotobakeep:say/b81ee57a0b874e5b"
+  ]
+ },
+ "say.block.minecraft.waxed_oxidized_copper_bulb": {
+  "sounds": [
+   "kotobakeep:say/2933db32d8ae4e41"
+  ]
+ },
+ "say.block.minecraft.waxed_oxidized_copper_chain": {
+  "sounds": [
+   "kotobakeep:say/0e49ba0516d5aa13"
+  ]
+ },
+ "say.block.minecraft.waxed_oxidized_copper_chest": {
+  "sounds": [
+   "kotobakeep:say/ca9d5cfdbe5fca8e"
+  ]
+ },
+ "say.block.minecraft.waxed_oxidized_copper_door": {
+  "sounds": [
+   "kotobakeep:say/e656bc1c705dc1e7"
+  ]
+ },
+ "say.block.minecraft.waxed_oxidized_copper_golem_statue": {
+  "sounds": [
+   "kotobakeep:say/c8035056c7aef395"
+  ]
+ },
+ "say.block.minecraft.waxed_oxidized_copper_grate": {
+  "sounds": [
+   "kotobakeep:say/4b5a6e3f153093d8"
+  ]
+ },
+ "say.block.minecraft.waxed_oxidized_copper_lantern": {
+  "sounds": [
+   "kotobakeep:say/a7fe43ab38e8535d"
+  ]
+ },
+ "say.block.minecraft.waxed_oxidized_copper_trapdoor": {
+  "sounds": [
+   "kotobakeep:say/ca4c4bc77ea26499"
+  ]
+ },
+ "say.block.minecraft.waxed_oxidized_cut_copper": {
+  "sounds": [
+   "kotobakeep:say/f24fc8c5209010dc"
+  ]
+ },
+ "say.block.minecraft.waxed_oxidized_cut_copper_slab": {
+  "sounds": [
+   "kotobakeep:say/4b16611677e4b6e9"
+  ]
+ },
+ "say.block.minecraft.waxed_oxidized_cut_copper_stairs": {
+  "sounds": [
+   "kotobakeep:say/7ac578f48759492d"
+  ]
+ },
+ "say.block.minecraft.waxed_oxidized_lightning_rod": {
+  "sounds": [
+   "kotobakeep:say/4084662d6a496ea7"
+  ]
+ },
+ "say.block.minecraft.waxed_weathered_chiseled_copper": {
+  "sounds": [
+   "kotobakeep:say/42f3ead14f4a2de0"
+  ]
+ },
+ "say.block.minecraft.waxed_weathered_copper": {
+  "sounds": [
+   "kotobakeep:say/c386cc3047ea952f"
+  ]
+ },
+ "say.block.minecraft.waxed_weathered_copper_bars": {
+  "sounds": [
+   "kotobakeep:say/904382a8f2071c4f"
+  ]
+ },
+ "say.block.minecraft.waxed_weathered_copper_bulb": {
+  "sounds": [
+   "kotobakeep:say/3c8d1c10fc3fa9cb"
+  ]
+ },
+ "say.block.minecraft.waxed_weathered_copper_chain": {
+  "sounds": [
+   "kotobakeep:say/40196a6f21091e50"
+  ]
+ },
+ "say.block.minecraft.waxed_weathered_copper_chest": {
+  "sounds": [
+   "kotobakeep:say/432c5e84216312b7"
+  ]
+ },
+ "say.block.minecraft.waxed_weathered_copper_door": {
+  "sounds": [
+   "kotobakeep:say/0d26f959a4078731"
+  ]
+ },
+ "say.block.minecraft.waxed_weathered_copper_golem_statue": {
+  "sounds": [
+   "kotobakeep:say/5ba50f531a22aa43"
+  ]
+ },
+ "say.block.minecraft.waxed_weathered_copper_grate": {
+  "sounds": [
+   "kotobakeep:say/ffa0c406c2fc5e93"
+  ]
+ },
+ "say.block.minecraft.waxed_weathered_copper_lantern": {
+  "sounds": [
+   "kotobakeep:say/9308362984afcd52"
+  ]
+ },
+ "say.block.minecraft.waxed_weathered_copper_trapdoor": {
+  "sounds": [
+   "kotobakeep:say/bab1461564de7155"
+  ]
+ },
+ "say.block.minecraft.waxed_weathered_cut_copper": {
+  "sounds": [
+   "kotobakeep:say/c069b860f40e5af3"
+  ]
+ },
+ "say.block.minecraft.waxed_weathered_cut_copper_slab": {
+  "sounds": [
+   "kotobakeep:say/af37d1288851bc37"
+  ]
+ },
+ "say.block.minecraft.waxed_weathered_cut_copper_stairs": {
+  "sounds": [
+   "kotobakeep:say/2307b4a0efefcf17"
+  ]
+ },
+ "say.block.minecraft.waxed_weathered_lightning_rod": {
+  "sounds": [
+   "kotobakeep:say/772b4a43452955de"
+  ]
+ },
+ "say.block.minecraft.weathered_chiseled_copper": {
+  "sounds": [
+   "kotobakeep:say/c9b5bad0501cc289"
+  ]
+ },
+ "say.block.minecraft.weathered_copper": {
+  "sounds": [
+   "kotobakeep:say/62025dc71b4be772"
+  ]
+ },
+ "say.block.minecraft.weathered_copper_bars": {
+  "sounds": [
+   "kotobakeep:say/50816c80396c6a98"
+  ]
+ },
+ "say.block.minecraft.weathered_copper_bulb": {
+  "sounds": [
+   "kotobakeep:say/ee5d93c2fbde2fcd"
+  ]
+ },
+ "say.block.minecraft.weathered_copper_chain": {
+  "sounds": [
+   "kotobakeep:say/e48a8c232f1de22e"
+  ]
+ },
+ "say.block.minecraft.weathered_copper_chest": {
+  "sounds": [
+   "kotobakeep:say/ae1f485613cae849"
+  ]
+ },
+ "say.block.minecraft.weathered_copper_door": {
+  "sounds": [
+   "kotobakeep:say/e43cd863e84059a8"
+  ]
+ },
+ "say.block.minecraft.weathered_copper_golem_statue": {
+  "sounds": [
+   "kotobakeep:say/8610a9e304ebc916"
+  ]
+ },
+ "say.block.minecraft.weathered_copper_grate": {
+  "sounds": [
+   "kotobakeep:say/1bb60fb489f21ab8"
+  ]
+ },
+ "say.block.minecraft.weathered_copper_lantern": {
+  "sounds": [
+   "kotobakeep:say/197609652cf456aa"
+  ]
+ },
+ "say.block.minecraft.weathered_copper_trapdoor": {
+  "sounds": [
+   "kotobakeep:say/91f511e697afb866"
+  ]
+ },
+ "say.block.minecraft.weathered_cut_copper": {
+  "sounds": [
+   "kotobakeep:say/edd0af1ea2fe996e"
+  ]
+ },
+ "say.block.minecraft.weathered_cut_copper_slab": {
+  "sounds": [
+   "kotobakeep:say/1534d4863c1d4fd3"
+  ]
+ },
+ "say.block.minecraft.weathered_cut_copper_stairs": {
+  "sounds": [
+   "kotobakeep:say/392645988be205f5"
+  ]
+ },
+ "say.block.minecraft.weathered_lightning_rod": {
+  "sounds": [
+   "kotobakeep:say/8642e904be2146c9"
+  ]
+ },
+ "say.block.minecraft.weeping_vines": {
+  "sounds": [
+   "kotobakeep:say/e8b251f4bcd0cbbb"
+  ]
+ },
+ "say.block.minecraft.weeping_vines_plant": {
+  "sounds": [
+   "kotobakeep:say/d783b66c294690de"
+  ]
+ },
+ "say.block.minecraft.wet_sponge": {
+  "sounds": [
+   "kotobakeep:say/75d762c78e58c182"
+  ]
+ },
+ "say.block.minecraft.wheat": {
+  "sounds": [
+   "kotobakeep:say/f13861f7a8e2aa8f"
+  ]
+ },
+ "say.block.minecraft.white_banner": {
+  "sounds": [
+   "kotobakeep:say/5c9363927dcc6814"
+  ]
+ },
+ "say.block.minecraft.white_bed": {
+  "sounds": [
+   "kotobakeep:say/4087f6279435a509"
+  ]
+ },
+ "say.block.minecraft.white_candle": {
+  "sounds": [
+   "kotobakeep:say/2ef588aae153de71"
+  ]
+ },
+ "say.block.minecraft.white_candle_cake": {
+  "sounds": [
+   "kotobakeep:say/ef6e68462b46b809"
+  ]
+ },
+ "say.block.minecraft.white_carpet": {
+  "sounds": [
+   "kotobakeep:say/be95a1335f728aa4"
+  ]
+ },
+ "say.block.minecraft.white_concrete": {
+  "sounds": [
+   "kotobakeep:say/8521d78a396e5abc"
+  ]
+ },
+ "say.block.minecraft.white_concrete_powder": {
+  "sounds": [
+   "kotobakeep:say/12e320c4889e2b6f"
+  ]
+ },
+ "say.block.minecraft.white_concrete_slab": {
+  "sounds": [
+   "kotobakeep:say/b0e71543a01e17b6"
+  ]
+ },
+ "say.block.minecraft.white_concrete_stairs": {
+  "sounds": [
+   "kotobakeep:say/9217b61cfddb4be8"
+  ]
+ },
+ "say.block.minecraft.white_glazed_terracotta": {
+  "sounds": [
+   "kotobakeep:say/6371a8d2d1199cb5"
+  ]
+ },
+ "say.block.minecraft.white_shulker_box": {
+  "sounds": [
+   "kotobakeep:say/a16cec7ddf9ef323"
+  ]
+ },
+ "say.block.minecraft.white_stained_glass": {
+  "sounds": [
+   "kotobakeep:say/18a1c0a43f0660ea"
+  ]
+ },
+ "say.block.minecraft.white_stained_glass_pane": {
+  "sounds": [
+   "kotobakeep:say/d079dd7e47d84709"
+  ]
+ },
+ "say.block.minecraft.white_terracotta": {
+  "sounds": [
+   "kotobakeep:say/c38c19a2210f2760"
+  ]
+ },
+ "say.block.minecraft.white_tulip": {
+  "sounds": [
+   "kotobakeep:say/08a6756b7d63cee0"
+  ]
+ },
+ "say.block.minecraft.white_wool": {
+  "sounds": [
+   "kotobakeep:say/d53c4380acf069cc"
+  ]
+ },
+ "say.block.minecraft.white_wool_slab": {
+  "sounds": [
+   "kotobakeep:say/f33705d343ad983b"
+  ]
+ },
+ "say.block.minecraft.white_wool_stairs": {
+  "sounds": [
+   "kotobakeep:say/7d1587f1ba6dfeb2"
+  ]
+ },
+ "say.block.minecraft.wildflowers": {
+  "sounds": [
+   "kotobakeep:say/a41c44c27f2ecfce"
+  ]
+ },
+ "say.block.minecraft.wither_rose": {
+  "sounds": [
+   "kotobakeep:say/548f414c7b08cc64"
+  ]
+ },
+ "say.block.minecraft.wither_skeleton_skull": {
+  "sounds": [
+   "kotobakeep:say/718634e0d75ca475"
+  ]
+ },
+ "say.block.minecraft.wither_skeleton_wall_skull": {
+  "sounds": [
+   "kotobakeep:say/282655a979db639a"
+  ]
+ },
+ "say.block.minecraft.yellow_banner": {
+  "sounds": [
+   "kotobakeep:say/f8269a99c5de12e0"
+  ]
+ },
+ "say.block.minecraft.yellow_bed": {
+  "sounds": [
+   "kotobakeep:say/2e29acb75a487e3e"
+  ]
+ },
+ "say.block.minecraft.yellow_candle": {
+  "sounds": [
+   "kotobakeep:say/97f7cf8969ccb1c7"
+  ]
+ },
+ "say.block.minecraft.yellow_candle_cake": {
+  "sounds": [
+   "kotobakeep:say/df9922c91c58ef90"
+  ]
+ },
+ "say.block.minecraft.yellow_carpet": {
+  "sounds": [
+   "kotobakeep:say/cfcf9c2a2a8f1957"
+  ]
+ },
+ "say.block.minecraft.yellow_concrete": {
+  "sounds": [
+   "kotobakeep:say/e9e1e66272dcad9e"
+  ]
+ },
+ "say.block.minecraft.yellow_concrete_powder": {
+  "sounds": [
+   "kotobakeep:say/69afff3e4cfeaa8c"
+  ]
+ },
+ "say.block.minecraft.yellow_concrete_slab": {
+  "sounds": [
+   "kotobakeep:say/eef2469af81e2006"
+  ]
+ },
+ "say.block.minecraft.yellow_concrete_stairs": {
+  "sounds": [
+   "kotobakeep:say/55f3d016230eaa00"
+  ]
+ },
+ "say.block.minecraft.yellow_glazed_terracotta": {
+  "sounds": [
+   "kotobakeep:say/38b566800b70b37f"
+  ]
+ },
+ "say.block.minecraft.yellow_poplar_leaves": {
+  "sounds": [
+   "kotobakeep:say/8f4ef7a23f65cb8b"
+  ]
+ },
+ "say.block.minecraft.yellow_shulker_box": {
+  "sounds": [
+   "kotobakeep:say/4878a9d90281161c"
+  ]
+ },
+ "say.block.minecraft.yellow_stained_glass": {
+  "sounds": [
+   "kotobakeep:say/a2581d9155f734d5"
+  ]
+ },
+ "say.block.minecraft.yellow_stained_glass_pane": {
+  "sounds": [
+   "kotobakeep:say/70e3aa4087b98028"
+  ]
+ },
+ "say.block.minecraft.yellow_terracotta": {
+  "sounds": [
+   "kotobakeep:say/28c6b3a05d85b0bb"
+  ]
+ },
+ "say.block.minecraft.yellow_wool": {
+  "sounds": [
+   "kotobakeep:say/cb8a6cc32aa7c616"
+  ]
+ },
+ "say.block.minecraft.yellow_wool_slab": {
+  "sounds": [
+   "kotobakeep:say/b6802bcc425d2862"
+  ]
+ },
+ "say.block.minecraft.yellow_wool_stairs": {
+  "sounds": [
+   "kotobakeep:say/83a33b33906d8b8a"
+  ]
+ },
+ "say.block.minecraft.zombie_head": {
+  "sounds": [
+   "kotobakeep:say/1c0fb60890fdd1b3"
+  ]
+ },
+ "say.block.minecraft.zombie_wall_head": {
+  "sounds": [
+   "kotobakeep:say/f77ee1ddb405c227"
+  ]
+ },
+ "say.item.minecraft.abandoned_camp_map": {
+  "sounds": [
+   "kotobakeep:say/fbfe7412efcb4b24"
+  ]
+ },
+ "say.item.minecraft.abandoned_campsite_map": {
+  "sounds": [
+   "kotobakeep:say/fbfe7412efcb4b24"
+  ]
+ },
+ "say.item.minecraft.acacia_boat": {
+  "sounds": [
+   "kotobakeep:say/82e35f75d43519ea"
+  ]
+ },
+ "say.item.minecraft.acacia_chest_boat": {
+  "sounds": [
+   "kotobakeep:say/83d58ebb02dfff9e"
+  ]
+ },
+ "say.item.minecraft.allay_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/b24ccc72c1048df3"
+  ]
+ },
+ "say.item.minecraft.amethyst_shard": {
+  "sounds": [
+   "kotobakeep:say/55809bd446f0f023"
+  ]
+ },
+ "say.item.minecraft.ancient_city_map": {
+  "sounds": [
+   "kotobakeep:say/1d4ff6efa95f947f"
+  ]
+ },
+ "say.item.minecraft.angler_pottery_shard": {
+  "sounds": [
+   "kotobakeep:say/b08d1194c7b28c7b"
+  ]
+ },
+ "say.item.minecraft.angler_pottery_sherd": {
+  "sounds": [
+   "kotobakeep:say/b08d1194c7b28c7b"
+  ]
+ },
+ "say.item.minecraft.apple": {
+  "sounds": [
+   "kotobakeep:say/9d121bc9774d9e27"
+  ]
+ },
+ "say.item.minecraft.archer_pottery_shard": {
+  "sounds": [
+   "kotobakeep:say/a311b35868fe4f9c"
+  ]
+ },
+ "say.item.minecraft.archer_pottery_sherd": {
+  "sounds": [
+   "kotobakeep:say/a311b35868fe4f9c"
+  ]
+ },
+ "say.item.minecraft.armadillo_scute": {
+  "sounds": [
+   "kotobakeep:say/67eda66359999a08"
+  ]
+ },
+ "say.item.minecraft.armadillo_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/41d5cf023d5b9a3f"
+  ]
+ },
+ "say.item.minecraft.armor_stand": {
+  "sounds": [
+   "kotobakeep:say/f6afa85aff9fdaf5"
+  ]
+ },
+ "say.item.minecraft.arms_up_pottery_shard": {
+  "sounds": [
+   "kotobakeep:say/3f8ed25628e2a797"
+  ]
+ },
+ "say.item.minecraft.arms_up_pottery_sherd": {
+  "sounds": [
+   "kotobakeep:say/3f8ed25628e2a797"
+  ]
+ },
+ "say.item.minecraft.arrow": {
+  "sounds": [
+   "kotobakeep:say/c4e6e8cb9f4a7a9c"
+  ]
+ },
+ "say.item.minecraft.axolotl_bucket": {
+  "sounds": [
+   "kotobakeep:say/8363d9f4e0dbaa45"
+  ]
+ },
+ "say.item.minecraft.axolotl_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/c810cad74ae9dd60"
+  ]
+ },
+ "say.item.minecraft.baked_potato": {
+  "sounds": [
+   "kotobakeep:say/c4b84edfc00a8801"
+  ]
+ },
+ "say.item.minecraft.bamboo_chest_raft": {
+  "sounds": [
+   "kotobakeep:say/f0b825379abb0d84"
+  ]
+ },
+ "say.item.minecraft.bamboo_raft": {
+  "sounds": [
+   "kotobakeep:say/e8d8cdda3e986753"
+  ]
+ },
+ "say.item.minecraft.bat_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/3af9c5ddbdd34b6b"
+  ]
+ },
+ "say.item.minecraft.bee_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/6d8b4521242a6e09"
+  ]
+ },
+ "say.item.minecraft.beef": {
+  "sounds": [
+   "kotobakeep:say/176e3262611ea61d"
+  ]
+ },
+ "say.item.minecraft.beetroot": {
+  "sounds": [
+   "kotobakeep:say/a25cabddc7fcf25c"
+  ]
+ },
+ "say.item.minecraft.beetroot_seeds": {
+  "sounds": [
+   "kotobakeep:say/99197cf4eaf8e031"
+  ]
+ },
+ "say.item.minecraft.beetroot_soup": {
+  "sounds": [
+   "kotobakeep:say/dc083a59e890c208"
+  ]
+ },
+ "say.item.minecraft.birch_boat": {
+  "sounds": [
+   "kotobakeep:say/8fa79aba60456de4"
+  ]
+ },
+ "say.item.minecraft.birch_chest_boat": {
+  "sounds": [
+   "kotobakeep:say/0d91f4a05fa47889"
+  ]
+ },
+ "say.item.minecraft.black_bundle": {
+  "sounds": [
+   "kotobakeep:say/f96e01933e2a95df"
+  ]
+ },
+ "say.item.minecraft.black_cushion": {
+  "sounds": [
+   "kotobakeep:say/d84fa3c107bd0d08"
+  ]
+ },
+ "say.item.minecraft.black_dye": {
+  "sounds": [
+   "kotobakeep:say/d5da3dd0120007dc"
+  ]
+ },
+ "say.item.minecraft.black_harness": {
+  "sounds": [
+   "kotobakeep:say/0402041c08100650"
+  ]
+ },
+ "say.item.minecraft.blade_pottery_shard": {
+  "sounds": [
+   "kotobakeep:say/a046553c69b1fe99"
+  ]
+ },
+ "say.item.minecraft.blade_pottery_sherd": {
+  "sounds": [
+   "kotobakeep:say/a046553c69b1fe99"
+  ]
+ },
+ "say.item.minecraft.blaze_powder": {
+  "sounds": [
+   "kotobakeep:say/9f56034131a4b08e"
+  ]
+ },
+ "say.item.minecraft.blaze_rod": {
+  "sounds": [
+   "kotobakeep:say/0d8e7145081719ab"
+  ]
+ },
+ "say.item.minecraft.blaze_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/106ee795b9b146e7"
+  ]
+ },
+ "say.item.minecraft.blue_bundle": {
+  "sounds": [
+   "kotobakeep:say/b843aeacc178a9df"
+  ]
+ },
+ "say.item.minecraft.blue_cushion": {
+  "sounds": [
+   "kotobakeep:say/70acdcd2e8a2838e"
+  ]
+ },
+ "say.item.minecraft.blue_dye": {
+  "sounds": [
+   "kotobakeep:say/7390a7420e759891"
+  ]
+ },
+ "say.item.minecraft.blue_egg": {
+  "sounds": [
+   "kotobakeep:say/52b0a46d1ccfdfaf"
+  ]
+ },
+ "say.item.minecraft.blue_harness": {
+  "sounds": [
+   "kotobakeep:say/a63a18f99d264457"
+  ]
+ },
+ "say.item.minecraft.bogged_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/8129d60534e4b659"
+  ]
+ },
+ "say.item.minecraft.bolt_armor_trim_smithing_template": {
+  "sounds": [
+   "kotobakeep:say/3d4796cbb91d2664"
+  ]
+ },
+ "say.item.minecraft.bone": {
+  "sounds": [
+   "kotobakeep:say/244407ddeacef317"
+  ]
+ },
+ "say.item.minecraft.bone_meal": {
+  "sounds": [
+   "kotobakeep:say/5a68c8560df3818f"
+  ]
+ },
+ "say.item.minecraft.book": {
+  "sounds": [
+   "kotobakeep:say/98adcc146d4ef7aa"
+  ]
+ },
+ "say.item.minecraft.bordure_indented_banner_pattern": {
+  "sounds": [
+   "kotobakeep:say/d0a74874c721317a"
+  ]
+ },
+ "say.item.minecraft.bow": {
+  "sounds": [
+   "kotobakeep:say/2e9bd91091ca40d3"
+  ]
+ },
+ "say.item.minecraft.bowl": {
+  "sounds": [
+   "kotobakeep:say/e72bc7a2cc9b17a9"
+  ]
+ },
+ "say.item.minecraft.bread": {
+  "sounds": [
+   "kotobakeep:say/7ac48c8fe0ed48ba"
+  ]
+ },
+ "say.item.minecraft.breeze_rod": {
+  "sounds": [
+   "kotobakeep:say/19b36438b9e0cce6"
+  ]
+ },
+ "say.item.minecraft.breeze_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/89328ed4074048a2"
+  ]
+ },
+ "say.item.minecraft.brewer_pottery_shard": {
+  "sounds": [
+   "kotobakeep:say/db218df0617638ac"
+  ]
+ },
+ "say.item.minecraft.brewer_pottery_sherd": {
+  "sounds": [
+   "kotobakeep:say/db218df0617638ac"
+  ]
+ },
+ "say.item.minecraft.brewing_stand": {
+  "sounds": [
+   "kotobakeep:say/b817432ee8d5765a"
+  ]
+ },
+ "say.item.minecraft.brick": {
+  "sounds": [
+   "kotobakeep:say/84db5061e228b682"
+  ]
+ },
+ "say.item.minecraft.brown_bundle": {
+  "sounds": [
+   "kotobakeep:say/964292583f721174"
+  ]
+ },
+ "say.item.minecraft.brown_cushion": {
+  "sounds": [
+   "kotobakeep:say/ee47cddcb936112c"
+  ]
+ },
+ "say.item.minecraft.brown_dye": {
+  "sounds": [
+   "kotobakeep:say/9ecb6a98d8f319fc"
+  ]
+ },
+ "say.item.minecraft.brown_egg": {
+  "sounds": [
+   "kotobakeep:say/21949a5769e8a01b"
+  ]
+ },
+ "say.item.minecraft.brown_harness": {
+  "sounds": [
+   "kotobakeep:say/d9a69e6e31c9d4cc"
+  ]
+ },
+ "say.item.minecraft.brush": {
+  "sounds": [
+   "kotobakeep:say/8adc737becd6d0fe"
+  ]
+ },
+ "say.item.minecraft.bucket": {
+  "sounds": [
+   "kotobakeep:say/59c5d02bf4ef2d13"
+  ]
+ },
+ "say.item.minecraft.bundle": {
+  "sounds": [
+   "kotobakeep:say/8ea0a6b94bf1580c"
+  ]
+ },
+ "say.item.minecraft.buried_ancient_city_map": {
+  "sounds": [
+   "kotobakeep:say/6bd8406cb184f2c9"
+  ]
+ },
+ "say.item.minecraft.buried_mineshaft_map": {
+  "sounds": [
+   "kotobakeep:say/d8c62eea3597519c"
+  ]
+ },
+ "say.item.minecraft.buried_treasure_map": {
+  "sounds": [
+   "kotobakeep:say/bf4bf031581cbfc0"
+  ]
+ },
+ "say.item.minecraft.buried_trial_chambers_map": {
+  "sounds": [
+   "kotobakeep:say/161c4a07016824b8"
+  ]
+ },
+ "say.item.minecraft.burn_pottery_shard": {
+  "sounds": [
+   "kotobakeep:say/d0438af04900c0b6"
+  ]
+ },
+ "say.item.minecraft.burn_pottery_sherd": {
+  "sounds": [
+   "kotobakeep:say/d0438af04900c0b6"
+  ]
+ },
+ "say.item.minecraft.camel_husk_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/5c919078d35b34b0"
+  ]
+ },
+ "say.item.minecraft.camel_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/4141471e534a08d2"
+  ]
+ },
+ "say.item.minecraft.carrot": {
+  "sounds": [
+   "kotobakeep:say/8343d6f495001c30"
+  ]
+ },
+ "say.item.minecraft.carrot_on_a_stick": {
+  "sounds": [
+   "kotobakeep:say/a75aaa5e8b288d98"
+  ]
+ },
+ "say.item.minecraft.cat_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/a458dfa4bb2b9129"
+  ]
+ },
+ "say.item.minecraft.cauldron": {
+  "sounds": [
+   "kotobakeep:say/3ca516d5e75d8c68"
+  ]
+ },
+ "say.item.minecraft.cave_spider_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/b74093764a527f88"
+  ]
+ },
+ "say.item.minecraft.chainmail_boots": {
+  "sounds": [
+   "kotobakeep:say/b30e1370acee4ff3"
+  ]
+ },
+ "say.item.minecraft.chainmail_chestplate": {
+  "sounds": [
+   "kotobakeep:say/0ba1da15df906ec9"
+  ]
+ },
+ "say.item.minecraft.chainmail_helmet": {
+  "sounds": [
+   "kotobakeep:say/eadaa006209e9a88"
+  ]
+ },
+ "say.item.minecraft.chainmail_leggings": {
+  "sounds": [
+   "kotobakeep:say/13a9d921b1e58757"
+  ]
+ },
+ "say.item.minecraft.charcoal": {
+  "sounds": [
+   "kotobakeep:say/137935ef79a27bd1"
+  ]
+ },
+ "say.item.minecraft.cherry_boat": {
+  "sounds": [
+   "kotobakeep:say/64d2f14affa4d853"
+  ]
+ },
+ "say.item.minecraft.cherry_chest_boat": {
+  "sounds": [
+   "kotobakeep:say/d4c96f8bb26c2d4c"
+  ]
+ },
+ "say.item.minecraft.chest_minecart": {
+  "sounds": [
+   "kotobakeep:say/db8b1cecf491436a"
+  ]
+ },
+ "say.item.minecraft.chicken": {
+  "sounds": [
+   "kotobakeep:say/30685fbeba96f585"
+  ]
+ },
+ "say.item.minecraft.chicken_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/32f2e6ab0fe35b05"
+  ]
+ },
+ "say.item.minecraft.chorus_fruit": {
+  "sounds": [
+   "kotobakeep:say/d4f2fbf903457974"
+  ]
+ },
+ "say.item.minecraft.clay_ball": {
+  "sounds": [
+   "kotobakeep:say/d1904de682fc5888"
+  ]
+ },
+ "say.item.minecraft.clock": {
+  "sounds": [
+   "kotobakeep:say/0573ea27e9047297"
+  ]
+ },
+ "say.item.minecraft.coal": {
+  "sounds": [
+   "kotobakeep:say/8119c33c1a775b0d"
+  ]
+ },
+ "say.item.minecraft.coast_armor_trim_smithing_template": {
+  "sounds": [
+   "kotobakeep:say/3d4796cbb91d2664"
+  ]
+ },
+ "say.item.minecraft.cocoa_beans": {
+  "sounds": [
+   "kotobakeep:say/5e933901c74e2ccc"
+  ]
+ },
+ "say.item.minecraft.cod": {
+  "sounds": [
+   "kotobakeep:say/aeea5e86e9f52257"
+  ]
+ },
+ "say.item.minecraft.cod_bucket": {
+  "sounds": [
+   "kotobakeep:say/617d72541635e538"
+  ]
+ },
+ "say.item.minecraft.cod_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/f78c31f722d852a6"
+  ]
+ },
+ "say.item.minecraft.command_block_minecart": {
+  "sounds": [
+   "kotobakeep:say/3b97e087c6077743"
+  ]
+ },
+ "say.item.minecraft.compass": {
+  "sounds": [
+   "kotobakeep:say/2ab5707eb9e7c3f4"
+  ]
+ },
+ "say.item.minecraft.cooked_beef": {
+  "sounds": [
+   "kotobakeep:say/2c563551399b9e28"
+  ]
+ },
+ "say.item.minecraft.cooked_chicken": {
+  "sounds": [
+   "kotobakeep:say/0e12e21431ab2beb"
+  ]
+ },
+ "say.item.minecraft.cooked_cod": {
+  "sounds": [
+   "kotobakeep:say/0fd4d4ada2c86e6a"
+  ]
+ },
+ "say.item.minecraft.cooked_mutton": {
+  "sounds": [
+   "kotobakeep:say/bf839273c978d45a"
+  ]
+ },
+ "say.item.minecraft.cooked_porkchop": {
+  "sounds": [
+   "kotobakeep:say/85985b05b85eec35"
+  ]
+ },
+ "say.item.minecraft.cooked_rabbit": {
+  "sounds": [
+   "kotobakeep:say/138f838136967364"
+  ]
+ },
+ "say.item.minecraft.cooked_salmon": {
+  "sounds": [
+   "kotobakeep:say/7bdeb9674f667aa9"
+  ]
+ },
+ "say.item.minecraft.cookie": {
+  "sounds": [
+   "kotobakeep:say/77054ea240b91d06"
+  ]
+ },
+ "say.item.minecraft.copper_axe": {
+  "sounds": [
+   "kotobakeep:say/1540a5740be8ee6d"
+  ]
+ },
+ "say.item.minecraft.copper_boots": {
+  "sounds": [
+   "kotobakeep:say/220045ad6f58a6ac"
+  ]
+ },
+ "say.item.minecraft.copper_chestplate": {
+  "sounds": [
+   "kotobakeep:say/91022be3eddef009"
+  ]
+ },
+ "say.item.minecraft.copper_golem_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/8cd762df520f4ec8"
+  ]
+ },
+ "say.item.minecraft.copper_helmet": {
+  "sounds": [
+   "kotobakeep:say/9e57491c6154854a"
+  ]
+ },
+ "say.item.minecraft.copper_hoe": {
+  "sounds": [
+   "kotobakeep:say/3c574a439241a7fa"
+  ]
+ },
+ "say.item.minecraft.copper_horse_armor": {
+  "sounds": [
+   "kotobakeep:say/26f26f93e529655e"
+  ]
+ },
+ "say.item.minecraft.copper_ingot": {
+  "sounds": [
+   "kotobakeep:say/8964e3368c04c2f6"
+  ]
+ },
+ "say.item.minecraft.copper_leggings": {
+  "sounds": [
+   "kotobakeep:say/7856ffcc5bb2af69"
+  ]
+ },
+ "say.item.minecraft.copper_nautilus_armor": {
+  "sounds": [
+   "kotobakeep:say/d3732c11471cbc21"
+  ]
+ },
+ "say.item.minecraft.copper_nugget": {
+  "sounds": [
+   "kotobakeep:say/819b864ee09d498a"
+  ]
+ },
+ "say.item.minecraft.copper_pickaxe": {
+  "sounds": [
+   "kotobakeep:say/95b58241d8b30388"
+  ]
+ },
+ "say.item.minecraft.copper_shovel": {
+  "sounds": [
+   "kotobakeep:say/10a9a10645197c87"
+  ]
+ },
+ "say.item.minecraft.copper_spear": {
+  "sounds": [
+   "kotobakeep:say/a4813f35ae2dfa2a"
+  ]
+ },
+ "say.item.minecraft.copper_sword": {
+  "sounds": [
+   "kotobakeep:say/b17533b6b374c437"
+  ]
+ },
+ "say.item.minecraft.cow_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/b2ca0e502442f8d2"
+  ]
+ },
+ "say.item.minecraft.creaking_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/1cfeddce0ffc3e27"
+  ]
+ },
+ "say.item.minecraft.creeper_banner_pattern": {
+  "sounds": [
+   "kotobakeep:say/e041bb2ce6874a9f"
+  ]
+ },
+ "say.item.minecraft.creeper_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/593308a865c83f3c"
+  ]
+ },
+ "say.item.minecraft.crossbow": {
+  "sounds": [
+   "kotobakeep:say/23b38878bfecfbb6"
+  ]
+ },
+ "say.item.minecraft.cyan_bundle": {
+  "sounds": [
+   "kotobakeep:say/cab115801a3cfc25"
+  ]
+ },
+ "say.item.minecraft.cyan_cushion": {
+  "sounds": [
+   "kotobakeep:say/ee6769a0ce1fd65f"
+  ]
+ },
+ "say.item.minecraft.cyan_dye": {
+  "sounds": [
+   "kotobakeep:say/3da46e0150e4af3f"
+  ]
+ },
+ "say.item.minecraft.cyan_harness": {
+  "sounds": [
+   "kotobakeep:say/c416deb2db6dd72f"
+  ]
+ },
+ "say.item.minecraft.danger_pottery_shard": {
+  "sounds": [
+   "kotobakeep:say/14db5171f297313a"
+  ]
+ },
+ "say.item.minecraft.danger_pottery_sherd": {
+  "sounds": [
+   "kotobakeep:say/14db5171f297313a"
+  ]
+ },
+ "say.item.minecraft.dark_oak_boat": {
+  "sounds": [
+   "kotobakeep:say/522541e112f18a18"
+  ]
+ },
+ "say.item.minecraft.dark_oak_chest_boat": {
+  "sounds": [
+   "kotobakeep:say/9cebb20c4fc85dd8"
+  ]
+ },
+ "say.item.minecraft.debug_stick": {
+  "sounds": [
+   "kotobakeep:say/55b440590760a7e2"
+  ]
+ },
+ "say.item.minecraft.desert_pyramid_map": {
+  "sounds": [
+   "kotobakeep:say/c0b536eb71762bb3"
+  ]
+ },
+ "say.item.minecraft.desert_village_map": {
+  "sounds": [
+   "kotobakeep:say/8a61a4b3d125272e"
+  ]
+ },
+ "say.item.minecraft.diamond": {
+  "sounds": [
+   "kotobakeep:say/ad878f367acd882a"
+  ]
+ },
+ "say.item.minecraft.diamond_axe": {
+  "sounds": [
+   "kotobakeep:say/6be22dfae5c0f31a"
+  ]
+ },
+ "say.item.minecraft.diamond_boots": {
+  "sounds": [
+   "kotobakeep:say/248a6e313d6d935b"
+  ]
+ },
+ "say.item.minecraft.diamond_chestplate": {
+  "sounds": [
+   "kotobakeep:say/ed294be9cee64de1"
+  ]
+ },
+ "say.item.minecraft.diamond_helmet": {
+  "sounds": [
+   "kotobakeep:say/c22fe1823c219e43"
+  ]
+ },
+ "say.item.minecraft.diamond_hoe": {
+  "sounds": [
+   "kotobakeep:say/f00d0f0775553d1e"
+  ]
+ },
+ "say.item.minecraft.diamond_horse_armor": {
+  "sounds": [
+   "kotobakeep:say/1cc9c469cec74734"
+  ]
+ },
+ "say.item.minecraft.diamond_leggings": {
+  "sounds": [
+   "kotobakeep:say/d53081a2c7eea5c4"
+  ]
+ },
+ "say.item.minecraft.diamond_nautilus_armor": {
+  "sounds": [
+   "kotobakeep:say/b497e6aaf3711ada"
+  ]
+ },
+ "say.item.minecraft.diamond_pickaxe": {
+  "sounds": [
+   "kotobakeep:say/d680c8e2722860f9"
+  ]
+ },
+ "say.item.minecraft.diamond_shovel": {
+  "sounds": [
+   "kotobakeep:say/0b7f42903e5b1cd8"
+  ]
+ },
+ "say.item.minecraft.diamond_spear": {
+  "sounds": [
+   "kotobakeep:say/3b9251f46948ebd5"
+  ]
+ },
+ "say.item.minecraft.diamond_sword": {
+  "sounds": [
+   "kotobakeep:say/db3fe55e02c37862"
+  ]
+ },
+ "say.item.minecraft.disc_fragment_5": {
+  "sounds": [
+   "kotobakeep:say/faaf7755a8197e0a"
+  ]
+ },
+ "say.item.minecraft.dolphin_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/f01283b3d6f562cc"
+  ]
+ },
+ "say.item.minecraft.donkey_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/42f2e067a20fe638"
+  ]
+ },
+ "say.item.minecraft.dragon_breath": {
+  "sounds": [
+   "kotobakeep:say/93f4dfae270e5df4"
+  ]
+ },
+ "say.item.minecraft.dried_kelp": {
+  "sounds": [
+   "kotobakeep:say/54cbccd4eb4a563d"
+  ]
+ },
+ "say.item.minecraft.drowned_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/05fcf2d193fd385d"
+  ]
+ },
+ "say.item.minecraft.dune_armor_trim_smithing_template": {
+  "sounds": [
+   "kotobakeep:say/3d4796cbb91d2664"
+  ]
+ },
+ "say.item.minecraft.echo_shard": {
+  "sounds": [
+   "kotobakeep:say/45093cccd3ff837f"
+  ]
+ },
+ "say.item.minecraft.egg": {
+  "sounds": [
+   "kotobakeep:say/6cd04401b4a21946"
+  ]
+ },
+ "say.item.minecraft.elder_guardian_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/fa71ddcfc1236be8"
+  ]
+ },
+ "say.item.minecraft.elytra": {
+  "sounds": [
+   "kotobakeep:say/02ee823f3091b345"
+  ]
+ },
+ "say.item.minecraft.emerald": {
+  "sounds": [
+   "kotobakeep:say/b97edebc74d17d0c"
+  ]
+ },
+ "say.item.minecraft.enchanted_book": {
+  "sounds": [
+   "kotobakeep:say/03aa3864a50819f2"
+  ]
+ },
+ "say.item.minecraft.enchanted_golden_apple": {
+  "sounds": [
+   "kotobakeep:say/87bd3267237bad0b"
+  ]
+ },
+ "say.item.minecraft.end_crystal": {
+  "sounds": [
+   "kotobakeep:say/3d963ddd40ed2a3a"
+  ]
+ },
+ "say.item.minecraft.ender_dragon_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/5e50aba960048791"
+  ]
+ },
+ "say.item.minecraft.ender_eye": {
+  "sounds": [
+   "kotobakeep:say/be376b8dece64e13"
+  ]
+ },
+ "say.item.minecraft.ender_pearl": {
+  "sounds": [
+   "kotobakeep:say/d5eaed4f836c44bc"
+  ]
+ },
+ "say.item.minecraft.enderman_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/2132f69d3fa79745"
+  ]
+ },
+ "say.item.minecraft.endermite_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/903b65fde96e7976"
+  ]
+ },
+ "say.item.minecraft.evoker_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/11c8de8633ec4138"
+  ]
+ },
+ "say.item.minecraft.experience_bottle": {
+  "sounds": [
+   "kotobakeep:say/9e84aaf731474281"
+  ]
+ },
+ "say.item.minecraft.explorer_pottery_shard": {
+  "sounds": [
+   "kotobakeep:say/5b2e1f8da2a3db67"
+  ]
+ },
+ "say.item.minecraft.explorer_pottery_sherd": {
+  "sounds": [
+   "kotobakeep:say/5b2e1f8da2a3db67"
+  ]
+ },
+ "say.item.minecraft.eye_armor_trim_smithing_template": {
+  "sounds": [
+   "kotobakeep:say/3d4796cbb91d2664"
+  ]
+ },
+ "say.item.minecraft.feather": {
+  "sounds": [
+   "kotobakeep:say/172190b61c945082"
+  ]
+ },
+ "say.item.minecraft.fermented_spider_eye": {
+  "sounds": [
+   "kotobakeep:say/03f226fa938019e7"
+  ]
+ },
+ "say.item.minecraft.field_masoned_banner_pattern": {
+  "sounds": [
+   "kotobakeep:say/31d4e5631681c3b5"
+  ]
+ },
+ "say.item.minecraft.filled_map": {
+  "sounds": [
+   "kotobakeep:say/78a081e3cf465eed"
+  ]
+ },
+ "say.item.minecraft.fire_charge": {
+  "sounds": [
+   "kotobakeep:say/567e34b3f47ecf20"
+  ]
+ },
+ "say.item.minecraft.firework_rocket": {
+  "sounds": [
+   "kotobakeep:say/64ec53c85da68a25"
+  ]
+ },
+ "say.item.minecraft.firework_star": {
+  "sounds": [
+   "kotobakeep:say/39da4d3839452743"
+  ]
+ },
+ "say.item.minecraft.fishing_rod": {
+  "sounds": [
+   "kotobakeep:say/a5240a95bc1741b3"
+  ]
+ },
+ "say.item.minecraft.flint": {
+  "sounds": [
+   "kotobakeep:say/c865cbc34e9e9365"
+  ]
+ },
+ "say.item.minecraft.flint_and_steel": {
+  "sounds": [
+   "kotobakeep:say/778a45ec7f45eaf6"
+  ]
+ },
+ "say.item.minecraft.flow_armor_trim_smithing_template": {
+  "sounds": [
+   "kotobakeep:say/3d4796cbb91d2664"
+  ]
+ },
+ "say.item.minecraft.flow_banner_pattern": {
+  "sounds": [
+   "kotobakeep:say/e041bb2ce6874a9f"
+  ]
+ },
+ "say.item.minecraft.flow_pottery_sherd": {
+  "sounds": [
+   "kotobakeep:say/69907ce44e49faad"
+  ]
+ },
+ "say.item.minecraft.flower_banner_pattern": {
+  "sounds": [
+   "kotobakeep:say/e041bb2ce6874a9f"
+  ]
+ },
+ "say.item.minecraft.flower_pot": {
+  "sounds": [
+   "kotobakeep:say/4af6e755fb0aefcf"
+  ]
+ },
+ "say.item.minecraft.fox_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/40e18640083552eb"
+  ]
+ },
+ "say.item.minecraft.friend_pottery_shard": {
+  "sounds": [
+   "kotobakeep:say/73e10625f1076067"
+  ]
+ },
+ "say.item.minecraft.friend_pottery_sherd": {
+  "sounds": [
+   "kotobakeep:say/73e10625f1076067"
+  ]
+ },
+ "say.item.minecraft.frog_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/87ce24945f26171f"
+  ]
+ },
+ "say.item.minecraft.frostbite_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/a56b679ec1ac5cd7"
+  ]
+ },
+ "say.item.minecraft.furnace_minecart": {
+  "sounds": [
+   "kotobakeep:say/f9094c5c602825a2"
+  ]
+ },
+ "say.item.minecraft.ghast_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/c04c744df82d55b5"
+  ]
+ },
+ "say.item.minecraft.ghast_tear": {
+  "sounds": [
+   "kotobakeep:say/318fbb7ed8a9b2af"
+  ]
+ },
+ "say.item.minecraft.glass_bottle": {
+  "sounds": [
+   "kotobakeep:say/aeefbfe58351658d"
+  ]
+ },
+ "say.item.minecraft.glistering_melon_slice": {
+  "sounds": [
+   "kotobakeep:say/7abe4c7d6cfcf224"
+  ]
+ },
+ "say.item.minecraft.globe_banner_pattern": {
+  "sounds": [
+   "kotobakeep:say/e041bb2ce6874a9f"
+  ]
+ },
+ "say.item.minecraft.glow_berries": {
+  "sounds": [
+   "kotobakeep:say/e7efd91a0cde68bc"
+  ]
+ },
+ "say.item.minecraft.glow_ink_sac": {
+  "sounds": [
+   "kotobakeep:say/080ec89d203423e2"
+  ]
+ },
+ "say.item.minecraft.glow_item_frame": {
+  "sounds": [
+   "kotobakeep:say/b2dadefeea362436"
+  ]
+ },
+ "say.item.minecraft.glow_squid_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/9ce221a7e155c069"
+  ]
+ },
+ "say.item.minecraft.glowstone_dust": {
+  "sounds": [
+   "kotobakeep:say/3399ce1c2f804055"
+  ]
+ },
+ "say.item.minecraft.goat_horn": {
+  "sounds": [
+   "kotobakeep:say/1a710faf7f609df4"
+  ]
+ },
+ "say.item.minecraft.goat_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/87d9133ff0385097"
+  ]
+ },
+ "say.item.minecraft.gold_ingot": {
+  "sounds": [
+   "kotobakeep:say/fb4efcc90a098d09"
+  ]
+ },
+ "say.item.minecraft.gold_nugget": {
+  "sounds": [
+   "kotobakeep:say/e96049a78b7c32ed"
+  ]
+ },
+ "say.item.minecraft.golden_apple": {
+  "sounds": [
+   "kotobakeep:say/e3727c44f912a364"
+  ]
+ },
+ "say.item.minecraft.golden_axe": {
+  "sounds": [
+   "kotobakeep:say/7901d0dfabf99005"
+  ]
+ },
+ "say.item.minecraft.golden_boots": {
+  "sounds": [
+   "kotobakeep:say/30ea32ab3a1f83b3"
+  ]
+ },
+ "say.item.minecraft.golden_carrot": {
+  "sounds": [
+   "kotobakeep:say/a01970c3c79d05be"
+  ]
+ },
+ "say.item.minecraft.golden_chestplate": {
+  "sounds": [
+   "kotobakeep:say/21b56c86e9b2b914"
+  ]
+ },
+ "say.item.minecraft.golden_helmet": {
+  "sounds": [
+   "kotobakeep:say/d0b1c8e1787b47c3"
+  ]
+ },
+ "say.item.minecraft.golden_hoe": {
+  "sounds": [
+   "kotobakeep:say/9b789273f729f630"
+  ]
+ },
+ "say.item.minecraft.golden_horse_armor": {
+  "sounds": [
+   "kotobakeep:say/52c54abd6c9c5b08"
+  ]
+ },
+ "say.item.minecraft.golden_leggings": {
+  "sounds": [
+   "kotobakeep:say/bd86379c67b29614"
+  ]
+ },
+ "say.item.minecraft.golden_nautilus_armor": {
+  "sounds": [
+   "kotobakeep:say/55c844484ff0e30a"
+  ]
+ },
+ "say.item.minecraft.golden_pickaxe": {
+  "sounds": [
+   "kotobakeep:say/252c2f2a96f2f578"
+  ]
+ },
+ "say.item.minecraft.golden_shovel": {
+  "sounds": [
+   "kotobakeep:say/028ecea698401fed"
+  ]
+ },
+ "say.item.minecraft.golden_spear": {
+  "sounds": [
+   "kotobakeep:say/2399c2bb1a0904af"
+  ]
+ },
+ "say.item.minecraft.golden_sword": {
+  "sounds": [
+   "kotobakeep:say/0477936584f9c7c5"
+  ]
+ },
+ "say.item.minecraft.gray_bundle": {
+  "sounds": [
+   "kotobakeep:say/3518a369cc500b96"
+  ]
+ },
+ "say.item.minecraft.gray_cushion": {
+  "sounds": [
+   "kotobakeep:say/79188b382feac72c"
+  ]
+ },
+ "say.item.minecraft.gray_dye": {
+  "sounds": [
+   "kotobakeep:say/20f2b4afa78fa238"
+  ]
+ },
+ "say.item.minecraft.gray_harness": {
+  "sounds": [
+   "kotobakeep:say/ee33dc82faf66b9b"
+  ]
+ },
+ "say.item.minecraft.green_bundle": {
+  "sounds": [
+   "kotobakeep:say/54b655861c6db04f"
+  ]
+ },
+ "say.item.minecraft.green_cushion": {
+  "sounds": [
+   "kotobakeep:say/bc82aa1799ff6c56"
+  ]
+ },
+ "say.item.minecraft.green_dye": {
+  "sounds": [
+   "kotobakeep:say/9fd273b566be61b7"
+  ]
+ },
+ "say.item.minecraft.green_harness": {
+  "sounds": [
+   "kotobakeep:say/d7fc59c9b5b8427a"
+  ]
+ },
+ "say.item.minecraft.guardian_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/baf47ec3f8d97eeb"
+  ]
+ },
+ "say.item.minecraft.gunpowder": {
+  "sounds": [
+   "kotobakeep:say/abde1951d0a73e57"
+  ]
+ },
+ "say.item.minecraft.guster_banner_pattern": {
+  "sounds": [
+   "kotobakeep:say/e041bb2ce6874a9f"
+  ]
+ },
+ "say.item.minecraft.guster_pottery_sherd": {
+  "sounds": [
+   "kotobakeep:say/be52a18ef325256e"
+  ]
+ },
+ "say.item.minecraft.happy_ghast_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/13a24116f6626bfc"
+  ]
+ },
+ "say.item.minecraft.harness": {
+  "sounds": [
+   "kotobakeep:say/241c8aab19494730"
+  ]
+ },
+ "say.item.minecraft.heart_of_the_sea": {
+  "sounds": [
+   "kotobakeep:say/f0405e366d75188e"
+  ]
+ },
+ "say.item.minecraft.heart_pottery_shard": {
+  "sounds": [
+   "kotobakeep:say/ac535c231bde30c8"
+  ]
+ },
+ "say.item.minecraft.heart_pottery_sherd": {
+  "sounds": [
+   "kotobakeep:say/ac535c231bde30c8"
+  ]
+ },
+ "say.item.minecraft.heartbreak_pottery_shard": {
+  "sounds": [
+   "kotobakeep:say/61bea1294ef3990f"
+  ]
+ },
+ "say.item.minecraft.heartbreak_pottery_sherd": {
+  "sounds": [
+   "kotobakeep:say/61bea1294ef3990f"
+  ]
+ },
+ "say.item.minecraft.hoglin_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/4776f1e9ad7b8971"
+  ]
+ },
+ "say.item.minecraft.honey_bottle": {
+  "sounds": [
+   "kotobakeep:say/9e4c351d3c2bef1b"
+  ]
+ },
+ "say.item.minecraft.honeycomb": {
+  "sounds": [
+   "kotobakeep:say/0cb0725d7b9347ad"
+  ]
+ },
+ "say.item.minecraft.hopper_minecart": {
+  "sounds": [
+   "kotobakeep:say/2483fd72cd57894d"
+  ]
+ },
+ "say.item.minecraft.horse_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/db904dad56dcd11b"
+  ]
+ },
+ "say.item.minecraft.host_armor_trim_smithing_template": {
+  "sounds": [
+   "kotobakeep:say/3d4796cbb91d2664"
+  ]
+ },
+ "say.item.minecraft.howl_pottery_shard": {
+  "sounds": [
+   "kotobakeep:say/15e2c6d9d7eb8122"
+  ]
+ },
+ "say.item.minecraft.howl_pottery_sherd": {
+  "sounds": [
+   "kotobakeep:say/15e2c6d9d7eb8122"
+  ]
+ },
+ "say.item.minecraft.husk_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/a9a5a757587dd695"
+  ]
+ },
+ "say.item.minecraft.ice_ball": {
+  "sounds": [
+   "kotobakeep:say/8530740cb6479c01"
+  ]
+ },
+ "say.item.minecraft.ink_sac": {
+  "sounds": [
+   "kotobakeep:say/ec9641a293da2b9c"
+  ]
+ },
+ "say.item.minecraft.iron_axe": {
+  "sounds": [
+   "kotobakeep:say/53a94c33d8dd0458"
+  ]
+ },
+ "say.item.minecraft.iron_boots": {
+  "sounds": [
+   "kotobakeep:say/26f4d9979b10e9e1"
+  ]
+ },
+ "say.item.minecraft.iron_chestplate": {
+  "sounds": [
+   "kotobakeep:say/72e4bc86256fd0c8"
+  ]
+ },
+ "say.item.minecraft.iron_golem_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/8543d8804b1b34e4"
+  ]
+ },
+ "say.item.minecraft.iron_helmet": {
+  "sounds": [
+   "kotobakeep:say/55e6fbe72b776459"
+  ]
+ },
+ "say.item.minecraft.iron_hoe": {
+  "sounds": [
+   "kotobakeep:say/e5f608a89707f93f"
+  ]
+ },
+ "say.item.minecraft.iron_horse_armor": {
+  "sounds": [
+   "kotobakeep:say/3829c7b1a52375b1"
+  ]
+ },
+ "say.item.minecraft.iron_ingot": {
+  "sounds": [
+   "kotobakeep:say/9333fb20f6547a22"
+  ]
+ },
+ "say.item.minecraft.iron_leggings": {
+  "sounds": [
+   "kotobakeep:say/529457bb0683b4b9"
+  ]
+ },
+ "say.item.minecraft.iron_nautilus_armor": {
+  "sounds": [
+   "kotobakeep:say/8e33035368430aef"
+  ]
+ },
+ "say.item.minecraft.iron_nugget": {
+  "sounds": [
+   "kotobakeep:say/bdd4d1537515999a"
+  ]
+ },
+ "say.item.minecraft.iron_pickaxe": {
+  "sounds": [
+   "kotobakeep:say/278c5bce73d87536"
+  ]
+ },
+ "say.item.minecraft.iron_shovel": {
+  "sounds": [
+   "kotobakeep:say/39f061fd3f07a1da"
+  ]
+ },
+ "say.item.minecraft.iron_spear": {
+  "sounds": [
+   "kotobakeep:say/d12089ae99469ed7"
+  ]
+ },
+ "say.item.minecraft.iron_sword": {
+  "sounds": [
+   "kotobakeep:say/a8449c00aa98570e"
+  ]
+ },
+ "say.item.minecraft.item_frame": {
+  "sounds": [
+   "kotobakeep:say/5ad2c8c294357091"
+  ]
+ },
+ "say.item.minecraft.jungle_boat": {
+  "sounds": [
+   "kotobakeep:say/cf333de6c68949b2"
+  ]
+ },
+ "say.item.minecraft.jungle_chest_boat": {
+  "sounds": [
+   "kotobakeep:say/5fa28e97ca1fade3"
+  ]
+ },
+ "say.item.minecraft.jungle_explorer_map": {
+  "sounds": [
+   "kotobakeep:say/f02fe31dc7bf60a7"
+  ]
+ },
+ "say.item.minecraft.jungle_pyramid_map": {
+  "sounds": [
+   "kotobakeep:say/71a6fb7ee39976a3"
+  ]
+ },
+ "say.item.minecraft.knowledge_book": {
+  "sounds": [
+   "kotobakeep:say/53266b390ea340da"
+  ]
+ },
+ "say.item.minecraft.lapis_lazuli": {
+  "sounds": [
+   "kotobakeep:say/4617c3a640bf5d19"
+  ]
+ },
+ "say.item.minecraft.lava_bucket": {
+  "sounds": [
+   "kotobakeep:say/daf8ef8035a69ea4"
+  ]
+ },
+ "say.item.minecraft.lead": {
+  "sounds": [
+   "kotobakeep:say/dd9b78409efc8cd6"
+  ]
+ },
+ "say.item.minecraft.leather": {
+  "sounds": [
+   "kotobakeep:say/656317a2c61f1b8f"
+  ]
+ },
+ "say.item.minecraft.leather_boots": {
+  "sounds": [
+   "kotobakeep:say/071289e0e75d66ed"
+  ]
+ },
+ "say.item.minecraft.leather_chestplate": {
+  "sounds": [
+   "kotobakeep:say/713879002675c2d3"
+  ]
+ },
+ "say.item.minecraft.leather_helmet": {
+  "sounds": [
+   "kotobakeep:say/3f204f4bf10b6ebc"
+  ]
+ },
+ "say.item.minecraft.leather_horse_armor": {
+  "sounds": [
+   "kotobakeep:say/159dc106ce543965"
+  ]
+ },
+ "say.item.minecraft.leather_leggings": {
+  "sounds": [
+   "kotobakeep:say/ace9a2dabb590df1"
+  ]
+ },
+ "say.item.minecraft.light_blue_bundle": {
+  "sounds": [
+   "kotobakeep:say/03eb7357480bfae0"
+  ]
+ },
+ "say.item.minecraft.light_blue_cushion": {
+  "sounds": [
+   "kotobakeep:say/484452ece12d8b7e"
+  ]
+ },
+ "say.item.minecraft.light_blue_dye": {
+  "sounds": [
+   "kotobakeep:say/4cc923219712ab41"
+  ]
+ },
+ "say.item.minecraft.light_blue_harness": {
+  "sounds": [
+   "kotobakeep:say/27b15072541f99ac"
+  ]
+ },
+ "say.item.minecraft.light_gray_bundle": {
+  "sounds": [
+   "kotobakeep:say/a0b5260627f64f7a"
+  ]
+ },
+ "say.item.minecraft.light_gray_cushion": {
+  "sounds": [
+   "kotobakeep:say/326edd67e15b48b2"
+  ]
+ },
+ "say.item.minecraft.light_gray_dye": {
+  "sounds": [
+   "kotobakeep:say/b0835cbcbfa2b9dc"
+  ]
+ },
+ "say.item.minecraft.light_gray_harness": {
+  "sounds": [
+   "kotobakeep:say/a23aa048cd5bafbd"
+  ]
+ },
+ "say.item.minecraft.lime_bundle": {
+  "sounds": [
+   "kotobakeep:say/d1dd07532d2ed887"
+  ]
+ },
+ "say.item.minecraft.lime_cushion": {
+  "sounds": [
+   "kotobakeep:say/62e9409b76d44638"
+  ]
+ },
+ "say.item.minecraft.lime_dye": {
+  "sounds": [
+   "kotobakeep:say/390be5cd698ae2f5"
+  ]
+ },
+ "say.item.minecraft.lime_harness": {
+  "sounds": [
+   "kotobakeep:say/a8151f6d002b7f6d"
+  ]
+ },
+ "say.item.minecraft.lingering_potion": {
+  "sounds": [
+   "kotobakeep:say/1cd34f0f53f4578a"
+  ]
+ },
+ "say.item.minecraft.llama_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/66db74ce9ce54287"
+  ]
+ },
+ "say.item.minecraft.lodestone_compass": {
+  "sounds": [
+   "kotobakeep:say/83c1ce93eb4d16b3"
+  ]
+ },
+ "say.item.minecraft.mace": {
+  "sounds": [
+   "kotobakeep:say/454e233b393ad7b3"
+  ]
+ },
+ "say.item.minecraft.magenta_bundle": {
+  "sounds": [
+   "kotobakeep:say/adc04ac7a90da5e8"
+  ]
+ },
+ "say.item.minecraft.magenta_cushion": {
+  "sounds": [
+   "kotobakeep:say/c562e8c4a0fbb061"
+  ]
+ },
+ "say.item.minecraft.magenta_dye": {
+  "sounds": [
+   "kotobakeep:say/4d7a0f50f515c83f"
+  ]
+ },
+ "say.item.minecraft.magenta_harness": {
+  "sounds": [
+   "kotobakeep:say/d9debe3542ecec5a"
+  ]
+ },
+ "say.item.minecraft.magma_cream": {
+  "sounds": [
+   "kotobakeep:say/1748b3bbfae5aa02"
+  ]
+ },
+ "say.item.minecraft.magma_cube_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/c99cdda382b327c7"
+  ]
+ },
+ "say.item.minecraft.mangrove_boat": {
+  "sounds": [
+   "kotobakeep:say/3bbe35df45b310c8"
+  ]
+ },
+ "say.item.minecraft.mangrove_chest_boat": {
+  "sounds": [
+   "kotobakeep:say/3c99385b327c03a6"
+  ]
+ },
+ "say.item.minecraft.map": {
+  "sounds": [
+   "kotobakeep:say/467e66b3cb39bdba"
+  ]
+ },
+ "say.item.minecraft.melon_seeds": {
+  "sounds": [
+   "kotobakeep:say/44c0be7240de05ac"
+  ]
+ },
+ "say.item.minecraft.melon_slice": {
+  "sounds": [
+   "kotobakeep:say/f3fbb36c9d7e0144"
+  ]
+ },
+ "say.item.minecraft.milk_bucket": {
+  "sounds": [
+   "kotobakeep:say/da992ca2f061498b"
+  ]
+ },
+ "say.item.minecraft.minecart": {
+  "sounds": [
+   "kotobakeep:say/e07ddf4da96c843e"
+  ]
+ },
+ "say.item.minecraft.miner_pottery_shard": {
+  "sounds": [
+   "kotobakeep:say/7e82451ce7686242"
+  ]
+ },
+ "say.item.minecraft.miner_pottery_sherd": {
+  "sounds": [
+   "kotobakeep:say/7e82451ce7686242"
+  ]
+ },
+ "say.item.minecraft.mineshaft_map": {
+  "sounds": [
+   "kotobakeep:say/c67b546dc17174da"
+  ]
+ },
+ "say.item.minecraft.mojang_banner_pattern": {
+  "sounds": [
+   "kotobakeep:say/e041bb2ce6874a9f"
+  ]
+ },
+ "say.item.minecraft.mooshroom_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/05ea952612c608e2"
+  ]
+ },
+ "say.item.minecraft.mourner_pottery_shard": {
+  "sounds": [
+   "kotobakeep:say/91f6e38e361c0f0e"
+  ]
+ },
+ "say.item.minecraft.mourner_pottery_sherd": {
+  "sounds": [
+   "kotobakeep:say/91f6e38e361c0f0e"
+  ]
+ },
+ "say.item.minecraft.mule_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/01a489ce148efac9"
+  ]
+ },
+ "say.item.minecraft.mushroom_stew": {
+  "sounds": [
+   "kotobakeep:say/962a9978a40bc578"
+  ]
+ },
+ "say.item.minecraft.music_disc_11": {
+  "sounds": [
+   "kotobakeep:say/f04bf807fe66485d"
+  ]
+ },
+ "say.item.minecraft.music_disc_13": {
+  "sounds": [
+   "kotobakeep:say/f04bf807fe66485d"
+  ]
+ },
+ "say.item.minecraft.music_disc_5": {
+  "sounds": [
+   "kotobakeep:say/f04bf807fe66485d"
+  ]
+ },
+ "say.item.minecraft.music_disc_blocks": {
+  "sounds": [
+   "kotobakeep:say/f04bf807fe66485d"
+  ]
+ },
+ "say.item.minecraft.music_disc_bounce": {
+  "sounds": [
+   "kotobakeep:say/f04bf807fe66485d"
+  ]
+ },
+ "say.item.minecraft.music_disc_cat": {
+  "sounds": [
+   "kotobakeep:say/f04bf807fe66485d"
+  ]
+ },
+ "say.item.minecraft.music_disc_chirp": {
+  "sounds": [
+   "kotobakeep:say/f04bf807fe66485d"
+  ]
+ },
+ "say.item.minecraft.music_disc_creator": {
+  "sounds": [
+   "kotobakeep:say/f04bf807fe66485d"
+  ]
+ },
+ "say.item.minecraft.music_disc_creator_music_box": {
+  "sounds": [
+   "kotobakeep:say/f04bf807fe66485d"
+  ]
+ },
+ "say.item.minecraft.music_disc_far": {
+  "sounds": [
+   "kotobakeep:say/f04bf807fe66485d"
+  ]
+ },
+ "say.item.minecraft.music_disc_lava_chicken": {
+  "sounds": [
+   "kotobakeep:say/f04bf807fe66485d"
+  ]
+ },
+ "say.item.minecraft.music_disc_mall": {
+  "sounds": [
+   "kotobakeep:say/f04bf807fe66485d"
+  ]
+ },
+ "say.item.minecraft.music_disc_mellohi": {
+  "sounds": [
+   "kotobakeep:say/f04bf807fe66485d"
+  ]
+ },
+ "say.item.minecraft.music_disc_otherside": {
+  "sounds": [
+   "kotobakeep:say/f04bf807fe66485d"
+  ]
+ },
+ "say.item.minecraft.music_disc_pigstep": {
+  "sounds": [
+   "kotobakeep:say/f04bf807fe66485d"
+  ]
+ },
+ "say.item.minecraft.music_disc_precipice": {
+  "sounds": [
+   "kotobakeep:say/f04bf807fe66485d"
+  ]
+ },
+ "say.item.minecraft.music_disc_relic": {
+  "sounds": [
+   "kotobakeep:say/f04bf807fe66485d"
+  ]
+ },
+ "say.item.minecraft.music_disc_stal": {
+  "sounds": [
+   "kotobakeep:say/f04bf807fe66485d"
+  ]
+ },
+ "say.item.minecraft.music_disc_strad": {
+  "sounds": [
+   "kotobakeep:say/f04bf807fe66485d"
+  ]
+ },
+ "say.item.minecraft.music_disc_tears": {
+  "sounds": [
+   "kotobakeep:say/f04bf807fe66485d"
+  ]
+ },
+ "say.item.minecraft.music_disc_wait": {
+  "sounds": [
+   "kotobakeep:say/f04bf807fe66485d"
+  ]
+ },
+ "say.item.minecraft.music_disc_ward": {
+  "sounds": [
+   "kotobakeep:say/f04bf807fe66485d"
+  ]
+ },
+ "say.item.minecraft.mutton": {
+  "sounds": [
+   "kotobakeep:say/00d15ae76db47f33"
+  ]
+ },
+ "say.item.minecraft.name_tag": {
+  "sounds": [
+   "kotobakeep:say/fc571b74b704d636"
+  ]
+ },
+ "say.item.minecraft.nautilus_shell": {
+  "sounds": [
+   "kotobakeep:say/5aedbee31d828c03"
+  ]
+ },
+ "say.item.minecraft.nautilus_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/ef9fa1bebb3f8ea2"
+  ]
+ },
+ "say.item.minecraft.nether_brick": {
+  "sounds": [
+   "kotobakeep:say/08bda170d8498fd1"
+  ]
+ },
+ "say.item.minecraft.nether_star": {
+  "sounds": [
+   "kotobakeep:say/4487edd4aeb39a75"
+  ]
+ },
+ "say.item.minecraft.nether_wart": {
+  "sounds": [
+   "kotobakeep:say/2a3de19ea7a41606"
+  ]
+ },
+ "say.item.minecraft.netherite_axe": {
+  "sounds": [
+   "kotobakeep:say/87b66c65ecc0c60d"
+  ]
+ },
+ "say.item.minecraft.netherite_boots": {
+  "sounds": [
+   "kotobakeep:say/c1d43954de44a196"
+  ]
+ },
+ "say.item.minecraft.netherite_chestplate": {
+  "sounds": [
+   "kotobakeep:say/19aafb51457e7f31"
+  ]
+ },
+ "say.item.minecraft.netherite_helmet": {
+  "sounds": [
+   "kotobakeep:say/608709819367d0dc"
+  ]
+ },
+ "say.item.minecraft.netherite_hoe": {
+  "sounds": [
+   "kotobakeep:say/abc2eda6b2bbe182"
+  ]
+ },
+ "say.item.minecraft.netherite_horse_armor": {
+  "sounds": [
+   "kotobakeep:say/3fcade983d69d574"
+  ]
+ },
+ "say.item.minecraft.netherite_ingot": {
+  "sounds": [
+   "kotobakeep:say/5a27dbbe5fa9fae5"
+  ]
+ },
+ "say.item.minecraft.netherite_leggings": {
+  "sounds": [
+   "kotobakeep:say/27ac30c710d3b659"
+  ]
+ },
+ "say.item.minecraft.netherite_nautilus_armor": {
+  "sounds": [
+   "kotobakeep:say/98b45fa808a1b7af"
+  ]
+ },
+ "say.item.minecraft.netherite_pickaxe": {
+  "sounds": [
+   "kotobakeep:say/7850d68256b9b67e"
+  ]
+ },
+ "say.item.minecraft.netherite_scrap": {
+  "sounds": [
+   "kotobakeep:say/5f0f1d46f972cd45"
+  ]
+ },
+ "say.item.minecraft.netherite_shovel": {
+  "sounds": [
+   "kotobakeep:say/6149dcd0815eb7a6"
+  ]
+ },
+ "say.item.minecraft.netherite_spear": {
+  "sounds": [
+   "kotobakeep:say/29c3f9eaa186ded8"
+  ]
+ },
+ "say.item.minecraft.netherite_sword": {
+  "sounds": [
+   "kotobakeep:say/4ff1eb67fa2ee6c4"
+  ]
+ },
+ "say.item.minecraft.netherite_upgrade_smithing_template": {
+  "sounds": [
+   "kotobakeep:say/3d4796cbb91d2664"
+  ]
+ },
+ "say.item.minecraft.oak_boat": {
+  "sounds": [
+   "kotobakeep:say/c6454e94796cc2fe"
+  ]
+ },
+ "say.item.minecraft.oak_chest_boat": {
+  "sounds": [
+   "kotobakeep:say/4dd0a0248c08bf4a"
+  ]
+ },
+ "say.item.minecraft.ocean_explorer_map": {
+  "sounds": [
+   "kotobakeep:say/c28756ae829186b1"
+  ]
+ },
+ "say.item.minecraft.ocean_monument_map": {
+  "sounds": [
+   "kotobakeep:say/6d8321fe0e2acd76"
+  ]
+ },
+ "say.item.minecraft.ocelot_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/aeca980ba3af97b1"
+  ]
+ },
+ "say.item.minecraft.ominous_bottle": {
+  "sounds": [
+   "kotobakeep:say/310c611e01f54f29"
+  ]
+ },
+ "say.item.minecraft.ominous_trial_key": {
+  "sounds": [
+   "kotobakeep:say/968c9b516b58ba43"
+  ]
+ },
+ "say.item.minecraft.orange_bundle": {
+  "sounds": [
+   "kotobakeep:say/5830512b07a5cb8b"
+  ]
+ },
+ "say.item.minecraft.orange_cushion": {
+  "sounds": [
+   "kotobakeep:say/25c0783782ed98c9"
+  ]
+ },
+ "say.item.minecraft.orange_dye": {
+  "sounds": [
+   "kotobakeep:say/bb3e9abd324ac5a5"
+  ]
+ },
+ "say.item.minecraft.orange_harness": {
+  "sounds": [
+   "kotobakeep:say/872f4028f7e93c1a"
+  ]
+ },
+ "say.item.minecraft.painting": {
+  "sounds": [
+   "kotobakeep:say/9ba55a455bcf5529"
+  ]
+ },
+ "say.item.minecraft.pale_oak_boat": {
+  "sounds": [
+   "kotobakeep:say/7983ab151c419687"
+  ]
+ },
+ "say.item.minecraft.pale_oak_chest_boat": {
+  "sounds": [
+   "kotobakeep:say/96fcdc3701afa2b4"
+  ]
+ },
+ "say.item.minecraft.panda_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/8a3ac20617629e50"
+  ]
+ },
+ "say.item.minecraft.paper": {
+  "sounds": [
+   "kotobakeep:say/4db6c00d0547ec4a"
+  ]
+ },
+ "say.item.minecraft.parched_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/897a954e41e98766"
+  ]
+ },
+ "say.item.minecraft.parrot_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/cce81a4bfb232f0a"
+  ]
+ },
+ "say.item.minecraft.phantom_membrane": {
+  "sounds": [
+   "kotobakeep:say/3e49eb17f8e5a1ef"
+  ]
+ },
+ "say.item.minecraft.phantom_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/f4885e8a6046934c"
+  ]
+ },
+ "say.item.minecraft.pig_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/2d513036bbe38c2a"
+  ]
+ },
+ "say.item.minecraft.piglin_banner_pattern": {
+  "sounds": [
+   "kotobakeep:say/e041bb2ce6874a9f"
+  ]
+ },
+ "say.item.minecraft.piglin_brute_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/22041e5fed225468"
+  ]
+ },
+ "say.item.minecraft.piglin_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/33c0576552a89004"
+  ]
+ },
+ "say.item.minecraft.pillager_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/b82ded5469032399"
+  ]
+ },
+ "say.item.minecraft.pink_bundle": {
+  "sounds": [
+   "kotobakeep:say/adb3c6a87bb115d4"
+  ]
+ },
+ "say.item.minecraft.pink_cushion": {
+  "sounds": [
+   "kotobakeep:say/2c695d699c3347ca"
+  ]
+ },
+ "say.item.minecraft.pink_dye": {
+  "sounds": [
+   "kotobakeep:say/3824878f3a916bfc"
+  ]
+ },
+ "say.item.minecraft.pink_harness": {
+  "sounds": [
+   "kotobakeep:say/6695d9f93a068b50"
+  ]
+ },
+ "say.item.minecraft.pitcher_plant": {
+  "sounds": [
+   "kotobakeep:say/9f6abb5968339819"
+  ]
+ },
+ "say.item.minecraft.pitcher_pod": {
+  "sounds": [
+   "kotobakeep:say/0ec47c4afcd09c9b"
+  ]
+ },
+ "say.item.minecraft.plains_village_map": {
+  "sounds": [
+   "kotobakeep:say/88ec812bf68cf70d"
+  ]
+ },
+ "say.item.minecraft.plenty_pottery_shard": {
+  "sounds": [
+   "kotobakeep:say/2b35abab1cd31f9d"
+  ]
+ },
+ "say.item.minecraft.plenty_pottery_sherd": {
+  "sounds": [
+   "kotobakeep:say/2b35abab1cd31f9d"
+  ]
+ },
+ "say.item.minecraft.poisonous_potato": {
+  "sounds": [
+   "kotobakeep:say/66bdedfefa9e486a"
+  ]
+ },
+ "say.item.minecraft.polar_bear_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/d0fe235965adb2e8"
+  ]
+ },
+ "say.item.minecraft.poplar_boat": {
+  "sounds": [
+   "kotobakeep:say/78612a7ae3bf54de"
+  ]
+ },
+ "say.item.minecraft.poplar_chest_boat": {
+  "sounds": [
+   "kotobakeep:say/5bf77ff25b5f6609"
+  ]
+ },
+ "say.item.minecraft.popped_chorus_fruit": {
+  "sounds": [
+   "kotobakeep:say/edde987e5662bb6c"
+  ]
+ },
+ "say.item.minecraft.porkchop": {
+  "sounds": [
+   "kotobakeep:say/b2cf892d3c6c9c83"
+  ]
+ },
+ "say.item.minecraft.potato": {
+  "sounds": [
+   "kotobakeep:say/ace8a7849d45ebf1"
+  ]
+ },
+ "say.item.minecraft.potion": {
+  "sounds": [
+   "kotobakeep:say/9e9955eb9db49ad5"
+  ]
+ },
+ "say.item.minecraft.pottery_shard_archer": {
+  "sounds": [
+   "kotobakeep:say/a311b35868fe4f9c"
+  ]
+ },
+ "say.item.minecraft.pottery_shard_arms_up": {
+  "sounds": [
+   "kotobakeep:say/3f8ed25628e2a797"
+  ]
+ },
+ "say.item.minecraft.pottery_shard_prize": {
+  "sounds": [
+   "kotobakeep:say/4a3b95217b172edc"
+  ]
+ },
+ "say.item.minecraft.pottery_shard_skull": {
+  "sounds": [
+   "kotobakeep:say/9159fa0d498b03b2"
+  ]
+ },
+ "say.item.minecraft.powder_snow_bucket": {
+  "sounds": [
+   "kotobakeep:say/2701b16bdc4704c7"
+  ]
+ },
+ "say.item.minecraft.prismarine_crystals": {
+  "sounds": [
+   "kotobakeep:say/f2f5720dffc66017"
+  ]
+ },
+ "say.item.minecraft.prismarine_shard": {
+  "sounds": [
+   "kotobakeep:say/e1fa7cdb82bd61ff"
+  ]
+ },
+ "say.item.minecraft.prize_pottery_shard": {
+  "sounds": [
+   "kotobakeep:say/4a3b95217b172edc"
+  ]
+ },
+ "say.item.minecraft.prize_pottery_sherd": {
+  "sounds": [
+   "kotobakeep:say/4a3b95217b172edc"
+  ]
+ },
+ "say.item.minecraft.pufferfish": {
+  "sounds": [
+   "kotobakeep:say/02c690ed6d4214b0"
+  ]
+ },
+ "say.item.minecraft.pufferfish_bucket": {
+  "sounds": [
+   "kotobakeep:say/f0e368cd5cc3b7bf"
+  ]
+ },
+ "say.item.minecraft.pufferfish_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/9ac20096c14c0f82"
+  ]
+ },
+ "say.item.minecraft.pumpkin_pie": {
+  "sounds": [
+   "kotobakeep:say/ad0b3e0dbf6f616c"
+  ]
+ },
+ "say.item.minecraft.pumpkin_seeds": {
+  "sounds": [
+   "kotobakeep:say/61b9f9681df39316"
+  ]
+ },
+ "say.item.minecraft.purple_bundle": {
+  "sounds": [
+   "kotobakeep:say/8bdfec6035a138ae"
+  ]
+ },
+ "say.item.minecraft.purple_cushion": {
+  "sounds": [
+   "kotobakeep:say/85f104d83a93d229"
+  ]
+ },
+ "say.item.minecraft.purple_dye": {
+  "sounds": [
+   "kotobakeep:say/500919a3f12056ec"
+  ]
+ },
+ "say.item.minecraft.purple_harness": {
+  "sounds": [
+   "kotobakeep:say/6c2f86d4b0acbc1e"
+  ]
+ },
+ "say.item.minecraft.quartz": {
+  "sounds": [
+   "kotobakeep:say/5f1ec95f0017e19f"
+  ]
+ },
+ "say.item.minecraft.rabbit": {
+  "sounds": [
+   "kotobakeep:say/c5e6e4ee3c29d122"
+  ]
+ },
+ "say.item.minecraft.rabbit_foot": {
+  "sounds": [
+   "kotobakeep:say/e712c02affe8b432"
+  ]
+ },
+ "say.item.minecraft.rabbit_hide": {
+  "sounds": [
+   "kotobakeep:say/5740d8ffdd5bde34"
+  ]
+ },
+ "say.item.minecraft.rabbit_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/eb6db5b1d0a5a5ca"
+  ]
+ },
+ "say.item.minecraft.rabbit_stew": {
+  "sounds": [
+   "kotobakeep:say/02d2011be059f2d5"
+  ]
+ },
+ "say.item.minecraft.raiser_armor_trim_smithing_template": {
+  "sounds": [
+   "kotobakeep:say/3d4796cbb91d2664"
+  ]
+ },
+ "say.item.minecraft.ravager_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/0df1e0d0865ac0c5"
+  ]
+ },
+ "say.item.minecraft.raw_copper": {
+  "sounds": [
+   "kotobakeep:say/603158570b3faf4d"
+  ]
+ },
+ "say.item.minecraft.raw_gold": {
+  "sounds": [
+   "kotobakeep:say/bd908c876769130e"
+  ]
+ },
+ "say.item.minecraft.raw_iron": {
+  "sounds": [
+   "kotobakeep:say/24dae70ab571fe25"
+  ]
+ },
+ "say.item.minecraft.recovery_compass": {
+  "sounds": [
+   "kotobakeep:say/2dc5e8e942f7f898"
+  ]
+ },
+ "say.item.minecraft.red_bundle": {
+  "sounds": [
+   "kotobakeep:say/e1c28695cdc75581"
+  ]
+ },
+ "say.item.minecraft.red_cushion": {
+  "sounds": [
+   "kotobakeep:say/fe3249226e93ca5b"
+  ]
+ },
+ "say.item.minecraft.red_dye": {
+  "sounds": [
+   "kotobakeep:say/6f7eea1695c06e43"
+  ]
+ },
+ "say.item.minecraft.red_harness": {
+  "sounds": [
+   "kotobakeep:say/0f5a248a375eb955"
+  ]
+ },
+ "say.item.minecraft.redstone": {
+  "sounds": [
+   "kotobakeep:say/ee5a5cf437810008"
+  ]
+ },
+ "say.item.minecraft.resin_brick": {
+  "sounds": [
+   "kotobakeep:say/eb7bae03b00e778a"
+  ]
+ },
+ "say.item.minecraft.resin_clump": {
+  "sounds": [
+   "kotobakeep:say/fd070e2a6a53b48f"
+  ]
+ },
+ "say.item.minecraft.rib_armor_trim_smithing_template": {
+  "sounds": [
+   "kotobakeep:say/3d4796cbb91d2664"
+  ]
+ },
+ "say.item.minecraft.rotten_flesh": {
+  "sounds": [
+   "kotobakeep:say/5e61848063f9512d"
+  ]
+ },
+ "say.item.minecraft.saddle": {
+  "sounds": [
+   "kotobakeep:say/d966ab31bc622999"
+  ]
+ },
+ "say.item.minecraft.salmon": {
+  "sounds": [
+   "kotobakeep:say/628881c99a4bb882"
+  ]
+ },
+ "say.item.minecraft.salmon_bucket": {
+  "sounds": [
+   "kotobakeep:say/ce19cb73235826bc"
+  ]
+ },
+ "say.item.minecraft.salmon_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/2a231eee183cda50"
+  ]
+ },
+ "say.item.minecraft.savanna_village_map": {
+  "sounds": [
+   "kotobakeep:say/72fa4896821553cd"
+  ]
+ },
+ "say.item.minecraft.scrape_pottery_sherd": {
+  "sounds": [
+   "kotobakeep:say/9267475e341adb7b"
+  ]
+ },
+ "say.item.minecraft.scute": {
+  "sounds": [
+   "kotobakeep:say/6bc381e117951bb0"
+  ]
+ },
+ "say.item.minecraft.sentry_armor_trim_smithing_template": {
+  "sounds": [
+   "kotobakeep:say/3d4796cbb91d2664"
+  ]
+ },
+ "say.item.minecraft.shaper_armor_trim_smithing_template": {
+  "sounds": [
+   "kotobakeep:say/3d4796cbb91d2664"
+  ]
+ },
+ "say.item.minecraft.sheaf_pottery_shard": {
+  "sounds": [
+   "kotobakeep:say/9684deee21d0e490"
+  ]
+ },
+ "say.item.minecraft.sheaf_pottery_sherd": {
+  "sounds": [
+   "kotobakeep:say/9684deee21d0e490"
+  ]
+ },
+ "say.item.minecraft.shears": {
+  "sounds": [
+   "kotobakeep:say/3cc5b3c2f5286e79"
+  ]
+ },
+ "say.item.minecraft.sheep_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/a0d94f99eed2ff4d"
+  ]
+ },
+ "say.item.minecraft.shelter_pottery_shard": {
+  "sounds": [
+   "kotobakeep:say/94b90934faa1dfab"
+  ]
+ },
+ "say.item.minecraft.shelter_pottery_sherd": {
+  "sounds": [
+   "kotobakeep:say/94b90934faa1dfab"
+  ]
+ },
+ "say.item.minecraft.shield": {
+  "sounds": [
+   "kotobakeep:say/bf6dd257011af8da"
+  ]
+ },
+ "say.item.minecraft.shulker_shell": {
+  "sounds": [
+   "kotobakeep:say/eaa1c08d1d356eb3"
+  ]
+ },
+ "say.item.minecraft.shulker_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/2d46fa6356717926"
+  ]
+ },
+ "say.item.minecraft.sign": {
+  "sounds": [
+   "kotobakeep:say/013dd73b0953b4ce"
+  ]
+ },
+ "say.item.minecraft.silence_armor_trim_smithing_template": {
+  "sounds": [
+   "kotobakeep:say/3d4796cbb91d2664"
+  ]
+ },
+ "say.item.minecraft.silverfish_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/fbc3a1907d514483"
+  ]
+ },
+ "say.item.minecraft.skeleton_horse_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/b40bd42bf8b3d766"
+  ]
+ },
+ "say.item.minecraft.skeleton_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/c769a272d26458e6"
+  ]
+ },
+ "say.item.minecraft.skull_banner_pattern": {
+  "sounds": [
+   "kotobakeep:say/e041bb2ce6874a9f"
+  ]
+ },
+ "say.item.minecraft.skull_pottery_shard": {
+  "sounds": [
+   "kotobakeep:say/9159fa0d498b03b2"
+  ]
+ },
+ "say.item.minecraft.skull_pottery_sherd": {
+  "sounds": [
+   "kotobakeep:say/9159fa0d498b03b2"
+  ]
+ },
+ "say.item.minecraft.slime_ball": {
+  "sounds": [
+   "kotobakeep:say/dac9963873f2945e"
+  ]
+ },
+ "say.item.minecraft.slime_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/482edc405ecfa2c6"
+  ]
+ },
+ "say.item.minecraft.smithing_template": {
+  "sounds": [
+   "kotobakeep:say/3d4796cbb91d2664"
+  ]
+ },
+ "say.item.minecraft.sniffer_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/ecf9b179661d202b"
+  ]
+ },
+ "say.item.minecraft.snort_pottery_shard": {
+  "sounds": [
+   "kotobakeep:say/d94e1bd266bfd658"
+  ]
+ },
+ "say.item.minecraft.snort_pottery_sherd": {
+  "sounds": [
+   "kotobakeep:say/d94e1bd266bfd658"
+  ]
+ },
+ "say.item.minecraft.snout_armor_trim_smithing_template": {
+  "sounds": [
+   "kotobakeep:say/3d4796cbb91d2664"
+  ]
+ },
+ "say.item.minecraft.snow_golem_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/eb2345b60d233bf0"
+  ]
+ },
+ "say.item.minecraft.snowball": {
+  "sounds": [
+   "kotobakeep:say/fc69c78449931922"
+  ]
+ },
+ "say.item.minecraft.snowy_village_map": {
+  "sounds": [
+   "kotobakeep:say/e38ce7b5c9eecd68"
+  ]
+ },
+ "say.item.minecraft.spectral_arrow": {
+  "sounds": [
+   "kotobakeep:say/5ac59ae3bf4025de"
+  ]
+ },
+ "say.item.minecraft.spider_eye": {
+  "sounds": [
+   "kotobakeep:say/14c7339d5de31bb0"
+  ]
+ },
+ "say.item.minecraft.spider_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/9ef144759a6b85f6"
+  ]
+ },
+ "say.item.minecraft.spire_armor_trim_smithing_template": {
+  "sounds": [
+   "kotobakeep:say/3d4796cbb91d2664"
+  ]
+ },
+ "say.item.minecraft.splash_potion": {
+  "sounds": [
+   "kotobakeep:say/1ae8920c928884f4"
+  ]
+ },
+ "say.item.minecraft.spruce_boat": {
+  "sounds": [
+   "kotobakeep:say/1f31247f6d7878b5"
+  ]
+ },
+ "say.item.minecraft.spruce_chest_boat": {
+  "sounds": [
+   "kotobakeep:say/5bf7538c384d5f16"
+  ]
+ },
+ "say.item.minecraft.spyglass": {
+  "sounds": [
+   "kotobakeep:say/454c520db5cc2663"
+  ]
+ },
+ "say.item.minecraft.squid_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/cf83b85119af91de"
+  ]
+ },
+ "say.item.minecraft.stick": {
+  "sounds": [
+   "kotobakeep:say/378dc9c106e983eb"
+  ]
+ },
+ "say.item.minecraft.stone_axe": {
+  "sounds": [
+   "kotobakeep:say/a100d6633ecf1280"
+  ]
+ },
+ "say.item.minecraft.stone_hoe": {
+  "sounds": [
+   "kotobakeep:say/6ae433d3787146ac"
+  ]
+ },
+ "say.item.minecraft.stone_pickaxe": {
+  "sounds": [
+   "kotobakeep:say/2e90da0a71cb8f9d"
+  ]
+ },
+ "say.item.minecraft.stone_shovel": {
+  "sounds": [
+   "kotobakeep:say/4f53dd205cffab7e"
+  ]
+ },
+ "say.item.minecraft.stone_spear": {
+  "sounds": [
+   "kotobakeep:say/1f57599697ed737e"
+  ]
+ },
+ "say.item.minecraft.stone_sword": {
+  "sounds": [
+   "kotobakeep:say/a6bf0e5cf0f80dc3"
+  ]
+ },
+ "say.item.minecraft.straw_bed": {
+  "sounds": [
+   "kotobakeep:say/99ea926bd8cbcc65"
+  ]
+ },
+ "say.item.minecraft.stray_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/7be6cd3db88e42f7"
+  ]
+ },
+ "say.item.minecraft.strider_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/d2495a36219c90b8"
+  ]
+ },
+ "say.item.minecraft.string": {
+  "sounds": [
+   "kotobakeep:say/7e144b27bcbd5e60"
+  ]
+ },
+ "say.item.minecraft.sugar": {
+  "sounds": [
+   "kotobakeep:say/1397cf830dcb80cb"
+  ]
+ },
+ "say.item.minecraft.sulfur_cube_bucket": {
+  "sounds": [
+   "kotobakeep:say/df7545c3b9626aa0"
+  ]
+ },
+ "say.item.minecraft.sulfur_cube_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/2b158bbd8fd48ad3"
+  ]
+ },
+ "say.item.minecraft.suspicious_stew": {
+  "sounds": [
+   "kotobakeep:say/dd3c4ff88e7afbe5"
+  ]
+ },
+ "say.item.minecraft.swamp_explorer_map": {
+  "sounds": [
+   "kotobakeep:say/2713fb7cec9e766b"
+  ]
+ },
+ "say.item.minecraft.swamp_hut_map": {
+  "sounds": [
+   "kotobakeep:say/a0f09af48a0fde17"
+  ]
+ },
+ "say.item.minecraft.sweet_berries": {
+  "sounds": [
+   "kotobakeep:say/4adf6514ef3c84d9"
+  ]
+ },
+ "say.item.minecraft.tadpole_bucket": {
+  "sounds": [
+   "kotobakeep:say/a66af17f32aecb0c"
+  ]
+ },
+ "say.item.minecraft.tadpole_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/6785ad92f0bf209d"
+  ]
+ },
+ "say.item.minecraft.taiga_village_map": {
+  "sounds": [
+   "kotobakeep:say/2b0ff54bc7c82e4e"
+  ]
+ },
+ "say.item.minecraft.tide_armor_trim_smithing_template": {
+  "sounds": [
+   "kotobakeep:say/3d4796cbb91d2664"
+  ]
+ },
+ "say.item.minecraft.tipped_arrow": {
+  "sounds": [
+   "kotobakeep:say/5b1998aa9061d8cd"
+  ]
+ },
+ "say.item.minecraft.tnt_minecart": {
+  "sounds": [
+   "kotobakeep:say/ae356b12ad1a0eac"
+  ]
+ },
+ "say.item.minecraft.torchflower_seeds": {
+  "sounds": [
+   "kotobakeep:say/a1c8d705e5595946"
+  ]
+ },
+ "say.item.minecraft.totem_of_undying": {
+  "sounds": [
+   "kotobakeep:say/bd65f2ca7a481a74"
+  ]
+ },
+ "say.item.minecraft.trader_llama_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/bdb23456c7eafb9c"
+  ]
+ },
+ "say.item.minecraft.trial_explorer_map": {
+  "sounds": [
+   "kotobakeep:say/7ebdc6d2bb01d782"
+  ]
+ },
+ "say.item.minecraft.trial_key": {
+  "sounds": [
+   "kotobakeep:say/603b2810f09223e9"
+  ]
+ },
+ "say.item.minecraft.trident": {
+  "sounds": [
+   "kotobakeep:say/38bcca0439e59c87"
+  ]
+ },
+ "say.item.minecraft.tropical_fish": {
+  "sounds": [
+   "kotobakeep:say/b5850e3bf404fda2"
+  ]
+ },
+ "say.item.minecraft.tropical_fish_bucket": {
+  "sounds": [
+   "kotobakeep:say/0524db95552f49a1"
+  ]
+ },
+ "say.item.minecraft.tropical_fish_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/c69ac9d61d8e1efe"
+  ]
+ },
+ "say.item.minecraft.turtle_helmet": {
+  "sounds": [
+   "kotobakeep:say/afb2401c55db0910"
+  ]
+ },
+ "say.item.minecraft.turtle_scute": {
+  "sounds": [
+   "kotobakeep:say/6bc381e117951bb0"
+  ]
+ },
+ "say.item.minecraft.turtle_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/bd3b750b0d63affe"
+  ]
+ },
+ "say.item.minecraft.vex_armor_trim_smithing_template": {
+  "sounds": [
+   "kotobakeep:say/3d4796cbb91d2664"
+  ]
+ },
+ "say.item.minecraft.vex_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/cfb6ff19064f5c7d"
+  ]
+ },
+ "say.item.minecraft.villager_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/2a4302a92a8b45ae"
+  ]
+ },
+ "say.item.minecraft.vindicator_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/b7092820e92932e4"
+  ]
+ },
+ "say.item.minecraft.wandering_trader_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/b774ebd7cc4c7bb4"
+  ]
+ },
+ "say.item.minecraft.ward_armor_trim_smithing_template": {
+  "sounds": [
+   "kotobakeep:say/3d4796cbb91d2664"
+  ]
+ },
+ "say.item.minecraft.warden_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/d61b90a5b5c3781e"
+  ]
+ },
+ "say.item.minecraft.warm_ocean_ruins_map": {
+  "sounds": [
+   "kotobakeep:say/31246c2c2df7750d"
+  ]
+ },
+ "say.item.minecraft.warped_fungus_on_a_stick": {
+  "sounds": [
+   "kotobakeep:say/4cc254e9731923c0"
+  ]
+ },
+ "say.item.minecraft.water_bucket": {
+  "sounds": [
+   "kotobakeep:say/5cc4b3b4f4861a82"
+  ]
+ },
+ "say.item.minecraft.wayfinder_armor_trim_smithing_template": {
+  "sounds": [
+   "kotobakeep:say/3d4796cbb91d2664"
+  ]
+ },
+ "say.item.minecraft.wheat": {
+  "sounds": [
+   "kotobakeep:say/f13861f7a8e2aa8f"
+  ]
+ },
+ "say.item.minecraft.wheat_seeds": {
+  "sounds": [
+   "kotobakeep:say/24ba580bfa7aed96"
+  ]
+ },
+ "say.item.minecraft.white_bundle": {
+  "sounds": [
+   "kotobakeep:say/317a40bf53bbdf43"
+  ]
+ },
+ "say.item.minecraft.white_cushion": {
+  "sounds": [
+   "kotobakeep:say/3a6ad68bb082de4e"
+  ]
+ },
+ "say.item.minecraft.white_dye": {
+  "sounds": [
+   "kotobakeep:say/7993ea725aa11ffe"
+  ]
+ },
+ "say.item.minecraft.white_harness": {
+  "sounds": [
+   "kotobakeep:say/e8463f6183b8ad57"
+  ]
+ },
+ "say.item.minecraft.wild_armor_trim_smithing_template": {
+  "sounds": [
+   "kotobakeep:say/3d4796cbb91d2664"
+  ]
+ },
+ "say.item.minecraft.wind_charge": {
+  "sounds": [
+   "kotobakeep:say/db0a05b582d6e827"
+  ]
+ },
+ "say.item.minecraft.witch_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/d44ef8a7392c8aec"
+  ]
+ },
+ "say.item.minecraft.wither_skeleton_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/4ad26e4ade189d23"
+  ]
+ },
+ "say.item.minecraft.wither_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/dd5bf477b487dd74"
+  ]
+ },
+ "say.item.minecraft.wolf_armor": {
+  "sounds": [
+   "kotobakeep:say/8b6056a88d8e4e95"
+  ]
+ },
+ "say.item.minecraft.wolf_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/30416da8275057bf"
+  ]
+ },
+ "say.item.minecraft.wooden_axe": {
+  "sounds": [
+   "kotobakeep:say/a2e09c3fb4c53876"
+  ]
+ },
+ "say.item.minecraft.wooden_hoe": {
+  "sounds": [
+   "kotobakeep:say/0e27baa275f1684f"
+  ]
+ },
+ "say.item.minecraft.wooden_pickaxe": {
+  "sounds": [
+   "kotobakeep:say/95a728b04f108ea5"
+  ]
+ },
+ "say.item.minecraft.wooden_shovel": {
+  "sounds": [
+   "kotobakeep:say/07e525cacc35628c"
+  ]
+ },
+ "say.item.minecraft.wooden_spear": {
+  "sounds": [
+   "kotobakeep:say/b377ea622b95b46e"
+  ]
+ },
+ "say.item.minecraft.wooden_sword": {
+  "sounds": [
+   "kotobakeep:say/7608c31cfbf856c7"
+  ]
+ },
+ "say.item.minecraft.woodland_explorer_map": {
+  "sounds": [
+   "kotobakeep:say/adec097caa02a4f3"
+  ]
+ },
+ "say.item.minecraft.woodland_mansion_map": {
+  "sounds": [
+   "kotobakeep:say/2d7208ba17ed1fbb"
+  ]
+ },
+ "say.item.minecraft.writable_book": {
+  "sounds": [
+   "kotobakeep:say/3dc14efbc81f1b7c"
+  ]
+ },
+ "say.item.minecraft.written_book": {
+  "sounds": [
+   "kotobakeep:say/d8e5e386547bd5dd"
+  ]
+ },
+ "say.item.minecraft.yellow_bundle": {
+  "sounds": [
+   "kotobakeep:say/9371ac0b61096825"
+  ]
+ },
+ "say.item.minecraft.yellow_cushion": {
+  "sounds": [
+   "kotobakeep:say/86c1992067444e34"
+  ]
+ },
+ "say.item.minecraft.yellow_dye": {
+  "sounds": [
+   "kotobakeep:say/c4bc3447f6b08cf5"
+  ]
+ },
+ "say.item.minecraft.yellow_harness": {
+  "sounds": [
+   "kotobakeep:say/272f061f1ba1721e"
+  ]
+ },
+ "say.item.minecraft.zoglin_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/2fb7cc4be9beb7d6"
+  ]
+ },
+ "say.item.minecraft.zombie_horse_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/590a64b7ca408957"
+  ]
+ },
+ "say.item.minecraft.zombie_nautilus_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/0bc64d521692ca68"
+  ]
+ },
+ "say.item.minecraft.zombie_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/772cebb143e256bf"
+  ]
+ },
+ "say.item.minecraft.zombie_villager_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/9e8e4ad0e3584aee"
+  ]
+ },
+ "say.item.minecraft.zombified_piglin_spawn_egg": {
+  "sounds": [
+   "kotobakeep:say/21d3dd84f3b3db59"
+  ]
+ }
+}

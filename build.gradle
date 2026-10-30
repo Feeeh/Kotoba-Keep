@@ -1,0 +1,48 @@
+plugins { id 'net.fabricmc.fabric-loom' version "${loom_version}" }
+
+version = project.mod_version
+group = 'id.glitchkid'
+base { archivesName = 'kotoba-keep' }
+repositories {
+    mavenCentral()
+    maven { url = 'https://maven.maxhenkel.de/repository/public' }
+}
+loom {
+    splitEnvironmentSourceSets()
+    mods { kotobakeep { sourceSet sourceSets.main; sourceSet sourceSets.client } }
+}
+dependencies {
+    minecraft "com.mojang:minecraft:${minecraft_version}"
+    implementation "net.fabricmc:fabric-loader:${loader_version}"
+    implementation "net.fabricmc.fabric-api:fabric-api:${fabric_api_version}"
+    compileOnly 'de.maxhenkel.voicechat:voicechat-api:2.6.27'
+    clientCompileOnly 'de.maxhenkel.voicechat:voicechat-api:2.6.27'
+    implementation include('com.atilika.kuromoji:kuromoji-core:0.9.0')
+    implementation include('com.atilika.kuromoji:kuromoji-ipadic:0.9.0')
+    clientImplementation include('com.alphacephei:vosk:0.3.45')
+    clientImplementation include('net.java.dev.jna:jna:5.18.1')
+    runtimeOnly files('vendor/voicechat-fabric-2.6.27+26.3.jar')
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.13.4'
+    testImplementation 'de.maxhenkel.voicechat:voicechat-api:2.6.27'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+processResources {
+    inputs.property 'version', project.version
+    filesMatching('fabric.mod.json') { expand version: project.version }
+}
+tasks.withType(JavaCompile).configureEach { options.release = 25; options.encoding = 'UTF-8' }
+java { withSourcesJar(); sourceCompatibility = JavaVersion.VERSION_25; targetCompatibility = JavaVersion.VERSION_25 }
+test { useJUnitPlatform() }
+tasks.register('speechSmoke', JavaExec) {
+    dependsOn 'clientClasses'
+    classpath = sourceSets.client.runtimeClasspath
+    mainClass = 'id.glitchkid.kotobakeep.client.SpeechSmoke'
+    args = [file('vendor/models/vosk-model-small-ja-0.22').absolutePath]
+}
+tasks.register('voiceLines', JavaExec) {
+    dependsOn 'testClasses'
+    classpath = sourceSets.test.runtimeClasspath
+    mainClass = 'id.glitchkid.kotobakeep.VoiceLines'
+    args = [file('build/voice-lines.json').absolutePath]
+}
+jar { from('LICENSE'); from('THIRD_PARTY_NOTICES.md') }

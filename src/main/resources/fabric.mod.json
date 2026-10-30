@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "kotobakeep",
+  "version": "${version}",
+  "name": "Kotoba Keep",
+  "description": "Say it to keep it. Learn the original Japanese Minecraft item names through offline voice challenges. Voice: VOICEVOX:冥鳴ひまり.",
+  "authors": ["glitchk.id"],
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["id.glitchkid.kotobakeep.KotobaKeep"],
+    "client": ["id.glitchkid.kotobakeep.client.KotobaClient"],
+    "voicechat": ["id.glitchkid.kotobakeep.voice.KotobaVoicePlugin"]
+  },
+  "depends": { "fabricloader": ">=0.20.1", "minecraft": "26.3", "java": ">=25", "fabric-api": "*", "voicechat": ">=2.6.27" }
+}
