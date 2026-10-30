@@ -112,6 +112,17 @@ The JAR is written to `build/libs/`. Kuromoji, Vosk and JNA are bundled inside i
 - `gradlew runClient` needs `vendor/voicechat-fabric-2.6.27+26.3.jar` from the Simple Voice Chat releases.
 - `gradlew speechSmoke` needs the extracted model in `vendor/models/vosk-model-small-ja-0.22`. It checks speech vocabulary for all 1,859 item names and loads the model through the native library.
 
+### Releasing
+
+GitHub Actions builds and tests every push. To publish a release, set `mod_version` in `gradle.properties`, commit, and push a matching tag:
+
+```powershell
+git tag v1.2.1
+git push origin v1.2.1
+```
+
+The workflow attaches `kotoba-keep-<version>+26.3.jar` and its SHA-256 checksum to a new GitHub release. It refuses tags that don't match `mod_version`. The release text comes from `.github/release-notes.md` plus the commit list.
+
 ### Regenerating the voice clips
 
 The OGG clips in `src/client/resources/assets/kotobakeep/sounds/say/` are generated. Each clip is checked against the mod's furigana reading; when VOICEVOX would misread a Minecraft name (for example 金床 as きんゆか instead of かなとこ), the generator fixes the reading. Unchanged words are not re-recorded.
