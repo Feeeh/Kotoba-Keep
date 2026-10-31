@@ -7,14 +7,23 @@ import net.minecraft.client.DeltaTracker;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.world.item.ItemStack;
 
 /** Full panel during play; a compact strip on top of open menus, which Minecraft draws over the HUD. */
 final class ChallengeHud implements HudElement {
-    private static final float WORD_SCALE=2.0f, RUBY_SCALE=1.0f, ROMAJI_SCALE=1.1f;
+    // Full panel: one row (icon, word, romaji over meaning, timer), the status under it, the countdown along the bottom edge.
+    private static final float WORD_SCALE=2.0f, RUBY_SCALE=1.0f, ICON_SCALE=1.5f, TIMER_SCALE=1.25f, MEANING_SCALE=0.9f, STATUS_SCALE=0.9f;
+    private static final int PANEL_HEIGHT=52, PANEL_MIN_WIDTH=200, PAD=10, GAP=8, ICON_SIZE=24, SIDE_MAX_WIDTH=140;
+    private static final int RUBY_TOP=7, WORD_TOP=17, ICON_TOP=8, SIDE_TOP=10, SIDE_MIDDLE=16, SIDE_STEP=12, STATUS_TOP=39;
+    private static final int DIVIDER_TOP=8, DIVIDER_BOTTOM=32, TIMER_TOP=9, TIMER_WIDTH=28, TIMER_HEIGHT=22;
     private static final float COMPACT_WORD_SCALE=1.5f, COMPACT_RUBY_SCALE=0.75f, SMALL_SCALE=0.75f;
     private static final int COMPACT_TOP=4, COMPACT_HEIGHT=32, COMPACT_TEXT_MAX=160;
+    private static final int ACCENT_WIDTH=2, PROGRESS_HEIGHT=2, KANJI_PAD=4;
+    private static final int BACKGROUND=0xF020182B, SLOT_COLOR=0xFF2E2240, BADGE_COLOR=0xFF392845, TRACK_COLOR=0xFF4B365C;
+    private static final int ROMAJI_COLOR=0xFFE6DDED, MEANING_COLOR=0xFFB9A9C9, FAIL_COLOR=0xFFF1B2C9;
+    private static final double TICKS_PER_SECOND=20;
     private final KotobaClient state;
     ChallengeHud(KotobaClient state){this.state=state;}
 
@@ -39,24 +48,36 @@ final class ChallengeHud implements HudElement {
         g.text(font,status,-font.width(status)/2,0,KotobaKeep.CONFIG.accentColor());g.pose().popMatrix();
     }
     private void drawPanel(GuiGraphicsExtractor g) {
+        var font=Minecraft.getInstance().font;
         int accent=KotobaKeep.CONFIG.accentColor();
-        int width=Math.max(300,wordWidth(WORD_SCALE,RUBY_SCALE)+88), height=KotobaKeep.CONFIG.showRomaji?122:105;
+        String romaji=KotobaKeep.CONFIG.showRomaji?romaji():"", meaning=meaning();
+        int wordX=PAD+ICON_SIZE+GAP, wordEnd=wordX+wordWidth(WORD_SCALE,RUBY_SCALE);
+        int sideWidth=Math.min(SIDE_MAX_WIDTH,(int)Math.ceil(Math.max(font.width(romaji),font.width(meaning)*MEANING_SCALE)));
+        int sideX=wordEnd+GAP, rowEnd=sideWidth>0?sideX+sideWidth:wordEnd;
+        int width=Math.max(PANEL_MIN_WIDTH,rowEnd+GAP+TIMER_WIDTH+PAD);
         float scale=Math.min(1f,(g.guiWidth()-16f)/width);
         g.pose().pushMatrix();g.pose().translate((g.guiWidth()-width*scale)/2f,KotobaKeep.CONFIG.hudTop);g.pose().scale(scale,scale);
-        drawBackground(g,width,height,accent);
-        scaledText(g,state.retryRemaining>0?"NEED MORE TIME?":"SAY IT IN JAPANESE",56,10,width-108,0xFFEACFF7,1.05f);
-        drawTimer(g,width-40,7,32,19,1.1f);
-        drawItem(g,13,42,2f);
-        drawWord(g,56,30,46,WORD_SCALE,RUBY_SCALE,accent);
-        if(KotobaKeep.CONFIG.showRomaji) scaledText(g,romaji(),56,73,width-66,0xFFE6DDED,ROMAJI_SCALE);
-        drawProgress(g,56,height-32,width-12,4,accent);
-        scaledText(g,statusText(),56,height-20,width-66,statusColor(),1f);
+        drawBackground(g,width,PANEL_HEIGHT,accent);
+        roundedRect(g,PAD-2,ICON_TOP-2,ICON_SIZE+4,ICON_SIZE+4,SLOT_COLOR);
+        drawItem(g,PAD,ICON_TOP,ICON_SCALE);
+        drawWord(g,wordX,RUBY_TOP,WORD_TOP,WORD_SCALE,RUBY_SCALE,accent);
+        if(sideWidth>0) drawSide(g,sideX,sideWidth,romaji,meaning);
+        drawTimer(g,width-PAD-TIMER_WIDTH,TIMER_TOP,TIMER_WIDTH,TIMER_HEIGHT,TIMER_SCALE);
+        scaledText(g,statusText(),PAD,STATUS_TOP,width-2*PAD,statusColor(),STATUS_SCALE);
+        drawProgress(g,width,PANEL_HEIGHT,accent);
         g.pose().popMatrix();
+    }
+    /** Romaji over the meaning, beside the word behind a thin divider; a single line sits centred. */
+    private static void drawSide(GuiGraphicsExtractor g,int x,int width,String romaji,String meaning) {
+        g.fill(x-GAP/2,DIVIDER_TOP,x-GAP/2+1,DIVIDER_BOTTOM,TRACK_COLOR);
+        boolean both=!romaji.isEmpty() && !meaning.isEmpty();
+        if(!romaji.isEmpty()) scaledText(g,romaji,x,both?SIDE_TOP:SIDE_MIDDLE,width,ROMAJI_COLOR,1f);
+        if(!meaning.isEmpty()) scaledText(g,meaning,x,both?SIDE_TOP+SIDE_STEP:SIDE_MIDDLE,width,MEANING_COLOR,MEANING_SCALE);
     }
     private void drawCompact(GuiGraphicsExtractor g,int mouseX,int mouseY) {
         var font=Minecraft.getInstance().font;
         int accent=KotobaKeep.CONFIG.accentColor();
-        String detail=KotobaKeep.CONFIG.showRomaji?romaji():"", status=statusText();
+        String detail=compactDetail(), status=statusText();
         int textX=28+wordWidth(COMPACT_WORD_SCALE,COMPACT_RUBY_SCALE)+6;
         int textWidth=Math.clamp((int)Math.ceil(Math.max(font.width(detail),font.width(status))*SMALL_SCALE),60,COMPACT_TEXT_MAX);
         int width=textX+textWidth+38;
@@ -67,24 +88,29 @@ final class ChallengeHud implements HudElement {
         drawBackground(g,width,COMPACT_HEIGHT,accent);
         drawItem(g,8,8,1f);
         drawWord(g,28,3,11,COMPACT_WORD_SCALE,COMPACT_RUBY_SCALE,accent);
-        scaledText(g,detail,textX,7,textWidth,0xFFE6DDED,SMALL_SCALE);
+        scaledText(g,detail,textX,7,textWidth,ROMAJI_COLOR,SMALL_SCALE);
         scaledText(g,status,textX,17,textWidth,statusColor(),SMALL_SCALE);
         drawTimer(g,width-32,7,26,14,1f);
-        drawProgress(g,4,COMPACT_HEIGHT-4,width-4,2,accent);
+        drawProgress(g,width,COMPACT_HEIGHT,accent);
         g.pose().popMatrix();
     }
 
     private static void drawBackground(GuiGraphicsExtractor g,int width,int height,int accent) {
-        g.fill(0,0,width,height,0xF020182B);g.fill(0,0,3,height,accent);
-        g.fill(3,0,width,1,accent);g.fill(3,height-1,width,height,0xFF694A7C);
+        roundedRect(g,0,0,width,height,BACKGROUND);
+        g.fill(0,1,ACCENT_WIDTH,height-1,accent);
     }
-    private void drawTimer(GuiGraphicsExtractor g,int x,int y,int width,int height,float textScale) {
+    /** A rectangle without its corner pixels, which reads as softly rounded. */
+    private static void roundedRect(GuiGraphicsExtractor g,int x,int y,int width,int height,int color) {
+        g.fill(x+1,y,x+width-1,y+height,color);
+        g.fill(x,y+1,x+1,y+height-1,color);g.fill(x+width-1,y+1,x+width,y+height-1,color);
+    }
+    private void drawTimer(GuiGraphicsExtractor g,int x,int y,int width,int height,float desiredScale) {
         var font=Minecraft.getInstance().font;
-        int ticks=ticksLeft();
-        String time=state.outcome==3?"DEMO":ticks>0?(int)Math.ceil(ticks/20.0)+"s":"...";
-        g.fill(x,y,x+width,y+height,0xFF392845);
+        String time=timerText();
+        float textScale=Math.min(desiredScale,(width-4f)/font.width(time));
+        roundedRect(g,x,y,width,height,BADGE_COLOR);
         g.pose().pushMatrix();g.pose().translate(x+width/2f,y+(height-8*textScale)/2f);g.pose().scale(textScale,textScale);
-        g.text(font,time,-font.width(time)/2,0,0xFFF7EEFC);g.pose().popMatrix();
+        g.text(font,time,-font.width(time)/2,0,flashing()?FAIL_COLOR:0xFFF7EEFC);g.pose().popMatrix();
     }
     private void drawItem(GuiGraphicsExtractor g,int x,int y,float scale) {
         var item=BuiltInRegistries.ITEM.getValue(Identifier.parse(state.challenge.item()));
@@ -105,14 +131,35 @@ final class ChallengeHud implements HudElement {
             x+=cell;
         }
     }
-    private void drawProgress(GuiGraphicsExtractor g,int x,int y,int right,int height,int accent) {
+    /** The countdown drains along the card's bottom edge. */
+    private void drawProgress(GuiGraphicsExtractor g,int width,int height,int accent) {
         int fullTicks=state.retryRemaining>0?Math.max(1,state.retryTotalTicks):Math.max(1,state.challenge.ticks());
         float fraction=state.outcome==1?1:Math.clamp(ticksLeft()/(float)fullTicks,0,1);
-        g.fill(x,y,right,y+height,0xFF4B365C);
-        g.fill(x,y,x+(int)((right-x)*fraction),y+height,accent);
+        int left=ACCENT_WIDTH, right=width-1, top=height-PROGRESS_HEIGHT;
+        g.fill(left,top,right,height,TRACK_COLOR);
+        g.fill(left,top,left+(int)((right-left)*fraction),height,accent);
     }
 
     private int ticksLeft() { return state.retryRemaining>0?state.retryRemaining:state.remaining; }
+    /** Right after a replay the timer briefly shows what it cost instead of the time. */
+    private String timerText() {
+        if(state.outcome==3)return "DEMO";
+        if(flashing())return replayCost();
+        int ticks=ticksLeft();
+        return ticks>0?seconds(ticks)+"s":"...";
+    }
+    private boolean flashing() { return state.replayFlash>0 && state.outcome==-1; }
+    private String replayCost() { return "-"+seconds(state.challenge.replayCost())+"s"; }
+    private static int seconds(int ticks) { return (int)Math.ceil(ticks/TICKS_PER_SECOND); }
+    /** The name in the player's game language; empty when untranslated, blank or the same Japanese. */
+    private String meaning() {
+        String key=state.challenge.key(), text=Component.translatable(key).getString();
+        return text.isBlank() || text.equals(key) || text.equals(state.word.text()) ? "" : text;
+    }
+    private String compactDetail() {
+        String romaji=KotobaKeep.CONFIG.showRomaji?romaji():"", meaning=meaning();
+        return romaji.isEmpty() || meaning.isEmpty() ? romaji+meaning : romaji+" · "+meaning;
+    }
     private String romaji() { return state.word.ruby().stream().map(r->Romaji.of(r.reading())).reduce((a,b)->a+" "+b).orElse(""); }
     private String statusText() {
         if(state.outcome==1)return "Nice! You keep it.";
@@ -120,22 +167,29 @@ final class ChallengeHud implements HudElement {
         if(state.outcome==0)return "Paused · your items are safe";
         if(state.outcome==3)return "Say it to keep it · glitchk.id";
         if(state.retryRequested)return "Restarting your attempt...";
-        if(state.retryRemaining>0)return "Press ["+state.retryKeyName()+"] to retry · items are safe";
+        if(state.retryRemaining>0)return "Need more time? ["+state.retryKeyName()+"] retry · items are safe";
+        if(state.listening)return "Listen...";
         if(!state.started)return "Preparing microphone...";
         if(state.submitted)return "Checking...";
         if(state.remaining==0)return "Finishing recognition...";
-        if(!state.heard.isEmpty())return "Heard: "+state.heard;
-        return state.challenge.retriesLeft()>0?"Listening · ["+state.retryKeyName()+"] retry":"Listening · final attempt";
+        // A wrong attempt is when hearing the word again helps most, so the replay hint stays.
+        if(!state.heard.isEmpty())return "Heard: "+state.heard+replayHint();
+        String retry=state.challenge.retriesLeft()>0?"["+state.retryKeyName()+"] retry":"final attempt";
+        return "Listening"+replayHint()+" · "+retry;
     }
-    private int statusColor() { return state.outcome==2?0xFFF1B2C9:state.outcome==1?0xFFB5EACC:0xFFEACFF7; }
+    private String replayHint() { return state.canReplay()?" · ["+state.replayKeyName()+"] hear "+replayCost():""; }
+    private int statusColor() { return state.outcome==2?FAIL_COLOR:state.outcome==1?0xFFB5EACC:0xFFEACFF7; }
     private int wordWidth(float wordScale,float rubyScale) {
         int width=0;
         for(var ruby:state.word.ruby())width+=segmentWidth(ruby,wordScale,rubyScale);
         return width;
     }
+    /** Kana keep their natural spacing; kanji get room for their furigana and a little air around it. */
     private static int segmentWidth(Japanese.Ruby ruby,float wordScale,float rubyScale) {
         var font=Minecraft.getInstance().font;
-        return (int)Math.ceil(Math.max(font.width(ruby.text())*wordScale,Japanese.hasKanji(ruby.text())?font.width(ruby.reading())*rubyScale:0))+4;
+        float text=font.width(ruby.text())*wordScale;
+        if(!Japanese.hasKanji(ruby.text()))return (int)Math.ceil(text);
+        return (int)Math.ceil(Math.max(text,font.width(ruby.reading())*rubyScale))+KANJI_PAD;
     }
     private static void scaledText(GuiGraphicsExtractor g,String text,int x,int y,int maxWidth,int color,float desiredScale) {
         var font=Minecraft.getInstance().font;float scale=Math.min(desiredScale,maxWidth/(float)Math.max(1,font.width(text)));

@@ -15,6 +15,12 @@ public final class LearningProgress {
         return LearningRules.due(items == null ? null : items.get(item), now);
     }
 
+    /** Answered correctly at least once, due for review or not. A failure forgets the word again. */
+    public boolean isLearned(UUID player, String item) {
+        Map<String, Long> items = learned.get(player.toString());
+        return items != null && items.containsKey(item);
+    }
+
     public void recordSuccess(UUID player, String item, long nextDue) {
         learned.computeIfAbsent(player.toString(), key -> new HashMap<>()).put(item, nextDue);
     }

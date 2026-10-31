@@ -24,6 +24,7 @@ import java.util.stream.Stream;
 public final class LearningServer {
     /** Marks a mob drop that can't be picked up until its killer names the mob. Saved with the entity. */
     private static final String LOCK_TAG = "kotobakeep_locked";
+    private static final int TICKS_PER_SECOND = 20;
     private static final class Session {
         Map<Item, Integer> previous;
         /** Keyed by the Item picked up or the EntityType killed. */
@@ -37,6 +38,8 @@ public final class LearningServer {
         final Object key;
         final String icon, name, translationKey, progressKey;
         final int duration;
+        /** The word isn't learned yet, so the client plays its clip before the timer starts. */
+        final boolean listen;
         final ChallengeTimer timer;
         long sentAt;
         int count;
@@ -46,20 +49,19 @@ public final class LearningServer {
         // Mob kill: the penalty destroys the locked drops. Null for item pickups.
         final Map<UUID, ItemEntity> drops;
 
-        private Pending(Object key, String icon, Japanese.Word word, String translationKey, String progressKey, ItemStack stack, int count, int protectedCount, Map<UUID, ItemEntity> drops) {
-            this.key = key; this.icon = icon; this.name = word.text(); this.translationKey = translationKey; this.progressKey = progressKey;
+        private Pending(Object key, String icon, Japanese.Word word, String translationKey, String progressKey, boolean listen, ItemStack stack, int count, int protectedCount, Map<UUID, ItemEntity> drops) {
+            this.key = key; this.icon = icon; this.name = word.text(); this.translationKey = translationKey; this.progressKey = progressKey; this.listen = listen;
             this.stack = stack; this.count = count; this.protectedCount = protectedCount; this.drops = drops;
             var config = KotobaKeep.CONFIG;
             this.duration = config.durationTicks(word.reading());
-            this.timer = new ChallengeTimer(duration, config.recognitionGraceSeconds * 20, config.retryWindowSeconds * 20, config.maxRetries);
+            this.timer = new ChallengeTimer(duration, config.recognitionGraceSeconds * TICKS_PER_SECOND, config.retryWindowSeconds * TICKS_PER_SECOND, config.maxRetries);
         }
-        static Pending pickup(Item item, Japanese.Word word, ItemStack sample, int gained, int before) {
-            String id = BuiltInRegistries.ITEM.getKey(item).toString();
-            return new Pending(item, id, word, item.getDescriptionId(), id, sample.copyWithCount(1), gained, before, null);
+        static Pending pickup(Item item, Japanese.Word word, String id, boolean listen, ItemStack sample, int gained, int before) {
+            return new Pending(item, id, word, item.getDescriptionId(), id, listen, sample.copyWithCount(1), gained, before, null);
         }
-        static Pending kill(EntityType<?> type, Japanese.Word word, String progressKey) {
+        static Pending kill(EntityType<?> type, Japanese.Word word, String progressKey, boolean listen) {
             String icon = SpawnEggItem.byId(type).map(egg -> BuiltInRegistries.ITEM.getKey(egg.value()).toString()).orElse("minecraft:air");
-            return new Pending(type, icon, word, type.getDescriptionId(), progressKey, ItemStack.EMPTY, 0, 0, new LinkedHashMap<>());
+            return new Pending(type, icon, word, type.getDescriptionId(), progressKey, listen, ItemStack.EMPTY, 0, 0, new LinkedHashMap<>());
         }
     }
     private final Map<UUID, Session> sessions = new HashMap<>();
@@ -105,17 +107,28 @@ public final class LearningServer {
         if (s == null || s.active == null || !s.active.id.equals(packet.id()) || !s.active.timer.acceptsAnswer(tick)) return;
         if (KotobaKeep.JAPANESE.matches(s.active.name, packet.text())) finish(player, s, 1);
     }
-    public void retry(ServerPlayer player, Packets.Retry packet) {
+    /** The player's active challenge if the packet names it and they can still play it, else null. */
+    private Pending playing(ServerPlayer player, UUID id) {
         Session s = sessions.get(player.getUUID());
-        if (s == null || s.active == null || !s.active.id.equals(packet.id()) || !available(player, s)) return;
-        if (!s.active.timer.retry(tick)) return;
-        // A fresh ID rejects duplicate retry packets and transcripts from the previous attempt.
-        s.active.id = UUID.randomUUID();
-        sendChallenge(player, s.active);
+        return s != null && s.active != null && s.active.id.equals(id) && available(player, s) ? s.active : null;
     }
+    public void retry(ServerPlayer player, Packets.Retry packet) {
+        Pending p = playing(player, packet.id());
+        if (p == null || !p.timer.retry(tick)) return;
+        // A fresh ID rejects duplicate retry packets and transcripts from the previous attempt.
+        p.id = UUID.randomUUID();
+        sendChallenge(player, p);
+    }
+    /** A refused replay does nothing; spamming limits itself because every grant costs time. */
+    public void replay(ServerPlayer player, Packets.Replay packet) {
+        Pending p = playing(player, packet.id());
+        int cost = replayCost();
+        if (p != null && p.timer.spend(tick, cost)) ServerPlayNetworking.send(player, new Packets.ReplayGranted(p.id, cost));
+    }
+    private static int replayCost() { return KotobaKeep.CONFIG.replayCostSeconds * TICKS_PER_SECOND; }
     private void sendChallenge(ServerPlayer player, Pending p) {
         p.sentAt = tick;
-        ServerPlayNetworking.send(player, new Packets.Challenge(p.id, p.icon, p.name, p.translationKey, p.count, p.duration, p.timer.retriesLeft()));
+        ServerPlayNetworking.send(player, new Packets.Challenge(p.id, p.icon, p.name, p.translationKey, p.count, p.duration, p.timer.retriesLeft(), p.listen, replayCost()));
     }
 
     public void beforeDeath(LivingEntity entity, DamageSource source) {
@@ -141,7 +154,7 @@ public final class LearningServer {
             if (!progress.isDue(player.getUUID(), progressKey, now(player))) return;
             var word = KotobaKeep.JAPANESE.item(type.getDescriptionId());
             if (word == null || !word.pronounceable()) return;
-            pending = Pending.kill(type, word, progressKey);
+            pending = Pending.kill(type, word, progressKey, !progress.isLearned(player.getUUID(), progressKey));
             s.queue.put(type, pending);
         }
         // Killing more of the same mob while it is asked adds those drops to the same challenge.
@@ -190,13 +203,14 @@ public final class LearningServer {
             if (gained <= 0) continue;
             Pending joined = s.active != null && s.active.key == item ? s.active : s.queue.get(item);
             if (joined != null) { joined.count += gained; continue; }
-            if (!progress.isDue(player.getUUID(), BuiltInRegistries.ITEM.getKey(item).toString(), now(player))) continue;
+            String id = BuiltInRegistries.ITEM.getKey(item).toString();
+            if (!progress.isDue(player.getUUID(), id, now(player))) continue;
             var word = KotobaKeep.JAPANESE.item(item.getDescriptionId());
             if (word == null || !word.pronounceable()) continue;
             ItemStack sample = ItemStack.EMPTY;
             for (int i = 0; i < player.getInventory().getContainerSize(); i++) if (player.getInventory().getItem(i).is(item)) { sample = player.getInventory().getItem(i); break; }
             if (sample.isEmpty()) continue;
-            s.queue.put(item, Pending.pickup(item, word, sample, gained, before));
+            s.queue.put(item, Pending.pickup(item, word, id, !progress.isLearned(player.getUUID(), id), sample, gained, before));
         }
         s.previous = inventory;
         if (s.active != null) {
@@ -204,7 +218,7 @@ public final class LearningServer {
             else {
                 var transition = s.active.timer.advance(tick);
                 if (transition == ChallengeTimer.Transition.OFFER_RETRY)
-                    ServerPlayNetworking.send(player, new Packets.RetryOffer(s.active.id, KotobaKeep.CONFIG.retryWindowSeconds * 20));
+                    ServerPlayNetworking.send(player, new Packets.RetryOffer(s.active.id, KotobaKeep.CONFIG.retryWindowSeconds * TICKS_PER_SECOND));
                 else if (transition == ChallengeTimer.Transition.FAIL) finish(player, s, 2);
             }
         }

@@ -1,3 +1,17 @@
+# Kotoba Keep 1.4.0 verification
+
+- New: words you haven't learned yet are spoken before their timer starts; the name is shown in your own game language; **J** replays the word for 3 seconds of the timer (server-enforced, `replayCostSeconds`); a failed word is spoken after its items are removed.
+- Redesigned challenge card: one row (item, word with furigana, romaji over meaning, timer badge) with the status underneath and the countdown along the bottom edge. 52 GUI pixels tall instead of 139; katakana keep natural spacing. Screenshots checked for a short word (土), a phrase (オークの原木), a long word (レッドストーンコンパレーター), romaji off, retry offer, kept, failed and the menu strip.
+- Built by three agents working on separate files (server, client audio and keys, HUD), on a shared network contract written first.
+- End-to-end check with a one-off Fabric client gametest (not kept in the build; microphone faked, answers sent as transcripts):
+  - New word (土): the challenge arrived marked "listen", the clip played with the microphone muted, and the timer started 24 ticks later, after the clip and its tail.
+  - Pressing J: the server granted the replay, the client countdown dropped by 60 ticks (3 s), the microphone was muted during the clip, and the timer showed `-3s`. A second press during the clip was ignored.
+  - After a correct answer the word counted as learned: its next challenge (review) arrived without "listen" and stayed silent.
+  - The review was left to time out: 1 item removed and the clip played.
+  - Screenshots: "Listen...", the "Dirt" meaning line, the `[J] hear -3s` hint, the `-3s` flash, and `tsuchi · Dirt` in the strip over the inventory.
+- `gradlew build`: 25 tests passed (new: replay cost timing and refusals, retry restores full time, learned-word tracking).
+- Not verified: a live spoken answer, echo from real speakers, and multiplayer latency on replays.
+
 # Kotoba Keep 1.3.0 verification
 
 - New: killing a mob whose name is due asks for its Japanese name. Its drops lock (can't be picked up, don't merge) with a purple box drawn around each one for the killer; a correct answer unlocks them, a timeout destroys them, and setup problems release them.

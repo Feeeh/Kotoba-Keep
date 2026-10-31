@@ -41,4 +41,29 @@ class ChallengeTimerTest {
         var timer=new ChallengeTimer(120,40,160,0);timer.start(0);
         assertFalse(timer.retry(10));assertEquals(FAIL,timer.advance(160));
     }
+    @Test void aReplayBringsTheTimeoutForwardByItsCost() {
+        var offered=new ChallengeTimer(120,40,160,1);offered.start(0);
+        assertTrue(offered.spend(10,60));
+        assertEquals(NONE,offered.advance(99));assertEquals(OFFER_RETRY,offered.advance(100));
+        var failed=new ChallengeTimer(120,40,160,0);failed.start(0);
+        assertTrue(failed.spend(10,60));
+        assertEquals(NONE,failed.advance(99));assertEquals(FAIL,failed.advance(100));
+    }
+    @Test void aReplayIsRefusedOutsideARunningAttemptOrWhenItWouldEmptyTheCountdown() {
+        var timer=new ChallengeTimer(120,40,160,1);
+        assertFalse(timer.spend(0,60));
+        timer.start(0);
+        assertFalse(timer.spend(10,0));
+        // At 60 the client shows 60 ticks left, which is not more than the cost.
+        assertFalse(timer.spend(60,60));assertTrue(timer.spend(60,59));
+        assertEquals(OFFER_RETRY,timer.advance(101));
+        assertFalse(timer.spend(102,1));
+    }
+    @Test void aRetryAfterAReplayRestoresTheFullTime() {
+        var timer=new ChallengeTimer(120,40,160,1);timer.start(0);
+        assertTrue(timer.spend(10,60));assertTrue(timer.retry(20));
+        assertFalse(timer.spend(25,60));
+        timer.start(30);
+        assertEquals(NONE,timer.advance(189));assertEquals(FAIL,timer.advance(190));
+    }
 }

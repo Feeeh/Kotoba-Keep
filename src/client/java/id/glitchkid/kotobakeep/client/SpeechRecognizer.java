@@ -21,6 +21,8 @@ public final class SpeechRecognizer implements AutoCloseable {
     private SpeechGrammar grammar;
     private volatile UUID challenge;
     private volatile boolean ready;
+    // Set from the client thread, read on SVC's audio thread: drop frames while our name clip plays.
+    private volatile boolean muted;
     private volatile String status = "Loading Japanese speech model...";
     private Consumer<String> transcript = text -> {};
     private String lastText = "";
@@ -54,9 +56,11 @@ public final class SpeechRecognizer implements AutoCloseable {
             } catch (Throwable error) { fail(error); }
         });
     }
+    /** While muted, the microphone can't pick up our own clip and answer for the player. */
+    public void mute(boolean muted) { this.muted = muted; }
     public void audio(short[] frame) {
         UUID id = challenge;
-        if (!ready || id == null || frame.length == 0 || worker.getQueue().size() > 80) return;
+        if (muted || !ready || id == null || frame.length == 0 || worker.getQueue().size() > 80) return;
         short[] copy = frame.clone();
         submit(() -> {
             if (!id.equals(challenge) || recognizer == null) return;

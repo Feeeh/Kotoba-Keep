@@ -2,13 +2,14 @@
 
 **Say it to keep it.** A Minecraft **26.3 / Fabric** mod by **glitchk.id** that teaches you the original Japanese names of Minecraft items.
 
-Pick up an item and a small panel appears at the top of the screen with its Japanese name, furigana above the kanji, romaji, and a countdown. Say the name into your Simple Voice Chat microphone before time runs out to keep the item. Get it right and you hear the word spoken back in natural Japanese. Run out of time and the newly picked-up items are removed. Kill a mob and you have to name it too, or its drops disappear.
+Pick up an item and a small panel appears at the top of the screen with its Japanese name, furigana above the kanji, romaji, what it's called in your own game language, and a countdown. New words are spoken to you first; say the name into your Simple Voice Chat microphone before time runs out to keep the item. Get it right and you hear the word again in natural Japanese. Run out of time and the newly picked-up items are removed. Kill a mob and you have to name it too, or its drops disappear.
 
 - Uses the **official Japanese Minecraft names** (`ja_jp.json`) for items, blocks and mobs, whatever language your game is set to.
 - **Mob kills ask too**: the drops stay locked in a purple 🚫 box until you say the mob's name.
-- **Furigana** over every kanji, plus optional romaji.
+- **Furigana** over every kanji, plus optional romaji and the name in your own game language (土 → Dirt).
+- **Listen first**: a word you haven't learned yet is spoken before its timer starts. Press **J** to hear it again for 3 seconds of your timer.
 - **Offline speech recognition** with [Vosk](https://alphacephei.com/vosk/). Nothing is uploaded or saved.
-- **Native-style pronunciation**: every vanilla item name is pre-recorded with the VOICEVOX voice **冥鳴ひまり** (Meimei Himari) and played after a correct answer.
+- **Native-style pronunciation**: every vanilla item and mob name is pre-recorded with the VOICEVOX voice **冥鳴ひまり** (Meimei Himari). You hear it before a new word, on **J**, and after every answer, right or wrong.
 - New items are always asked. Items you've already answered correctly come back for review after a random **2–5 minutes** of play time.
 - One retry per word, and nothing is ever removed because of a microphone or setup problem.
 
@@ -44,13 +45,17 @@ It only touches that profile, and backs up older Kotoba Keep JARs to `config/kot
 3. Pick up an item. Hold your voice chat **push-to-talk** key (or use voice activation) and say the whole Japanese name. You can keep moving and playing while the panel is shown.
 4. For dirt, say **つち (tsuchi)**. For an oak log, say **オークの原木 (おーくのげんぼく / ooku no genboku)**.
 
-After a correct answer you hear the word spoken. The volume is Minecraft's **Voice/Speech** slider (Options → Music & Sounds); turn it down to mute the voice. Modded items have no recording.
+A word you haven't learned yet is spoken first ("Listen..."), and its timer starts once the clip ends. Words you're reviewing stay silent, since they test your memory. Press **J** during the countdown to hear the word again; it costs **3 seconds** of the timer, and the timer briefly shows `-3s`. The panel shows the J hint only while a replay is possible (not while a clip is playing, and not with 3 seconds or less left).
+
+After every answer you hear the word: as a reward when you get it right, and as the correct pronunciation when time runs out. Your microphone is ignored while a clip plays, so speakers can't answer for you. The volume is Minecraft's **Voice/Speech** slider (Options → Music & Sounds); turn it down to mute the voice. Modded items have no recording, so they skip the listening step and can't be replayed.
+
+Under the romaji, the panel shows the name in your game language (for example *Dirt*, *Oak Log*, *Cow*) so you know what the word means. It's hidden when your game is set to Japanese.
 
 When you kill a mob whose name is due, its drops lock where they fell. Each one sits in a see-through purple box with a red 🚫 on its sides, so you know it can't be picked up yet, by you, other players or mobs. Say the mob's name (for a cow, **ウシ (ushi)**) and the drops unlock; run out of time and they vanish. Picking up the unlocked drops can then ask for those items' names as usual.
 
 Challenges keep working while a menu is open (inventory, chests, furnaces, and so on). The panel shrinks to a strip along the top of the screen; hover your mouse over it to see the slots underneath.
 
-Press **R** for one fresh attempt at the current word, either while its countdown runs or during the **8-second "Need more time?"** window after it expires. R also works in item menus, but not while you're typing in a text box. Items stay in your inventory while you decide. You can change R under Kotoba Keep in Minecraft's key bindings.
+Press **R** for one fresh attempt at the current word, either while its countdown runs or during the **8-second "Need more time?"** window after it expires. A fresh attempt gives the full time again, and a new word is spoken again first. R and J also work in item menus, but not while you're typing in a text box. Items stay in your inventory while you decide. You can change both keys under Kotoba Keep in Minecraft's key bindings.
 
 | Command | What it does |
 | --- | --- |
@@ -80,7 +85,7 @@ These are client commands and don't need cheats.
 
 ## Multiplayer
 
-Install Kotoba Keep, Fabric API and Simple Voice Chat on the Fabric server **and** every participating client. Only clients need the speech model. Use the same Kotoba Keep version everywhere; 1.3.0 changed the network format, so older versions can't connect to it. Players without the mod are ignored. Simple Voice Chat must connect normally (default UDP port 24454).
+Install Kotoba Keep, Fabric API and Simple Voice Chat on the Fabric server **and** every participating client. Only clients need the speech model. Use the same Kotoba Keep version everywhere; 1.4.0 changed the network format, so older versions can't connect to it. Players without the mod are ignored. Simple Voice Chat must connect normally (default UDP port 24454).
 
 This is a cooperative learning mod, not anti-cheat: the client reports what it heard and the server checks it against the active challenge, so a modified client can skip its own challenges.
 
@@ -97,6 +102,7 @@ This is a cooperative learning mod, not anti-cheat: the client reports what it h
 | `recognitionGraceSeconds` | `2` | |
 | `maxRetries` | `1` | Server; 0 to 5 |
 | `retryWindowSeconds` | `8` | Server |
+| `replayCostSeconds` | `3` | Server; 0 to 10. Seconds a replay (J) takes off the timer; 0 turns replays off |
 | `hudAccentColor` | `"#c888e8"` | |
 | `hudTop` | `12` | GUI pixels from the top |
 | `showRomaji` | `true` | |
@@ -124,8 +130,8 @@ The JAR is written to `build/libs/`. Kuromoji, Vosk and JNA are bundled inside i
 GitHub Actions builds and tests every push. To publish a release, set `mod_version` in `gradle.properties`, commit, and push a matching tag:
 
 ```powershell
-git tag v1.2.1
-git push origin v1.2.1
+git tag v1.4.0
+git push origin v1.4.0
 ```
 
 The workflow attaches `kotoba-keep-<version>+26.3.jar` and its SHA-256 checksum to a new GitHub release. It refuses tags that don't match `mod_version`. The release text comes from `.github/release-notes.md` plus the commit list.

@@ -15,6 +15,8 @@ public final class Config {
     public int recognitionGraceSeconds = 2;
     public int maxRetries = 1;
     public int retryWindowSeconds = 8;
+    /** Seconds a replay of the spoken name takes off the timer. 0 turns replays off. */
+    public int replayCostSeconds = 3;
     public String hudAccentColor = "#c888e8";
     public int hudTop = 12;
     public boolean showRomaji = true;
@@ -34,6 +36,7 @@ public final class Config {
             config.recognitionGraceSeconds = Math.clamp(config.recognitionGraceSeconds, 1, 5);
             config.maxRetries = Math.clamp(config.maxRetries, 0, 5);
             config.retryWindowSeconds = Math.clamp(config.retryWindowSeconds, 3, 30);
+            config.replayCostSeconds = Math.clamp(config.replayCostSeconds, 0, 10);
             if (config.hudAccentColor == null || !config.hudAccentColor.matches("#[0-9a-fA-F]{6}")) config.hudAccentColor = "#c888e8";
             config.hudTop = Math.clamp(config.hudTop, 0, 200);
             Files.createDirectories(path.getParent());

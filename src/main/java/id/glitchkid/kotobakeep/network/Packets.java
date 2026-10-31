@@ -9,12 +9,16 @@ import net.minecraft.resources.Identifier;
 import java.util.UUID;
 
 public final class Packets {
-    /** item: icon to show (a spawn egg for mobs). key: translation key of the name, which picks the voice clip. */
-    public record Challenge(UUID id, String item, String name, String key, int count, int ticks, int retriesLeft) implements CustomPacketPayload {
+    /**
+     * item: icon to show (a spawn egg for mobs). key: translation key of the name, which picks the voice clip.
+     * listen: the word isn't learned yet, so the client plays its clip before the timer starts.
+     * replayCost: ticks a replay takes off the timer; 0 turns replays off.
+     */
+    public record Challenge(UUID id, String item, String name, String key, int count, int ticks, int retriesLeft, boolean listen, int replayCost) implements CustomPacketPayload {
         public static final Type<Challenge> TYPE = new Type<>(Identifier.fromNamespaceAndPath("kotobakeep", "challenge"));
         public static final StreamCodec<RegistryFriendlyByteBuf, Challenge> CODEC = new StreamCodec<>() {
-            public Challenge decode(RegistryFriendlyByteBuf b) { return new Challenge(b.readUUID(), b.readUtf(256), b.readUtf(256), b.readUtf(256), b.readVarInt(), b.readVarInt(), b.readVarInt()); }
-            public void encode(RegistryFriendlyByteBuf b, Challenge p) { b.writeUUID(p.id); b.writeUtf(p.item,256); b.writeUtf(p.name,256); b.writeUtf(p.key,256); b.writeVarInt(p.count); b.writeVarInt(p.ticks); b.writeVarInt(p.retriesLeft); }
+            public Challenge decode(RegistryFriendlyByteBuf b) { return new Challenge(b.readUUID(), b.readUtf(256), b.readUtf(256), b.readUtf(256), b.readVarInt(), b.readVarInt(), b.readVarInt(), b.readBoolean(), b.readVarInt()); }
+            public void encode(RegistryFriendlyByteBuf b, Challenge p) { b.writeUUID(p.id); b.writeUtf(p.item,256); b.writeUtf(p.name,256); b.writeUtf(p.key,256); b.writeVarInt(p.count); b.writeVarInt(p.ticks); b.writeVarInt(p.retriesLeft); b.writeBoolean(p.listen); b.writeVarInt(p.replayCost); }
         };
         public Type<Challenge> type() { return TYPE; }
     }
@@ -41,6 +45,24 @@ public final class Packets {
             public void encode(RegistryFriendlyByteBuf b, Retry p) { b.writeUUID(p.id); }
         };
         public Type<Retry> type() { return TYPE; }
+    }
+    /** Asks to hear the active word again; the server takes the replay cost off the timer. */
+    public record Replay(UUID id) implements CustomPacketPayload {
+        public static final Type<Replay> TYPE = new Type<>(Identifier.fromNamespaceAndPath("kotobakeep", "replay"));
+        public static final StreamCodec<RegistryFriendlyByteBuf, Replay> CODEC = new StreamCodec<>() {
+            public Replay decode(RegistryFriendlyByteBuf b) { return new Replay(b.readUUID()); }
+            public void encode(RegistryFriendlyByteBuf b, Replay p) { b.writeUUID(p.id); }
+        };
+        public Type<Replay> type() { return TYPE; }
+    }
+    /** The replay was paid for: the client plays the clip and takes cost ticks off its countdown. */
+    public record ReplayGranted(UUID id, int cost) implements CustomPacketPayload {
+        public static final Type<ReplayGranted> TYPE = new Type<>(Identifier.fromNamespaceAndPath("kotobakeep", "replay_granted"));
+        public static final StreamCodec<RegistryFriendlyByteBuf, ReplayGranted> CODEC = new StreamCodec<>() {
+            public ReplayGranted decode(RegistryFriendlyByteBuf b) { return new ReplayGranted(b.readUUID(), b.readVarInt()); }
+            public void encode(RegistryFriendlyByteBuf b, ReplayGranted p) { b.writeUUID(p.id); b.writeVarInt(p.cost); }
+        };
+        public Type<ReplayGranted> type() { return TYPE; }
     }
     public record RetryOffer(UUID id, int ticks) implements CustomPacketPayload {
         public static final Type<RetryOffer> TYPE = new Type<>(Identifier.fromNamespaceAndPath("kotobakeep", "retry_offer"));
@@ -86,5 +108,7 @@ public final class Packets {
         PayloadTypeRegistry.serverboundPlay().register(Retry.TYPE, Retry.CODEC);
         PayloadTypeRegistry.clientboundPlay().register(RetryOffer.TYPE, RetryOffer.CODEC);
         PayloadTypeRegistry.clientboundPlay().register(LockedDrops.TYPE, LockedDrops.CODEC);
+        PayloadTypeRegistry.serverboundPlay().register(Replay.TYPE, Replay.CODEC);
+        PayloadTypeRegistry.clientboundPlay().register(ReplayGranted.TYPE, ReplayGranted.CODEC);
     }
 }

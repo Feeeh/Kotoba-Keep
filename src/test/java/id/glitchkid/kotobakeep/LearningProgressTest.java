@@ -42,6 +42,16 @@ class LearningProgressTest {
         assertTrue(restored.isDue(UUID.randomUUID(), DIRT, 4999));
     }
 
+    @Test void aWordIsLearnedFromTheFirstCorrectAnswerUntilItIsFailed() {
+        var progress = new LearningProgress();
+        assertFalse(progress.isLearned(player, DIRT));
+        progress.recordSuccess(player, DIRT, 2500);
+        assertTrue(progress.isDue(player, DIRT, 2500));
+        assertTrue(progress.isLearned(player, DIRT));
+        progress.recordFailure(player, DIRT);
+        assertFalse(progress.isLearned(player, DIRT));
+    }
+
     @Test void aCancelledAttemptDoesNotTeachAnUnknownWord() {
         var progress = new LearningProgress();
         assertTrue(progress.isDue(player, DIRT, 1));

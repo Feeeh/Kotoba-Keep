@@ -28,6 +28,12 @@ public final class ChallengeTimer {
         retriesUsed++; phase = Phase.PREPARING;
         return true;
     }
+    /** Pays for a replay. The client shows the deadline without the grace, so that is the time the cost must fit in. */
+    public boolean spend(long now, int cost) {
+        if (phase != Phase.RUNNING || cost <= 0 || deadline - grace - now <= cost) return false;
+        deadline -= cost;
+        return true;
+    }
     public Transition advance(long now) {
         if (phase == Phase.RUNNING && now >= deadline) {
             if (retriesLeft() > 0) {
