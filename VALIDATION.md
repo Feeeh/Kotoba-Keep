@@ -1,3 +1,28 @@
+# Kotoba Keep 1.5.0 verification
+
+- New, each with its own setting in `config/kotobakeep.json`:
+  - Growing review gaps (`growingReviewGaps`, off by default; `reviewGapMinutes` = 3, 15, 60, 240, 1440).
+  - Fading hints (`fadeHints`, on; romaji hidden after `hideRomajiAfter` = 2 correct answers in a row, furigana after `hideFuriganaAfter` = 4).
+  - New-word limit (`limitNewWords`, on; one never-met word per `newWordGapSeconds` = 60).
+  - Gentle first meeting (`gentleFirstMeeting`, off by default).
+- New **settings screen** (press **K**, rebindable under Options → Controls → Key Binds → Kotoba Keep). It uses Minecraft's own option widgets: toggles, sliders, and text boxes for free-form values, with an English and Japanese tooltip on every option. Edits go to a copy that is range-checked, saved and swapped in when the screen closes. On someone else's server the learning and challenge sections are replaced by a note, because that server's config decides them.
+- Saved progress now records each word's correct-answer streak in `data/kotobakeep-words.json`. A 1.4.0 `kotobakeep-mastery.json` is converted on first load (streak 1) and left untouched for downgrades.
+- End-to-end check with a one-off Fabric client gametest (not kept in the build; microphone faked, answers sent as transcripts; first meeting and growing gaps turned on, new-word gap set to 5 s):
+  - First dirt pickup arrived as a gentle first meeting. It timed out with 0 removed, and the player still had all 3 dirt.
+  - Cobblestone picked up during that challenge (inside the new-word gap) was never asked. Picked up again after the gap, it was asked.
+  - Second dirt ask: not gentle, spoken first. After the correct answer the word had streak 1 and was due in 3,599 ticks (3 minutes).
+  - Iron ingot at streak 2 showed furigana but no romaji; oak log at streak 4 showed neither. Saved gaps after their answers: 1 h (streak 3) and 1 day (streak 5, the last gap repeating).
+  - Screenshots checked: "Listen... · first meeting, items are safe", "Time's up · first meeting, nothing lost", and both faded-hint cards.
+  - The generated config contained every new setting with its default.
+- Settings screen, checked with a second one-off client gametest:
+  - K opened it.
+  - Keyboard input (Enter on a toggle, arrow keys on a slider) changed Gentle First Meeting and Panel Position. Review Gaps typed as `1, 2, 3` applied, and `abc` in New Word Gap turned red and kept 60.
+  - Nothing applied while the screen was open. On close, the live config and `kotobakeep.json` had the new values.
+  - On a dedicated server, only the display options and the server note were shown.
+  - Screenshots checked: the display, learning and challenge sections, a tooltip, the red invalid field, and the server view.
+- `gradlew build`: 27 tests passed (new: growing gaps, streak counting and reset, converting the 1.4.0 save).
+- Not verified: a live spoken answer, multiplayer, and a real 1.4.0 world being converted (the conversion is covered by a unit test).
+
 # Kotoba Keep 1.4.0 verification
 
 - New: words you haven't learned yet are spoken before their timer starts; the name is shown in your own game language; **J** replays the word for 3 seconds of the timer (server-enforced, `replayCostSeconds`); a failed word is spoken after its items are removed.

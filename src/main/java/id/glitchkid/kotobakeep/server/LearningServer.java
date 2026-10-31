@@ -31,6 +31,8 @@ public final class LearningServer {
         final LinkedHashMap<Object, Pending> queue = new LinkedHashMap<>();
         Pending active;
         long readyAt = -1000, gapUntil;
+        /** The tick from which the next never-answered word may be asked (limitNewWords). */
+        long nextNewWord;
         int[] sentLocked = new int[0];
     }
     private static final class Pending {
@@ -38,8 +40,10 @@ public final class LearningServer {
         final Object key;
         final String icon, name, translationKey, progressKey;
         final int duration;
-        /** The word isn't learned yet, so the client plays its clip before the timer starts. */
-        final boolean listen;
+        /** Correct answers in a row so far. 0: not learned yet, so the client plays its clip before the timer starts. */
+        final int streak;
+        /** The word's first ask with gentleFirstMeeting on: failing takes nothing. */
+        final boolean gentle;
         final ChallengeTimer timer;
         long sentAt;
         int count;
@@ -49,19 +53,21 @@ public final class LearningServer {
         // Mob kill: the penalty destroys the locked drops. Null for item pickups.
         final Map<UUID, ItemEntity> drops;
 
-        private Pending(Object key, String icon, Japanese.Word word, String translationKey, String progressKey, boolean listen, ItemStack stack, int count, int protectedCount, Map<UUID, ItemEntity> drops) {
-            this.key = key; this.icon = icon; this.name = word.text(); this.translationKey = translationKey; this.progressKey = progressKey; this.listen = listen;
-            this.stack = stack; this.count = count; this.protectedCount = protectedCount; this.drops = drops;
+        /** known: the player's progress on this word, null if they never answered it. */
+        private Pending(Object key, String icon, Japanese.Word word, String translationKey, String progressKey, LearningProgress.Entry known, ItemStack stack, int count, int protectedCount, Map<UUID, ItemEntity> drops) {
             var config = KotobaKeep.CONFIG;
+            this.key = key; this.icon = icon; this.name = word.text(); this.translationKey = translationKey; this.progressKey = progressKey;
+            this.streak = known == null ? 0 : known.streak(); this.gentle = known == null && config.gentleFirstMeeting;
+            this.stack = stack; this.count = count; this.protectedCount = protectedCount; this.drops = drops;
             this.duration = config.durationTicks(word.reading());
             this.timer = new ChallengeTimer(duration, config.recognitionGraceSeconds * TICKS_PER_SECOND, config.retryWindowSeconds * TICKS_PER_SECOND, config.maxRetries);
         }
-        static Pending pickup(Item item, Japanese.Word word, String id, boolean listen, ItemStack sample, int gained, int before) {
-            return new Pending(item, id, word, item.getDescriptionId(), id, listen, sample.copyWithCount(1), gained, before, null);
+        static Pending pickup(Item item, Japanese.Word word, String id, LearningProgress.Entry known, ItemStack sample, int gained, int before) {
+            return new Pending(item, id, word, item.getDescriptionId(), id, known, sample.copyWithCount(1), gained, before, null);
         }
-        static Pending kill(EntityType<?> type, Japanese.Word word, String progressKey, boolean listen) {
+        static Pending kill(EntityType<?> type, Japanese.Word word, String progressKey, LearningProgress.Entry known) {
             String icon = SpawnEggItem.byId(type).map(egg -> BuiltInRegistries.ITEM.getKey(egg.value()).toString()).orElse("minecraft:air");
-            return new Pending(type, icon, word, type.getDescriptionId(), progressKey, listen, ItemStack.EMPTY, 0, 0, new LinkedHashMap<>());
+            return new Pending(type, icon, word, type.getDescriptionId(), progressKey, known, ItemStack.EMPTY, 0, 0, new LinkedHashMap<>());
         }
     }
     private final Map<UUID, Session> sessions = new HashMap<>();
@@ -75,10 +81,16 @@ public final class LearningServer {
     private final List<ItemEntity> dyingDrops = new ArrayList<>();
 
     public LearningServer(MinecraftServer server) {
-        progressPath = server.getWorldPath(LevelResource.ROOT).resolve("data/kotobakeep-mastery.json");
+        progressPath = server.getWorldPath(LevelResource.ROOT).resolve("data/kotobakeep-words.json");
+        Path mastery = progressPath.resolveSibling("kotobakeep-mastery.json");
         try {
             if (Files.exists(progressPath)) {
                 progress = LearningProgress.fromJson(Files.readString(progressPath));
+            } else if (Files.exists(mastery)) {
+                // Converted into a new file, so a downgrade still finds its own history untouched.
+                progress = LearningProgress.fromMasteryJson(Files.readString(mastery));
+                dirty = true;
+                KotobaKeep.LOG.info("Converted learned words from {}; that file is kept for older versions.", mastery.getFileName());
             } else if (Files.exists(progressPath.resolveSibling("kotobakeep-progress.json"))) {
                 KotobaKeep.LOG.info("Legacy pickup history did not record correct answers. Words will be checked again; the old history file is preserved.");
             }
@@ -90,8 +102,19 @@ public final class LearningServer {
     }
     private void schedule(ServerPlayer player, String progressKey) {
         var config = KotobaKeep.CONFIG;
-        progress.recordSuccess(player.getUUID(), progressKey, LearningRules.nextDue(now(player), config.repeatMinSeconds, config.repeatMaxSeconds, random));
+        long now = now(player);
+        progress.recordSuccess(player.getUUID(), progressKey, streak -> config.growingReviewGaps
+            ? LearningRules.growingDue(now, streak, config.reviewGapMinutes)
+            : LearningRules.nextDue(now, config.repeatMinSeconds, config.repeatMaxSeconds, random));
         dirty = true;
+    }
+    /** A never-answered word must wait for the new-word limit, and takes the slot when it passes. Known words always pass. */
+    private boolean admit(Session s, LearningProgress.Entry known) {
+        var config = KotobaKeep.CONFIG;
+        if (known != null || !config.limitNewWords) return true;
+        if (tick < s.nextNewWord) return false;
+        s.nextNewWord = tick + (long) config.newWordGapSeconds * TICKS_PER_SECOND;
+        return true;
     }
     public void ready(ServerPlayer player, Packets.Ready packet) {
         Session s = sessions.computeIfAbsent(player.getUUID(), k -> new Session());
@@ -128,7 +151,7 @@ public final class LearningServer {
     private static int replayCost() { return KotobaKeep.CONFIG.replayCostSeconds * TICKS_PER_SECOND; }
     private void sendChallenge(ServerPlayer player, Pending p) {
         p.sentAt = tick;
-        ServerPlayNetworking.send(player, new Packets.Challenge(p.id, p.icon, p.name, p.translationKey, p.count, p.duration, p.timer.retriesLeft(), p.listen, replayCost()));
+        ServerPlayNetworking.send(player, new Packets.Challenge(p.id, p.icon, p.name, p.translationKey, p.count, p.duration, p.timer.retriesLeft(), replayCost(), p.streak, p.gentle));
     }
 
     public void beforeDeath(LivingEntity entity, DamageSource source) {
@@ -154,7 +177,9 @@ public final class LearningServer {
             if (!progress.isDue(player.getUUID(), progressKey, now(player))) return;
             var word = KotobaKeep.JAPANESE.item(type.getDescriptionId());
             if (word == null || !word.pronounceable()) return;
-            pending = Pending.kill(type, word, progressKey, !progress.isLearned(player.getUUID(), progressKey));
+            var known = progress.entry(player.getUUID(), progressKey);
+            if (!admit(s, known)) return;
+            pending = Pending.kill(type, word, progressKey, known);
             s.queue.put(type, pending);
         }
         // Killing more of the same mob while it is asked adds those drops to the same challenge.
@@ -198,19 +223,8 @@ public final class LearningServer {
         if (s.previous == null) s.previous = inventory;
         if (!available(player, s)) { cancel(player, s); s.previous = inventory; return; }
         for (var entry : inventory.entrySet()) {
-            Item item = entry.getKey();
-            int before = s.previous.getOrDefault(item, 0), gained = entry.getValue() - before;
-            if (gained <= 0) continue;
-            Pending joined = s.active != null && s.active.key == item ? s.active : s.queue.get(item);
-            if (joined != null) { joined.count += gained; continue; }
-            String id = BuiltInRegistries.ITEM.getKey(item).toString();
-            if (!progress.isDue(player.getUUID(), id, now(player))) continue;
-            var word = KotobaKeep.JAPANESE.item(item.getDescriptionId());
-            if (word == null || !word.pronounceable()) continue;
-            ItemStack sample = ItemStack.EMPTY;
-            for (int i = 0; i < player.getInventory().getContainerSize(); i++) if (player.getInventory().getItem(i).is(item)) { sample = player.getInventory().getItem(i); break; }
-            if (sample.isEmpty()) continue;
-            s.queue.put(item, Pending.pickup(item, word, id, !progress.isLearned(player.getUUID(), id), sample, gained, before));
+            int before = s.previous.getOrDefault(entry.getKey(), 0), gained = entry.getValue() - before;
+            if (gained > 0) pickedUp(player, s, entry.getKey(), before, gained);
         }
         s.previous = inventory;
         if (s.active != null) {
@@ -227,6 +241,19 @@ public final class LearningServer {
             s.active = iterator.next().getValue(); iterator.remove();
             sendChallenge(player, s.active);
         }
+    }
+    private void pickedUp(ServerPlayer player, Session s, Item item, int before, int gained) {
+        Pending joined = s.active != null && s.active.key == item ? s.active : s.queue.get(item);
+        if (joined != null) { joined.count += gained; return; }
+        String id = BuiltInRegistries.ITEM.getKey(item).toString();
+        if (!progress.isDue(player.getUUID(), id, now(player))) return;
+        var word = KotobaKeep.JAPANESE.item(item.getDescriptionId());
+        if (word == null || !word.pronounceable()) return;
+        ItemStack sample = ItemStack.EMPTY;
+        for (int i = 0; i < player.getInventory().getContainerSize(); i++) if (player.getInventory().getItem(i).is(item)) { sample = player.getInventory().getItem(i); break; }
+        if (sample.isEmpty()) return;
+        var known = progress.entry(player.getUUID(), id);
+        if (admit(s, known)) s.queue.put(item, Pending.pickup(item, word, id, known, sample, gained, before));
     }
     /** Tells the killer which drops to draw a lock box around, whenever that set changes. */
     private static void syncLockedDrops(ServerPlayer player, Session s) {
@@ -247,10 +274,11 @@ public final class LearningServer {
     private void finish(ServerPlayer player, Session s, int outcome) {
         Pending p = s.active;
         if (p == null) return;
-        int removed = outcome == 2 ? (p.drops != null ? destroyDrops(p) : takeBack(player, s, p)) : 0;
-        if (outcome != 2) release(p);
+        boolean penalty = outcome == 2 && !p.gentle;
+        int removed = penalty ? (p.drops != null ? destroyDrops(p) : takeBack(player, s, p)) : 0;
+        if (!penalty) release(p);
         if (outcome == 1) schedule(player, p.progressKey);
-        else if (outcome == 2) dirty |= progress.recordFailure(player.getUUID(), p.progressKey);
+        else if (outcome == 2) { progress.recordFailure(player.getUUID(), p.progressKey); dirty = true; }
         ServerPlayNetworking.send(player, new Packets.Result(p.id, outcome, removed));
         s.active = null; s.gapUntil = tick + 30;
     }

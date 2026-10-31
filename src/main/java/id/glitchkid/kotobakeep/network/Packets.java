@@ -11,14 +11,15 @@ import java.util.UUID;
 public final class Packets {
     /**
      * item: icon to show (a spawn egg for mobs). key: translation key of the name, which picks the voice clip.
-     * listen: the word isn't learned yet, so the client plays its clip before the timer starts.
      * replayCost: ticks a replay takes off the timer; 0 turns replays off.
+     * streak: correct answers in a row so far. 0 means not learned yet, so the client plays the clip before the
+     * timer starts; higher streaks fade the hints. gentle: the word's first meeting, so failing takes nothing.
      */
-    public record Challenge(UUID id, String item, String name, String key, int count, int ticks, int retriesLeft, boolean listen, int replayCost) implements CustomPacketPayload {
+    public record Challenge(UUID id, String item, String name, String key, int count, int ticks, int retriesLeft, int replayCost, int streak, boolean gentle) implements CustomPacketPayload {
         public static final Type<Challenge> TYPE = new Type<>(Identifier.fromNamespaceAndPath("kotobakeep", "challenge"));
         public static final StreamCodec<RegistryFriendlyByteBuf, Challenge> CODEC = new StreamCodec<>() {
-            public Challenge decode(RegistryFriendlyByteBuf b) { return new Challenge(b.readUUID(), b.readUtf(256), b.readUtf(256), b.readUtf(256), b.readVarInt(), b.readVarInt(), b.readVarInt(), b.readBoolean(), b.readVarInt()); }
-            public void encode(RegistryFriendlyByteBuf b, Challenge p) { b.writeUUID(p.id); b.writeUtf(p.item,256); b.writeUtf(p.name,256); b.writeUtf(p.key,256); b.writeVarInt(p.count); b.writeVarInt(p.ticks); b.writeVarInt(p.retriesLeft); b.writeBoolean(p.listen); b.writeVarInt(p.replayCost); }
+            public Challenge decode(RegistryFriendlyByteBuf b) { return new Challenge(b.readUUID(), b.readUtf(256), b.readUtf(256), b.readUtf(256), b.readVarInt(), b.readVarInt(), b.readVarInt(), b.readVarInt(), b.readVarInt(), b.readBoolean()); }
+            public void encode(RegistryFriendlyByteBuf b, Challenge p) { b.writeUUID(p.id); b.writeUtf(p.item,256); b.writeUtf(p.name,256); b.writeUtf(p.key,256); b.writeVarInt(p.count); b.writeVarInt(p.ticks); b.writeVarInt(p.retriesLeft); b.writeVarInt(p.replayCost); b.writeVarInt(p.streak); b.writeBoolean(p.gentle); }
         };
         public Type<Challenge> type() { return TYPE; }
     }

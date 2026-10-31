@@ -10,8 +10,12 @@ Pick up an item and a small panel appears at the top of the screen with its Japa
 - **Listen first**: a word you haven't learned yet is spoken before its timer starts. Press **J** to hear it again for 3 seconds of your timer.
 - **Offline speech recognition** with [Vosk](https://alphacephei.com/vosk/). Nothing is uploaded or saved.
 - **Native-style pronunciation**: every vanilla item and mob name is pre-recorded with the VOICEVOX voice **冥鳴ひまり** (Meimei Himari). You hear it before a new word, on **J**, and after every answer, right or wrong.
-- New items are always asked. Items you've already answered correctly come back for review after a random **2–5 minutes** of play time.
+- **Hints fade as you learn**: romaji disappears after 2 correct answers in a row, furigana after 4, so you move on to reading the kanji.
+- **New words a few at a time**: at most one brand-new word a minute; reviews of words you've met keep coming.
+- Items you've already answered correctly come back for review after a random **2–5 minutes** of play time, or, with **growing review gaps** turned on, after 3 min → 15 min → 1 h → 4 h → 1 day as they stick.
+- Optional **gentle first meeting**: failing a word the first time you see it takes nothing.
 - One retry per word, and nothing is ever removed because of a microphone or setup problem.
+- **In-game settings**: press **K** to change every option, with explanations, in Minecraft's own options style.
 
 ## Requirements
 
@@ -51,11 +55,19 @@ After every answer you hear the word: as a reward when you get it right, and as 
 
 Under the romaji, the panel shows the name in your game language (for example *Dirt*, *Oak Log*, *Cow*) so you know what the word means. It's hidden when your game is set to Japanese.
 
+As you learn a word, its hints fade. After **2 correct answers in a row** its romaji is hidden, and after **4** its furigana too, so you read the kanji on your own. A wrong answer brings both back. The meaning line always stays.
+
+New words arrive a few at a time: the first time you meet a word, it's asked only if no other new word was asked in the last **60 seconds**. Other new items you pick up in that minute (and the drops of new mobs you kill) are simply yours, and the word is asked on a later pickup. Words you've already met are not limited.
+
+With **gentle first meeting** turned on (`gentleFirstMeeting`, off by default), failing a word the very first time it's asked takes nothing; the panel says "first meeting, items are safe". From the word's second ask on, the normal rules apply.
+
 When you kill a mob whose name is due, its drops lock where they fell. Each one sits in a see-through purple box with a red 🚫 on its sides, so you know it can't be picked up yet, by you, other players or mobs. Say the mob's name (for a cow, **ウシ (ushi)**) and the drops unlock; run out of time and they vanish. Picking up the unlocked drops can then ask for those items' names as usual.
 
 Challenges keep working while a menu is open (inventory, chests, furnaces, and so on). The panel shrinks to a strip along the top of the screen; hover your mouse over it to see the slots underneath.
 
-Press **R** for one fresh attempt at the current word, either while its countdown runs or during the **8-second "Need more time?"** window after it expires. A fresh attempt gives the full time again, and a new word is spoken again first. R and J also work in item menus, but not while you're typing in a text box. Items stay in your inventory while you decide. You can change both keys under Kotoba Keep in Minecraft's key bindings.
+Press **R** for one fresh attempt at the current word, either while its countdown runs or during the **8-second "Need more time?"** window after it expires. A fresh attempt gives the full time again, and a new word is spoken again first. R and J also work in item menus, but not while you're typing in a text box. Items stay in your inventory while you decide. You can change these keys under Kotoba Keep in Minecraft's key bindings (Options → Controls → Key Binds).
+
+Press **K** to open the **Kotoba Keep settings**. Every option is there, with a tooltip that explains it. Changes apply when you close the screen (Done or Esc) and are saved to `config/kotobakeep.json`. A text box turns red while its value isn't valid, and the old value is kept until you fix it. On someone else's server you only see your own display settings; that server's config decides the learning and challenge rules.
 
 | Command | What it does |
 | --- | --- |
@@ -71,8 +83,10 @@ These are client commands and don't need cheats.
 - Each newly encountered **item type** creates a challenge. Ground pickups, crafting, chest transfers, trading and commands all count. Rearranging slots or equipping an item you already have does not.
 - Different new items queue up, and each gets its own full timer. Picking up more of the item being asked joins that challenge without restarting its timer.
 - An item counts as learned only when you say its name correctly. Until then, every new pickup asks again, with no cooldown. Failing a later review makes the next pickup ask again too.
+- At most one never-met word is asked per **60 seconds** (`limitNewWords`). New items picked up in between are not asked or removed.
 - Items already in your inventory when you join don't trigger a popup until you acquire more of them.
 - After a correct answer, that item waits a random **120–300 seconds of world play time** before it can be asked again. The timer alone doesn't create a popup; you have to pick the item up again. Offline time doesn't count.
+- With `growingReviewGaps` on, each correct answer in a row waits longer instead: **3 min, 15 min, 1 h, 4 h, then 1 day** of play time (`reviewGapMinutes`). A wrong answer starts the word over.
 - A challenge lasts **6–18 seconds**, depending on the length of the reading, plus two seconds to finish recognition. Pausing singleplayer freezes the timer.
 - The first timeout offers **one retry** with **8 seconds** to choose it, and removes nothing. The second attempt is final.
 - Saying the complete name anywhere in your speech counts, even with extra words before or after it. Kana, katakana, kanji, spacing, long-vowel spellings and v/b variants are all accepted. Matching uses the spoken reading, so **石炭 (せきたん)** does not count for **石 (いし)**. This checks that the word was recognized; it is not a pronunciation score.
@@ -85,13 +99,13 @@ These are client commands and don't need cheats.
 
 ## Multiplayer
 
-Install Kotoba Keep, Fabric API and Simple Voice Chat on the Fabric server **and** every participating client. Only clients need the speech model. Use the same Kotoba Keep version everywhere; 1.4.0 changed the network format, so older versions can't connect to it. Players without the mod are ignored. Simple Voice Chat must connect normally (default UDP port 24454).
+Install Kotoba Keep, Fabric API and Simple Voice Chat on the Fabric server **and** every participating client. Only clients need the speech model. Use the same Kotoba Keep version everywhere; 1.5.0 changed the network format, so older versions can't connect to it. Players without the mod are ignored. Simple Voice Chat must connect normally (default UDP port 24454).
 
 This is a cooperative learning mod, not anti-cheat: the client reports what it heard and the server checks it against the active challenge, so a modified client can skip its own challenges.
 
 ## Configuration
 
-`config/kotobakeep.json` is created on first launch. Restart Minecraft or the server after editing it.
+Press **K** in game to change these settings on the settings screen. They apply as soon as you close it. They are stored in `config/kotobakeep.json`, created on first launch. If you edit the file by hand, restart Minecraft or the server afterwards. "Server" settings come from the server's file in multiplayer; in singleplayer and on your own LAN world they're yours.
 
 | Setting | Default | Notes |
 | --- | --- | --- |
@@ -103,12 +117,18 @@ This is a cooperative learning mod, not anti-cheat: the client reports what it h
 | `maxRetries` | `1` | Server; 0 to 5 |
 | `retryWindowSeconds` | `8` | Server |
 | `replayCostSeconds` | `3` | Server; 0 to 10. Seconds a replay (J) takes off the timer; 0 turns replays off |
-| `hudAccentColor` | `"#c888e8"` | |
+| `growingReviewGaps` | `false` | Server. Use `reviewGapMinutes` instead of `repeatMinSeconds`/`repeatMaxSeconds` |
+| `reviewGapMinutes` | `[3, 15, 60, 240, 1440]` | Server. Minutes of play time after the 1st, 2nd, 3rd… correct answer in a row; the last one repeats. Up to 20 gaps, 1 to 525600 each |
+| `fadeHints` | `true` | Client. Hide hints for words you keep getting right |
+| `hideRomajiAfter` / `hideFuriganaAfter` | `2` / `4` | Client; 1 to 20. Correct answers in a row before romaji / furigana are hidden |
+| `limitNewWords` | `true` | Server. At most one never-met word per `newWordGapSeconds` |
+| `newWordGapSeconds` | `60` | Server; 1 to 3600 |
+| `gentleFirstMeeting` | `false` | Server. Failing a word the first time it's asked takes nothing |
 | `hudTop` | `12` | GUI pixels from the top |
 | `showRomaji` | `true` | |
 | `modelPath` | `config/kotobakeep/vosk-model-small-ja-0.22` | |
 
-Learning progress is saved per world in `<world>/data/kotobakeep-mastery.json`.
+Learning progress is saved per world in `<world>/data/kotobakeep-words.json`: for each word, when it's next due and how many times in a row you've answered it right. Worlds from 1.4.0 or older are converted from `kotobakeep-mastery.json` on first load (each learned word starts at 1 correct answer); the old file is left in place.
 
 ## Building
 
@@ -130,8 +150,8 @@ The JAR is written to `build/libs/`. Kuromoji, Vosk and JNA are bundled inside i
 GitHub Actions builds and tests every push. To publish a release, set `mod_version` in `gradle.properties`, commit, and push a matching tag:
 
 ```powershell
-git tag v1.4.0
-git push origin v1.4.0
+git tag v1.5.0
+git push origin v1.5.0
 ```
 
 The workflow attaches `kotoba-keep-<version>+26.3.jar` and its SHA-256 checksum to a new GitHub release. It refuses tags that don't match `mod_version`. The release text comes from `.github/release-notes.md` plus the commit list.

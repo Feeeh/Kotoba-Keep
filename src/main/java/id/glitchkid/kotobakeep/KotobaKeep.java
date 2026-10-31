@@ -15,7 +15,8 @@ import org.slf4j.LoggerFactory;
 
 public final class KotobaKeep implements ModInitializer {
     public static final Logger LOG = LoggerFactory.getLogger("KotobaKeep");
-    public static Config CONFIG;
+    /** Replaced as a whole when the settings screen closes, so the server thread never sees a half-edited config. */
+    public static volatile Config CONFIG;
     public static Japanese JAPANESE;
     public static LearningServer SERVER;
     public void onInitialize() {

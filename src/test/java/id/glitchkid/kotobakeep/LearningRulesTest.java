@@ -18,6 +18,14 @@ class LearningRulesTest {
         assertTrue(max-min>3500);
         assertTrue(LearningRules.due(null,0));
     }
+    @Test void growingGapsStretchWithEachCorrectAnswerInARowAndRepeatTheLast() {
+        int[] gaps = {3, 15, 60};
+        assertEquals(1000 + 3 * 1200, LearningRules.growingDue(1000, 1, gaps));
+        assertEquals(1000 + 15 * 1200, LearningRules.growingDue(1000, 2, gaps));
+        assertEquals(1000 + 60 * 1200, LearningRules.growingDue(1000, 3, gaps));
+        assertEquals(1000 + 60 * 1200, LearningRules.growingDue(1000, 9, gaps));
+        assertEquals(1000 + 1440 * 1200L, LearningRules.growingDue(1000, 5, new Config().reviewGapMinutes));
+    }
     @Test void penaltiesProtectTheExistingStock() {
         assertEquals(3,LearningRules.penalty(67,64,3));
         assertEquals(1,LearningRules.penalty(65,64,3));

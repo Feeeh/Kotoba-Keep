@@ -25,7 +25,7 @@ final class LockBoxes {
         if (ids.length == 0 || mc.level == null) return;
         float partial = mc.getDeltaTracker().getGameTimeDeltaPartialTick(false);
         Vec3 camera = mc.gameRenderer.mainCamera().position();
-        int stroke = KotobaKeep.CONFIG.accentColor();
+        int stroke = ChallengeHud.ACCENT;
         var style = GizmoStyle.strokeAndFill(stroke, STROKE_WIDTH, stroke & 0x00FFFFFF | FILL_ALPHA);
         try (var _ = renderer.collectPerFrameRenderThreadGizmos()) {
             for (int id : ids) {

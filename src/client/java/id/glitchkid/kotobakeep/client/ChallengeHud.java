@@ -22,6 +22,8 @@ final class ChallengeHud implements HudElement {
     private static final int COMPACT_TOP=4, COMPACT_HEIGHT=32, COMPACT_TEXT_MAX=160;
     private static final int ACCENT_WIDTH=2, PROGRESS_HEIGHT=2, KANJI_PAD=4;
     private static final int BACKGROUND=0xF020182B, SLOT_COLOR=0xFF2E2240, BADGE_COLOR=0xFF392845, TRACK_COLOR=0xFF4B365C;
+    /** The Kotoba Keep brand colour, also used for the lock boxes around mob drops. */
+    static final int ACCENT=0xFFC888E8;
     private static final int ROMAJI_COLOR=0xFFE6DDED, MEANING_COLOR=0xFFB9A9C9, FAIL_COLOR=0xFFF1B2C9;
     private static final double TICKS_PER_SECOND=20;
     private final KotobaClient state;
@@ -45,26 +47,25 @@ final class ChallengeHud implements HudElement {
         String status="Kotoba Keep · " + state.status();
         float scale=Math.min(1f,(g.guiWidth()-16f)/Math.max(1,font.width(status)));
         g.pose().pushMatrix();g.pose().translate(g.guiWidth()/2f,KotobaKeep.CONFIG.hudTop);g.pose().scale(scale,scale);
-        g.text(font,status,-font.width(status)/2,0,KotobaKeep.CONFIG.accentColor());g.pose().popMatrix();
+        g.text(font,status,-font.width(status)/2,0,ACCENT);g.pose().popMatrix();
     }
     private void drawPanel(GuiGraphicsExtractor g) {
         var font=Minecraft.getInstance().font;
-        int accent=KotobaKeep.CONFIG.accentColor();
-        String romaji=KotobaKeep.CONFIG.showRomaji?romaji():"", meaning=meaning();
+        String romaji=romaji(), meaning=meaning();
         int wordX=PAD+ICON_SIZE+GAP, wordEnd=wordX+wordWidth(WORD_SCALE,RUBY_SCALE);
         int sideWidth=Math.min(SIDE_MAX_WIDTH,(int)Math.ceil(Math.max(font.width(romaji),font.width(meaning)*MEANING_SCALE)));
         int sideX=wordEnd+GAP, rowEnd=sideWidth>0?sideX+sideWidth:wordEnd;
         int width=Math.max(PANEL_MIN_WIDTH,rowEnd+GAP+TIMER_WIDTH+PAD);
         float scale=Math.min(1f,(g.guiWidth()-16f)/width);
         g.pose().pushMatrix();g.pose().translate((g.guiWidth()-width*scale)/2f,KotobaKeep.CONFIG.hudTop);g.pose().scale(scale,scale);
-        drawBackground(g,width,PANEL_HEIGHT,accent);
+        drawBackground(g,width,PANEL_HEIGHT);
         roundedRect(g,PAD-2,ICON_TOP-2,ICON_SIZE+4,ICON_SIZE+4,SLOT_COLOR);
         drawItem(g,PAD,ICON_TOP,ICON_SCALE);
-        drawWord(g,wordX,RUBY_TOP,WORD_TOP,WORD_SCALE,RUBY_SCALE,accent);
+        drawWord(g,wordX,RUBY_TOP,WORD_TOP,WORD_SCALE,RUBY_SCALE);
         if(sideWidth>0) drawSide(g,sideX,sideWidth,romaji,meaning);
         drawTimer(g,width-PAD-TIMER_WIDTH,TIMER_TOP,TIMER_WIDTH,TIMER_HEIGHT,TIMER_SCALE);
         scaledText(g,statusText(),PAD,STATUS_TOP,width-2*PAD,statusColor(),STATUS_SCALE);
-        drawProgress(g,width,PANEL_HEIGHT,accent);
+        drawProgress(g,width,PANEL_HEIGHT);
         g.pose().popMatrix();
     }
     /** Romaji over the meaning, beside the word behind a thin divider; a single line sits centred. */
@@ -76,7 +77,6 @@ final class ChallengeHud implements HudElement {
     }
     private void drawCompact(GuiGraphicsExtractor g,int mouseX,int mouseY) {
         var font=Minecraft.getInstance().font;
-        int accent=KotobaKeep.CONFIG.accentColor();
         String detail=compactDetail(), status=statusText();
         int textX=28+wordWidth(COMPACT_WORD_SCALE,COMPACT_RUBY_SCALE)+6;
         int textWidth=Math.clamp((int)Math.ceil(Math.max(font.width(detail),font.width(status))*SMALL_SCALE),60,COMPACT_TEXT_MAX);
@@ -85,19 +85,19 @@ final class ChallengeHud implements HudElement {
         // On small windows the strip can cover a large chest's top row; hovering it reveals the slots.
         if(mouseX>=left && mouseX<=left+width*scale && mouseY>=COMPACT_TOP && mouseY<=COMPACT_TOP+COMPACT_HEIGHT*scale)return;
         g.pose().pushMatrix();g.pose().translate(left,COMPACT_TOP);g.pose().scale(scale,scale);
-        drawBackground(g,width,COMPACT_HEIGHT,accent);
+        drawBackground(g,width,COMPACT_HEIGHT);
         drawItem(g,8,8,1f);
-        drawWord(g,28,3,11,COMPACT_WORD_SCALE,COMPACT_RUBY_SCALE,accent);
+        drawWord(g,28,3,11,COMPACT_WORD_SCALE,COMPACT_RUBY_SCALE);
         scaledText(g,detail,textX,7,textWidth,ROMAJI_COLOR,SMALL_SCALE);
         scaledText(g,status,textX,17,textWidth,statusColor(),SMALL_SCALE);
         drawTimer(g,width-32,7,26,14,1f);
-        drawProgress(g,width,COMPACT_HEIGHT,accent);
+        drawProgress(g,width,COMPACT_HEIGHT);
         g.pose().popMatrix();
     }
 
-    private static void drawBackground(GuiGraphicsExtractor g,int width,int height,int accent) {
+    private static void drawBackground(GuiGraphicsExtractor g,int width,int height) {
         roundedRect(g,0,0,width,height,BACKGROUND);
-        g.fill(0,1,ACCENT_WIDTH,height-1,accent);
+        g.fill(0,1,ACCENT_WIDTH,height-1,ACCENT);
     }
     /** A rectangle without its corner pixels, which reads as softly rounded. */
     private static void roundedRect(GuiGraphicsExtractor g,int x,int y,int width,int height,int color) {
@@ -117,27 +117,28 @@ final class ChallengeHud implements HudElement {
         if(item==null)return;
         g.pose().pushMatrix();g.pose().translate(x,y);g.pose().scale(scale,scale);g.item(new ItemStack(item),0,0);g.pose().popMatrix();
     }
-    /** The word with furigana centred above each kanji segment. */
-    private void drawWord(GuiGraphicsExtractor g,int x,int rubyY,int wordY,float wordScale,float rubyScale,int accent) {
+    /** The word with furigana centred above each kanji segment, unless the furigana has faded. */
+    private void drawWord(GuiGraphicsExtractor g,int x,int rubyY,int wordY,float wordScale,float rubyScale) {
         var font=Minecraft.getInstance().font;
+        boolean furigana=furigana();
         for(var ruby:state.word.ruby()) {
-            int cell=segmentWidth(ruby,wordScale,rubyScale);
-            if(Japanese.hasKanji(ruby.text())) {
+            int cell=segmentWidth(ruby,wordScale,rubyScale,furigana);
+            if(furigana && Japanese.hasKanji(ruby.text())) {
                 g.pose().pushMatrix();g.pose().translate(x+cell/2f,rubyY);g.pose().scale(rubyScale,rubyScale);
                 g.text(font,ruby.reading(),-font.width(ruby.reading())/2,0,0xFFEACFF7);g.pose().popMatrix();
             }
             g.pose().pushMatrix();g.pose().translate(x+cell/2f,wordY);g.pose().scale(wordScale,wordScale);
-            g.text(font,ruby.text(),-font.width(ruby.text())/2,0,accent);g.pose().popMatrix();
+            g.text(font,ruby.text(),-font.width(ruby.text())/2,0,ACCENT);g.pose().popMatrix();
             x+=cell;
         }
     }
     /** The countdown drains along the card's bottom edge. */
-    private void drawProgress(GuiGraphicsExtractor g,int width,int height,int accent) {
+    private void drawProgress(GuiGraphicsExtractor g,int width,int height) {
         int fullTicks=state.retryRemaining>0?Math.max(1,state.retryTotalTicks):Math.max(1,state.challenge.ticks());
         float fraction=state.outcome==1?1:Math.clamp(ticksLeft()/(float)fullTicks,0,1);
         int left=ACCENT_WIDTH, right=width-1, top=height-PROGRESS_HEIGHT;
         g.fill(left,top,right,height,TRACK_COLOR);
-        g.fill(left,top,left+(int)((right-left)*fraction),height,accent);
+        g.fill(left,top,left+(int)((right-left)*fraction),height,ACCENT);
     }
 
     private int ticksLeft() { return state.retryRemaining>0?state.retryRemaining:state.remaining; }
@@ -157,18 +158,26 @@ final class ChallengeHud implements HudElement {
         return text.isBlank() || text.equals(key) || text.equals(state.word.text()) ? "" : text;
     }
     private String compactDetail() {
-        String romaji=KotobaKeep.CONFIG.showRomaji?romaji():"", meaning=meaning();
+        String romaji=romaji(), meaning=meaning();
         return romaji.isEmpty() || meaning.isEmpty() ? romaji+meaning : romaji+" · "+meaning;
     }
-    private String romaji() { return state.word.ruby().stream().map(r->Romaji.of(r.reading())).reduce((a,b)->a+" "+b).orElse(""); }
+    /** Empty when romaji is turned off or has faded for this word. */
+    private String romaji() {
+        if(!KotobaKeep.CONFIG.showRomaji || faded(KotobaKeep.CONFIG.hideRomajiAfter))return "";
+        return state.word.ruby().stream().map(r->Romaji.of(r.reading())).reduce((a,b)->a+" "+b).orElse("");
+    }
+    private boolean furigana() { return !faded(KotobaKeep.CONFIG.hideFuriganaAfter); }
+    /** A hint fades once the word has been answered right this many times in a row. */
+    private boolean faded(int after) { return KotobaKeep.CONFIG.fadeHints && state.challenge.streak()>=after; }
     private String statusText() {
+        boolean gentle=state.challenge.gentle();
         if(state.outcome==1)return "Nice! You keep it.";
-        if(state.outcome==2)return "Time's up · removed "+state.removed;
+        if(state.outcome==2)return gentle?"Time's up · first meeting, nothing lost":"Time's up · removed "+state.removed;
         if(state.outcome==0)return "Paused · your items are safe";
         if(state.outcome==3)return "Say it to keep it · glitchk.id";
         if(state.retryRequested)return "Restarting your attempt...";
         if(state.retryRemaining>0)return "Need more time? ["+state.retryKeyName()+"] retry · items are safe";
-        if(state.listening)return "Listen...";
+        if(state.listening)return gentle?"Listen... · first meeting, items are safe":"Listen...";
         if(!state.started)return "Preparing microphone...";
         if(state.submitted)return "Checking...";
         if(state.remaining==0)return "Finishing recognition...";
@@ -181,14 +190,15 @@ final class ChallengeHud implements HudElement {
     private int statusColor() { return state.outcome==2?FAIL_COLOR:state.outcome==1?0xFFB5EACC:0xFFEACFF7; }
     private int wordWidth(float wordScale,float rubyScale) {
         int width=0;
-        for(var ruby:state.word.ruby())width+=segmentWidth(ruby,wordScale,rubyScale);
+        boolean furigana=furigana();
+        for(var ruby:state.word.ruby())width+=segmentWidth(ruby,wordScale,rubyScale,furigana);
         return width;
     }
-    /** Kana keep their natural spacing; kanji get room for their furigana and a little air around it. */
-    private static int segmentWidth(Japanese.Ruby ruby,float wordScale,float rubyScale) {
+    /** Kana keep their natural spacing; kanji with furigana get room for it and a little air around it. */
+    private static int segmentWidth(Japanese.Ruby ruby,float wordScale,float rubyScale,boolean furigana) {
         var font=Minecraft.getInstance().font;
         float text=font.width(ruby.text())*wordScale;
-        if(!Japanese.hasKanji(ruby.text()))return (int)Math.ceil(text);
+        if(!furigana || !Japanese.hasKanji(ruby.text()))return (int)Math.ceil(text);
         return (int)Math.ceil(Math.max(text,font.width(ruby.reading())*rubyScale))+KANJI_PAD;
     }
     private static void scaledText(GuiGraphicsExtractor g,String text,int x,int y,int maxWidth,int color,float desiredScale) {

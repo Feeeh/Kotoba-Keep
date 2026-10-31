@@ -42,7 +42,7 @@ public final class KotobaClient implements ClientModInitializer {
     Japanese.Word word;
     int remaining, resultTicks, outcome = -1, removed, retryRemaining, retryTotalTicks;
     boolean started, submitted, flushed, pausedByUser, retryRequested;
-    KeyMapping retryKey, replayKey;
+    KeyMapping retryKey, replayKey, settingsKey;
     String heard = "";
     // Read by ChallengeHud. listening: a new word's clip is playing before the timer starts.
     // replayFlash: ticks left to show the replay cost on the timer after a replay.
@@ -58,6 +58,7 @@ public final class KotobaClient implements ClientModInitializer {
         var keys = KeyMapping.Category.register(Identifier.fromNamespaceAndPath("kotobakeep", "controls"));
         retryKey = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.kotobakeep.retry", InputConstants.KEY_R, keys));
         replayKey = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.kotobakeep.replay", InputConstants.KEY_J, keys));
+        settingsKey = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.kotobakeep.settings", InputConstants.KEY_K, keys));
         VoiceBridge.audio = speech::audio;
         ClientPlayNetworking.registerGlobalReceiver(Packets.Challenge.TYPE, (packet, context) -> begin(packet));
         ClientPlayNetworking.registerGlobalReceiver(Packets.Result.TYPE, (packet, context) -> {
@@ -113,7 +114,7 @@ public final class KotobaClient implements ClientModInitializer {
         challenge=packet; word=KotobaKeep.JAPANESE.word(packet.name()); remaining=packet.ticks();
         started=false; submitted=false; flushed=false; retryRequested=false; retryRemaining=0; resultTicks=0; outcome=-1; heard="";
         recognizerReady=false; replayRequested=false; replayFlash=0;
-        listening=packet.listen() && playClip(packet.key()); // a new word is heard before its timer starts
+        listening=packet.streak()==0 && playClip(packet.key()); // a word not learned yet is heard before its timer starts
         speech.start(packet.id(), word, text -> Minecraft.getInstance().execute(() -> receiveTranscript(packet.id(),text)), () -> Minecraft.getInstance().execute(() -> {
             if(challenge!=null && challenge.id().equals(packet.id())){recognizerReady=true;startTimer();}
         }));
@@ -141,6 +142,7 @@ public final class KotobaClient implements ClientModInitializer {
         VoiceBridge.refresh();
         while (retryKey.consumeClick()) requestRetry();
         while (replayKey.consumeClick()) requestReplay();
+        while (settingsKey.consumeClick()) client.gui.setScreen(new SettingsScreen(null));
         if(tick%20==0)sendReady(available()?1:0,zero);
         if(client.isPaused())return; // the sound engine pauses our clip too, so the mute waits with it
         tickClip(client);
@@ -198,7 +200,7 @@ public final class KotobaClient implements ClientModInitializer {
     private void demo() {
         // A local visual preview. It never creates a server challenge or removes items.
         word=KotobaKeep.JAPANESE.word("オークの原木");
-        challenge=new Packets.Challenge(zero,"minecraft:oak_log",word.text(),"block.minecraft.oak_log",1,200,1,false,0);
+        challenge=new Packets.Challenge(zero,"minecraft:oak_log",word.text(),"block.minecraft.oak_log",1,200,1,0,0,false);
         remaining=200;resultTicks=200;outcome=3;started=false;
         playClip(challenge.key());
     }
