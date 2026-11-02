@@ -1,6 +1,10 @@
+![Kotoba Keep](assets/branding/kotoba-keep-banner.png)
+
 # Kotoba Keep
 
 **Say it to keep it.** A Minecraft **26.3 / Fabric** mod by **glitchk.id** that teaches you the original Japanese names of Minecraft items.
+
+**Download:** [CurseForge](https://www.curseforge.com/minecraft/mc-mods/kotoba-keep)
 
 Pick up an item and a small panel appears at the top of the screen with its Japanese name, furigana above the kanji, romaji, what it's called in your own game language, and a countdown. New words are spoken to you first; say the name into your Simple Voice Chat microphone before time runs out to keep the item. Get it right and you hear the word again in natural Japanese. Run out of time and the newly picked-up items are removed. Kill a mob and you have to name it too, or its drops disappear.
 
@@ -30,7 +34,7 @@ Pick up an item and a small panel appears at the top of the screen with its Japa
 
 ## Install
 
-1. Put `kotoba-keep-<version>.jar`, Fabric API and Simple Voice Chat into your instance's `mods/` folder.
+1. Download `kotoba-keep-<version>.jar` from [CurseForge](https://www.curseforge.com/minecraft/mc-mods/kotoba-keep), then put it, Fabric API and Simple Voice Chat into your instance's `mods/` folder.
 2. Download [vosk-model-small-ja-0.22.zip](https://alphacephei.com/vosk/models/vosk-model-small-ja-0.22.zip) and extract its `vosk-model-small-ja-0.22` folder into `config/kotobakeep/`.
 
 **CurseForge on Windows:** create a Minecraft 26.3 Fabric profile named `Kotoba Keep`, then run the installer from a build (see [Building](#building)). It copies the mod, downloads the pinned Fabric API and Simple Voice Chat releases (SHA-512 verified) and the speech model (SHA-256 verified):
